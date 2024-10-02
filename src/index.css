@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Kollektif";
+  src: url("./fonts/Kollektif.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

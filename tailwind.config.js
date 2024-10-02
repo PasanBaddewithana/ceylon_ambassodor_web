@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        kollektif: ["Kollektif", "sans-serif"], // Add the custom font here
+      },
+    },
   },
   plugins: [],
 };
