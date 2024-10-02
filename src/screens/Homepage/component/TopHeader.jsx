@@ -2,6 +2,7 @@
 import React from "react";
 import { FaPhone, FaEnvelope, FaGlobe, FaTrain } from "react-icons/fa"; // Using react-icons for icons
 import { ReactComponent as Phone } from "../../../assets/telephone.svg";
+import { ReactComponent as Mail } from "../../../assets/mail.svg";
 
 const TopHeader = () => {
   return (
@@ -14,7 +15,7 @@ const TopHeader = () => {
             <span>+94 77 777 7777</span>
           </div>
           <div className="flex items-center space-x-1">
-            <FaEnvelope />
+            <Mail />
             <span>info@ceylonambassador.com</span>
           </div>
         </div>
@@ -22,7 +23,6 @@ const TopHeader = () => {
         {/* Right Section - Support Links */}
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-1">
-            <FaGlobe />
             <span>Support 24/7</span>
           </div>
           <div className="flex items-center space-x-1">
