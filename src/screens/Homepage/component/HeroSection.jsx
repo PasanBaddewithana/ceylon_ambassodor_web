@@ -1,16 +1,16 @@
 // src/components/Hero.js
 import React from "react";
+import planeImage from "../../../assets/airliner-plane-parked-terminal-view-from-front-cockpit-fuselage-with-boarding-bridge.png";
 
 const Hero = () => {
   return (
     <section className="relative">
-      <img
-        src="/hero-image.png" // Replace with the image path
-        alt="Airplane"
-        className="w-full h-[500px] object-cover"
-      />
-      <div className="absolute inset-0 flex justify-center items-center">
-        <h1 className="text-white text-4xl font-bold">CEYLON AMBASSADOR</h1>
+      <div className="">
+        <img
+          src={planeImage}
+          alt="Airplane"
+          className="w-full h-[600px] object-cover"
+        />
       </div>
     </section>
   );

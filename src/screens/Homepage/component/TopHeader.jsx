@@ -3,10 +3,11 @@ import React from "react";
 import { FaPhone, FaEnvelope, FaGlobe, FaTrain } from "react-icons/fa"; // Using react-icons for icons
 import { ReactComponent as Phone } from "../../../assets/telephone.svg";
 import { ReactComponent as Mail } from "../../../assets/mail.svg";
-
+import { ReactComponent as Support } from "../../../assets/support.svg";
+import { ReactComponent as TrackTrace } from "../../../assets/track_trace.svg";
 const TopHeader = () => {
   return (
-    <div className="bg-[#031c3f] text-white text-sm font-kollektif">
+    <div className="bg-[#031c3f] text-white text-[12px] font-kollektif">
       <div className="container mx-auto flex justify-between items-center py-1 px-4">
         {/* Left Section - Contact Info */}
         <div className="flex items-center space-x-4">
@@ -23,10 +24,11 @@ const TopHeader = () => {
         {/* Right Section - Support Links */}
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-1">
+            <Support />
             <span>Support 24/7</span>
           </div>
           <div className="flex items-center space-x-1">
-            <FaTrain />
+            <TrackTrace />
             <span>Track and Trace</span>
           </div>
         </div>
