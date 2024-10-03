@@ -4,7 +4,7 @@ import React from "react";
 const ContactDropDown = ({ toggleDropdown }) => {
   return (
     <div
-      className="absolute bg-[#031c3f] top-full text-white  mt-2 py-2 px-4 rounded shadow-lg"
+      className="absolute bg-[#031c3f] top-full text-white  mt-2 py-2 px-4 rounded shadow-lg font-kollektif  font-bold text-sm"
       onClick={toggleDropdown}
     >
       <a

@@ -35,7 +35,7 @@ const Navbar = () => {
   }, [isContactDropdownOpen]);
 
   return (
-    <nav className="bg-transparent mx-auto flex items-center border-b-2 border-[#031c3f] text-[#031c3f]  fixed top-6 w-full z-10 font-kollektif font-bold text-sm">
+    <nav className="bg-transparent mx-auto flex items-center border-b-2 border-[#031c3f] text-[#031c3f]  fixed top-6 w-full z-10 font-kollektif  font-bold text-sm">
       <div className="container mx-auto flex justify-between items-center">
         <div className="w-[90%] flex justify-between items-center py-2 px-6 border-r-2 border-[#031c3f]">
           {/* Logo */}
