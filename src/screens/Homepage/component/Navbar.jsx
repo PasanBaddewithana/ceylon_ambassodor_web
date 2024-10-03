@@ -1,16 +1,38 @@
-// src/components/Navbar.js
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { ReactComponent as Logo } from "../../../assets/Logo.svg";
-import { FaUserCircle } from "react-icons/fa";
-import { FaMapMarkerAlt, FaBars } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { ReactComponent as TrackOrder } from "../../../assets/track_order.svg";
+import ContactDropDown from "./ContactDropDown";
 
 const Navbar = () => {
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isContactDropdownOpen, setContactDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null); // Create a ref for the dropdown
 
-  const toggleDropdown = () => {
-    setDropdownOpen(!isDropdownOpen);
+  const toggleContactDropdown = () => {
+    setContactDropdownOpen(!isContactDropdownOpen);
   };
+
+  const handleClickOutside = (event) => {
+    // Check if the click is outside the dropdown
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setContactDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Add event listener when dropdown is open
+    if (isContactDropdownOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      // Remove event listener when dropdown is closed
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isContactDropdownOpen]);
 
   return (
     <nav className="bg-transparent mx-auto flex items-center border-b-2 border-[#031c3f] text-[#031c3f]  fixed top-6 w-full z-10 font-kollektif font-bold text-sm">
@@ -50,32 +72,19 @@ const Navbar = () => {
             </a>
 
             {/* Contact with Dropdown */}
-            <div className="relative group">
+            <div className="relative group" ref={dropdownRef}>
               <a
                 href="#"
                 className="relative group text-base hover:text-yellow-500"
-                onClick={toggleDropdown}
+                onClick={toggleContactDropdown}
               >
                 Contact
                 <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
               </a>
 
-              {/* Dropdown Menu */}
-              {isDropdownOpen && (
-                <div
-                  className="absolute bg-[#031c3f] text-white top-full mt-2 py-2 px-4 rounded shadow-lg"
-                  onClick={toggleDropdown}
-                >
-                  <a href="#" className="block px-4 py-2 hover:bg-yellow-500">
-                    Contact Us
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-yellow-500">
-                    FAQ's
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-yellow-500">
-                    Book a Freight
-                  </a>
-                </div>
+              {/*Contact Dropdown Menu */}
+              {isContactDropdownOpen && (
+                <ContactDropDown toggleDropdown={toggleContactDropdown} />
               )}
             </div>
           </div>

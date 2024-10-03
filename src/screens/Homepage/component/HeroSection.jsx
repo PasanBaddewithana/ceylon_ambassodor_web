@@ -7,12 +7,12 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Import icons 
 const Hero = ({ images }) => {
   // Slider settings
   const settings = {
-    dots: true, // Show dots for navigation
+    dots: false, // Show dots for navigation
     infinite: true, // Loop the slides
     speed: 500, // Transition speed
     slidesToShow: 1, // Number of slides to show at once
     slidesToScroll: 1, // Number of slides to scroll at once
-    autoplay: true, // Enable autoplay
+    autoplay: false, // Enable autoplay
     autoplaySpeed: 3000, // Autoplay speed in milliseconds
     nextArrow: <CustomNextArrow />, // Custom next arrow
     prevArrow: <CustomPrevArrow />, // Custom previous arrow
