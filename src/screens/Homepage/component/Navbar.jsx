@@ -6,43 +6,85 @@ import DropdownMenu from "./DropdownMenu";
 
 const Navbar = () => {
   const [isContactDropdownOpen, setContactDropdownOpen] = useState(false);
-  const dropdownRef = useRef(null); // Create a ref for the dropdown
+  const [isOfficeDropdownOpen, setOfficeDropdownOpen] = useState(false);
+  const [isCompaniesDropdownOpen, setCompaniesDropdownOpen] = useState(false);
+
+  const contactDropdownRef = useRef(null);
+  const officeDropdownRef = useRef(null);
+  const companiesDropdownRef = useRef(null);
 
   const toggleContactDropdown = () => {
     setContactDropdownOpen(!isContactDropdownOpen);
   };
 
+  const toggleOfficeDropdown = () => {
+    setOfficeDropdownOpen(!isOfficeDropdownOpen);
+  };
+
+  const toggleCompaniesDropdown = () => {
+    setCompaniesDropdownOpen(!isCompaniesDropdownOpen);
+  };
+
   const handleClickOutside = (event) => {
-    // Check if the click is outside the dropdown
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    if (
+      contactDropdownRef.current &&
+      !contactDropdownRef.current.contains(event.target)
+    ) {
       setContactDropdownOpen(false);
+    }
+    if (
+      officeDropdownRef.current &&
+      !officeDropdownRef.current.contains(event.target)
+    ) {
+      setOfficeDropdownOpen(false);
+    }
+    if (
+      companiesDropdownRef.current &&
+      !companiesDropdownRef.current.contains(event.target)
+    ) {
+      setCompaniesDropdownOpen(false);
     }
   };
 
   useEffect(() => {
-    // Add event listener when dropdown is open
-    if (isContactDropdownOpen) {
+    if (
+      isContactDropdownOpen ||
+      isOfficeDropdownOpen ||
+      isCompaniesDropdownOpen
+    ) {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
-      // Remove event listener when dropdown is closed
       document.removeEventListener("mousedown", handleClickOutside);
     }
 
-    // Cleanup on unmount
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isContactDropdownOpen]);
+  }, [isContactDropdownOpen, isOfficeDropdownOpen, isCompaniesDropdownOpen]);
 
-  // Define the links for each dropdown
   const contactLinks = [
     { href: "#", text: "Contact Us" },
     { href: "#", text: "FAQ's" },
     { href: "#", text: "Book a Freight" },
   ];
 
+  const officeLinks = [
+    { href: "#", text: "Global Network" },
+    { href: "#", text: "Our clients" },
+    { href: "#", text: "Meet the crew" },
+    { href: "#", text: "Available positions" },
+    { href: "#", text: "Blog" },
+  ];
+
+  const companiesLinks = [
+    { href: "#", text: "United Freight Solutions" },
+    { href: "#", text: "Khmergate" },
+    { href: "#", text: "AEROFLY Aviation" },
+    { href: "#", text: "Brandpulse" },
+  ];
+
   return (
-    <nav className="bg-transparent mx-auto flex items-center border-b-2 border-[#031c3f] text-[#031c3f]  fixed top-6 w-full z-10 font-kollektif  font-bold text-sm">
+    <nav className="bg-transparent mx-auto flex items-center border-b-2 border-[#031c3f] text-[#031c3f] fixed top-6 w-full z-10 font-kollektif font-bold text-sm">
       <div className="container mx-auto flex justify-between items-center">
         <div className="w-[90%] flex justify-between items-center py-2 px-6 border-r-2 border-[#031c3f]">
           {/* Logo */}
@@ -54,42 +96,62 @@ const Navbar = () => {
           <div className="flex space-x-14">
             <a href="#" className="relative group text-base">
               Home
-              <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f]  transition-all duration-300 group-hover:w-[120%]"></span>
+              <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
             </a>
-            <a
-              href="#"
-              className="relative group text-base hover:text-yellow-500"
-            >
+            <a href="#" className="relative group text-base ">
               About
               <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
             </a>
-            <a
-              href="#"
-              className="relative group text-base hover:text-yellow-500"
-            >
-              Companies
-              <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
-            </a>
-            <a
-              href="#"
-              className="relative group text-base hover:text-yellow-500"
-            >
-              Office
-              <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
-            </a>
 
-            {/* Contact with Dropdown */}
-            <div className="relative group" ref={dropdownRef}>
+            {/* Companies Dropdown */}
+            <div className="relative group" ref={companiesDropdownRef}>
               <a
                 href="#"
-                className="relative group text-base hover:text-yellow-500"
+                className="relative group text-base "
+                onClick={toggleCompaniesDropdown}
+              >
+                Companies
+                <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
+              </a>
+
+              {isCompaniesDropdownOpen && (
+                <DropdownMenu
+                  links={companiesLinks}
+                  toggleDropdown={toggleCompaniesDropdown}
+                />
+              )}
+            </div>
+
+            {/* Office Dropdown */}
+            <div className="relative group" ref={officeDropdownRef}>
+              <a
+                href="#"
+                className="relative group text-base"
+                onClick={toggleOfficeDropdown}
+              >
+                Office
+                <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
+              </a>
+
+              {isOfficeDropdownOpen && (
+                <DropdownMenu
+                  links={officeLinks}
+                  toggleDropdown={toggleOfficeDropdown}
+                />
+              )}
+            </div>
+
+            {/* Contact Dropdown */}
+            <div className="relative group" ref={contactDropdownRef}>
+              <a
+                href="#"
+                className="relative group text-base "
                 onClick={toggleContactDropdown}
               >
                 Contact
                 <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
               </a>
 
-              {/*Contact Dropdown Menu */}
               {isContactDropdownOpen && (
                 <DropdownMenu
                   links={contactLinks}
@@ -111,7 +173,7 @@ const Navbar = () => {
 
             {/* Hamburger Menu */}
             <div className="bg-[#031c3f] p-[6px]">
-              <FaBars className="text-white text-3xl" /> {/* Hamburger icon */}
+              <FaBars className="text-white text-3xl" />
             </div>
           </div>
         </div>
