@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        kollektif: ["Kollektif", "sans-serif"], // Add the custom font here
+        kollektif: ["Kollektif", "Kollektifbold", "sans-serif"], // Add the custom font here
       },
     },
   },

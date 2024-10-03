@@ -8,7 +8,7 @@ import { ReactComponent as TrackTrace } from "../../../assets/track_trace.svg";
 const TopHeader = () => {
   return (
     <div className="bg-[#031c3f] text-white text-[12px] font-kollektif">
-      <div className="container mx-auto flex justify-between items-center py-1 px-4">
+      <div className="container bg-[#031c3f]  flex justify-between items-center py-1 px-10">
         {/* Left Section - Contact Info */}
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-1">

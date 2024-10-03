@@ -10,8 +10,8 @@
 }
 
 @font-face {
-  font-family: "Kollektif";
-  src: url("./fonts/Kollektif.ttf") format("truetype");
+  font-family: "Kollektifbold";
+  src: url("./fonts/Kollektif-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
