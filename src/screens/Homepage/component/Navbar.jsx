@@ -16,19 +16,19 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <div className="flex space-x-12">
-            <a href="#" className=" text-sm hover:text-yellow-500">
+            <a href="#" className=" text-base hover:text-yellow-500">
               Home
             </a>
-            <a href="#" className=" text-sm hover:text-yellow-500">
+            <a href="#" className=" text-base hover:text-yellow-500">
               About
             </a>
-            <a href="#" className=" text-sm hover:text-yellow-500">
+            <a href="#" className=" text-base hover:text-yellow-500">
               Companies
             </a>
-            <a href="#" className=" text-sm hover:text-yellow-500">
+            <a href="#" className=" text-base hover:text-yellow-500">
               Office
             </a>
-            <a href="#" className="text-sm hover:text-yellow-500">
+            <a href="#" className="text-base hover:text-yellow-500">
               Contact
             </a>
           </div>
