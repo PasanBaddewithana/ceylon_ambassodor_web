@@ -29,8 +29,6 @@ const Hero = ({ images }) => {
                 alt={`Airplane ${index + 1}`}
                 className="w-full h-[570px] object-cover" // Keep object-cover to fill the space
               />
-              {/* White overlay with opacity */}
-              <div className="absolute inset-0 bg-white opacity-10"></div>
             </div>
           ))}
         </Slider>
