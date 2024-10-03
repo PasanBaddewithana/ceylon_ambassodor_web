@@ -11,6 +11,7 @@ function HomePage() {
       <TopHeader />
       <Navbar />
       <Hero />
+      <NavSection />
     </div>
   );
 }

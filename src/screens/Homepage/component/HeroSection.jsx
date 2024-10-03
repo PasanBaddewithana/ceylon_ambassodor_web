@@ -1,15 +1,16 @@
-// src/components/Hero.js
 import React from "react";
-import planeImage from "../../../assets/airliner-plane-parked-terminal-view-from-front-cockpit-fuselage-with-boarding-bridge.png";
+import planeImage from "../../../assets/plane_image.svg";
 
 const Hero = () => {
   return (
     <section className="relative">
-      <div className="">
+      {" "}
+      {/* Add top padding */}
+      <div className="w-full">
         <img
           src={planeImage}
           alt="Airplane"
-          className="w-full h-[600px] object-cover"
+          className="w-full h-[550px] object-cover" // Keep object-cover to fill the space
         />
       </div>
     </section>
