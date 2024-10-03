@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { ReactComponent as Logo } from "../../../assets/Logo.svg";
 import { FaBars } from "react-icons/fa";
 import { ReactComponent as TrackOrder } from "../../../assets/track_order.svg";
-import ContactDropDown from "./ContactDropDown";
 import DropdownMenu from "./DropdownMenu";
 
 const Navbar = () => {
