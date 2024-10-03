@@ -25,28 +25,28 @@ const Navbar = () => {
           <div className="flex space-x-14">
             <a href="#" className="relative group text-base">
               Home
-              <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f]  transition-all duration-300 group-hover:w-[60%]"></span>
+              <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f]  transition-all duration-300 group-hover:w-[120%]"></span>
             </a>
             <a
               href="#"
               className="relative group text-base hover:text-yellow-500"
             >
               About
-              <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[60%]"></span>
+              <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
             </a>
             <a
               href="#"
               className="relative group text-base hover:text-yellow-500"
             >
               Companies
-              <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[60%]"></span>
+              <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
             </a>
             <a
               href="#"
               className="relative group text-base hover:text-yellow-500"
             >
               Office
-              <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[60%]"></span>
+              <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
             </a>
 
             {/* Contact with Dropdown */}
@@ -54,8 +54,7 @@ const Navbar = () => {
               <a
                 href="#"
                 className="relative group text-base hover:text-yellow-500"
-                onMouseEnter={toggleDropdown}
-                onMouseLeave={toggleDropdown}
+                onClick={toggleDropdown}
               >
                 Contact
                 <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
@@ -65,8 +64,7 @@ const Navbar = () => {
               {isDropdownOpen && (
                 <div
                   className="absolute bg-[#031c3f] text-white top-full mt-2 py-2 px-4 rounded shadow-lg"
-                  onMouseEnter={toggleDropdown}
-                  onMouseLeave={toggleDropdown}
+                  onClick={toggleDropdown}
                 >
                   <a href="#" className="block px-4 py-2 hover:bg-yellow-500">
                     Contact Us
