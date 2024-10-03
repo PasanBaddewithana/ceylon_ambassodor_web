@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from "../../../assets/Logo.svg";
 import { FaBars } from "react-icons/fa";
 import { ReactComponent as TrackOrder } from "../../../assets/track_order.svg";
 import ContactDropDown from "./ContactDropDown";
+import DropdownMenu from "./DropdownMenu";
 
 const Navbar = () => {
   const [isContactDropdownOpen, setContactDropdownOpen] = useState(false);
@@ -34,6 +35,13 @@ const Navbar = () => {
     };
   }, [isContactDropdownOpen]);
 
+  // Define the links for each dropdown
+  const contactLinks = [
+    { href: "#", text: "Contact Us" },
+    { href: "#", text: "FAQ's" },
+    { href: "#", text: "Book a Freight" },
+  ];
+
   return (
     <nav className="bg-transparent mx-auto flex items-center border-b-2 border-[#031c3f] text-[#031c3f]  fixed top-6 w-full z-10 font-kollektif  font-bold text-sm">
       <div className="container mx-auto flex justify-between items-center">
@@ -47,28 +55,28 @@ const Navbar = () => {
           <div className="flex space-x-14">
             <a href="#" className="relative group text-base">
               Home
-              <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f]  transition-all duration-300 group-hover:w-[120%]"></span>
+              <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f]  transition-all duration-300 group-hover:w-[120%]"></span>
             </a>
             <a
               href="#"
               className="relative group text-base hover:text-yellow-500"
             >
               About
-              <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
+              <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
             </a>
             <a
               href="#"
               className="relative group text-base hover:text-yellow-500"
             >
               Companies
-              <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
+              <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
             </a>
             <a
               href="#"
               className="relative group text-base hover:text-yellow-500"
             >
               Office
-              <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
+              <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
             </a>
 
             {/* Contact with Dropdown */}
@@ -79,12 +87,15 @@ const Navbar = () => {
                 onClick={toggleContactDropdown}
               >
                 Contact
-                <span className="absolute top-[-4px] left-0 w-0 h-[2px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
+                <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
               </a>
 
               {/*Contact Dropdown Menu */}
               {isContactDropdownOpen && (
-                <ContactDropDown toggleDropdown={toggleContactDropdown} />
+                <DropdownMenu
+                  links={contactLinks}
+                  toggleDropdown={toggleContactDropdown}
+                />
               )}
             </div>
           </div>
