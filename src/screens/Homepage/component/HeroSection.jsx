@@ -16,8 +16,12 @@ const Hero = ({ images }) => {
   };
 
   return (
-    <section className="relative">
+    <section className="relative overflow-hidden">
+      {" "}
+      {/* Added overflow-hidden */}
       <div className="w-full">
+        {" "}
+        {/* Ensure full width */}
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index} className="relative">
