@@ -2,13 +2,15 @@ import React from "react";
 import MapComponent from "../component/MapComponent";
 import TopHeader from "../../Homepage/component/TopHeader";
 import Navbar from "../../Homepage/component/Navbar";
+import ContactUsForm from "../component/ContactUsForm";
 
 function ContactUsScreen() {
   return (
     <div className="relative">
-       <TopHeader/>
-       <Navbar/>
+      <TopHeader />
+      <Navbar />
       <MapComponent />
+      <ContactUsForm />
     </div>
   );
 }

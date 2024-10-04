@@ -19,7 +19,7 @@ const ContactUsForm = () => {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen py-10 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-center text-3xl font-bold text-gray-900">
           Get in Touch with Ceylon Ambassador
