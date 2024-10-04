@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "../component/Footer";
 
 const FAQ_Page = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -32,6 +33,7 @@ const FAQ_Page = () => {
           <Sidebar />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
