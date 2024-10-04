@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white py-10">
+    <footer className="bg-[#031c3f] text-white py-10">
       <div className="container mx-auto px-4">
         {/* Top Quote */}
         <p className="text-center text-lg mb-8 font-light">
@@ -21,7 +21,6 @@ const Footer = () => {
               alt="Ceylon Ambassador"
               className="mx-auto md:mx-0 mb-4"
             />
-            <p>&copy; 2024 Ceylon Ambassador, All Rights Reserved</p>
           </div>
 
           {/* Footer Links - Divided into sections */}
@@ -78,7 +77,8 @@ const Footer = () => {
         <hr className="border-t border-white opacity-20 mb-8" />
 
         {/* Social Media Icons */}
-        <div className="text-center">
+        <div className="flex justify-center  text-center">
+          <p>&copy; 2024 Ceylon Ambassador, All Rights Reserved</p>
           <div className="flex justify-center space-x-6">
             <a href="#" className="hover:text-gray-400">
               <img src="https://via.placeholder.com/24" alt="Facebook" />

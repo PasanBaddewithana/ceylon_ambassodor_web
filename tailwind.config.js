@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         kollektif: ["Kollektif", "Kollektifbold", "sans-serif"], // Add the custom font here
+        Montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },
