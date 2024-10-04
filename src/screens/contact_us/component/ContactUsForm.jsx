@@ -19,9 +19,9 @@ const ContactUsForm = () => {
   };
 
   return (
-    <div className="min-h-screen py-10 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-10 px-4 sm:px-6 lg:px-8 text-customBlue">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-center text-3xl font-bold text-gray-900">
+        <h1 className="text-center text-3xl font-bold ">
           Get in Touch with Ceylon Ambassador
         </h1>
         <p className="text-center mt-4 text-gray-600">
@@ -33,9 +33,7 @@ const ContactUsForm = () => {
 
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              How Can We Assist You?
-            </h2>
+            <h2 className="text-xl font-semibold">How Can We Assist You?</h2>
             <p className="text-gray-600">
               Have a question about our logistics solutions? Interested in
               exploring our aviation services or travel packages? Looking to
@@ -43,10 +41,8 @@ const ContactUsForm = () => {
               from you!
             </p>
             <div className="mt-8">
-              <h3 className="font-semibold text-lg text-gray-700">
-                Support Center 24/7
-              </h3>
-              <p className="text-xl font-bold text-gray-900">+94 77 367 5054</p>
+              <h3 className="font-semibold text-lg ">Support Center 24/7</h3>
+              <p className="text-xl font-bold">+94 77 367 5054</p>
               <p className="text-gray-600">info@ceylonambassador.com</p>
               <p className="mt-4 text-gray-600">
                 No 91/ 1st Floor, Kandy Road, Dalugama, Kelaniya
