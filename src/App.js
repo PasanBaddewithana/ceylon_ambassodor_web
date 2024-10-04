@@ -1,10 +1,10 @@
-import FAQ_Page from "./screens/faq/screens/FAQ_Screen";
+import FAQ_Screen from "./screens/faq/screens/FAQ_Screen";
 import HomePage from "./screens/Homepage/screen/HomePage";
 
 function App() {
   return (
     <div className="App">
-      <FAQ_Page />
+      <FAQ_Screen />
     </div>
   );
 }
