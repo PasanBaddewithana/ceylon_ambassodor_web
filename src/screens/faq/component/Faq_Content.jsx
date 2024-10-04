@@ -121,7 +121,8 @@ const Sidebar = () => {
           <li>Agriculture</li>
           <li>Architecture</li>
           <li>Construction</li>
-          {/* Add more categories as needed */}
+          
+          
         </ul>
       </div>
 

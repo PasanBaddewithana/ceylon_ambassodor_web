@@ -22,12 +22,8 @@ const Footer = () => {
         {/* Footer Content */}
         <div className="flex flex-wrap justify-between mb-8">
           {/* Logo Section */}
-          <div className="w-full md:w-1/4 mb-6 md:mb-0 text-center mt-3 md:text-left">
-            <img
-              src={white_logo}
-              alt="Ceylon Ambassador"
-              className="mx-auto md:mx-0 mb-4"
-            />
+          <div className="flex justify-center md:w-1/4 mb-6 md:mb-0 text-center mt-3 md:text-left">
+            <img src={white_logo} alt="Ceylon Ambassador" className="" />
           </div>
 
           {/* Footer Links - Divided into sections */}
@@ -84,9 +80,12 @@ const Footer = () => {
         <hr className="border-t border-white mx-10 mb-8" />
 
         {/* Social Media Icons */}
-        <div className="flex justify-center text-center">
-          <p>&copy; 2024 Ceylon Ambassador, All Rights Reserved</p>
-          <div className="flex ml-9 justify-end space-x-4">
+        <div className="flex justify-between items-center ml-8 mr-8">
+          <p className="text-center w-full">
+            &copy; 2024 Ceylon Ambassador, All Rights Reserved
+          </p>
+
+          <div className="flex justify-end space-x-4">
             <a href="#" className="hover:text-gray-400" aria-label="Facebook">
               <FaFacebookF size={24} />
             </a>
