@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiSearch } from "react-icons/fi"; // Importing search icon
+import Logistic_Image from "../../../assets/transport-logistics-concept.svg";
 
 const FAQ_Content = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -135,11 +136,7 @@ const Sidebar = () => {
 
       {/* Image */}
       <div>
-        <img
-          src="https://via.placeholder.com/200"
-          alt="Ship"
-          className="w-full rounded"
-        />
+        <img src={Logistic_Image} alt="Ship" className="" />
       </div>
     </div>
   );

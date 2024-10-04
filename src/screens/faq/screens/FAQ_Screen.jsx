@@ -12,7 +12,9 @@ function FAQ_Screen() {
       <div className="bg-gray-200 h-[200px]  flex justify-start items-center">
         <Navbar />
         <div className="mt-10 ml-24">
-          <h1 className="text-5xl font-bold text-black">FAQ Page</h1>
+          <h1 className="text-5xl font-Montserrat  font-bold text-black">
+            FAQ Page
+          </h1>
         </div>
       </div>
 
