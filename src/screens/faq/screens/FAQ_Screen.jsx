@@ -11,7 +11,9 @@ function FAQ_Screen() {
       <TopHeader />
       <div className="bg-gray-200 h-[150px]  flex justify-start items-center">
         <Navbar />
-        <h1 className="text-4xl font-bold text-blue-900">FAQ Page</h1>
+        <div className="ml-10">
+          <h1 className="text-4xl font-bold text-blue-900">FAQ Page</h1>
+        </div>
       </div>
 
       {/* Make sure FAQ_Content is placed below Navbar */}
