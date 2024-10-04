@@ -6,10 +6,18 @@ import Navbar from "../../Homepage/component/Navbar";
 
 function FAQ_Screen() {
   return (
-    <div>
+    <div style={{ position: "relative" }}>
+      {/* Set relative positioning */}
       <TopHeader />
-      <Navbar />
-      <FAQ_Content />
+      <div className="bg-gray-200 h-[150px]  flex justify-start items-center">
+        <Navbar />
+        <h1 className="text-4xl font-bold text-blue-900">FAQ Page</h1>
+      </div>
+
+      {/* Make sure FAQ_Content is placed below Navbar */}
+      <div className="mt-1">
+        <FAQ_Content />
+      </div>
       <Footer />
     </div>
   );
