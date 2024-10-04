@@ -1,8 +1,15 @@
 import React from "react";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
+import white_logo from "../../../assets/white_logo.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#031c3f] text-white py-8">
+    <footer className="container bg-[#031c3f] text-white py-8">
       <div className="container mx-auto px-4">
         {/* Top Quote */}
         <p className="text-center text-lg mb-8 font-light">
@@ -10,14 +17,14 @@ const Footer = () => {
           yours."
         </p>
 
-        <hr className="border-t border-white  mb-8" />
+        <hr className="border-t border-white mx-10 mb-8" />
 
         {/* Footer Content */}
         <div className="flex flex-wrap justify-between mb-8">
           {/* Logo Section */}
-          <div className="w-full md:w-1/4 mb-6 md:mb-0 text-center md:text-left">
+          <div className="w-full md:w-1/4 mb-6 md:mb-0 text-center mt-3 md:text-left">
             <img
-              src="https://via.placeholder.com/150"
+              src={white_logo}
               alt="Ceylon Ambassador"
               className="mx-auto md:mx-0 mb-4"
             />
@@ -74,23 +81,23 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr className="border-t border-white  mb-8" />
+        <hr className="border-t border-white mx-10 mb-8" />
 
         {/* Social Media Icons */}
-        <div className="flex justify-center  text-center">
+        <div className="flex justify-center text-center">
           <p>&copy; 2024 Ceylon Ambassador, All Rights Reserved</p>
-          <div className="flex justify-center space-x-6">
-            <a href="#" className="hover:text-gray-400">
-              <img src="https://via.placeholder.com/24" alt="Facebook" />
+          <div className="flex ml-9 justify-end space-x-4">
+            <a href="#" className="hover:text-gray-400" aria-label="Facebook">
+              <FaFacebookF size={24} />
             </a>
-            <a href="#" className="hover:text-gray-400">
-              <img src="https://via.placeholder.com/24" alt="Instagram" />
+            <a href="#" className="hover:text-gray-400" aria-label="Instagram">
+              <FaInstagram size={24} />
             </a>
-            <a href="#" className="hover:text-gray-400">
-              <img src="https://via.placeholder.com/24" alt="LinkedIn" />
+            <a href="#" className="hover:text-gray-400" aria-label="LinkedIn">
+              <FaLinkedinIn size={24} />
             </a>
-            <a href="#" className="hover:text-gray-400">
-              <img src="https://via.placeholder.com/24" alt="YouTube" />
+            <a href="#" className="hover:text-gray-400" aria-label="YouTube">
+              <FaYoutube size={24} />
             </a>
           </div>
         </div>

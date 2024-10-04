@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiSearch } from "react-icons/fi"; // Importing search icon
 import Logistic_Image from "../../../assets/transport-logistics-concept.svg";
+import logo from "../../../assets/Logo.svg";
 
 const FAQ_Content = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -84,7 +85,7 @@ const ReplyForm = () => (
         className="w-full p-2 border rounded h-28"
       />
       <button className="bg-[#031c3f] text-white py-2 px-4 rounded-md">
-        Send Message
+        + Send Message
       </button>
     </form>
   </div>
@@ -136,7 +137,16 @@ const Sidebar = () => {
 
       {/* Image */}
       <div>
-        <img src={Logistic_Image} alt="Ship" className="" />
+        <img
+          src={Logistic_Image}
+          alt="Ship"
+          className="self-center ml-6 mb-2 "
+        />
+        <img
+          src={logo}
+          alt="logo"
+          className="self-center ml-6 mb-4 w-52 h-52"
+        />
       </div>
     </div>
   );
