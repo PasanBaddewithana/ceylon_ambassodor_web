@@ -6,10 +6,10 @@ const MapComponent = () => {
       {/* Gray-colored div using Tailwind CSS */}
       <div className="w-full h-12 bg-gray-200"></div>
       {/* Google Map iframe */}
-      <div style={{ width: "100%", height: "400px" }}>
+      <div style={{ width: "100%", height: "450px" }}>
         <iframe
           width="100%"
-          height="400"
+          height="450"
           frameBorder="0"
           scrolling="no"
           marginHeight="0"
@@ -18,7 +18,7 @@ const MapComponent = () => {
           title="Google Map"
         />
       </div>
-      <div className="w-full h-6 bg-gray-200"></div>
+      <div className="w-full h-2 bg-gray-200"></div>
     </div>
   );
 };
