@@ -118,7 +118,7 @@ const ContactUsForm = () => {
 
               <button
                 type="submit"
-                className="w-full bg-indigo-600 text-white p-2 rounded-md shadow hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className=" bg-indigo-600 text-white p-2 rounded-md shadow hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 Send Message
               </button>
