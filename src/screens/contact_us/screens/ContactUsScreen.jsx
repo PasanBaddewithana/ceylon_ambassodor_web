@@ -9,7 +9,7 @@ import Footer from "../../faq/component/Footer";
 
 function ContactUsScreen() {
   return (
-    <div className="relative font-kollektif">
+    <div className="relative font-Montserrat">
       <TopHeader />
       <Navbar />
       <MapComponent />

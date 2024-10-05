@@ -41,17 +41,22 @@ const ContactUsForm = () => {
               enhance your brand with cutting-edge strategies? We’d love to hear
               from you!
             </p>
-            <div className="mt-8 grid grid-cols-1 lg:grid-cols-4 gap-4">
+            <div className="mt-10 grid grid-cols-1 lg:grid-cols-4 gap-4">
               {/* Left Part: Phone number and email (3/4 part) */}
               <div className="lg:col-span-3">
-                <h3 className="font-semibold text-lg">Support Center 24/7</h3>
-                <p className="text-xl font-bold">+94 77 367 5054</p>
-                <p className="text-gray-600">info@ceylonambassador.com</p>
+                <h3 className="text-sm text-gray-600 mb-1">
+                  Support Center 24/7
+                </h3>
+                <p className="text-5xl font-bold">+94 77 367 5054</p>
+                <h3 className="text-sm text-gray-600 mt-10 mb-1">
+                  Support Center 24/7
+                </h3>
+                <p className="">info@ceylonambassador.com</p>
               </div>
 
               {/* Right Part: Address (1/4 part) */}
               <div className="lg:col-span-1">
-                <div className="mt-4  mr-4 text-center">
+                <div className="mr-4">
                   <h3 className="text-sm text-gray-600 mb-4">
                     Support Center 24/7
                   </h3>
