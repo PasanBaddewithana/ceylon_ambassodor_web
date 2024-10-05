@@ -41,23 +41,32 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
           {services.map((service, index) => (
-            <div key={index} className="flex flex-col items-start space-y-4">
-              <div className="">
-                <img
-                  src={service.logo}
-                  alt={service.logo_text}
-                  className="w-16 h-16"
-                />
-              </div>
-              <h3 className="text-lg font-semibold">{service.title}</h3>
-              <p className="text-gray-300">{service.description}</p>
-              <div className="mt-6">
-                <h4 className="font-semibold">Support Center 24/7</h4>
-                <p className="text-2xl font-bold">+94 77 367 5054</p>
-                <p>info@ceylonambassador.com</p>
-                <p className="mt-2">
-                  No 91/ 1st Floor, Kandy Road, Dalugama, Kelaniya
-                </p>
+            <div
+              key={index}
+              className="flex flex-col justify-end h-full space-y-4"
+            >
+              <div>
+                <img src={service.logo} alt={service.logo_text} />
+                <div className="justify-center mt-4">
+                  <p className="text-gray-300 mt-4 text-sm">
+                    {service.description}
+                  </p>
+                </div>
+                <div className="mt-10 grid grid-cols-4 gap-4">
+                  {/* Left column: phone number and email */}
+                  <div className="col-span-3">
+                    <h4 className="font-semibold">Support Center 24/7</h4>
+                    <p className="text-2xl font-bold">+94 77 367 5054</p>
+                    <p>info@ceylonambassador.com</p>
+                  </div>
+
+                  {/* Right column: address */}
+                  <div className="col-span-1">
+                    <p className="mt-2">
+                      No 91/ 1st Floor, Kandy Road, Dalugama, Kelaniya
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
