@@ -63,8 +63,8 @@ const Navbar = () => {
   }, [isContactDropdownOpen, isOfficeDropdownOpen, isCompaniesDropdownOpen]);
 
   const contactLinks = [
-    { href: "#", text: "Contact Us" },
-    { href: "#", text: "FAQ's" },
+    { href: "/contact-us", text: "Contact Us" },
+    { href: "/faq", text: "FAQ's" },
     { href: "#", text: "Book a Freight" },
   ];
 

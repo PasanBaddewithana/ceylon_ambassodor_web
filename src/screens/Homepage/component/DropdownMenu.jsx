@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DropdownMenu = ({ links, toggleDropdown }) => {
   return (
@@ -8,14 +9,14 @@ const DropdownMenu = ({ links, toggleDropdown }) => {
       style={{ minWidth: "150px" }}
     >
       {links.map((link, index) => (
-        <a
+        <Link
           key={index}
-          href={link.href}
+          to={link.href}
           className="block px-2 py-2 border-b border-transparent hover:border-white transition-all duration-300 whitespace-nowrap uppercase"
           style={{ whiteSpace: "nowrap" }}
         >
           {link.text}
-        </a>
+        </Link>
       ))}
     </div>
   );
