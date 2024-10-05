@@ -39,7 +39,7 @@ const ServicesSection = () => {
   return (
     <div className="bg-[#031c3f] text-white py-12 px-4 sm:px-6 lg:px-8 font-Montserrat">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-x-60 lg:gap-y-16">
           {services.map((service, index) => (
             <div
               key={index}
