@@ -44,7 +44,6 @@ export default function SocialConnectComponent() {
           <FaYoutube className="text-customBlue text-2xl" />
         </div>
       </div>
-
       <div className="bg-gray-200 p-6 rounded-2xl mt-16">
         <div className="flex justify-center items-center flex-wrap gap-6">
           {brands.map((brand) => (
@@ -68,7 +67,6 @@ export default function SocialConnectComponent() {
           ))}
         </div>
       </div>
-
       <p className="text-center text-customBlue font-bold mt-6">
         "Connecting opportunities, delivering excellence."
       </p>
