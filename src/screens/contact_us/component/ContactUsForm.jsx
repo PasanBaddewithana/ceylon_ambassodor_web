@@ -51,9 +51,14 @@ const ContactUsForm = () => {
 
               {/* Right Part: Address (1/4 part) */}
               <div className="lg:col-span-1">
-                <p className="mt-4 text-gray-600">
-                  No 91/ 1st Floor, Kandy Road, Dalugama, Kelaniya
-                </p>
+                <div className="mt-4  mr-4 text-center">
+                  <h3 className="text-sm text-gray-600 mb-4">
+                    Support Center 24/7
+                  </h3>
+                  <p className="font-semibold text-lg">
+                    No 91/ 1st Floor, Kandy Road, Dalugama, Kelaniya
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -62,7 +67,7 @@ const ContactUsForm = () => {
           <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-lg mx-auto lg:max-w-full">
             <form onSubmit={handleSubmit} className="space-y-8">
               {/* Name Field */}
-              <div className="relative border-b border-gray-400">
+              <div className="relative border-b border-gray-700">
                 <input
                   type="text"
                   id="name"
@@ -82,7 +87,7 @@ const ContactUsForm = () => {
               </div>
 
               {/* Email Field */}
-              <div className="relative border-b border-gray-400">
+              <div className="relative border-b border-gray-700">
                 <input
                   type="email"
                   id="email"
@@ -102,7 +107,7 @@ const ContactUsForm = () => {
               </div>
 
               {/* Message Field */}
-              <div className="relative border-b border-gray-400">
+              <div className="relative border-b border-gray-700">
                 <textarea
                   id="message"
                   name="message"
@@ -121,7 +126,7 @@ const ContactUsForm = () => {
               </div>
 
               {/* Add Button Icon */}
-              <div className="relative flex items-center justify-start py-4 border-b border-gray-400">
+              <div className="relative flex items-center justify-start py-2 border-b border-gray-700">
                 <span className="text-2xl text-gray-500">+</span>
               </div>
 
