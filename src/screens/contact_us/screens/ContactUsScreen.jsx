@@ -7,6 +7,7 @@ import ServicesSection from "../component/ServiceSection";
 
 import Footer from "../../faq/component/Footer";
 import SocialConnectComponent from "../component/SocialConnectComponent";
+import InnovationBanner from "../component/InnovationBanner";
 
 function ContactUsScreen() {
   return (
@@ -17,6 +18,7 @@ function ContactUsScreen() {
       <ContactUsForm />
       <ServicesSection />
       <SocialConnectComponent />
+      <InnovationBanner />
       <Footer />
     </div>
   );

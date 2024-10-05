@@ -10,12 +10,14 @@ export default function InnovationBanner() {
         className="w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-black bg-opacity-30" />
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-white text-center font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
-          <p>Innovation isn&apos;t</p>
-          <p>just in our DNA,</p>
-          <p>it&apos;s in everything</p>
-          <p>we do. </p>
+      <div className="absolute inset-0 flex items-center justify-center font-Montserrat">
+        <div className="text-white text-left font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-5xl leading-tight">
+          <p className="text-7xl">"</p>
+          <p> Innovation isn&apos;t</p>
+          <p> just in our DNA,</p>
+          <p> it&apos;s in everything</p>
+          <p> we do. </p>
+          <p className="text-7xl text-right"> "</p>
         </div>
       </div>
     </div>
