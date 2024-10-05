@@ -33,7 +33,7 @@ const ContactUsForm = () => {
         {/* Grid layout to divide screen into two equal pieces */}
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Section */}
-          <div className="flex align-center">
+          <div className="mt-12">
             <h2 className="text-3xl font-bold">How Can We Assist You?</h2>
             <p className="mt-4">
               Have a question about our logistics solutions? Interested in
@@ -41,13 +41,20 @@ const ContactUsForm = () => {
               enhance your brand with cutting-edge strategies? We’d love to hear
               from you!
             </p>
-            <div className="mt-8">
-              <h3 className="font-semibold text-lg">Support Center 24/7</h3>
-              <p className="text-xl font-bold">+94 77 367 5054</p>
-              <p className="text-gray-600">info@ceylonambassador.com</p>
-              <p className="mt-4 text-gray-600">
-                No 91/ 1st Floor, Kandy Road, Dalugama, Kelaniya
-              </p>
+            <div className="mt-8 grid grid-cols-1 lg:grid-cols-4 gap-4">
+              {/* Left Part: Phone number and email (3/4 part) */}
+              <div className="lg:col-span-3">
+                <h3 className="font-semibold text-lg">Support Center 24/7</h3>
+                <p className="text-xl font-bold">+94 77 367 5054</p>
+                <p className="text-gray-600">info@ceylonambassador.com</p>
+              </div>
+
+              {/* Right Part: Address (1/4 part) */}
+              <div className="lg:col-span-1">
+                <p className="mt-4 text-gray-600">
+                  No 91/ 1st Floor, Kandy Road, Dalugama, Kelaniya
+                </p>
+              </div>
             </div>
           </div>
 
