@@ -4,8 +4,9 @@ import TopHeader from "../../Homepage/component/TopHeader";
 import Navbar from "../../Homepage/component/Navbar";
 import ContactUsForm from "../component/ContactUsForm";
 import ServicesSection from "../component/ServiceSection";
-import LastContent from "../component/LastContent";
+
 import Footer from "../../faq/component/Footer";
+import SocialConnectComponent from "../component/SocialConnectComponent";
 
 function ContactUsScreen() {
   return (
@@ -15,7 +16,7 @@ function ContactUsScreen() {
       <MapComponent />
       <ContactUsForm />
       <ServicesSection />
-      <LastContent />
+      <SocialConnectComponent />
       <Footer />
     </div>
   );
