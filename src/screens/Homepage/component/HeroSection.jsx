@@ -12,14 +12,14 @@ const Hero = ({ images }) => {
     speed: 500, // Transition speed
     slidesToShow: 1, // Number of slides to show at once
     slidesToScroll: 1, // Number of slides to scroll at once
-    autoplay: false, // Enable autoplay
+    autoplay: true, // Enable autoplay
     autoplaySpeed: 3000, // Autoplay speed in milliseconds
     nextArrow: <CustomNextArrow />, // Custom next arrow
     prevArrow: <CustomPrevArrow />, // Custom previous arrow
   };
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden flex-wrap mb-0">
       <div className="w-full">
         <Slider {...settings}>
           {images.map((image, index) => (
@@ -27,7 +27,7 @@ const Hero = ({ images }) => {
               <img
                 src={image}
                 alt={`Airplane ${index + 1}`}
-                className="w-full h-[570px] object-cover" // Keep object-cover to fill the space
+                className="w-full h-[550px] object-cover" // Keep object-cover to fill the space
               />
             </div>
           ))}

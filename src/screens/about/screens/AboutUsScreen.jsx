@@ -3,6 +3,7 @@ import TopHeader from "../../Homepage/component/TopHeader";
 import Navbar from "../../Homepage/component/Navbar";
 import Hero from "../../Homepage/component/HeroSection";
 import ship from "../../../assets/ship.png";
+import FrontBanner from "../components/FrontBanner";
 
 function AboutUsScreen() {
   const images = [ship, ship];
@@ -10,7 +11,10 @@ function AboutUsScreen() {
     <div className="relative">
       <TopHeader />
       <Navbar />
-      <Hero images={images} />
+      <div className="flex-1 bg-customBlue">
+        <Hero images={images} />
+        <FrontBanner />
+      </div>
     </div>
   );
 }
