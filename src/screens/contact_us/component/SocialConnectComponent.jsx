@@ -22,7 +22,7 @@ const brands = [
 
 export default function SocialConnectComponent() {
   return (
-    <div className="bg-white p-8 max-w-4xl mx-auto font-Montserrat">
+    <div className="bg-white p-8 max-w-7xl mx-auto font-Montserrat">
       <div className="text-center mb-8">
         <img
           src={logo}
@@ -36,7 +36,7 @@ export default function SocialConnectComponent() {
           Stay updated with the latest news, projects, and insights from Ceylon
           Ambassador by following us on our social media channels:
         </p>
-        <div className="flex justify-center space-x-4">
+        <div className="flex justify-center space-x-4 mb-6">
           <FaFacebookF className="text-customBlue text-2xl" />
           <FaInstagram className="text-customBlue text-2xl" />
           <FaTwitter className="text-customBlue text-2xl" />
@@ -45,19 +45,20 @@ export default function SocialConnectComponent() {
         </div>
       </div>
 
-      <div className="bg-gray-100 p-6 rounded-lg">
+      <div className="bg-gray-200 p-6 rounded-2xl mt-16">
         <div className="flex justify-center items-center flex-wrap gap-6">
           {brands.map((brand) => (
             <div
               key={brand.name}
-              className="text-center flex-shrink-0 w-[200px]"
+              className="text-center flex-shrink-0 w-[250px] border-r-4 border-white pr-4"
             >
               <img
                 src={brand.logo}
                 alt={`${brand.name} Logo`}
                 className="mx-auto mb-2 h-[100px] w-[200px]"
               />
-              <div className="flex justify-center space-x-2">
+              {/* Background color added here */}
+              <div className="bg-white p-2 rounded-lg flex justify-center mt-4 space-x-2">
                 <FaFacebookF className="w-4 h-4 text-customBlue" />
                 <FaInstagram className="w-4 h-4 text-customBlue" />
                 <FaTwitter className="w-4 h-4 text-customBlue" />

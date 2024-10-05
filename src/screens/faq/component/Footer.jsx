@@ -23,14 +23,22 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between mb-8">
           {/* Logo Section */}
           <div className="flex justify-center md:w-1/4 mb-6 md:mb-0 text-center mt-3 md:text-left">
-            <img src={white_logo} alt="Ceylon Ambassador" className="" />
+            <img
+              src={white_logo}
+              alt="Ceylon Ambassador"
+              className="h-[120px] w-[250px]"
+            />{" "}
+            {/* Reduced logo size */}
           </div>
 
           {/* Footer Links - Divided into sections */}
-          <div className="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            {/* Reduced gap between columns */}
             <div>
-              <h3 className="font-semibold mb-4">Our Divisions</h3>
-              <ul className="space-y-2">
+              <h3 className="font-semibold mb-3 text-sm">Our Divisions</h3>
+              {/* Reduced font size */}
+              <ul className="space-y-1 text-xs">
+                {/* Reduced space between items and text size */}
                 <li>About Us</li>
                 <li>Our Team</li>
                 <li>Our Clients</li>
@@ -39,10 +47,12 @@ const Footer = () => {
                 <li>Job Application</li>
               </ul>
             </div>
-
             <div>
-              <h3 className="font-semibold mb-4">Company Service</h3>
-              <ul className="space-y-2">
+              <h3 className="font-semibold mb-3 text-sm">Company Service</h3>
+              {/* Reduced font size */}
+              <ul className="space-y-1 text-xs">
+                {" "}
+                {/* Reduced space between items and text size */}
                 <li>Our Services</li>
                 <li>What We Do</li>
                 <li>Request a Freight</li>
@@ -52,10 +62,12 @@ const Footer = () => {
                 <li>Maritime Transport</li>
               </ul>
             </div>
-
             <div>
-              <h3 className="font-semibold mb-4">Contact Us</h3>
-              <ul className="space-y-2">
+              <h3 className="font-semibold mb-3 text-sm">Contact Us</h3>
+              {/* Reduced font size */}
+              <ul className="space-y-1 text-xs">
+                {" "}
+                {/* Reduced space between items and text size */}
                 <li>Find Us Here</li>
                 <li>Get In Touch</li>
                 <li>FAQ Page</li>
@@ -63,10 +75,12 @@ const Footer = () => {
                 <li>Support 24/7</li>
               </ul>
             </div>
-
             <div>
-              <h3 className="font-semibold mb-4">Latest News</h3>
-              <ul className="space-y-2">
+              <h3 className="font-semibold mb-3 text-sm">Latest News</h3>{" "}
+              {/* Reduced font size */}
+              <ul className="space-y-1 text-xs">
+                {" "}
+                {/* Reduced space between items and text size */}
                 <li>Expert Tips</li>
                 <li>A Sustainable Future</li>
                 <li>Fresh Start</li>
@@ -81,22 +95,24 @@ const Footer = () => {
 
         {/* Social Media Icons */}
         <div className="flex justify-between items-center ml-8 mr-8">
-          <p className="text-center w-full">
+          <p className="text-center w-full text-xs">
+            {" "}
+            {/* Reduced font size */}
             &copy; 2024 Ceylon Ambassador, All Rights Reserved
           </p>
 
           <div className="flex justify-end space-x-4">
             <a href="#" className="hover:text-gray-400" aria-label="Facebook">
-              <FaFacebookF size={24} />
+              <FaFacebookF size={20} /> {/* Slightly reduced icon size */}
             </a>
             <a href="#" className="hover:text-gray-400" aria-label="Instagram">
-              <FaInstagram size={24} />
+              <FaInstagram size={20} /> {/* Slightly reduced icon size */}
             </a>
             <a href="#" className="hover:text-gray-400" aria-label="LinkedIn">
-              <FaLinkedinIn size={24} />
+              <FaLinkedinIn size={20} /> {/* Slightly reduced icon size */}
             </a>
             <a href="#" className="hover:text-gray-400" aria-label="YouTube">
-              <FaYoutube size={24} />
+              <FaYoutube size={20} /> {/* Slightly reduced icon size */}
             </a>
           </div>
         </div>
