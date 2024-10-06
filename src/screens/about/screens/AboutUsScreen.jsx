@@ -8,6 +8,7 @@ import VisionScreen from "../components/VisionScreen";
 import ValuesSection from "../components/ValueScetion";
 import CardsGrid from "../components/CardGrid";
 import LeadershipComponent from "../components/LeadershipComponent";
+import AirplaneHero from "../components/AirplaneHero";
 
 function AboutUsScreen() {
   const images = [ship, ship];
@@ -23,6 +24,7 @@ function AboutUsScreen() {
       <ValuesSection />
       <CardsGrid />
       <LeadershipComponent />
+      <AirplaneHero />
     </div>
   );
 }

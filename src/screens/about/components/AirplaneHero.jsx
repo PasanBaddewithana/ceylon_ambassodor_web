@@ -12,9 +12,9 @@ const AirplaneHero = () => {
         className="w-full h-full object-cover"
       />
 
-      {/* Overlay Logo */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <img src={logo} alt="Ceylon Ambassador Logo" className="h-24 md:h-32" />
+      {/* Overlay Logo aligned to bottom center */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+        <img src={logo} alt="Ceylon Ambassador Logo" className="h-24" />
       </div>
     </section>
   );
