@@ -1,4 +1,6 @@
 import React from "react";
+import airplaneImage from "../../../assets/airplane_about_hero.jpg";
+import logo from "../../../assets/white_logo_2.svg";
 
 const AirplaneHero = () => {
   return (
