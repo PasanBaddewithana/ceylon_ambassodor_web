@@ -2,6 +2,7 @@ import React from "react";
 import TopHeader from "../../Homepage/component/TopHeader";
 import Navbar from "../../Homepage/component/Navbar";
 import map from "../../../assets/map.png";
+import GlobalNetworkIntroduction from "../components/GlobalIntroduction";
 
 function GlobalNetworkScreen() {
   return (
@@ -16,6 +17,7 @@ function GlobalNetworkScreen() {
           alt="Map"
         />
       </div>
+      <GlobalNetworkIntroduction />
     </div>
   );
 }
