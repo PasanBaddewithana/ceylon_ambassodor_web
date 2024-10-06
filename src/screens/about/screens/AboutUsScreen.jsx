@@ -10,6 +10,7 @@ import CardsGrid from "../components/CardGrid";
 import LeadershipComponent from "../components/LeadershipComponent";
 import AirplaneHero from "../components/AirplaneHero";
 import ServicesWithImages from "../components/ServiceswithImages";
+import GridComponent from "../components/GridComponent";
 
 function AboutUsScreen() {
   const images = [ship, ship];
@@ -27,6 +28,7 @@ function AboutUsScreen() {
       <LeadershipComponent />
       <AirplaneHero />
       <ServicesWithImages />
+      <GridComponent />
     </div>
   );
 }
