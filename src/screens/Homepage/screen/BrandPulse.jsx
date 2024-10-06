@@ -11,7 +11,9 @@ import courierImage from "../../../assets/courier.jpg";
 import RoboImage from "../../../assets/roboimage.jpg";
 import BrandNavSection from "../component/BrandPulseNavigationSection";
 import SecondPart from "../component/SecondPart";
-import secondSection from "../../../assets/secondSection.png";
+import FirstSection from "../component/FirstSection";
+import ThirdPart from "../component/ThirdPart";
+import FourthPart from "../component/FourthPart";
 
 function BrandPulse() {
   const images = [
@@ -25,9 +27,10 @@ function BrandPulse() {
     <div>
       <TopHeader />
       <Navbar />
-      <Hero images={images} />
-      <BrandNavSection />
+      <FirstSection />
       <SecondPart />
+      <ThirdPart />
+      <FourthPart />
     </div>
   );
 }
