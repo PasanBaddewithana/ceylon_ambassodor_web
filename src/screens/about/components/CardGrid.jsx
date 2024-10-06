@@ -1,6 +1,6 @@
 // CardsGrid.jsx
 import React from "react";
-import Card from "./Card";
+import Card from "./CardComponent";
 
 // Sample data for the cards
 const cardsData = [

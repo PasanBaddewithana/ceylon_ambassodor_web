@@ -6,6 +6,7 @@ import ship from "../../../assets/ship.png";
 import FrontBanner from "../components/FrontBanner";
 import VisionScreen from "../components/VisionScreen";
 import ValuesSection from "../components/ValueScetion";
+import CardsGrid from "../components/CardGrid";
 
 function AboutUsScreen() {
   const images = [ship, ship];
@@ -19,6 +20,7 @@ function AboutUsScreen() {
       </div>
       <VisionScreen />
       <ValuesSection />
+      <CardsGrid />
     </div>
   );
 }
