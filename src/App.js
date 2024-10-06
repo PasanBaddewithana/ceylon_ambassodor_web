@@ -4,6 +4,7 @@ import ContactUsScreen from "./screens/contact_us/screens/ContactUsScreen";
 import FAQ_Screen from "./screens/faq/screens/FAQ_Screen";
 import HomePage from "./screens/Homepage/screen/HomePage";
 import AboutUsScreen from "./screens/about/screens/AboutUsScreen";
+import GlobalNetworkScreen from "./screens/global_network/screens/GlobalNetworkScreen";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUsScreen />} />
           <Route path="/faq" element={<FAQ_Screen />} />
           <Route path="/about" element={<AboutUsScreen />} />
+          <Route path="/global-network" element={<GlobalNetworkScreen />} />
         </Routes>
       </div>
     </Router>

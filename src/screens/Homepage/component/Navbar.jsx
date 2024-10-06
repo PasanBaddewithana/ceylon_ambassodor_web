@@ -70,7 +70,7 @@ const Navbar = () => {
   ];
 
   const officeLinks = [
-    { href: "#", text: "Global Network" },
+    { href: "/global-network", text: "Global Network" },
     { href: "#", text: "Our clients" },
     { href: "#", text: "Meet the crew" },
     { href: "#", text: "Available positions" },
