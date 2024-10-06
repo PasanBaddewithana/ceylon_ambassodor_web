@@ -11,6 +11,7 @@ import LeadershipComponent from "../components/LeadershipComponent";
 import AirplaneHero from "../components/AirplaneHero";
 import ServicesWithImages from "../components/ServiceswithImages";
 import GridComponent from "../components/GridComponent";
+import Footer from "../../faq/component/Footer";
 
 function AboutUsScreen() {
   const images = [ship, ship];
@@ -29,6 +30,7 @@ function AboutUsScreen() {
       <AirplaneHero />
       <ServicesWithImages />
       <GridComponent />
+      <Footer />
     </div>
   );
 }
