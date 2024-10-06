@@ -2,12 +2,15 @@ import React from "react";
 
 const VisionScreen = () => {
   return (
-    <div className="h-screen flex bg-white">
-      {/* Sidebar */}
-      <div className="w-1/4 bg-white flex flex-col justify-start items-center p-8">
-        <div className="space-y-4 text-left">
+    <div className="h-screen flex justify-center items-center bg-white px-12 mx-16 mt-12 overflow-hidden gap-x-8">
+      {/* Sidebar - Left side (5 columns) */}
+      <div className="w-5/12 bg-white flex flex-col justify-start items-center">
+        <div className="space-y-2 text-left">
           {[...Array(6)].map((_, index) => (
-            <p key={index} className="text-lg font-semibold">
+            <p
+              key={index}
+              className="text-lg font-semibold border-b border-black pb-2"
+            >
               UNITED FREIGHT SOLUTIONS
             </p>
           ))}
@@ -17,10 +20,29 @@ const VisionScreen = () => {
             <span className="text-3xl font-bold text-white">+</span>
           </div>
         </div>
+
+        {/* Image Section on the left side */}
+        <div className="mt-16 flex flex-col items-center space-y-4">
+          <img
+            src="path/to/airplane.png"
+            alt="Airplane"
+            className="w-20 object-contain"
+          />
+          <img
+            src="path/to/cargo-ship.png"
+            alt="Cargo Ship"
+            className="w-20 object-contain"
+          />
+          <img
+            src="path/to/truck.png"
+            alt="Truck"
+            className="w-20 object-contain"
+          />
+        </div>
       </div>
 
-      {/* Main Content */}
-      <div className="w-3/4 flex flex-col p-8">
+      {/* Main Content - Right side (7 columns) */}
+      <div className="w-7/12 flex flex-col p-8">
         {/* Our Journey Section */}
         <section className="mb-12">
           <h2 className="text-3xl font-semibold mb-4">Our Journey</h2>
@@ -43,7 +65,7 @@ const VisionScreen = () => {
         {/* Vision & Mission */}
         <div className="grid grid-cols-2 gap-8">
           {/* Vision */}
-          <div>
+          <div className="flex flex-col items-start">
             <h2 className="text-4xl font-extrabold text-[#031c3f]">
               <span className="text-7xl">“</span> Vision
             </h2>
@@ -53,7 +75,7 @@ const VisionScreen = () => {
           </div>
 
           {/* Mission */}
-          <div>
+          <div className="flex flex-col items-end">
             <h2 className="text-4xl font-extrabold text-[#031c3f]">
               Mission <span className="text-7xl text-right">”</span>
             </h2>
@@ -62,25 +84,6 @@ const VisionScreen = () => {
               deliver excellence...
             </p>
           </div>
-        </div>
-
-        {/* Images Section */}
-        <div className="mt-16 flex justify-center space-x-8">
-          <img
-            src="path/to/airplane.png"
-            alt="Airplane"
-            className="w-1/4 object-contain"
-          />
-          <img
-            src="path/to/cargo-ship.png"
-            alt="Cargo Ship"
-            className="w-1/4 object-contain"
-          />
-          <img
-            src="path/to/truck.png"
-            alt="Truck"
-            className="w-1/4 object-contain"
-          />
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import Navbar from "../../Homepage/component/Navbar";
 import Hero from "../../Homepage/component/HeroSection";
 import ship from "../../../assets/ship.png";
 import FrontBanner from "../components/FrontBanner";
+import VisionScreen from "../components/VisionScreen";
 
 function AboutUsScreen() {
   const images = [ship, ship];
@@ -15,6 +16,7 @@ function AboutUsScreen() {
         <Hero images={images} />
         <FrontBanner />
       </div>
+      <VisionScreen />
     </div>
   );
 }
