@@ -2,18 +2,18 @@ import React from "react";
 import SustainabilityImage from "../../../assets/trees.jpg";
 import InnovationImage from "../../../assets/new_idea.jpg";
 import ClientSuccessImage from "../../../assets/client_sucess.jpg";
-import Logo from "../../../assets/white_logo_2.svg";
+import Logo from "../../../assets/blue_logo.svg";
 
 const ServicesWithImages = () => {
   return (
-    <div className="App">
+    <div className="font-Montserrat">
       {/* Sustainability & Social Responsibility Section */}
       <div className="flex flex-col md:flex-row my-10 items-center justify-center px-5 md:px-20">
-        <div className="md:w-1/2 p-5 text-center md:text-left">
-          <h2 className="text-2xl font-bold text-blue-900 mb-5">
+        <div className="md:w-1/2 py-2 max-w-96 text-center md:text-left">
+          <h2 className="text-3xl font-MontserratMedium font-bold text-customBlue text-right">
             Sustainability & Social Responsibility
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-700 mt-1 text-sm text-right">
             At Ceylon Ambassador, we are deeply committed to sustainability and
             corporate social responsibility. We believe in creating value not
             only for our clients but also for the communities and environments
@@ -22,8 +22,8 @@ const ServicesWithImages = () => {
             educational programs and job creation.
           </p>
         </div>
-        <div className="md:w-1/2 flex justify-center relative">
-          <div className="w-full h-auto max-w-md border-l-2 border-gray-300 px-5">
+        <div className="md:w-1/2 flex justify-start mx-8 relative">
+          <div className="w-full  h-auto  max-w-md border-l-2 border-gray-700 px-5">
             <img
               src={SustainabilityImage}
               alt="Sustainability"
@@ -36,10 +36,10 @@ const ServicesWithImages = () => {
       {/* Innovation at the Core Section */}
       <div className="flex flex-col md:flex-row-reverse my-10 items-center justify-center px-5 md:px-20">
         <div className="md:w-1/2 p-5 text-center md:text-left">
-          <h2 className="text-2xl font-bold text-blue-900 mb-5">
+          <h2 className="text-3xl font-MontserratMedium font-bold text-customBlue text-left">
             Innovation at the Core
           </h2>
-          <p className="text-gray-600">
+          <p className="text-sm mt-1 text-gray-700 text-left">
             Innovation is the engine that drives everything we do at Ceylon
             Ambassador. Whether it's through adopting cutting-edge technology in
             logistics, enhancing customer experiences in aviation, creating
@@ -48,8 +48,8 @@ const ServicesWithImages = () => {
             possible solutions to our clients.
           </p>
         </div>
-        <div className="md:w-1/2 flex justify-center relative">
-          <div className="w-full h-auto max-w-md border-l-2 border-gray-300 px-5">
+        <div className="md:w-1/2 flex justify-end mx-8 relative">
+          <div className="w-full h-auto max-w-md border-r-2 border-gray-700 px-5">
             <img
               src={InnovationImage}
               alt="Innovation"
@@ -61,11 +61,11 @@ const ServicesWithImages = () => {
 
       {/* Client Success Stories Section */}
       <div className="flex flex-col md:flex-row my-10 items-center justify-center px-5 md:px-20">
-        <div className="md:w-1/2 p-5 text-center md:text-left">
-          <h2 className="text-2xl font-bold text-blue-900 mb-5">
+        <div className="md:w-1/2 py-2 max-w-96 text-center md:text-left">
+          <h2 className="text-3xl font-MontserratMedium  font-bold text-customBlue text-right">
             Client Success Stories
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-700 mt-1 text-sm text-right">
             Our success is built on the success of our clients. Over the years,
             we've partnered with businesses across the globe, delivering
             customized solutions that drive results and exceed expectations.
@@ -74,11 +74,11 @@ const ServicesWithImages = () => {
             generate tangible impact for businesses of all sizes.
           </p>
         </div>
-        <div className="md:w-1/2 flex justify-center relative">
-          <div className="w-full h-auto max-w-md border-l-2 border-gray-300 px-5">
+        <div className="md:w-1/2 flex justify-start mx-8 relative">
+          <div className="w-full h-auto  max-w-md border-l-2 border-gray-700 px-5">
             <img
               src={ClientSuccessImage}
-              alt="Client Success"
+              alt="Sustainability"
               className="w-full h-auto object-cover"
             />
           </div>
@@ -86,30 +86,22 @@ const ServicesWithImages = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-100 py-10 px-5 md:px-20 flex flex-col md:flex-row items-center justify-between">
-        <div className="flex items-center mb-5 md:mb-0">
-          <img
-            src={Logo}
-            alt="Ceylon Ambassador Logo"
-            className="w-24 h-auto"
-          />
+      <footer className="mt-24 px-5 md:px-20 flex flex-col md:flex-row items-center justify-between ">
+        <div className="flex items-center mb-5 ml-12 mr-6 mt-2 ">
+          <img src={Logo} alt="Ceylon Ambassador Logo" className="w-32" />
         </div>
-        <div className="text-center md:text-left">
-          <h2 className="text-xl font-bold text-blue-900 mb-3">
-            Join the Ceylon Ambassador Family
-          </h2>
-          <p className="text-gray-600 mb-5">
+        <div className="text-customBlue ">
+          <p> join the </p>
+          <h2 className="text-xl font-bold">Ceylon Ambassador Family</h2>
+        </div>
+        <div className="text-center md:text-left space-y-5 md:space-x-10 mt-2 ">
+          <p className="max-w-screen-md text-gray-600 text-xs mb-5">
             At Ceylon Ambassador, we don't just build business relationships; we
             create partnerships that last. Whether you're looking to optimize
             your supply chain, enhance your brand, or explore new travel
             opportunities, we invite you to join us on our journey of growth,
             innovation, and success.
           </p>
-        </div>
-        <div>
-          <button className="bg-blue-900 text-white px-6 py-2 rounded-lg">
-            Contact Us
-          </button>
         </div>
       </footer>
     </div>
