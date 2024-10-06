@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         kollektif: ["Kollektif", "Kollektifbold", "sans-serif"], // Add the custom font here
         Montserrat: ["Montserrat-Regular", "sans-serif"],
+        MontserratMedium: ['"Montserrat-Medium"', "sans-serif"],
       },
       colors: {
         customBlue: "#031c3f",

@@ -4,7 +4,7 @@ import AllVehiclesImage from "../../../assets/all_vehicles_image.png";
 const VisionScreen = () => {
   return (
     <div className="font-Montserrat">
-      <div className="h-screen flex justify-center items-start bg-white px-12 mx-16 mt-12 gap-x-4 text-customBlue">
+      <div className="mb-10 flex justify-center items-start bg-white px-12 mx-16 mt-12 gap-x-4 text-customBlue">
         {/* Sidebar - Left side (5 columns) */}
         <div className="w-4/12 bg-white flex flex-col justify-start items-start">
           <div className="space-y-2 text-left">
@@ -83,7 +83,10 @@ const VisionScreen = () => {
         <div className="">
           {/* Vision */}
           <div className="flex flex-col items-start">
-            <h2 className="text-4xl font-extrabold text-[#031c3f]">
+            <h2
+              className="text-4xl font-MontserratMedium
+             font-extrabold text-[#031c3f]"
+            >
               <span className="text-7xl">“</span> Vision
             </h2>
             <p className=" mt-4 text-customBlue">
@@ -100,7 +103,7 @@ const VisionScreen = () => {
 
           {/* Mission */}
           <div className="flex flex-col items-end">
-            <h2 className="text-4xl font-extrabold text-[#031c3f] ">
+            <h2 className="text-4xl font-MontserratMedium font-extrabold text-[#031c3f] ">
               Mission <span className="text-7xl">”</span>
             </h2>
             <p className="mt-4  text-customBlue">
