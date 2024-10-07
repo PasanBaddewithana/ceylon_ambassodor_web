@@ -1,13 +1,15 @@
 import React from "react";
 import DetailCard from "./DetailCard";
 import creativeDesign from "../../../assets/creativedesign.jpg";
-import digitalDesign from "../../../assets/digitaldesign.jpg";
-import contentMarketing from "../../../assets/contentMarketing.jpg";
+import digitalDesign from "../../../assets/digitaldesigndesign.jpg";
+import contentMarketing from "../../../assets/content_marketing.jpg";
 import integratedMarketing from "../../../assets/intregratedMArketing.jpg";
+import FifthSectionHeader from "./FifthSectionHeader";
 
 const FifthSection = () => {
   return (
     <div className="flex flex-col items-center justify-center">
+      <FifthSectionHeader />
       <DetailCard
         image={creativeDesign}
         topicTop="Brand Creation: "

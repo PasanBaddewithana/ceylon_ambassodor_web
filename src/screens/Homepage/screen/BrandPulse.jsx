@@ -14,6 +14,7 @@ import SecondPart from "../component/SecondPart";
 import FirstSection from "../component/FirstSection";
 import ThirdPart from "../component/ThirdPart";
 import FourthPart from "../component/FourthPart";
+import FifthSection from "../component/FifthSection";
 
 function BrandPulse() {
   const images = [
@@ -31,6 +32,7 @@ function BrandPulse() {
       <SecondPart />
       <ThirdPart />
       <FourthPart />
+      <FifthSection />
     </div>
   );
 }
