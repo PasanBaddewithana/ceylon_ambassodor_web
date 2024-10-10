@@ -17,6 +17,8 @@ import FourthPart from "../component/FourthPart";
 import FifthSection from "../component/FifthSection";
 import SixthSection from "../component/SixthSection";
 import SeventhSection from "../component/SeventhSection";
+import LastSection from "../component/LastSection";
+import Footer from "../../../../src/screens/faq/component/Footer";
 
 function BrandPulse() {
   const images = [
@@ -37,6 +39,8 @@ function BrandPulse() {
       <FifthSection />
       <SixthSection />
       <SeventhSection />
+      <LastSection />
+      <Footer />
     </div>
   );
 }
