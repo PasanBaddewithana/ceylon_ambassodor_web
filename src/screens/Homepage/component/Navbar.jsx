@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from "../../../assets/Logo.svg";
 import { FaBars } from "react-icons/fa";
 import { ReactComponent as TrackOrder } from "../../../assets/track_order.svg";
 import DropdownMenu from "./DropdownMenu";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isContactDropdownOpen, setContactDropdownOpen] = useState(false);
@@ -63,13 +64,13 @@ const Navbar = () => {
   }, [isContactDropdownOpen, isOfficeDropdownOpen, isCompaniesDropdownOpen]);
 
   const contactLinks = [
-    { href: "#", text: "Contact Us" },
-    { href: "#", text: "FAQ's" },
+    { href: "/contact-us", text: "Contact Us" },
+    { href: "/faq", text: "FAQ's" },
     { href: "#", text: "Book a Freight" },
   ];
 
   const officeLinks = [
-    { href: "#", text: "Global Network" },
+    { href: "/global-network", text: "Global Network" },
     { href: "#", text: "Our clients" },
     { href: "#", text: "Meet the crew" },
     { href: "#", text: "Available positions" },
@@ -94,14 +95,14 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <div className="flex space-x-14">
-            <a href="#" className="relative group text-base">
+            <Link to="/" className="relative group text-base">
               Home
               <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
-            </a>
-            <a href="#" className="relative group text-base ">
+            </Link>
+            <Link to="/about" className="relative group text-base ">
               About
               <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
-            </a>
+            </Link>
 
             {/* Companies Dropdown */}
             <div className="relative group" ref={companiesDropdownRef}>
