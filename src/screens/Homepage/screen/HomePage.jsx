@@ -9,6 +9,7 @@ import CargoService from "../../../assets/cargo-service-image.jpg";
 import OfficeImage from "../../../assets/office-supplies-sheets-notes.jpg";
 import courierImage from "../../../assets/courier.jpg";
 import RoboImage from "../../../assets/roboimage.jpg";
+import LogisticsPage from "../component/UFS_LogoPart";
 
 function HomePage() {
   const images = [
@@ -24,6 +25,7 @@ function HomePage() {
       <Navbar />
       <Hero images={images} />
       <NavSection />
+      <LogisticsPage />
     </div>
   );
 }
