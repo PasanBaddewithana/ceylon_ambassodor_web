@@ -11,6 +11,7 @@ import courierImage from "../../../assets/courier.jpg";
 import RoboImage from "../../../assets/roboimage.jpg";
 import LogisticsPage from "../component/UFS_LogoPart";
 import SecondHomeImageComponent from "../component/SecondImageComponent";
+import ServicesComponent from "../component/ServicesComponent";
 
 function HomePage() {
   const images = [
@@ -28,6 +29,7 @@ function HomePage() {
       <NavSection />
       <LogisticsPage />
       <SecondHomeImageComponent />
+      <ServicesComponent />
     </div>
   );
 }
