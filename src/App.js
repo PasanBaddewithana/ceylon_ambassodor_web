@@ -9,25 +9,21 @@ import GlobalNetworkScreen from "./screens/global_network/screens/GlobalNetworkS
 
 function App() {
   return (
-
     <div className="App">
-      {/* <ContactUsScreen /> */}
-      {/* <HomePage/> */}
-      <BrandPulse/>
+      <Router>
+        <div className="App">
+          <Routes>
+            {/* Set the initial route to HomePage */}
+            <Route path="/" element={<HomePage />} />
+            {/* Other routes */}
+            <Route path="/contact-us" element={<ContactUsScreen />} />
+            <Route path="/faq" element={<FAQ_Screen />} />
+            <Route path="/about" element={<AboutUsScreen />} />
+            <Route path="/global-network" element={<GlobalNetworkScreen />} />
+          </Routes>
+        </div>
+      </Router>
     </div>
-    <Router>
-      <div className="App">
-        <Routes>
-          {/* Set the initial route to HomePage */}
-          <Route path="/" element={<HomePage />} />
-          {/* Other routes */}
-          <Route path="/contact-us" element={<ContactUsScreen />} />
-          <Route path="/faq" element={<FAQ_Screen />} />
-          <Route path="/about" element={<AboutUsScreen />} />
-          <Route path="/global-network" element={<GlobalNetworkScreen />} />
-        </Routes>
-      </div>
-    </Router>
   );
 }
 
