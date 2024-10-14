@@ -5,7 +5,7 @@ import ufs_orange from "../../../assets/home/ufs_orange.png";
 
 const LogisticsPage = () => {
   return (
-    <div className="mt-4 flex flex-col justify-center items-center bg-gray-50">
+    <div className="mt-4  mb-4 flex flex-col justify-center items-center bg-gray-50">
       {/* Container for the content */}
       <div className="max-w-7xl mx-auto p-6">
         <div className="flex flex-col lg:flex-row items-center justify-between  space-y-8 ">
@@ -25,7 +25,7 @@ const LogisticsPage = () => {
             <h1 className="text-3xl font-bold text-customBlue">
               Your Global Logistics Partner for Seamless Solutions
             </h1>
-            <p className="text-gray-600">
+            <p className="text-gray-600 pb-4">
               UFS is a leader in logistics and supply chain management, offering
               a full suite of services including air, sea, and inland freight,
               warehousing, and global consolidation. With a strong network of
@@ -35,29 +35,35 @@ const LogisticsPage = () => {
             </p>
 
             {/* View More Button */}
-            <div className="flex items-center space-x-4 py-8 border-t-2 border-customBlue ">
-              {/* Circle with Plus Icon */}
-              <div className="flex justify-center items-center w-12 h-12 bg-orange-300 rounded-full">
-                <svg
-                  className="w-6 h-6 text-customBlue"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 4v16m8-8H4"
-                  />
-                </svg>
-              </div>
-              {/* Text beside Icon */}
-              <div className="text-gray-800">
-                <p className="font-medium">View more</p>
-                <p>about our services</p>
-              </div>
+            <div className="flex items-center space-x-4 py-4 border-t-2 border-customBlue">
+              {/* Clickable area with hover effect */}
+              <a
+                href="#"
+                className="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg transition-all duration-300 cursor-pointer"
+              >
+                {/* Circle with Plus Icon */}
+                <div className="flex justify-center items-center w-12 h-12 bg-orange-300 rounded-full transition-transform duration-300 hover:scale-110">
+                  <svg
+                    className="w-6 h-6 text-customBlue"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </div>
+                {/* Text beside Icon */}
+                <div className="text-gray-800">
+                  <p className="font-medium">View more</p>
+                  <p>about our services</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
