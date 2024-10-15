@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactComponent = () => {
   return (
-    <div className="bg-blue-900 text-white py-10 px-4">
+    <div className="bg-customBlue text-white py-10 px-4">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 lg:space-x-8">
         {/* Left Section: Operating Locations */}
         <div>
