@@ -15,6 +15,7 @@ import ServicesComponent from "../component/ServicesComponent";
 import HomeJoinUsComponent from "../component/HomeJoinUsComponent";
 import StatsSection from "../component/StateSection";
 import GlobalLogisticsComponent from "../component/GlobalLogisticComponent";
+import LatestNewsComponent from "../component/LatestNewsComponent";
 
 function HomePage() {
   const images = [
@@ -36,6 +37,7 @@ function HomePage() {
       <HomeJoinUsComponent />
       <StatsSection />
       <GlobalLogisticsComponent />
+      <LatestNewsComponent />
     </div>
   );
 }
