@@ -9,7 +9,7 @@ import globalConsolidationIcon from "../../../assets/home/global_logo.png";
 
 const ServicesComponent = () => {
   return (
-    <div className="bg-customGray py-12">
+    <div className="bg-bggray py-12 font-Montserrat ">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Air Freight Service */}

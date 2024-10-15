@@ -4,7 +4,7 @@ import company_logo from "../../../assets/white_logo_2.svg"; // Replace with the
 
 const HomeJoinUsComponent = () => {
   return (
-    <div className="relative flex justify-center items-center mt-12 py-8">
+    <div className="relative flex justify-center items-center mt-12 py-8 font-Montserrat ">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10">
         {/* Left Section: Text (40% width) */}
         <div className="lg:w-2/5 text-center lg:text-left space-y-4 border-customBlue border-r-2">
@@ -43,7 +43,7 @@ const HomeJoinUsComponent = () => {
                   />
                 </svg>
               </div>
-              <div className="text-gray-800">
+              <div className="text-gray-800 font-kollektif">
                 <p className="font-medium">View more</p>
                 <p>about our services</p>
               </div>

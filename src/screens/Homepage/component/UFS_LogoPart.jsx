@@ -16,7 +16,7 @@ const LogisticsPage = () => {
           </div>
 
           {/* Text Content */}
-          <div className="lg:w-1/2 space-y-4 text-center lg:text-left">
+          <div className="lg:w-1/2 space-y-4 text-center lg:text-left font-Montserrat">
             <img
               src={ufs_orange}
               alt="UFS Logo"
@@ -59,7 +59,7 @@ const LogisticsPage = () => {
                   </svg>
                 </div>
                 {/* Text beside Icon */}
-                <div className="text-gray-800">
+                <div className="text-gray-800 font-kollektif ">
                   <p className="font-medium">View more</p>
                   <p>about our services</p>
                 </div>
