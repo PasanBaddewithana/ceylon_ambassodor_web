@@ -78,13 +78,17 @@ const LatestNewsComponent = () => {
 
             {/* Date and Divider */}
             <div className="flex items-center justify-center mb-2">
-              <div className="text-4xl font-bold text-customBlue">09</div>
+              <div className="text-4xl font-bold text-customBlue font-MontserratSemiBold">
+                09
+              </div>
               <div className="ml-2">
-                <div className="text-sm text-customBlue">Aug</div>
+                <div className="text-sm text-customBlue font-Montserrat">
+                  Aug
+                </div>
               </div>
               <div className="border-l-4 border-customBlue ml-4 h-full"></div>
 
-              <div className="ml-4">
+              <div className="ml-4 font-Montserrat">
                 <h3 className="text-lg font-semibold text-customBlue mb-2">
                   Your Global Logistics <br /> Partner for Seamless
                 </h3>
@@ -119,7 +123,7 @@ const LatestNewsComponent = () => {
                         />
                       </svg>
                     </div>
-                    <div className="text-customBlue">
+                    <div className="text-customBlue font-kollektif">
                       <p className="font-medium">View more</p>
                       <p>about our services</p>
                     </div>
@@ -136,13 +140,17 @@ const LatestNewsComponent = () => {
 
             {/* Date and Divider */}
             <div className="flex items-center justify-center mb-2">
-              <div className="text-4xl font-bold text-customBlue">09</div>
+              <div className="text-4xl font-bold text-customBlue font-MontserratSemiBold">
+                09
+              </div>
               <div className="ml-2">
-                <div className="text-sm text-customBlue">Aug</div>
+                <div className="text-sm text-customBlue font-Montserrat">
+                  Aug
+                </div>
               </div>
               <div className="border-l-4 border-customBlue ml-4 h-full"></div>
 
-              <div className="ml-4">
+              <div className="ml-4 font-Montserrat">
                 <h3 className="text-lg font-semibold text-customBlue mb-2">
                   Your Global Logistics <br /> Partner for Seamless
                 </h3>
@@ -177,7 +185,7 @@ const LatestNewsComponent = () => {
                         />
                       </svg>
                     </div>
-                    <div className="text-customBlue">
+                    <div className="text-customBlue font-kollektif">
                       <p className="font-medium">View more</p>
                       <p>about our services</p>
                     </div>
