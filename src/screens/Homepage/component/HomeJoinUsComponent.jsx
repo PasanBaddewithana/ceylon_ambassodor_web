@@ -14,7 +14,7 @@ const HomeJoinUsComponent = () => {
           <h1 className="text-4xl font-bold text-customBlue leading-tight">
             on Our Journey
           </h1>
-          <p className="text-customBlue max-w-md lg:max-w-xs">
+          <p className="text-customBlue max-w-md lg:max-w-sm">
             We invite you to explore our services and discover how Ceylon
             Ambassador can be your partner in growth. Together, let's connect
             opportunities and create lasting value.
