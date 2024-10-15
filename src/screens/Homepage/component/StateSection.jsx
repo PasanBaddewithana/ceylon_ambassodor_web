@@ -9,7 +9,7 @@ const StatsSection = () => {
   ];
 
   return (
-    <div className="bg-customBlue py-12">
+    <div className="bg-customBlue py-12 font-MontserratMedium ">
       <div className="max-w-7xl mx-auto flex justify-around items-center">
         {stats.map((stat, index) => (
           <div key={index} className="flex items-center space-x-4">
@@ -18,7 +18,7 @@ const StatsSection = () => {
             {/* Stat Block */}
             <div className="text-center text-white">
               <p className="text-sm">{stat.label}</p>
-              <p className="text-4xl font-bold">{stat.value}</p>
+              <p className="text-5xl font-bold">{stat.value}</p>
             </div>
           </div>
         ))}
