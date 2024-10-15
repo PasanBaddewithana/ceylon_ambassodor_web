@@ -16,10 +16,12 @@ const LatestNewsComponent = () => {
 
             {/* Date and Divider */}
             <div className="flex items-center justify-center mb-2">
-              <div className="text-4xl font-bold text-customBlue font-MontserratSemiBold">
-                09
-              </div>
-              <div className="ml-2">
+              <div className="flex flex-col items-center">
+                {" "}
+                {/* Modified */}
+                <div className="text-4xl font-bold text-customBlue font-MontserratSemiBold">
+                  09
+                </div>
                 <div className="text-sm text-customBlue font-Montserrat">
                   Aug
                 </div>
@@ -32,7 +34,7 @@ const LatestNewsComponent = () => {
                 </h3>
 
                 {/* News Description */}
-                <p className="text-sm text-customBlue mb-4">
+                <p className="text-sm text-customBlue mb-4 text-justify">
                   UFS is a leader in logistics and supply chain management,
                   offering a full suite of services including air, sea, and
                   inland freight,
@@ -78,10 +80,12 @@ const LatestNewsComponent = () => {
 
             {/* Date and Divider */}
             <div className="flex items-center justify-center mb-2">
-              <div className="text-4xl font-bold text-customBlue font-MontserratSemiBold">
-                09
-              </div>
-              <div className="ml-2">
+              <div className="flex flex-col items-center">
+                {" "}
+                {/* Modified */}
+                <div className="text-4xl font-bold text-customBlue font-MontserratSemiBold">
+                  09
+                </div>
                 <div className="text-sm text-customBlue font-Montserrat">
                   Aug
                 </div>
@@ -94,7 +98,7 @@ const LatestNewsComponent = () => {
                 </h3>
 
                 {/* News Description */}
-                <p className="text-sm text-customBlue mb-4">
+                <p className="text-sm text-customBlue mb-4 text-justify">
                   UFS is a leader in logistics and supply chain management,
                   offering a full suite of services including air, sea, and
                   inland freight,
@@ -140,10 +144,12 @@ const LatestNewsComponent = () => {
 
             {/* Date and Divider */}
             <div className="flex items-center justify-center mb-2">
-              <div className="text-4xl font-bold text-customBlue font-MontserratSemiBold">
-                09
-              </div>
-              <div className="ml-2">
+              <div className="flex flex-col items-center">
+                {" "}
+                {/* Modified */}
+                <div className="text-4xl font-bold text-customBlue font-MontserratSemiBold">
+                  09
+                </div>
                 <div className="text-sm text-customBlue font-Montserrat">
                   Aug
                 </div>
@@ -156,7 +162,7 @@ const LatestNewsComponent = () => {
                 </h3>
 
                 {/* News Description */}
-                <p className="text-sm text-customBlue mb-4">
+                <p className="text-sm text-customBlue mb-4 text-justify ">
                   UFS is a leader in logistics and supply chain management,
                   offering a full suite of services including air, sea, and
                   inland freight,

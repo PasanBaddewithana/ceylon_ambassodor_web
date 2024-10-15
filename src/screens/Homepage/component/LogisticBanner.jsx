@@ -1,6 +1,6 @@
 import React from "react";
 import logistic_banner from "../../../assets/home/4th_image_home.jpg";
-import logo from "../../../assets/Logo.svg";
+import logo from "../../../assets/home/blueQuata.svg";
 
 const LogisticsBanner = () => {
   return (
@@ -14,11 +14,19 @@ const LogisticsBanner = () => {
 
       {/* Text content */}
       <div className="mt-16 relative z-10 flex flex-col items-start justify-center px-8 py-16 lg:px-20">
-        <div className=" p-6 max-w-md ">
-          <h1 className="text-2xl font-bold text-customBlue leading-tight">
-            Your Global Logistics Partner for Seamless Solutions
+        <div className="p-6 max-w-md">
+          {/* Quote Icon at the Start */}
+          <div className="flex justify-start mb-4">
+            <img src={logo} alt="Quote Icon" className="w-16 h-16" />
+          </div>
+
+          {/* Title and Description */}
+          <h1 className="text-2xl font-bold text-customBlue font-MontserratMedium">
+            Your Global Logistics
+            <br />
+            Partner for Seamless Solutions
           </h1>
-          <p className="mt-8 text-sm  text-customBlue">
+          <p className="mt-8 text-sm text-customBlue font-Montserrat">
             UFS is a leader in logistics and supply chain management, offering a
             full suite of services including air, sea, and inland freight,
             warehousing, and global consolidation. With a strong network of
@@ -26,9 +34,6 @@ const LogisticsBanner = () => {
             reliable, and cost-effective logistics solutions that meet the
             complex needs of businesses worldwide.
           </p>
-          <div className="flex mt-8 justify-center">
-            <img src={logo} alt="Ceylon Ambassador" className="w-44 h-auto" />
-          </div>
         </div>
       </div>
     </div>

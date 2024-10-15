@@ -81,7 +81,7 @@ const Navbar = () => {
     { href: "#", text: "United Freight Solutions" },
     { href: "#", text: "Khmergate" },
     { href: "#", text: "AEROFLY Aviation" },
-    { href: "#", text: "Brandpulse" },
+    { href: "/brand-pulse", text: "Brandpulse" },
   ];
 
   return (

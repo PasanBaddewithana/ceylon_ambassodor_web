@@ -20,6 +20,7 @@ function App() {
             <Route path="/faq" element={<FAQ_Screen />} />
             <Route path="/about" element={<AboutUsScreen />} />
             <Route path="/global-network" element={<GlobalNetworkScreen />} />
+            <Route path="/brand-pulse" element={<BrandPulse />} />
           </Routes>
         </div>
       </Router>
