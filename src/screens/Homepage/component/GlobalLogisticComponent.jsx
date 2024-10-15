@@ -1,5 +1,6 @@
 import React from "react";
 import backgroundImage from "../../../assets/home/3_image_home.jpg";
+import quote_img from "../../../assets/quata.png";
 
 const GlobalLogisticsComponent = () => {
   return (
@@ -11,8 +12,15 @@ const GlobalLogisticsComponent = () => {
       ></div>
 
       {/* Text Content Section */}
-      <div className="relative z-10 h-full w-full flex  items-end justify-end pr-20 text-white">
+      <div className="relative z-10 h-full w-full flex items-end justify-end pr-20 text-white">
         <div className="w-2/5 lg:mb-24 space-y-6">
+          {/* Quote Image */}
+          <img
+            src={quote_img}
+            alt="Quote Icon"
+            className="h-12 w-12 lg:h-16 lg:w-16"
+          />
+
           {/* Title */}
           <h1 className="text-4xl font-bold font-MontserratMedium">
             Your Global Logistics Partner for Seamless Solutions
