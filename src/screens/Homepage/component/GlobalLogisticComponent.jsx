@@ -14,12 +14,12 @@ const GlobalLogisticsComponent = () => {
       <div className="relative z-10 h-full w-full flex  items-end justify-end pr-20 text-white">
         <div className="w-2/5 lg:mb-24 space-y-6">
           {/* Title */}
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-4xl font-bold font-MontserratMedium">
             Your Global Logistics Partner for Seamless Solutions
           </h1>
 
           {/* Description */}
-          <p className="text-sm leading-relaxed">
+          <p className="text-sm leading-relaxed font-Montserrat">
             UFS is a leader in logistics and supply chain management, offering a
             full suite of services including air, sea, and inland freight,
             warehousing, and global consolidation. With a strong network of
