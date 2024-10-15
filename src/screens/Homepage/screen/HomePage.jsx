@@ -12,6 +12,7 @@ import RoboImage from "../../../assets/roboimage.jpg";
 import LogisticsPage from "../component/UFS_LogoPart";
 import SecondHomeImageComponent from "../component/SecondImageComponent";
 import ServicesComponent from "../component/ServicesComponent";
+import HomeJoinUsComponent from "../component/HomeJoinUsComponent";
 
 function HomePage() {
   const images = [
@@ -30,6 +31,7 @@ function HomePage() {
       <LogisticsPage />
       <SecondHomeImageComponent />
       <ServicesComponent />
+      <HomeJoinUsComponent />
     </div>
   );
 }
