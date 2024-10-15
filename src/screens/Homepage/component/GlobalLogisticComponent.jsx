@@ -12,29 +12,33 @@ const GlobalLogisticsComponent = () => {
       ></div>
 
       {/* Text Content Section */}
-      <div className="relative z-10 h-full w-full flex items-end justify-end pr-20 text-white">
+      <div className="relative z-10 h-full w-full flex items-center justify-end pr-20 text-white">
         <div className="w-2/5 lg:mb-24 space-y-6">
           {/* Quote Image */}
           <img
             src={quote_img}
             alt="Quote Icon"
-            className="h-12 w-12 lg:h-16 lg:w-16"
+            className="h-12 w-12 lg:h-14 lg:w-14"
           />
 
-          {/* Title */}
-          <h1 className="text-4xl font-bold font-MontserratMedium">
-            Your Global Logistics Partner for Seamless Solutions
-          </h1>
+          <div className="ml-4">
+            {/* Title */}
+            <h1 className="mt-4 text-4xl font-bold font-MontserratMedium">
+              Your Global Logistics
+              <br />
+              Partner for Seamless Solutions
+            </h1>
 
-          {/* Description */}
-          <p className="text-sm leading-relaxed font-Montserrat">
-            UFS is a leader in logistics and supply chain management, offering a
-            full suite of services including air, sea, and inland freight,
-            warehousing, and global consolidation. With a strong network of
-            partners and state-of-the-art technology, UFS delivers efficient,
-            reliable, and cost-effective logistics solutions that meet the
-            complex needs of businesses worldwide.
-          </p>
+            {/* Description */}
+            <p className="text-sm leading-relaxed  text-justify font-Montserrat mt-8">
+              UFS is a leader in logistics and supply chain management, offering
+              a full suite of services including air, sea, and inland freight,
+              warehousing, and global consolidation. With a strong network of
+              partners and state-of-the-art technology, UFS delivers efficient,
+              reliable, and cost-effective logistics solutions that meet the
+              complex needs of businesses worldwide.
+            </p>
+          </div>
         </div>
       </div>
     </div>

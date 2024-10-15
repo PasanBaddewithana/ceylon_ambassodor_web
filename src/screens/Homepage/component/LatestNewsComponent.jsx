@@ -4,7 +4,7 @@ const LatestNewsComponent = () => {
   return (
     <div className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-customBlue mb-10">
+        <h2 className="text-3xl font-bold text-customBlue mb-10 font-MontserratSemiBold">
           Latest News
         </h2>
 
@@ -16,13 +16,17 @@ const LatestNewsComponent = () => {
 
             {/* Date and Divider */}
             <div className="flex items-center justify-center mb-2">
-              <div className="text-4xl font-bold text-customBlue">09</div>
+              <div className="text-4xl font-bold text-customBlue font-MontserratSemiBold">
+                09
+              </div>
               <div className="ml-2">
-                <div className="text-sm text-customBlue">Aug</div>
+                <div className="text-sm text-customBlue font-Montserrat">
+                  Aug
+                </div>
               </div>
               <div className="border-l-4 border-customBlue ml-4 h-full"></div>
 
-              <div className="ml-4">
+              <div className="ml-4 font-Montserrat">
                 <h3 className="text-lg font-semibold text-customBlue mb-2">
                   Your Global Logistics <br /> Partner for Seamless
                 </h3>
@@ -57,7 +61,7 @@ const LatestNewsComponent = () => {
                         />
                       </svg>
                     </div>
-                    <div className="text-customBlue">
+                    <div className="text-customBlue font-kollektif">
                       <p className="font-medium">View more</p>
                       <p>about our services</p>
                     </div>
