@@ -16,6 +16,8 @@ import HomeJoinUsComponent from "../component/HomeJoinUsComponent";
 import StatsSection from "../component/StateSection";
 import GlobalLogisticsComponent from "../component/GlobalLogisticComponent";
 import LatestNewsComponent from "../component/LatestNewsComponent";
+import LogisticsBanner from "../component/LogisticBanner";
+import HomeGridComponent from "../component/HomeGrid";
 
 function HomePage() {
   const images = [
@@ -38,6 +40,8 @@ function HomePage() {
       <StatsSection />
       <GlobalLogisticsComponent />
       <LatestNewsComponent />
+      <LogisticsBanner />
+      <HomeGridComponent />
     </div>
   );
 }
