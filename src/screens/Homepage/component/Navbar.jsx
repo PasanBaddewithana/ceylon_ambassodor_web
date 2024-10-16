@@ -73,7 +73,7 @@ const Navbar = () => {
     { href: "/global-network", text: "Global Network" },
     { href: "#", text: "Our clients" },
     { href: "#", text: "Meet the crew" },
-    { href: "#", text: "Available positions" },
+    { href: "/avilable-positions", text: "Available positions" },
     { href: "#", text: "Blog" },
   ];
 
