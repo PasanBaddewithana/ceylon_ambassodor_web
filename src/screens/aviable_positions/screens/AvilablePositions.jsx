@@ -3,6 +3,7 @@ import TopHeader from "../../Homepage/component/TopHeader";
 import Navbar from "../../Homepage/component/Navbar";
 import Footer from "../../faq/component/Footer";
 import JobListingsPage from "../components/JobListingsPage";
+import FleetComponent from "../components/FleetComponent";
 
 function AvilablePositions() {
   return (
@@ -21,6 +22,7 @@ function AvilablePositions() {
       {/* Make sure FAQ_Content is placed below Navbar */}
       <div className="mt-3">
         <JobListingsPage />
+        <FleetComponent />
       </div>
       <Footer />
     </div>

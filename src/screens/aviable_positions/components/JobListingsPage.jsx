@@ -11,12 +11,12 @@ const JobListingsPage = () => {
           <img
             src={working_man}
             alt="Shipping services"
-            className="w-3/4 h-auto  "
+            className="w-3/4 h-auto"
           />
         </div>
 
         {/* Text Section */}
-        <div className="lg:w-1/2 flex flex-col justify-center border-l-2  mt-8 pb-4 lg:mt-0">
+        <div className="lg:w-1/2 flex flex-col justify-center border-l-2 border-bggray mt-8 pb-4 lg:mt-0">
           <div className="border-b-2 border-bggray pl-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
               Fast and professional shipping services
@@ -29,8 +29,8 @@ const JobListingsPage = () => {
           </div>
           <div className="mt-4 ml-8 flex items-center">
             <button className="flex items-center">
-              <div className="bg-blue-800 rounded-full w-8 h-8 flex items-center justify-center ">
-                <span className="text-2xl font-bold text-white">+</span>
+              <div className="bg-customBlue rounded-full w-8 h-8 flex items-center justify-center ">
+                <span className="text-3xl font-bold text-white">+</span>
               </div>
             </button>
             <div className="ml-4">
@@ -41,14 +41,14 @@ const JobListingsPage = () => {
       </div>
 
       {/* Job Listings Section */}
-      <div className="bg-gray-100 py-12">
+      <div className="max-w-screen-xl mx-auto py-12">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8">
+          <h2 className="text-3xl font-bold text-customBlue mb-8">
             Open positions
           </h2>
 
           {/* Job Listings Table */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="bg-white ">
             <table className="min-w-full bg-white">
               <thead>
                 <tr>
@@ -61,7 +61,7 @@ const JobListingsPage = () => {
                   <th className="py-3 px-6 bg-gray-50 text-left text-sm font-semibold text-gray-600 uppercase">
                     Type
                   </th>
-                  <th className="py-3 px-6 bg-gray-50 text-left text-sm font-semibold text-gray-600 uppercase"></th>
+                  <th className="py-3 px-6 bg-gray-50 text-right"></th>
                 </tr>
               </thead>
               <tbody>
@@ -99,9 +99,12 @@ const JobListingsPage = () => {
                       {job.type}
                     </td>
                     <td className="py-4 px-6 text-right">
-                      <button className="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-                        + Send Message
-                      </button>
+                      <div className="flex items-center justify-end">
+                        <button className="flex items-center bg-customBlue text-white text-sm px-4 py-2">
+                          <span className="text-3xl font-bold mr-2">+</span>
+                          <span className="text-base">Send Message</span>
+                        </button>
+                      </div>
                     </td>
                   </tr>
                 ))}
