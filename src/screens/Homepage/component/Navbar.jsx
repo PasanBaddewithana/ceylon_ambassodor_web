@@ -74,7 +74,7 @@ const Navbar = () => {
     { href: "#", text: "Our clients" },
     { href: "#", text: "Meet the crew" },
     { href: "/avilable-positions", text: "Available positions" },
-    { href: "#", text: "Blog" },
+    { href: "/blog", text: "Blog" },
   ];
 
   const companiesLinks = [

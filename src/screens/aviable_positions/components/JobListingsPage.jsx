@@ -100,7 +100,7 @@ const JobListingsPage = () => {
                     </td>
                     <td className="py-4 px-6 text-right">
                       <div className="flex items-center justify-end">
-                        <button className="flex items-center bg-customBlue text-white text-sm px-4 py-2">
+                        <button className="flex items-center bg-customBlue text-white text-sm px-3 py-1">
                           <span className="text-3xl font-bold mr-2">+</span>
                           <span className="text-base">Send Message</span>
                         </button>

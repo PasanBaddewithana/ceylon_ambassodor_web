@@ -7,6 +7,7 @@ import HomePage from "./screens/Homepage/screen/HomePage";
 import AboutUsScreen from "./screens/about/screens/AboutUsScreen";
 import GlobalNetworkScreen from "./screens/global_network/screens/GlobalNetworkScreen";
 import AvilablePositions from "./screens/aviable_positions/screens/AvilablePositions";
+import BlogPage from "./blog/screens/BlogPage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/global-network" element={<GlobalNetworkScreen />} />
             <Route path="/brand-pulse" element={<BrandPulse />} />
             <Route path="/avilable-positions" element={<AvilablePositions />} />
+            <Route path="/blog" element={<BlogPage />} />
           </Routes>
         </div>
       </Router>
