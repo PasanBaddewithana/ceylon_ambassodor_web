@@ -5,28 +5,28 @@ const JobListingsPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Top Section with Image and Text */}
-      <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-8 py-16">
+      <div className="container mx-auto flex flex-col lg:flex-row lg:items-center lg:space-x-8 py-16 px-4 lg:px-8">
         {/* Image Section */}
-        <div className="lg:w-1/2 px-4">
+        <div className="lg:w-1/2 mb-8 lg:mb-0">
           <img
             src={working_man}
             alt="Shipping services"
-            className="w-full h-auto rounded-lg shadow-lg"
+            className="w-full h-auto rounded-lg shadow-lg object-cover"
           />
         </div>
 
         {/* Text Section */}
-        <div className="lg:w-1/2 px-4 flex flex-col justify-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <div className="lg:w-1/2 flex flex-col justify-center">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">
             Fast and professional shipping services
           </h2>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 mb-6 leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             elementum, lacus a cursus hendrerit, lectus risus rhoncus nunc, sit
             amet accumsan.
           </p>
 
-          <button className="flex items-center text-white bg-blue-600 px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+          <button className="flex items-center text-white bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
             <span className="text-2xl font-bold mr-2">+</span>
             View more about our services
           </button>
@@ -35,8 +35,8 @@ const JobListingsPage = () => {
 
       {/* Job Listings Section */}
       <div className="bg-gray-100 py-12">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold text-gray-800 mb-8">
+        <div className="container mx-auto px-4 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8">
             Open positions
           </h2>
 
