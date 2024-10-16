@@ -7,6 +7,7 @@ import BlogPost from "../components/BlogComponent";
 import blog1_img from "../../assets/blog/blog1.jpg";
 import blog2_img from "../../assets/blog/blog2.jpg";
 import blog3_img from "../../assets/blog/blog3.jpg";
+import QuoteBanner from "../components/QuaoteBanner";
 
 // Array of blog post data
 const blogPosts = [
@@ -38,11 +39,25 @@ function BlogPage() {
     <div className="relative">
       <TopHeader />
       <Navbar />
-      <div className="mt-10 ">
-        {/* Map over the blogPosts array to render BlogPost components */}
-        {blogPosts.map((post, index) => (
+      <div className="mt-10">
+        {/* Render the first two blog posts */}
+        {blogPosts.slice(0, 2).map((post, index) => (
           <BlogPost
-            key={index} // use a unique key for each element
+            key={index} // Use a unique key for each element
+            date={post.date}
+            title={post.title}
+            description={post.description}
+            imageUrl={post.imageUrl}
+          />
+        ))}
+
+        {/* Render the QuoteBanner component */}
+        <QuoteBanner />
+
+        {/* Render the rest of the blog posts */}
+        {blogPosts.slice(2).map((post, index) => (
+          <BlogPost
+            key={index + 2} // Adjust key to avoid conflicts with previous iteration
             date={post.date}
             title={post.title}
             description={post.description}
