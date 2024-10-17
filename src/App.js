@@ -6,26 +6,24 @@ import BrandPulse from "./screens/Homepage/screen/BrandPulse";
 import HomePage from "./screens/Homepage/screen/HomePage";
 import AboutUsScreen from "./screens/about/screens/AboutUsScreen";
 import GlobalNetworkScreen from "./screens/global_network/screens/GlobalNetworkScreen";
+import Aerofly from "./screens/Homepage/screen/Aerofly";
 
 function App() {
   return (
-
-    <div className="App">
-      {/* <ContactUsScreen /> */}
-      {/* <HomePage/> */}
-      <BrandPulse/>
-    </div>
     <Router>
       <div className="App">
+        {/* Set the initial route to HomePage */}
         <Routes>
-          {/* Set the initial route to HomePage */}
           <Route path="/" element={<HomePage />} />
           {/* Other routes */}
           <Route path="/contact-us" element={<ContactUsScreen />} />
           <Route path="/faq" element={<FAQ_Screen />} />
           <Route path="/about" element={<AboutUsScreen />} />
           <Route path="/global-network" element={<GlobalNetworkScreen />} />
+          <Route path="/aerofly" element={<Aerofly />} />
         </Routes>
+        {/* Static component like BrandPulse can be placed here if needed */}
+        {/* <BrandPulse /> */}
       </div>
     </Router>
   );

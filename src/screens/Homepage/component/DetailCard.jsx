@@ -14,6 +14,8 @@ const DetailCard = ({
   subPointDes3,
   conclusion,
   imagePosition = "left", // Default position is 'left'
+  buttoncolor,
+  buttonHoverColor,
 }) => {
   return (
     <div className="flex flex-row items-center justify-center px-[110px] py-[70px] gap-10">
@@ -42,7 +44,9 @@ const DetailCard = ({
               <span className="font-bold">{subPoint3}</span> {subPointDes3}
             </p>
             <p className="text-[13px] p-1">{conclusion}</p>
-            <button className="px-4 py-2 bg-[#4BDF80] text-white mt-5 hover:bg-[#37a25c] transition duration-300">
+            <button
+              className={`px-4 py-2 bg-[${buttoncolor}] text-white mt-5 hover:bg-[${buttonHoverColor}] transition duration-300`}
+            >
               + Send Message
             </button>
           </div>
@@ -70,7 +74,9 @@ const DetailCard = ({
               <span className="font-bold">{subPoint3}</span> {subPointDes3}
             </p>
             <p className="text-[13px] p-1">{conclusion}</p>
-            <button className="px-4 py-2 bg-[#4BDF80] text-white mt-5 hover:bg-[#37a25c] transition duration-300">
+            <button
+              className={`px-4 py-2 bg-[${buttoncolor}] text-white mt-5 hover:bg-[${buttonHoverColor}] transition duration-300`}
+            >
               + Send Message
             </button>
           </div>
@@ -82,5 +88,6 @@ const DetailCard = ({
     </div>
   );
 };
-
+//#4BDF80 //hover#37a25c
+//brown  //hover
 export default DetailCard;
