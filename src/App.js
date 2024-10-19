@@ -13,12 +13,13 @@ import AvilablePositions from "./screens/aviable_positions/screens/AvilablePosit
 import BlogPage from "./blog/screens/BlogPage";
 import MeetCrewScreen from "./screens/meet_crew/screens/MeetCrewScreen";
 import ProfilePage from "./screens/meet_crew/screens/ProfileScreen";
+import OurClientScreen from "./screens/OurClients/screens/OurClientScreen";
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Router>
-        <div className="App">
+        <div className="">
           <Routes>
             {/* Set the initial route to HomePage */}
             <Route path="/" element={<HomePage />} />
@@ -32,6 +33,7 @@ function App() {
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/aerofly" element={<Aerofly />} />
             <Route path="/meet-crew" element={<MeetCrewScreen />} />
+            <Route path="/our-clients" element={<OurClientScreen />} />
             <Route path="/profile/:name" element={<ProfilePage />} />
           </Routes>
         </div>

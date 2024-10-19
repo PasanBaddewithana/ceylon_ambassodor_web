@@ -71,7 +71,7 @@ const Navbar = () => {
 
   const officeLinks = [
     { href: "/global-network", text: "Global Network" },
-    { href: "#", text: "Our clients" },
+    { href: "/our-clients", text: "Our clients" },
     { href: "/meet-crew", text: "Meet the crew" },
     { href: "/avilable-positions", text: "Available positions" },
     { href: "/blog", text: "Blog" },
