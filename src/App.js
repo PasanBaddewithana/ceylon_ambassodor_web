@@ -9,7 +9,6 @@ import GlobalNetworkScreen from "./screens/global_network/screens/GlobalNetworkS
 
 import Aerofly from "./screens/Homepage/screen/Aerofly";
 
-
 import AvilablePositions from "./screens/aviable_positions/screens/AvilablePositions";
 import BlogPage from "./blog/screens/BlogPage";
 import MeetCrewScreen from "./screens/meet_crew/screens/MeetCrewScreen";
@@ -31,13 +30,13 @@ function App() {
             <Route path="/brand-pulse" element={<BrandPulse />} />
             <Route path="/avilable-positions" element={<AvilablePositions />} />
             <Route path="/blog" element={<BlogPage />} />
+            <Route path="/aerofly" element={<Aerofly />} />
             <Route path="/meet-crew" element={<MeetCrewScreen />} />
             <Route path="/profile/:name" element={<ProfilePage />} />
           </Routes>
         </div>
       </Router>
     </div>
-
   );
 }
 
