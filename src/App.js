@@ -6,6 +6,10 @@ import BrandPulse from "./screens/Homepage/screen/BrandPulse";
 import HomePage from "./screens/Homepage/screen/HomePage";
 import AboutUsScreen from "./screens/about/screens/AboutUsScreen";
 import GlobalNetworkScreen from "./screens/global_network/screens/GlobalNetworkScreen";
+
+import Aerofly from "./screens/Homepage/screen/Aerofly";
+
+
 import AvilablePositions from "./screens/aviable_positions/screens/AvilablePositions";
 import BlogPage from "./blog/screens/BlogPage";
 import MeetCrewScreen from "./screens/meet_crew/screens/MeetCrewScreen";
@@ -33,6 +37,7 @@ function App() {
         </div>
       </Router>
     </div>
+
   );
 }
 

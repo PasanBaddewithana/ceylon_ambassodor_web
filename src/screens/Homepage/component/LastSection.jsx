@@ -10,13 +10,11 @@ import {
 
 import brandColored from "../../../assets/brand_pulse_ml_color.svg";
 
-const LastSection = () => {
+const LastSection = ({ lastwords, lastImage }) => {
   return (
     <div className="flex flex-col justify-center items-center">
-      <img src={brandColored} className="w-[480px] p-14" />
-      <p className="pb-6 text-[#181728] text-[13px] font-[500]">
-        Contact us today to start building your brand's future with BrandPulse
-      </p>
+      <img src={lastImage} className="w-[480px] p-14" />
+      <p className="pb-6 text-[#181728] text-[13px] font-[500]">{lastwords}</p>
       <div className="flex space-x-4 pb-10">
         <FontAwesomeIcon icon={faFacebookF} className="text-[#181728]" />
         <FontAwesomeIcon icon={faInstagram} className="text-[#181728]" />
