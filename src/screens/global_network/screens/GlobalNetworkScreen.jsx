@@ -6,6 +6,9 @@ import GlobalNetworkIntroduction from "../components/GlobalIntroduction";
 import SectionComponent from "../components/SectionComponent";
 import world_logo from "../../../assets/world_logo_back.svg";
 import world_logo_white from "../../../assets/world_logo_white.svg";
+import ContainerShipImage from "../components/ContainerShip";
+import GlobalReach from "../components/GlobalReachComponent";
+import Footer from "../../faq/component/Footer";
 
 function GlobalNetworkScreen() {
   const countryDetails_Middle_East = [
@@ -155,6 +158,9 @@ function GlobalNetworkScreen() {
       {sectionDetails.map((section, index) => (
         <SectionComponent key={index} {...section} />
       ))}
+      <ContainerShipImage />
+      <GlobalReach />
+      <Footer />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import container_ship from "../../../assets/global_network/cargo-servicer-contai
 
 function ContainerShipImage() {
   return (
-    <div className="relative h-full w-full">
+    <div className="relative  h-full w-full">
       <img
         src={container_ship} // Replace with your image path
         alt="Container Ship"
