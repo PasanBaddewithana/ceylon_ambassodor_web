@@ -8,6 +8,7 @@ import blog1_img from "../../assets/blog/blog1.jpg";
 import blog2_img from "../../assets/blog/blog2.jpg";
 import blog3_img from "../../assets/blog/blog3.jpg";
 import QuoteBanner from "../components/QuaoteBanner";
+import Breadcrumb from "../components/BreadCrumb";
 
 // Array of blog post data
 const blogPosts = [
@@ -39,7 +40,11 @@ function BlogPage() {
     <div className="relative">
       <TopHeader />
       <Navbar />
-      <div className="mt-10">
+      <div className="flex lg:ml-96 mt-14">
+        <Breadcrumb />
+      </div>
+
+      <div className="mt-6">
         {/* Render the first two blog posts */}
         {blogPosts.slice(0, 2).map((post, index) => (
           <BlogPost
