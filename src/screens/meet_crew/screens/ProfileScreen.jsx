@@ -1,6 +1,11 @@
 import React from "react";
 import TopHeader from "../../Homepage/component/TopHeader";
 import Navbar from "../../Homepage/component/Navbar";
+import TeamMemberProfile from "../components/TeamMemberProfile";
+import MeetThePros from "../components/TeamMember_Friends";
+import Footer from "../../faq/component/Footer";
+
+import { useParams } from "react-router-dom";
 
 const teamMembers = [
   { name: "Joel Yamaha", role: "Developer", img: "path_to_joel_image" },
@@ -14,10 +19,18 @@ const teamMembers = [
 ];
 
 const ProfilePage = () => {
+  const { name } = useParams();
   return (
     <div className="relative">
       <TopHeader />
       <Navbar />
+      <div className="mt-12">
+        <TeamMemberProfile name={name} />
+      </div>
+      <div className="mt-16 mb-6">
+        <MeetThePros />
+      </div>
+      <Footer />
     </div>
   );
 };

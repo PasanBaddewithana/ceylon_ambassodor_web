@@ -1,83 +1,93 @@
 import React from "react";
 
-const TeamMemberProfile = () => {
+const TeamMemberProfile = ({ name }) => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container max-w-screen-lg  mx-auto px-4 py-6">
       {/* Breadcrumb */}
-      <div className="text-sm text-gray-600 mb-4">
-        <a href="/" className="hover:underline">
+      <div className="text-sm text-gray-500 mb-6">
+        <a href="/" className="hover:underline text-gray-600">
           Home
         </a>{" "}
         /{" "}
-        <a href="/team" className="hover:underline">
+        <a href="/team" className="hover:underline text-gray-600">
           Team
         </a>{" "}
-        / Mary Simens
+        <span className="font-bold text-gray-900">/ {name}</span>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-start gap-8">
+      <div className="mt-24 flex flex-col lg:flex-row gap-20">
         {/* Left Column */}
-        <div className="lg:w-1/3 w-full">
+        <div className="lg:w-1/4 w-full">
           {/* Profile Image */}
-          <img
-            src="https://via.placeholder.com/150" // Replace this with the actual image source
-            alt="Mary Simens"
-            className="rounded-full w-36 h-36 object-cover mb-4"
-          />
+          <div className="flex justify-center lg:justify-start mb-6">
+            <img
+              src="https://via.placeholder.com/150" // Replace this with the actual image source
+              alt="Mary Simens"
+              className="rounded-full w-36 h-36 object-cover"
+            />
+          </div>
 
           {/* Name and Role */}
-          <h1 className="text-2xl font-bold mb-2">Mary Simens</h1>
-          <p className="text-gray-500 mb-4">Manager</p>
+          <p className="text-gray-500 text-center lg:text-left mb-1">Manager</p>
+          <h1 className="text-2xl font-bold  text-center lg:text-left mb-10">
+            {name}
+          </h1>
 
           {/* Contact Information */}
-          <p className="text-gray-700 mb-2">
-            <span className="font-semibold">Phone: </span> +1 (123)
-            1800-567-8990
-          </p>
-          <p className="text-gray-700 mb-6">
-            <span className="font-semibold">Email: </span>{" "}
-            marysimens@example.com
-          </p>
+          <div className="border-t-2 border-b-2 border-gray-300 py-6">
+            <p className="text-gray-700 text-center lg:text-left mb-1">
+              +1 (123) 1800-567-8990
+            </p>
+          </div>
+          <div className="border-b-2 border-gray-300 py-6">
+            <p className="text-gray-700 text-center lg:text-left">
+              marysimens@example.com
+            </p>
+          </div>
         </div>
 
         {/* Right Column */}
-        <div className="lg:w-2/3 w-full">
+        <div className="lg:w-3/4 w-full font-Montserrat">
           {/* Biography Section */}
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-700 leading-relaxed mb-6">
             Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
             commodo. Non habent claritatem in sitamcon quat duis autem facilisis
             at vero eros nibh. Eiusmod tincidunt ut laoreet vel illum irure qui
             sequitur mutationem consuetud.
           </p>
-
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-700 leading-relaxed mb-6">
             Nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
             ex ea commodo consequat. Duis autem vel eum dolore eu feugiat nulla
-            facilisis.
+            facilisis at vero eros et accumsan et iusto. Dolore eu feugiat nulla
+            facilisis at vero eros et accumsan.
           </p>
-
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-700 leading-relaxed mb-6">
             Iusto odio dignissim qui blandit praesent luptatum zzril delenit
             augue duis dolore te feugiat nulla facilisi. Lacerat facer possim
             assum.
           </p>
 
           {/* Divider */}
-          <hr className="my-6" />
+          <hr className="my-6 " />
 
           {/* Specialty, Degrees, and Training Section */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Specialty</h3>
-              <p className="text-gray-700">Leadership Development</p>
+          <div className="mt-8 space-y-8">
+            {/* Specialty */}
+            <div className="flex border-b-2 space-x-24 border-gray-300 pb-2">
+              <h3 className="text-lg font-semibold mb-2 ">Specialty</h3>
+              <p className="text-gray-700 text-sm">Leadership Development</p>
             </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Degrees</h3>
-              <p className="text-gray-700">M.D. of Business</p>
+
+            {/* Degrees */}
+            <div className="flex border-b-2 space-x-24 items-center border-gray-300 pb-2">
+              <h3 className="text-lg font-semibold mb-2 ">Degrees</h3>
+              <p className="text-gray-700 text-sm  ">M.D. of Business</p>
             </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Training</h3>
-              <p className="text-gray-700">
+
+            {/* Training */}
+            <div className="flex  space-x-24   border-b-2  border-gray-300 pb-2">
+              <h3 className="text-lg font-semibold mb-2 ">Training</h3>
+              <p className="text-gray-700 text-sm ">
                 Typi non habent claritatem insitam; est usus legentis in iis qui
                 facit eorum claritatem investigat.
               </p>
