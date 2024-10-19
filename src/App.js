@@ -9,6 +9,7 @@ import GlobalNetworkScreen from "./screens/global_network/screens/GlobalNetworkS
 import AvilablePositions from "./screens/aviable_positions/screens/AvilablePositions";
 import BlogPage from "./blog/screens/BlogPage";
 import MeetCrewScreen from "./screens/meet_crew/screens/MeetCrewScreen";
+import ProfilePage from "./screens/meet_crew/screens/ProfileScreen";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/avilable-positions" element={<AvilablePositions />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/meet-crew" element={<MeetCrewScreen />} />
+            <Route path="/profile/:name" element={<ProfilePage />} />
           </Routes>
         </div>
       </Router>

@@ -4,6 +4,8 @@ import Navbar from "../../Homepage/component/Navbar";
 import JobListingsPage from "../../aviable_positions/components/JobListingsPage";
 import FleetComponent from "../../aviable_positions/components/FleetComponent";
 import Footer from "../../faq/component/Footer";
+import HeadPart from "../components/HeadPart";
+import TeamComponent from "../components/TeamComponent";
 
 function MeetCrewScreen() {
   return (
@@ -21,8 +23,8 @@ function MeetCrewScreen() {
 
       {/* Make sure FAQ_Content is placed below Navbar */}
       <div className="mt-3">
-        <JobListingsPage />
-        <FleetComponent />
+        <HeadPart />
+        <TeamComponent />
       </div>
       <Footer />
     </div>
