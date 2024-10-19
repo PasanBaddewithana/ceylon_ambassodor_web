@@ -14,6 +14,7 @@ import BlogPage from "./blog/screens/BlogPage";
 import MeetCrewScreen from "./screens/meet_crew/screens/MeetCrewScreen";
 import ProfilePage from "./screens/meet_crew/screens/ProfileScreen";
 import OurClientScreen from "./screens/OurClients/screens/OurClientScreen";
+import BookFrieghtScreen from "./screens/book_frieght/screens/BookFrieghtScreen";
 
 function App() {
   return (
@@ -34,7 +35,10 @@ function App() {
             <Route path="/aerofly" element={<Aerofly />} />
             <Route path="/meet-crew" element={<MeetCrewScreen />} />
             <Route path="/our-clients" element={<OurClientScreen />} />
+            <Route path="/book-frieghts" element={<BookFrieghtScreen />} />
             <Route path="/profile/:name" element={<ProfilePage />} />
+
+            <Route path="*" element={<h1>Not Found</h1>} />
           </Routes>
         </div>
       </Router>

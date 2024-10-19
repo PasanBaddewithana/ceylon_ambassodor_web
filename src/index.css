@@ -29,3 +29,18 @@
   font-family: "Montserrat-SemiBold";
   src: url("./fonts/FontsFree-Net-Montserrat-SemiBold.ttf");
 }
+
+/* input-field */
+.input-field {
+  @apply w-full p-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* btn-primary */
+.btn-primary {
+  @apply bg-customBlue  text-white px-6 py-2  hover:bg-customBlue transition;
+}
+
+/* btn-secondary */
+.btn-secondary {
+  @apply bg-customBlue text-white  px-6 py-0  hover:bg-customBlue transition;
+}

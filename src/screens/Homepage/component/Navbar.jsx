@@ -66,7 +66,7 @@ const Navbar = () => {
   const contactLinks = [
     { href: "/contact-us", text: "Contact Us" },
     { href: "/faq", text: "FAQ's" },
-    { href: "#", text: "Book a Freight" },
+    { href: "/book-frieghts", text: "Book a Freight" },
   ];
 
   const officeLinks = [
