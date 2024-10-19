@@ -6,26 +6,38 @@ import BrandPulse from "./screens/Homepage/screen/BrandPulse";
 import HomePage from "./screens/Homepage/screen/HomePage";
 import AboutUsScreen from "./screens/about/screens/AboutUsScreen";
 import GlobalNetworkScreen from "./screens/global_network/screens/GlobalNetworkScreen";
+
 import Aerofly from "./screens/Homepage/screen/Aerofly";
+
+
+import AvilablePositions from "./screens/aviable_positions/screens/AvilablePositions";
+import BlogPage from "./blog/screens/BlogPage";
+import MeetCrewScreen from "./screens/meet_crew/screens/MeetCrewScreen";
+import ProfilePage from "./screens/meet_crew/screens/ProfileScreen";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        {/* Set the initial route to HomePage */}
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          {/* Other routes */}
-          <Route path="/contact-us" element={<ContactUsScreen />} />
-          <Route path="/faq" element={<FAQ_Screen />} />
-          <Route path="/about" element={<AboutUsScreen />} />
-          <Route path="/global-network" element={<GlobalNetworkScreen />} />
-          <Route path="/aerofly" element={<Aerofly />} />
-        </Routes>
-        {/* Static component like BrandPulse can be placed here if needed */}
-        {/* <BrandPulse /> */}
-      </div>
-    </Router>
+    <div className="App">
+      <Router>
+        <div className="App">
+          <Routes>
+            {/* Set the initial route to HomePage */}
+            <Route path="/" element={<HomePage />} />
+            {/* Other routes */}
+            <Route path="/contact-us" element={<ContactUsScreen />} />
+            <Route path="/faq" element={<FAQ_Screen />} />
+            <Route path="/about" element={<AboutUsScreen />} />
+            <Route path="/global-network" element={<GlobalNetworkScreen />} />
+            <Route path="/brand-pulse" element={<BrandPulse />} />
+            <Route path="/avilable-positions" element={<AvilablePositions />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/meet-crew" element={<MeetCrewScreen />} />
+            <Route path="/profile/:name" element={<ProfilePage />} />
+          </Routes>
+        </div>
+      </Router>
+    </div>
+
   );
 }
 

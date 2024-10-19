@@ -72,16 +72,16 @@ const Navbar = () => {
   const officeLinks = [
     { href: "/global-network", text: "Global Network" },
     { href: "#", text: "Our clients" },
-    { href: "#", text: "Meet the crew" },
-    { href: "#", text: "Available positions" },
-    { href: "#", text: "Blog" },
+    { href: "/meet-crew", text: "Meet the crew" },
+    { href: "/avilable-positions", text: "Available positions" },
+    { href: "/blog", text: "Blog" },
   ];
 
   const companiesLinks = [
     { href: "#", text: "United Freight Solutions" },
     { href: "#", text: "Khmergate" },
     { href: "#", text: "AEROFLY Aviation" },
-    { href: "#", text: "Brandpulse" },
+    { href: "/brand-pulse", text: "Brandpulse" },
   ];
 
   return (
