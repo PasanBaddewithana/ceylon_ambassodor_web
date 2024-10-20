@@ -6,7 +6,14 @@ import BrandPulse from "./screens/Homepage/screen/BrandPulse";
 import HomePage from "./screens/Homepage/screen/HomePage";
 import AboutUsScreen from "./screens/about/screens/AboutUsScreen";
 import GlobalNetworkScreen from "./screens/global_network/screens/GlobalNetworkScreen";
+
 import Aerofly from "./screens/Homepage/screen/Aerofly";
+
+
+import AvilablePositions from "./screens/aviable_positions/screens/AvilablePositions";
+import BlogPage from "./blog/screens/BlogPage";
+import MeetCrewScreen from "./screens/meet_crew/screens/MeetCrewScreen";
+import ProfilePage from "./screens/meet_crew/screens/ProfileScreen";
 import Khmergate from "./screens/Homepage/screen/Khmergate";
 
 function App() {
@@ -22,7 +29,6 @@ function App() {
           <Route path="/about" element={<AboutUsScreen />} />
           <Route path="/global-network" element={<GlobalNetworkScreen />} />
           <Route path="/aerofly" element={<Aerofly />} />
-          <Route path="/khmergate" element={<Khmergate />} />
         </Routes>
         {/* Static component like BrandPulse can be placed here if needed */}
         {/* <BrandPulse /> */}

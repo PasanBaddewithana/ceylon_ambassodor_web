@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../../assets/Logo.svg";
-import world_logo from "../../../assets/world_logo.svg";
+import world_logo from "../../../assets/world_logo_back.svg";
 const GlobalNetworkIntroduction = () => {
   return (
     <div>
@@ -23,24 +23,27 @@ const GlobalNetworkIntroduction = () => {
         </div>
         {/* Asia Section */}
         <div className="mb-10">
-          <div className="flex space-x-3">
+          <div className="flex space-x-5 items-center">
             {/* Rounded background behind the image */}
-            <div className="bg-customBlue rounded-full items-center">
+            <div className="">
               <img
                 src={world_logo}
                 alt="world_logo"
-                className="w-8 h-12 object-contain" // Ensures the image is contained within the background
+                className="w-8 h-12 object-contain"
               />
             </div>
-
-            {/* Asia text */}
-            <h3 className="text-2xl font-semibold mb-6">Asia</h3>
+            <div className="mt-6">
+              {/* Asia text */}
+              <h3 className="text-2xl font-semibold mb-6">Asia</h3>
+            </div>
           </div>
 
           {/* Sri Lanka */}
           <div className="mb-12">
-            <h4 className="text-xl font-bold mb-2">Sri Lanka (Headquarters)</h4>
-            <p className="mb-4">
+            <h4 className="text-xl font-semibold mb-2">
+              Sri Lanka (Headquarters)
+            </h4>
+            <p className="mb-4 text-xs">
               As the heart of our operations, Sri Lanka is the hub from which we
               manage our diverse range of services. From United Freight
               Solutions’ comprehensive logistics network to Aerofly Aviation’s
@@ -48,7 +51,7 @@ const GlobalNetworkIntroduction = () => {
               solutions, Sri Lanka serves as our strategic headquarters for
               connecting clients across the globe.
             </p>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap text-xs">
               <div className="w-full md:w-1/2">
                 <strong>Services:</strong> Logistics, Aviation, Branding, and
                 Marketing
