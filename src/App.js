@@ -7,6 +7,7 @@ import HomePage from "./screens/Homepage/screen/HomePage";
 import AboutUsScreen from "./screens/about/screens/AboutUsScreen";
 import GlobalNetworkScreen from "./screens/global_network/screens/GlobalNetworkScreen";
 import Aerofly from "./screens/Homepage/screen/Aerofly";
+import Khmergate from "./screens/Homepage/screen/Khmergate";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<AboutUsScreen />} />
           <Route path="/global-network" element={<GlobalNetworkScreen />} />
           <Route path="/aerofly" element={<Aerofly />} />
+          <Route path="/khmergate" element={<Khmergate />} />
         </Routes>
         {/* Static component like BrandPulse can be placed here if needed */}
         {/* <BrandPulse /> */}
