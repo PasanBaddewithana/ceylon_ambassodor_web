@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { backend_url } from "../../../url";
 
 // Multi-step form component
 const MultiStepForm = ({ currentStep, nextStep, prevStep }) => {
@@ -76,15 +78,25 @@ const MultiStepForm = ({ currentStep, nextStep, prevStep }) => {
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Validate form before submission
     if (validate_form()) {
-      console.log("Form Submitted:", formData);
-      alert("Form submitted successfully!");
-      navigate("/");
+      try {
+        const response = await axios.post(
+          `${backend_url}/form-submissions/submit`,
+          formData
+        );
+
+        console.log("Form Submitted:", response.data);
+        alert("Form submitted successfully!");
+        navigate("/");
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        alert("There was an error submitting the form. Please try again.");
+      }
     } else {
-      console.log("------END ---------------");
+      console.log("Validation failed.");
     }
   };
 

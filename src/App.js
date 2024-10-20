@@ -19,6 +19,15 @@ import BookFrieghtScreen from "./screens/book_frieght/screens/BookFrieghtScreen"
 function App() {
   return (
     <div className="">
+      {/* <AnimatedCursor
+        innerSize={8}
+        outerSize={15}
+        color="255, 255, 153" // Light yellow color
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={2}
+      /> */}
+
       <Router>
         <div className="">
           <Routes>
