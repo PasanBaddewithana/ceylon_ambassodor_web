@@ -22,13 +22,14 @@ const FirstSection = ({
         <img
           src={branding}
           alt="Brand Logo"
-          className="absolute top-1/2 right-[2.5%] transform -translate-x-1/2 -translate-y-1/2 w-[340px]"
+          className="absolute top-1/2 right-[0%] transform -translate-x-1/4 -translate-y-1/2 w-[500px]"
         />
-        <img
+
+        {/* <img
           src={midbranding}
           alt="Mid Brand Logo"
           className="absolute top-1/2   w-[340px]"
-        />
+        /> */}
         <div className="absolute bottom-0 w-screen">
           <BrandNavSection
             first={first}

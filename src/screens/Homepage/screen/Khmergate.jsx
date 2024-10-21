@@ -15,9 +15,9 @@ import SixthSection from "../component/SixthSection";
 
 import LastSection from "../component/LastSection";
 import Footer from "../../../../src/screens/faq/component/Footer";
-import mainImage from "../../../assets/mainimage.jpg";
-import aerofly from "../../../assets/aeroflylogo.svg";
-import uniformedPilot from "../../../assets/uniformedPilot.jpg";
+import mainImage from "../../..//assets/Khmergate/asian_girl_image.jpg";
+import khmergate_logo from "../../../assets/Khmergate/khermgate_green_logo.svg";
+import plane_man from "../../../assets/Khmergate/airplane-man-transportation-aircraft.jpg";
 import AeroThirdPart from "../component/AeroThirdPart";
 import AeroflyFifth from "../component/AeroflyFifth";
 import AeroSeventh from "../component/AeroSeventh";
@@ -40,18 +40,19 @@ function Khmergate() {
       <Navbar />
       <FirstSection
         image={mainImage}
-        midbranding={aerofly}
-        first="CARGO CAPACITY MANAGEMENT"
-        second="GENERAL SALES & SERVICES AGENT"
-        third="AIRLINE REPRESENTATION"
-        fourth="CUSTOM SERVICE SOLUTIONS"
+        branding={khmergate_logo}
+        midbranding={khmergate_logo}
+        first="INBOUND TOURS"
+        second="OUTBOUND TOURS"
+        third="EVENT SERVICES"
+        fourth="SPECIAL INTEREST TOURS"
       />
       <KhmergateSecond />
       <KhmergateThird />
-      <FourthPart fourthImage={uniformedPilot} imageHeight={800} />
+      <FourthPart fourthImage={plane_man} imageHeight={800} />
       <KhmergateFifth />
       <SixthSection
-        brandImage={aerofly}
+        brandImage={khmergate_logo}
         brandName="Aerofly Aviation?"
         description="At Aerofly Aviation, we offer more than just aviation services we provide solutions that help your airline thrive in an ever-changing industry. Here's why airlines trust us to handle their most critical operations:"
         subtopic1="Expert Cargo Management:"
@@ -68,7 +69,7 @@ function Khmergate() {
       />
       <AeroSeventh />
       <LastSection
-        lastImage={aerofly}
+        lastImage={khmergate_logo}
         lastwords="Contact us today to learn how Aerofly can become your trusted partner in aviation excellence."
       />
       <Footer />

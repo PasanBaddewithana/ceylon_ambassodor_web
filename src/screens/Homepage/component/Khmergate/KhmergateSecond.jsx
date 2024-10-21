@@ -1,6 +1,6 @@
 import React from "react";
-import aerofly from "../../../../assets/aerofly_logo.svg";
-import runaway from "../../../../assets/runawayPlane.jpg";
+import khermgate from "../../../../assets/khmergate.png";
+import runaway from "../../../../assets/Khmergate/khon-is-art-culture-thailand-dancing-masked-tossakan-hanuman-are-fighting-literature.jpg";
 
 const KhmergateSecond = () => {
   return (
@@ -8,7 +8,7 @@ const KhmergateSecond = () => {
       {/* Left part */}
       <div className="w-1/2 h-full flex flex-col justify-center items-center ">
         <div className="flex flex-col justify-center items-start">
-          <img src={aerofly} className="w-[200px] mb-9" />
+          <img src={khermgate} alt="logo" className="w-[300px] h-auto mb-9" />
           <p className="text-white text-[28px] font-bold">"Your Gateway to </p>
           <p className="text-white text-[28px] font-bold mb-5">
             Extraordinary Experiences"

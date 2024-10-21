@@ -1,16 +1,16 @@
 import React from "react";
 import CartoonCard from "../CartoonCard";
-import plane from "../../../../assets/plane.svg";
-import planeEarth from "../../../../assets/planeEarth.svg";
-import planeWindow from "../../../../assets/planeWindow.svg";
-import handPlane from "../../../../assets/handPlane.svg";
-import message from "../../../../assets/message.svg";
+import lorry from "../../../../assets/Khmergate/logo/lorry.svg";
+import pass from "../../../../assets/Khmergate/logo/pass.svg";
+import ballon from "../../../../assets/Khmergate/logo/balloon.svg";
+import camera from "../../../../assets/Khmergate/logo/camera.svg";
+import bag from "../../../../assets/Khmergate/logo/bag.svg";
 
 const KhmergateThird = () => {
   return (
     <div className="w-full h-[400px] flex flex-row items-center justify-center p-8 gap-20 text-[#015B02]">
       <CartoonCard
-        image={plane}
+        image={lorry}
         textcolor="#015B02"
         h="180px"
         alt="plane"
@@ -18,7 +18,7 @@ const KhmergateThird = () => {
         content="Immerse yourself in Cambodia's rich culture, historical landmarks, and natural beauty with our expertly guided tours, offering deep cultural and adventure experiences. "
       />
       <CartoonCard
-        image={planeEarth}
+        image={pass}
         textcolor="#015B02"
         h="150px"
         alt="newspaper"
@@ -27,7 +27,7 @@ const KhmergateThird = () => {
       />
       <CartoonCard
         textcolor="#015B02"
-        image={planeWindow}
+        image={camera}
         h="160px"
         alt="bulb"
         topic="Event Management and MICE"
@@ -35,7 +35,7 @@ const KhmergateThird = () => {
       />
       <CartoonCard
         textcolor="#015B02"
-        image={message}
+        image={ballon}
         h="130px"
         alt="speaker"
         topic="Special Interest Tours"
@@ -43,7 +43,7 @@ const KhmergateThird = () => {
       />
       <CartoonCard
         textcolor="#015B02"
-        image={handPlane}
+        image={bag}
         h="140px"
         alt="slips"
         topic="Custom Travel Solutions"

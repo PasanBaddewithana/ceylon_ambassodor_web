@@ -1,5 +1,5 @@
 import React from "react";
-import aerofly from "../../../../assets/aeroflylogo.svg";
+import aerofly from "../../../../assets/Khmergate/khermgate_green_logo.svg";
 
 const KhmergateFifthHeader = () => {
   return (

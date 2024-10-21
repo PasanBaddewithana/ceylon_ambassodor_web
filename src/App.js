@@ -16,7 +16,6 @@ import ProfilePage from "./screens/meet_crew/screens/ProfileScreen";
 
 import Khmergate from "./screens/Homepage/screen/Khmergate";
 
-
 import OurClientScreen from "./screens/OurClients/screens/OurClientScreen";
 import BookFrieghtScreen from "./screens/book_frieght/screens/BookFrieghtScreen";
 
@@ -50,13 +49,12 @@ function App() {
             <Route path="/our-clients" element={<OurClientScreen />} />
             <Route path="/book-frieghts" element={<BookFrieghtScreen />} />
             <Route path="/profile/:name" element={<ProfilePage />} />
-
+            <Route path="/khmergate" element={<Khmergate />} />
             <Route path="*" element={<h1>Not Found</h1>} />
           </Routes>
         </div>
       </Router>
     </div>
-
   );
 }
 

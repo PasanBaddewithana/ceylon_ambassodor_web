@@ -1,10 +1,11 @@
 import React from "react";
 import DetailCard from "../DetailCard";
-import cargo from "../../../../assets/cargo.jpg";
+import girl from "../../../../assets/Khmergate/traveler-watching-sunset-ancient-temple-complex.jpg";
 import strategic from "../../../../assets/strategic.jpg";
 import sales from "../../../../assets/sales.jpg";
 import focused from "../../../../assets/focused.jpg";
 import airline from "../../../../assets/airline.jpg";
+
 import KhmergateFifthHeader from "./KhmergateFifthHeader";
 
 const KhmergateFifth = () => {
@@ -12,7 +13,7 @@ const KhmergateFifth = () => {
     <div className="flex flex-col items-center justify-center">
       <KhmergateFifthHeader />
       <DetailCard
-        image={cargo}
+        image={girl}
         topicTop="Discover Cambodia"
         topicBottom=" with Our Inbound Tours   "
         description="Cambodia is a land of ancient wonders, vibrant traditions, and awe-inspiring landscapes. With KhmerGate's Inbound Tours, you can dive deep into the country's heritage while enjoying tailored experiences that cater to every traveler. "
