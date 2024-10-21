@@ -123,11 +123,11 @@ const Navbar = ({ changeColor = false }) => {
             <div className="hidden md:flex space-x-6 lg:space-x-10">
               <Link to="/" className="relative group text-base">
                 Home
-                <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute top-[-2px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link to="/about" className="relative group text-base ">
                 About
-                <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute top-[-2px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
               </Link>
 
               {/* Companies Dropdown */}
@@ -138,7 +138,7 @@ const Navbar = ({ changeColor = false }) => {
                   onClick={toggleCompaniesDropdown}
                 >
                   Companies
-                  <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute top-[-2px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
                 {isCompaniesDropdownOpen && (
@@ -157,7 +157,7 @@ const Navbar = ({ changeColor = false }) => {
                   onClick={toggleOfficeDropdown}
                 >
                   Office
-                  <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute top-[-2px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
                 {isOfficeDropdownOpen && (
@@ -176,7 +176,7 @@ const Navbar = ({ changeColor = false }) => {
                   onClick={toggleContactDropdown}
                 >
                   Contact
-                  <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute top-[-2px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
                 {isContactDropdownOpen && (
