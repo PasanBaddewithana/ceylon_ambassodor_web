@@ -14,7 +14,7 @@ const Navbar = ({ changeColor = false }) => {
   const [isContactDropdownOpen, setContactDropdownOpen] = useState(false);
   const [isOfficeDropdownOpen, setOfficeDropdownOpen] = useState(false);
   const [isCompaniesDropdownOpen, setCompaniesDropdownOpen] = useState(false);
-  const [isSidebarOpen, setSidebarOpen] = useState(false); // New state for sidebar
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   const contactDropdownRef = useRef(null);
   const officeDropdownRef = useRef(null);
@@ -108,26 +108,26 @@ const Navbar = ({ changeColor = false }) => {
         ${changeColor ? "text-white" : "text-[#031c3f]"}
          absolute top-6 w-full z-10 font-kollektif font-bold text-sm`}
       >
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto flex justify-between items-center px-4">
           <div
-            className={`w-[90%] flex justify-between items-center py-2 px-6 border-r-2 ${
+            className={`w-full flex justify-between items-center py-2 md:py-4 border-r-2 ${
               changeColor ? "border-white" : "border-[#031c3f]"
             }`}
           >
             {/* Logo */}
-            <div className="items-center ml-4">
+            <div className="flex items-center ml-2 md:ml-4">
               <Logo />
             </div>
 
             {/* Navigation Links */}
-            <div className="flex space-x-14">
+            <div className="hidden md:flex space-x-6 lg:space-x-10">
               <Link to="/" className="relative group text-base">
                 Home
-                <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
+                <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link to="/about" className="relative group text-base ">
                 About
-                <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
+                <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
               </Link>
 
               {/* Companies Dropdown */}
@@ -138,7 +138,7 @@ const Navbar = ({ changeColor = false }) => {
                   onClick={toggleCompaniesDropdown}
                 >
                   Companies
-                  <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
+                  <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
                 {isCompaniesDropdownOpen && (
@@ -157,7 +157,7 @@ const Navbar = ({ changeColor = false }) => {
                   onClick={toggleOfficeDropdown}
                 >
                   Office
-                  <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
+                  <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
                 {isOfficeDropdownOpen && (
@@ -176,7 +176,7 @@ const Navbar = ({ changeColor = false }) => {
                   onClick={toggleContactDropdown}
                 >
                   Contact
-                  <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-[120%]"></span>
+                  <span className="absolute top-[-4px] left-0 w-0 h-[3px] bg-[#c3a05f] transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
                 {isContactDropdownOpen && (
@@ -189,25 +189,26 @@ const Navbar = ({ changeColor = false }) => {
             </div>
           </div>
 
-          {/* Track Your Order Button */}
-          <div className="items-center w-[20%]">
-            <div className="flex items-center bg-transparent justify-between">
-              {/* Track Your Order Section */}
-              <div className="flex items-center justify-center">
-                <TrackOrder />
-                <span
-                  className={`${
-                    changeColor ? "text-white" : "text-[#031c3f]"
-                  } font-bold`}
-                >
-                  Track Your Order
-                </span>
-              </div>
+          {/* Track Your Order Button and Hamburger Menu */}
+          <div className="flex items-center space-x-4 md:space-x-8">
+            {/* Track Your Order Section */}
+            <div className="hidden md:flex items-center justify-center">
+              <TrackOrder />
+              <span
+                className={`${
+                  changeColor ? "text-white" : "text-[#031c3f]"
+                } font-bold`}
+              >
+                Track Your Order
+              </span>
+            </div>
 
-              {/* Hamburger Menu */}
-              <div className="bg-[#031c3f] p-[6px]" onClick={toggleSidebar}>
-                <FaBars className="text-white text-3xl cursor-pointer" />
-              </div>
+            {/* Hamburger Menu */}
+            <div
+              className="bg-[#031c3f] p-[6px] md:hidden"
+              onClick={toggleSidebar}
+            >
+              <FaBars className="text-white text-3xl cursor-pointer" />
             </div>
           </div>
         </div>
@@ -237,7 +238,7 @@ const Navbar = ({ changeColor = false }) => {
             </div>
 
             {/* Grid Layout for Contact Information */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-0 text-left  mt-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-0 text-left mt-20">
               {/* Contact Info (Left) */}
               <div>
                 <p className="text-sm">Support Center 24/7</p>
@@ -267,7 +268,7 @@ const Navbar = ({ changeColor = false }) => {
             <div className="flex justify-center mt-10">
               <button
                 className="bg-white text-customBlue font-kollektif px-8 py-3 text-lg font-semibold"
-                onClick={() => navigate("/book-frieghts")} // Navigate to "/"
+                onClick={() => navigate("/book-frieghts")}
               >
                 + Request a Freight
               </button>
