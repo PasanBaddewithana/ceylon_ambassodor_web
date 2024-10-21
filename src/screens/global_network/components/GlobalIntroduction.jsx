@@ -43,7 +43,7 @@ const GlobalNetworkIntroduction = () => {
             <h4 className="text-xl font-semibold mb-2">
               Sri Lanka (Headquarters)
             </h4>
-            <p className="mb-4 text-xs">
+            <p className="mb-4 text-sm">
               As the heart of our operations, Sri Lanka is the hub from which we
               manage our diverse range of services. From United Freight
               Solutions’ comprehensive logistics network to Aerofly Aviation’s
@@ -51,7 +51,7 @@ const GlobalNetworkIntroduction = () => {
               solutions, Sri Lanka serves as our strategic headquarters for
               connecting clients across the globe.
             </p>
-            <div className="flex flex-wrap text-xs">
+            <div className="flex flex-wrap text-sm">
               <div className="w-full md:w-1/2">
                 <strong>Services:</strong> Logistics, Aviation, Branding, and
                 Marketing
@@ -65,15 +65,15 @@ const GlobalNetworkIntroduction = () => {
 
           {/* Cambodia */}
           <div className="mb-12">
-            <h4 className="text-xl font-bold mb-2">Cambodia</h4>
-            <p className="mb-4">
+            <h4 className="text-xl font-bold mb-2 ">Cambodia</h4>
+            <p className="mb-4 text-sm">
               Cambodia is a key region for our travel and tourism operations
               through KhmerGate, offering immersive experiences that showcase
               the rich cultural heritage and natural beauty of Southeast Asia.
               It’s also a base for BrandPulse, where we provide branding and
               marketing solutions to businesses across the region.
             </p>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap text-sm">
               <div className="w-full md:w-1/2">
                 <strong>Services:</strong> Travel and Tourism, Branding,
                 Marketing, Event Management
@@ -88,14 +88,14 @@ const GlobalNetworkIntroduction = () => {
           {/* India */}
           <div className="mb-12">
             <h4 className="text-xl font-bold mb-2">India</h4>
-            <p className="mb-4">
+            <p className="mb-4 text-sm">
               We operate a robust logistics network in India, a major hub for
               United Freight Solutions' freight and supply chain services. With
               strong partnerships and a deep understanding of the region's trade
               routes, we help businesses in India optimize their logistics and
               expand their global reach.
             </p>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap text-sm ">
               <div className="w-full md:w-1/2">
                 <strong>Services:</strong> Logistics, Freight Management,
                 Warehousing
@@ -110,14 +110,14 @@ const GlobalNetworkIntroduction = () => {
           {/* Singapore */}
           <div>
             <h4 className="text-xl font-bold mb-2">Singapore</h4>
-            <p className="mb-4">
+            <p className="mb-4 text-sm ">
               Singapore is a key logistics and aviation hub for United Freight
               Solutions and Aerofly Aviation. Our presence in this dynamic
               region enables us to offer streamlined air and sea freight
               solutions, as well as comprehensive aviation services for
               businesses in Southeast Asia.
             </p>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap text-sm ">
               <div className="w-full md:w-1/2">
                 <strong>Services:</strong> Logistics, Aviation, Freight
                 Consolidation, Warehousing

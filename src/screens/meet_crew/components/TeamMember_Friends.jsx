@@ -31,7 +31,7 @@ const MeetThePros = () => {
         <h2 className="text-3xl font-extrabold mb-8 lg:ml-1 text-left font-MontserratMedium">
           Meet the pros
         </h2>
-        <div className="flex justify-between gap-12">
+        <div className="flex justify-between gap-12 font-Montserrat">
           {teamMembers.map((member, index) => (
             <Link
               key={index}

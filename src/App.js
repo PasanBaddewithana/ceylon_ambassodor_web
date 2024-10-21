@@ -9,31 +9,54 @@ import GlobalNetworkScreen from "./screens/global_network/screens/GlobalNetworkS
 
 import Aerofly from "./screens/Homepage/screen/Aerofly";
 
-
 import AvilablePositions from "./screens/aviable_positions/screens/AvilablePositions";
 import BlogPage from "./blog/screens/BlogPage";
 import MeetCrewScreen from "./screens/meet_crew/screens/MeetCrewScreen";
 import ProfilePage from "./screens/meet_crew/screens/ProfileScreen";
+
 import Khmergate from "./screens/Homepage/screen/Khmergate";
+
+
+import OurClientScreen from "./screens/OurClients/screens/OurClientScreen";
+import BookFrieghtScreen from "./screens/book_frieght/screens/BookFrieghtScreen";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        {/* Set the initial route to HomePage */}
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          {/* Other routes */}
-          <Route path="/contact-us" element={<ContactUsScreen />} />
-          <Route path="/faq" element={<FAQ_Screen />} />
-          <Route path="/about" element={<AboutUsScreen />} />
-          <Route path="/global-network" element={<GlobalNetworkScreen />} />
-          <Route path="/aerofly" element={<Aerofly />} />
-        </Routes>
-        {/* Static component like BrandPulse can be placed here if needed */}
-        {/* <BrandPulse /> */}
-      </div>
-    </Router>
+    <div className="">
+      {/* <AnimatedCursor
+        innerSize={8}
+        outerSize={15}
+        color="255, 255, 153" // Light yellow color
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={2}
+      /> */}
+
+      <Router>
+        <div className="">
+          <Routes>
+            {/* Set the initial route to HomePage */}
+            <Route path="/" element={<HomePage />} />
+            {/* Other routes */}
+            <Route path="/contact-us" element={<ContactUsScreen />} />
+            <Route path="/faq" element={<FAQ_Screen />} />
+            <Route path="/about" element={<AboutUsScreen />} />
+            <Route path="/global-network" element={<GlobalNetworkScreen />} />
+            <Route path="/brand-pulse" element={<BrandPulse />} />
+            <Route path="/avilable-positions" element={<AvilablePositions />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/aerofly" element={<Aerofly />} />
+            <Route path="/meet-crew" element={<MeetCrewScreen />} />
+            <Route path="/our-clients" element={<OurClientScreen />} />
+            <Route path="/book-frieghts" element={<BookFrieghtScreen />} />
+            <Route path="/profile/:name" element={<ProfilePage />} />
+
+            <Route path="*" element={<h1>Not Found</h1>} />
+          </Routes>
+        </div>
+      </Router>
+    </div>
+
   );
 }
 
