@@ -8,7 +8,7 @@ const FifthSectionHeader = () => {
         <img src={aerofly} className="w-[200px]" />
         <div className="flex flex-col justify-center items-start pl-10">
           <p className="text-[20px] text-black mb-0">Let's </p>
-          <p className="text-[28px] text-black font-semibold mt-[-8px]">
+          <p className="text-[28px] text-[#015B02] font-semibold mt-[-8px]">
             Fly Higher Together
           </p>
         </div>

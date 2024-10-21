@@ -13,6 +13,10 @@ import AvilablePositions from "./screens/aviable_positions/screens/AvilablePosit
 import BlogPage from "./blog/screens/BlogPage";
 import MeetCrewScreen from "./screens/meet_crew/screens/MeetCrewScreen";
 import ProfilePage from "./screens/meet_crew/screens/ProfileScreen";
+
+import Khmergate from "./screens/Homepage/screen/Khmergate";
+
+
 import OurClientScreen from "./screens/OurClients/screens/OurClientScreen";
 import BookFrieghtScreen from "./screens/book_frieght/screens/BookFrieghtScreen";
 
@@ -52,6 +56,7 @@ function App() {
         </div>
       </Router>
     </div>
+
   );
 }
 
