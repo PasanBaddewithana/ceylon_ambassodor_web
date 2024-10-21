@@ -32,7 +32,7 @@ function HomePage() {
   return (
     <div>
       <TopHeader />
-      <Navbar changeColor={true} />
+      <Navbar />
 
       <Hero images={images} />
       <NavSection />
