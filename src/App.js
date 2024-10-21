@@ -15,6 +15,7 @@ import MeetCrewScreen from "./screens/meet_crew/screens/MeetCrewScreen";
 import ProfilePage from "./screens/meet_crew/screens/ProfileScreen";
 import OurClientScreen from "./screens/OurClients/screens/OurClientScreen";
 import BookFrieghtScreen from "./screens/book_frieght/screens/BookFrieghtScreen";
+import WareHousePage from "./screens/Warehouse/WareHousePage";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
             <Route path="/our-clients" element={<OurClientScreen />} />
             <Route path="/book-frieghts" element={<BookFrieghtScreen />} />
             <Route path="/profile/:name" element={<ProfilePage />} />
+            <Route path="/warehouse" element=  {<WareHousePage />} />
 
             <Route path="*" element={<h1>Not Found</h1>} />
           </Routes>
