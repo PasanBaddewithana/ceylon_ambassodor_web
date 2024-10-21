@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 import big_logo from "../../../assets/bigLogo.svg";
 
-const Navbar = ({ textColor = "#031c3f", borderColor = "#031c3f" }) => {
+const Navbar = ({ changeColor = false }) => {
   const navigate = useNavigate();
 
   const [isContactDropdownOpen, setContactDropdownOpen] = useState(false);
@@ -102,11 +102,17 @@ const Navbar = ({ textColor = "#031c3f", borderColor = "#031c3f" }) => {
   return (
     <>
       <nav
-        className={`bg-transparent mx-auto flex items-center border-b-2 border-[${borderColor}] text-[${textColor}] absolute top-6 w-full z-10 font-kollektif font-bold text-sm`}
+        className={`bg-transparent mx-auto flex items-center border-b-2 ${
+          changeColor ? "border-white" : "border-[#031c3f]"
+        }
+        ${changeColor ? "text-white" : "text-[#031c3f]"}
+         absolute top-6 w-full z-10 font-kollektif font-bold text-sm`}
       >
         <div className="container mx-auto flex justify-between items-center">
           <div
-            className={`w-[90%] flex justify-between items-center py-2 px-6 border-r-2 border-[${borderColor}]`}
+            className={`w-[90%] flex justify-between items-center py-2 px-6 border-r-2 ${
+              changeColor ? "border-white" : "border-[#031c3f]"
+            }`}
           >
             {/* Logo */}
             <div className="items-center ml-4">
@@ -189,7 +195,11 @@ const Navbar = ({ textColor = "#031c3f", borderColor = "#031c3f" }) => {
               {/* Track Your Order Section */}
               <div className="flex items-center justify-center">
                 <TrackOrder />
-                <span className="text-[#031c3f] font-bold">
+                <span
+                  className={`${
+                    changeColor ? "text-white" : "text-[#031c3f]"
+                  } font-bold`}
+                >
                   Track Your Order
                 </span>
               </div>
