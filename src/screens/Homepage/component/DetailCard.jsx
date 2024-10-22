@@ -22,7 +22,7 @@ const DetailCard = ({
     <div className="flex flex-row items-center justify-center px-[110px] py-[70px] gap-10">
       {imagePosition === "left" ? (
         <>
-          <div className="w-1/2 h-[500px] flex flex-col items-center justify-center">
+          <div className="w-1/2 h-auto flex flex-col items-center justify-center">
             <img src={image} alt="" />
           </div>
           <div className="flex flex-col items-start w-1/2 p-10">
@@ -67,7 +67,7 @@ const DetailCard = ({
         </>
       ) : (
         <>
-          <div className="flex flex-col items-end w-1/2 p-10">
+          <div className="flex flex-col w-1/2 p-10">
             <p className="font-bold text-[30px]" style={{ color: textColor }}>
               {topicTop}
             </p>
@@ -80,9 +80,9 @@ const DetailCard = ({
             <p className="text-[13px] p-1" style={{ color: textColor }}>
               {description}
             </p>
-            <div className="text-left">
+            <div className=" ">
               <p
-                className="font-bold text-[13px] p-1"
+                className="text-left font-bold text-[13px] p-1"
                 style={{ color: textColor }}
               >
                 {subTopic}
@@ -106,7 +106,7 @@ const DetailCard = ({
               + Send Message
             </button>
           </div>
-          <div className="w-1/2 h-[500px] flex flex-col items-center justify-center">
+          <div className="w-1/2 h-auto flex flex-col items-center justify-center">
             <img src={image} alt="" />
           </div>
         </>
