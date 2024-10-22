@@ -25,6 +25,8 @@ import AeroSecond from "../component/AeroSecond";
 import KhmergateSecond from "../component/Khmergate/KhmergateSecond";
 import KhmergateThird from "../component/Khmergate/KhmergateThird";
 import KhmergateFifth from "../component/Khmergate/KhmergateFifth";
+import KhmergateSeventh from "../component/Khmergate/KhmergateSeventh";
+import KhmergateLastSection from "../component/Khmergate/KhmergateLastSection";
 
 function Khmergate() {
   const images = [
@@ -53,24 +55,23 @@ function Khmergate() {
       <KhmergateFifth />
       <SixthSection
         brandImage={khmergate_logo}
-        brandName="Aerofly Aviation?"
-        description="At Aerofly Aviation, we offer more than just aviation services we provide solutions that help your airline thrive in an ever-changing industry. Here's why airlines trust us to handle their most critical operations:"
-        subtopic1="Expert Cargo Management:"
-        subdes1=" We ensure that every inch of cargo space is maximized, providing tailored solutions that increase your profitability while maintaining safety and compliance."
-        subtopic2="Global Representation:"
-        subdes2="
- With a presence in key markets around the world, Aerofly Aviation ensures your brand reaches new heights, even in regions where you may not have a direct presence."
-        subtopic3="Strategic Partnerships:"
-        subdes3=" Our deep industry connections allow us to build partnerships that open new revenue streams and enhance your operational efficiency."
-        subtopic4="Customer-Centric Approach: "
-        subdes4=" We prioritize your clients' satisfaction with proactive communication, 24/7 support, and seamless service throughout the customer journey."
-        subtopic5="Data-Driven Insights: "
-        subdes5="Using advanced analytics, we provide you with the data and insights needed to optimize your operations and stay competitive in the fast-paced aviation industry."
+        brandName="Travel with Khmergate?"
+        description="Choosing KhmerGate means choosing a company committed to making your journey unforgettable. Here's why travelers trust us with their most cherished adventures:"
+        subtopic1="Authentic Experiences:"
+        subdes1="Our local guides provide unique insights and take you beyond the typical tourist routes to discover the heart of Cambodia and beyond."
+        subtopic2="Personalized Service:"
+        subdes2="From tailored itineraries to personal support throughout your trip, every experience is customized to meet your needs and preferences"
+        subtopic3="Sustainable Tourism:"
+        subdes3=" We believe in responsible travel, supporting local communities, and ensuring that our tours have a positive impact on the environment and people of Cambodia."
+        subtopic4="Seamless Planning: "
+        subdes4="Our experienced team handles all the details, from logistics to accommodations, so you can focus on creating memories."
+        subtopic5="Expert Knowledge: "
+        subdes5="With years of experience in the travel industry, we are your trusted partner in delivering the best travel solutions, both in Cambodia and globally."
       />
-      <AeroSeventh />
-      <LastSection
+      <KhmergateSeventh />
+      <KhmergateLastSection
         lastImage={khmergate_logo}
-        lastwords="Contact us today to learn how Aerofly can become your trusted partner in aviation excellence."
+        lastwords="Contact us today to begin your next adventure, and let us show you the world through KhmerGate."
       />
       <Footer />
     </div>
