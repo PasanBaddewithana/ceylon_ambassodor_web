@@ -14,19 +14,22 @@ const DetailCard = ({
   subPointDes3,
   conclusion,
   imagePosition = "left", // Default position is 'left'
-  buttoncolor,
-  buttonHoverColor,
+  buttoncolor = "#000", // Default button color
+  buttonHoverColor = "#333", // Default hover color
   textColor = "black", // Default text color is black
 }) => {
   return (
-    <div className="flex flex-row items-center justify-center px-[110px] py-[70px] gap-10">
+    <div className="flex flex-row items-center justify-center px-[110px] py-[70px] gap-10 font-Montserrat text-customBlue">
       {imagePosition === "left" ? (
         <>
           <div className="w-1/2 h-auto flex flex-col items-center justify-center">
             <img src={image} alt="" />
           </div>
           <div className="flex flex-col items-start w-1/2 p-10">
-            <p className="font-bold text-[30px]" style={{ color: textColor }}>
+            <p
+              className="font-bold text-[30px] font-MontserratMedium"
+              style={{ color: textColor }}
+            >
               {topicTop}
             </p>
             <p
@@ -59,7 +62,16 @@ const DetailCard = ({
               {conclusion}
             </p>
             <button
-              className={`px-4 py-2 bg-[${buttoncolor}] text-white mt-5 hover:bg-[${buttonHoverColor}] transition duration-300`}
+              className="px-4 py-2 text-white mt-5 transition duration-300"
+              style={{
+                backgroundColor: buttoncolor,
+              }}
+              onMouseEnter={(e) =>
+                (e.target.style.backgroundColor = buttonHoverColor)
+              }
+              onMouseLeave={(e) =>
+                (e.target.style.backgroundColor = buttoncolor)
+              }
             >
               + Send Message
             </button>
@@ -68,7 +80,10 @@ const DetailCard = ({
       ) : (
         <>
           <div className="flex flex-col w-1/2 p-10">
-            <p className="font-bold text-[30px]" style={{ color: textColor }}>
+            <p
+              className="font-bold text-[30px] font-MontserratMedium"
+              style={{ color: textColor }}
+            >
               {topicTop}
             </p>
             <p
@@ -80,9 +95,9 @@ const DetailCard = ({
             <p className="text-[13px] p-1" style={{ color: textColor }}>
               {description}
             </p>
-            <div className=" ">
+            <div className="text-left">
               <p
-                className="text-left font-bold text-[13px] p-1"
+                className="font-bold text-[13px] p-1"
                 style={{ color: textColor }}
               >
                 {subTopic}
@@ -101,7 +116,16 @@ const DetailCard = ({
               {conclusion}
             </p>
             <button
-              className={`px-4 py-2 bg-[${buttoncolor}] text-white mt-5 hover:bg-[${buttonHoverColor}] transition duration-300`}
+              className="px-4 py-2 text-white mt-5 transition duration-300 self-end"
+              style={{
+                backgroundColor: buttoncolor,
+              }}
+              onMouseEnter={(e) =>
+                (e.target.style.backgroundColor = buttonHoverColor)
+              }
+              onMouseLeave={(e) =>
+                (e.target.style.backgroundColor = buttoncolor)
+              }
             >
               + Send Message
             </button>

@@ -38,6 +38,7 @@ function Aerofly() {
       <Navbar />
       <FirstSection
         image={mainImage}
+        branding={aerofly}
         midbranding={aerofly}
         first="CARGO CAPACITY MANAGEMENT"
         second="GENERAL SALES & SERVICES AGENT"

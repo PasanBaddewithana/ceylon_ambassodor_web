@@ -14,10 +14,14 @@ const CartoonCard = ({
   return (
     <div className="flex flex-col items-center justify-center w-[200px] gap-2">
       <img src={image} style={{ height: h }} alt={alt} />
-      <p className={`font-bold text-center text-[14px] ${textColorClass}`}>
+      <p
+        className={`mt-4 font-bold font-MontserratSemiBold text-center text-[16px] ${textColorClass}`}
+      >
         {topic}
       </p>
-      <p className={`text-center text-[14px] ${textColorClass}`}>{content}</p>
+      <p className={`text-center font-Montserrat text-xs ${textColorClass}`}>
+        {content}
+      </p>
     </div>
   );
 };
