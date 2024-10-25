@@ -14,6 +14,7 @@ import UFSlogo from "../../assets/warehouse/UFS_log_Orange.svg"
 import Footer from "../faq/component/Footer"
 import Navbar from "../Homepage/component/Navbar"
 import TopHeader from "../Homepage/component/TopHeader"
+ import FifthSectionHeader from "./components/FifthSectionHeader"
 
 
 const WareHousePage = () => { 
@@ -32,6 +33,7 @@ const WareHousePage = () => {
 
             />
             <ConnectingGlobal />
+            <FifthSectionHeader />
             <IconsLayer />
             <ContainerImage />
             <ForwardTogether   />

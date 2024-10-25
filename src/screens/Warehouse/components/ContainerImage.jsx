@@ -1,17 +1,13 @@
 
 
 //container image component
-
+import React from 'react'
+import cotainerImage from '../../../assets/warehouse/transport-logistics-concept-3.jpg' 
 const ContainerImage = () => {
     return (
-        <div className="container-image">
-            <div className="container">
-                <div className="container-image__content">
-                    <h1 className="container-image__content__title">Container Image</h1>
-                    <p className="container-image__content__description">We provide a range of services that connect you to the world.</p>
-                </div>
-            </div>
-        </div>
+        <div className="bg-[#BC9C61] py-8">
+      <img src={cotainerImage} />
+    </div>
     );
 }
 
