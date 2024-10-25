@@ -8,13 +8,14 @@ import IslansFreight from "./components/IslandFreight";
 import SeaFreight from "./components/SeaFreight";
 import WareHousingAndDistribution from "./components/WarehousingAndDistribution";
 import WhyChooseUs from "./components/WhyChooseUs";
-import MainImage from "../../assets/warehouse/industrial-warehouse-parking-lot-cloudy-sky-modern-distribution-center-concept-urban-architecture-industrial-design-distribution-centers-cloudy-sky-parking-lots.jpg";
+
 import LastSection from "./components/LastSection";
 import UFSlogo from "../../assets/warehouse/UFS_log_Orange.svg";
 import Footer from "../faq/component/Footer";
 import Navbar from "../Homepage/component/Navbar";
 import TopHeader from "../Homepage/component/TopHeader";
 import FifthSectionHeader from "./components/FifthSectionHeader";
+import MainImage from "../../assets/warehouse/industrial-warehouse-parking-lot-cloudy-sky-modern-distribution-center-concept-urban-architecture-industrial-design-distribution-centers-cloudy-sky-parking-lots.png";
 
 const WareHousePage = () => {
   return (
