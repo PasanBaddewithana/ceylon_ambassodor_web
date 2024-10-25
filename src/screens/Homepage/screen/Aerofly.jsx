@@ -22,6 +22,7 @@ import AeroThirdPart from "../component/AeroThirdPart";
 import AeroflyFifth from "../component/AeroflyFifth";
 import AeroSeventh from "../component/AeroSeventh";
 import AeroSecond from "../component/AeroSecond";
+import AeroFlySixthSection from "../component/AeroflySixthSection";
 
 function Aerofly() {
   const images = [
@@ -37,6 +38,7 @@ function Aerofly() {
       <Navbar />
       <FirstSection
         image={mainImage}
+        branding={aerofly}
         midbranding={aerofly}
         first="CARGO CAPACITY MANAGEMENT"
         second="GENERAL SALES & SERVICES AGENT"
@@ -47,7 +49,7 @@ function Aerofly() {
       <AeroThirdPart />
       <FourthPart fourthImage={uniformedPilot} imageHeight={800} />
       <AeroflyFifth />
-      <SixthSection
+      <AeroFlySixthSection
         brandImage={aerofly}
         brandName="Aerofly Aviation?"
         description="At Aerofly Aviation, we offer more than just aviation services we provide solutions that help your airline thrive in an ever-changing industry. Here's why airlines trust us to handle their most critical operations:"

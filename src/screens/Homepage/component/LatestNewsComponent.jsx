@@ -15,7 +15,7 @@ const LatestNewsComponent = () => {
             <div className="bg-gray-300 h-64 mb-4"></div>
 
             {/* Date and Divider */}
-            <div className="flex items-center justify-center mb-2">
+            <div className="flex items-center justify-center mt-4 lg:items-start mb-2">
               <div className="flex flex-col items-center">
                 {" "}
                 {/* Modified */}
@@ -79,7 +79,7 @@ const LatestNewsComponent = () => {
             <div className="bg-gray-300 h-64 mb-4"></div>
 
             {/* Date and Divider */}
-            <div className="flex items-center justify-center mb-2">
+            <div className="flex items-center mt-4  lg:items-start justify-center mb-2">
               <div className="flex flex-col items-center">
                 {" "}
                 {/* Modified */}
@@ -143,8 +143,8 @@ const LatestNewsComponent = () => {
             <div className="bg-gray-300 h-64 mb-4"></div>
 
             {/* Date and Divider */}
-            <div className="flex items-center justify-center mb-2">
-              <div className="flex flex-col items-center">
+            <div className="flex items-center mt-4  lg:items-start justify-center mb-2">
+              <div className="flex flex-col items-center lg:items-start">
                 {" "}
                 {/* Modified */}
                 <div className="text-4xl font-bold text-customBlue font-MontserratSemiBold">

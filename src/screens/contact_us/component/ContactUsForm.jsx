@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import axios from "axios";
+import { backend_url } from "../../../url";
 
 const ContactUsForm = () => {
   const [form, setForm] = useState({
@@ -7,14 +9,43 @@ const ContactUsForm = () => {
     message: "",
   });
 
+  const [errors, setErrors] = useState({}); // State to store error messages
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setForm((prevForm) => ({ ...prevForm, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  // Create validate function for form data
+  const validate = () => {
+    let errors = {};
+    if (!form.name) {
+      errors.name = "Name is required";
+    }
+    if (!form.email) {
+      errors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(form.email)) {
+      errors.email = "Email address is invalid";
+    }
+    if (!form.message) {
+      errors.message = "Message is required";
+    }
+    return errors;
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", form);
+    const validationErrors = validate(); // Validate the form data
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors); // Set errors if validation fails
+    } else {
+      console.log("Form submitted:", form);
+      const response = await axios.post(`${backend_url}/message/submit`, form);
+      alert("Message sent successfully!");
+      // Optionally reset form and errors after submission
+      setForm({ name: "", email: "", message: "" });
+      setErrors({});
+    }
   };
 
   return (
@@ -89,6 +120,8 @@ const ContactUsForm = () => {
                 >
                   Your Name
                 </label>
+                {errors.name && <p className="text-red-500">{errors.name}</p>}{" "}
+                {/* Error message */}
               </div>
 
               {/* Email Field */}
@@ -109,6 +142,8 @@ const ContactUsForm = () => {
                 >
                   Your Email
                 </label>
+                {errors.email && <p className="text-red-500">{errors.email}</p>}{" "}
+                {/* Error message */}
               </div>
 
               {/* Message Field */}
@@ -128,6 +163,10 @@ const ContactUsForm = () => {
                 >
                   Message
                 </label>
+                {errors.message && (
+                  <p className="text-red-500">{errors.message}</p>
+                )}{" "}
+                {/* Error message */}
               </div>
 
               {/* Add Button Icon */}

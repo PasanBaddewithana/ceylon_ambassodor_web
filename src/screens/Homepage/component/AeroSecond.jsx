@@ -10,14 +10,14 @@ const AeroSecond = () => {
       <div className="w-1/2 h-full flex flex-col justify-center items-center ">
         <div className="flex flex-col justify-center items-start">
           <img src={aerofly} className="w-[200px] mb-9" />
-          <p className="text-black text-[28px] font-bold">
+          <p className="text-black text-[28px] font-bold font-MontserratMedium ">
             "Your Trusted Partner{" "}
           </p>
-          <p className="text-black text-[28px] font-bold mb-5">
+          <p className="text-black text-[28px] font-bold mb-5 font-MontserratMedium ">
             in Aviation Excellence"
           </p>
-          <div className="h-[2px] w-[500px] bg-[#BC9C61] "></div>
-          <p className="text-black text-[14px] mt-4 w-[390px]">
+          <div className="h-[2px] w-[500px] bg-[#BC9C61] font-Montserrat"></div>
+          <p className="text-black text-[14px] mt-4 w-[390px] font-Montserrat">
             At Aerofly Aviation, we take pride in delivering comprehensive and
             innovative solutions to the global aviation industry. From
             maximizing cargo sales to providing world-class airline

@@ -22,6 +22,7 @@ import Footer from "../../../../src/screens/faq/component/Footer";
 import heroImage from "../../../assets/hero_image.png";
 import brandColored from "../../../assets/brand_pulse_ml_color.svg";
 import tableMeeting from "../../../assets/table_meeting.png";
+import BrandPulseSixthSection from "../component/Khmergate/BrandPulseSixthScreen";
 
 function BrandPulse() {
   const images = [
@@ -47,7 +48,7 @@ function BrandPulse() {
       <ThirdPart />
       <FourthPart fourthImage={tableMeeting} />
       <FifthSection />
-      <SixthSection
+      <BrandPulseSixthSection
         brandName="BrandPulse?"
         description="Choosing BrandPulse means working with a team that's passionate about
           crafting brands that resonate and inspire. Here's why businesses trust

@@ -33,6 +33,7 @@ function HomePage() {
     <div>
       <TopHeader />
       <Navbar />
+
       <Hero images={images} />
       <NavSection />
       <LogisticsPage />

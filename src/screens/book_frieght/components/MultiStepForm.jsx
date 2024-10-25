@@ -84,7 +84,7 @@ const MultiStepForm = ({ currentStep, nextStep, prevStep }) => {
     if (validate_form()) {
       try {
         const response = await axios.post(
-          `${backend_url}/form-submissions/submit`,
+          `${backend_url}/form/submit`,
           formData
         );
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-const SixthSection = ({
+const AeroFlySixthSection = ({
   brandName,
   description,
   subdes1,
@@ -20,14 +20,14 @@ const SixthSection = ({
       <div className="flex flex-row justify-center items-center w-1/2 ">
         <img src={brandImage} className="w-[200px]" />
         <div className="flex flex-col justify-center items-start pl-10">
-          <p className="text-[20px] text-[#015B02] mb-0">Why </p>
-          <p className="text-[28px] text-[#015B02] font-semibold mt-[-8px]">
+          <p className="text-[20px] text-black mb-0">Why </p>
+          <p className="text-[28px] text-black font-semibold mt-[-8px]">
             {brandName}
           </p>
         </div>
       </div>
 
-      <div className="w-1/2 text-[13px] pr-[50px] flex flex-col items-center justify-center text-[#015B02]">
+      <div className="w-1/2 text-[13px] pr-[50px] flex flex-col items-center justify-center text-black">
         <p className="p-0">{description}</p>
         <p className="text-[13px] p-1">
           <span className="font-bold">{subtopic1}</span>
@@ -55,4 +55,4 @@ const SixthSection = ({
   );
 };
 
-export default SixthSection;
+export default AeroFlySixthSection;

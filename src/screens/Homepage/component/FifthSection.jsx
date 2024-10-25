@@ -5,11 +5,12 @@ import digitalDesign from "../../../assets/digitaldesigndesign.jpg";
 import contentMarketing from "../../../assets/content_marketing.jpg";
 import integratedMarketing from "../../../assets/intregratedMArketing.jpg";
 import FifthSectionHeader from "./FifthSectionHeader";
+import BrandPulseFifthSectionHeader from "./Brandpulse/BrandPulseFifthSectionHeader";
 
 const FifthSection = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <FifthSectionHeader />
+      <BrandPulseFifthSectionHeader />
       <DetailCard
         image={creativeDesign}
         topicTop="Brand Creation: "
@@ -24,6 +25,8 @@ const FifthSection = () => {
         subPointDes3=" We craft compelling narratives that communicate your brand's mission, vision, and values, connecting with your audience on an emotional level and building loyalty. "
         conclusion="Whatever your vision, Brand Pulse's Brand Creation services provide the creativity and strategy you need to build a brand that speaks to your customers and stands out in the marketplace. "
         imagePosition="right"
+        textColor="#181728"
+        buttoncolor="#41cb32"
       />
       <div className="h-[2px] w-3/4 bg-black"></div>
       <DetailCard
@@ -52,6 +55,8 @@ const FifthSection = () => {
         conclusion="With BrandPulse's Digital Marketing, your brand will stay top-of-mind
           and continue to grow in the ever-evolving digital landscape."
         imagePosition="left"
+        textColor="#181728"
+        buttoncolor="#41cb32"
       />
       <div className="h-[2px] w-3/4 bg-black"></div>
       <DetailCard
@@ -74,6 +79,8 @@ const FifthSection = () => {
       your brand's vision to life, ensuring a cohesive and memorable visual
       identity."
         imagePosition="right"
+        textColor="#181728"
+        buttoncolor="#41cb32"
       />
       <div className="h-[2px] w-3/4 bg-black"></div>
 
@@ -103,6 +110,8 @@ const FifthSection = () => {
         conclusion=" With BrandPulse's Content Marketing, your brand will build lasting
       connections and establish authority in your industry."
         imagePosition="left"
+        textColor="#181728"
+        buttoncolor="#41cb32"
       />
       <div className="h-[2px] w-3/4 bg-black"></div>
       <DetailCard
@@ -124,6 +133,8 @@ const FifthSection = () => {
         conclusion=" With BrandPulse's Integrated Marketing Campaigns, your brand's message
       will be heard loud and clear. driving growth and building brand loyalty."
         imagePosition="right"
+        textColor="#181728"
+        buttoncolor="#41cb32"
       />
       <div className="h-[2px] w-3/4 bg-black"></div>
     </div>
