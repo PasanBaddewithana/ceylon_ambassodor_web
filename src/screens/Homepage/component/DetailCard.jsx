@@ -13,7 +13,7 @@ const DetailCard = ({
   subPoint3,
   subPointDes3,
   conclusion,
-  imagePosition = "left", // Default position is 'left'
+  imagePosition = "left", 
   buttoncolor,
   buttonHoverColor,
 }) => {

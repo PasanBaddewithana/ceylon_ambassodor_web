@@ -1,37 +1,44 @@
-import fatherSonImage from '../../../assets/warehouse/father-son-standing-their-warehouse-with-helmets-their-heads-looking-package-prepared-transport-looking-proud-satisfied.jpg';
-
+import fatherSonImage from "../../../assets/warehouse/father-son-standing-their-warehouse-with-helmets-their-heads-looking-package-prepared-transport-looking-proud-satisfied.jpg";
+import UFSLogo from "../../../assets/warehouse/UFS_log_Orange.svg";
 const ConnectingGlobal = () => {
-    //background color to blue 
-    return (
+  //background color to blue
+  return (
+    //height to half of the screen
+    <div className="flex flex-col md:flex-row h-1/2 bg-blue-900">
+      {/* Left side (Text and small image) align tecxt ot left  add 30 px padding */}
+      <div className="flex-1 pr-20 pl-20 pb-16">
+        <img
+          src={UFSLogo}
+          alt="warehouse"
+          className="mb-4 w-2/3 md:w-1/2 transform scale-50"
+        />
 
-        <div className="flex flex-col md:flex-row h-screen bg-blue-900">
-            {/* Left side (Text and small image) */}
-            <div className="flex-1 flex flex-col justify-center items-center p-8">
-                <img 
-                    src="https://www.ceylonambassador.com/images/warehouse/warehouse-1.jpg" 
-                    alt="warehouse" 
-                    className="mb-4 w-2/3 md:w-1/2"
-                />
-                <h1 className="text-3xl font-bold mb-4">Connecting Global</h1>
-                <p className="text-lg">
-                    We provide a range of services that connect you to the world.
-                </p>
-            </div>
+        <h1 className="text-5xl font-bold mb-3 text-white">
+          "Connecting the Globe,
+          <br /> One shipment at a Time"
+        </h1>
 
-            {/*Yellow Color Divider */}
-            
-            <div className="bg-yellow-400 w-1/12"></div>
+        <div className="w-3/4 bg-yellow-400 h-1 mb-3"></div>
+        <p className="text-lg text-white">
+        The beauty of nature is a source of endless inspiration. From the vibrant colors of a sunset to the soothing sound of a flowing river, the natural world has a way of captivating our senses. The sight of tall trees swaying in the breeze, the smell of fresh flowers blooming in the spring, and the feel of cool grass underfoot all contribute to the wonder and tranquility that nature provides. In today’s fast-paced world, taking the time to appreciate these simple yet profound moments can bring peace and balance to our lives. Nature, in its purest form, reminds us to slow down and connect with the world around us.
+        </p>
+      </div>
 
-            {/* Right side (Image only) */}
-            <div className="flex-1">
-                <img 
-                    src={fatherSonImage}
-                    alt="warehouse large" 
-                    className="object-cover w-full h-full"
-                />
-            </div>
+      {/* Middle (Vertical line)  align center */}
+        <div className="hidden md:flex items-center justify-center">
+            <div className="w-1 h-3/4 bg-yellow-400"></div>
         </div>
-    );
-}
+
+      {/* Right side (Image only) */}
+      <div className="flex-1 items-center justify-center hidden md:flex">
+        <img
+          src={fatherSonImage}
+          alt="warehouse large"
+          className="object-cover h-3/4 w-4/5"
+        />
+      </div>
+    </div>
+  );
+};
 
 export default ConnectingGlobal;
