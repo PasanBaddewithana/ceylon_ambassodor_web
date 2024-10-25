@@ -98,8 +98,11 @@ const Navbar = ({ changeColor = false }) => {
   ];
 
   const companiesLinks = [
-    { href: "#", text: "United Freight Solutions" },
+
+    { href: "/ufs", text: "United Freight Solutions" },
+
     { href: "/khmergate", text: "Khmergate" },
+
     { href: "/aerofly", text: "AEROFLY Aviation" },
     { href: "/brand-pulse", text: "Brandpulse" },
   ];

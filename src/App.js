@@ -18,6 +18,7 @@ import Khmergate from "./screens/Homepage/screen/Khmergate";
 
 import OurClientScreen from "./screens/OurClients/screens/OurClientScreen";
 import BookFrieghtScreen from "./screens/book_frieght/screens/BookFrieghtScreen";
+import WareHousePage from "./screens/Warehouse/WareHousePage";
 
 function App() {
   return (
@@ -49,7 +50,11 @@ function App() {
             <Route path="/our-clients" element={<OurClientScreen />} />
             <Route path="/book-frieghts" element={<BookFrieghtScreen />} />
             <Route path="/profile/:name" element={<ProfilePage />} />
+
+            <Route path="/ufs" element=  {<WareHousePage />} />
+
             <Route path="/khmergate" element={<Khmergate />} />
+
             <Route path="*" element={<h1>Not Found</h1>} />
           </Routes>
         </div>

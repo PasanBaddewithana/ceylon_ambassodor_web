@@ -13,10 +13,12 @@ const DetailCard = ({
   subPoint3,
   subPointDes3,
   conclusion,
+
   imagePosition = "left", // Default position is 'left'
   buttoncolor = "#000", // Default button color
   buttonHoverColor = "#333", // Default hover color
   textColor = "black", // Default text color is black
+
 }) => {
   return (
     <div className="flex flex-row items-center justify-center px-[110px] py-[70px] gap-10 font-Montserrat text-customBlue">
