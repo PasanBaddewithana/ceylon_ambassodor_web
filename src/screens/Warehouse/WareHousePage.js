@@ -11,20 +11,25 @@ import WhyChooseUs from "./components/WhyChooseUs"
 import MainImage from "../../assets/warehouse/industrial-warehouse-parking-lot-cloudy-sky-modern-distribution-center-concept-urban-architecture-industrial-design-distribution-centers-cloudy-sky-parking-lots.jpg"
 import LastSection from "./components/LastSection"
 import UFSlogo from "../../assets/warehouse/UFS_log_Orange.svg"
+import Footer from "../faq/component/Footer"
+import Navbar from "../Homepage/component/Navbar"
+import TopHeader from "../Homepage/component/TopHeader"
 
 
 const WareHousePage = () => { 
  
     return (
         <div>
+            <TopHeader />
+            <Navbar />
             <FirstSection 
                 image={MainImage}
                 first="Home"
                 second="Services"
                 third="Warehouse"
                 fourth="Contact"
-                branding="https://res.cloudinary.com/dzcmadjl1/image/upload/v1632990592/brand_pulse_ml_color"
-                midbranding="https://res.cloudinary.com/dzcmadjl1/image/upload/v1632990592/brand_pulse_ml_color"
+                branding= {UFSlogo}
+
             />
             <ConnectingGlobal />
             <IconsLayer />
@@ -39,6 +44,7 @@ const WareHousePage = () => {
                 lastImage={UFSlogo}
                 lastwords="We are committed to providing the best services to our clients"
             />
+            <Footer />
         </div>
     )
 }

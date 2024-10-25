@@ -47,7 +47,7 @@ function App() {
             <Route path="/our-clients" element={<OurClientScreen />} />
             <Route path="/book-frieghts" element={<BookFrieghtScreen />} />
             <Route path="/profile/:name" element={<ProfilePage />} />
-            <Route path="/warehouse" element=  {<WareHousePage />} />
+            <Route path="/ufs" element=  {<WareHousePage />} />
 
             <Route path="*" element={<h1>Not Found</h1>} />
           </Routes>
