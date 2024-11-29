@@ -11,37 +11,37 @@ const IconsLayer = () => {
       <CartoonCard
         image={Plane}
         h="100px"
-        alt="robot"
-        topic="Brand Strategy"
-        content="We help define your brand's positioning and create a cohesive identity that resonates with your audience,from logo design to brand storytelling."
+        alt="plane"
+        topic="Air Freight"
+        content="Delivering fast, secure, and reliable air cargo solutions with global reach and real-time tracking."
       />
       <CartoonCard
         image={Ship}
-        alt="newspaper"
-        topic="Digital Marketing"
+        alt="ship"
+        topic="Sea Freight"
         h="100px"
-        content="Our digital marketing solutions increase your brand's visibility through SEO,SEM,social media campaigns, and targeted email marketing to engage and grow your audience."
+        content="Providing cost-effective and flexible ocean freight services for all shipment sizes and types."
       />
       <CartoonCard
         image={Truck}
-        alt="bulb"
-        topic="Creative Design"
+        alt="Truck"
+        topic="Inland Freight"
         h="100px"
-        content="We design compelling visuals, from websites to packaging, that bring your brand to life and ensure a consisten, memorable customer experience."
+        content="Offering tailored and secure inland freight solutions, including temperature-controlled and custom handling options."
       />
       <CartoonCard
         image={Train}
-        alt="speaker"
-        topic="Content Marketing"
+        alt="Train"
+        topic="Warehousing"
         h="100px"
-        content="Our content marketing services create valuable, relevant conent that establishes your brand as a thought leader and fosters strong connections with your audience"
+        content="Advanced warehousing solutions with real-time inventory management and value-added services."
       />
       <CartoonCard
         image={World}
         h="100px"
         alt="slips"
-        topic="Integrated Marketing Campaigns"
-        content="We develop and execute multichannel marketing campaigns that amplify your brand's message and drive measurable results across both digital and traditional platforms"
+        topic="Global Consolidation"
+        content="Efficient multi-country consolidation and distribution services, leveraging strategic locations."
       />
     </div>
   );
