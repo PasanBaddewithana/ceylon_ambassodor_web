@@ -15,7 +15,7 @@ import Footer from "../faq/component/Footer";
 import Navbar from "../Homepage/component/Navbar";
 import TopHeader from "../Homepage/component/TopHeader";
 import FifthSectionHeader from "./components/FifthSectionHeader";
-import MainImage from "../../assets/warehouse/industrial-warehouse-parking-lot-cloudy-sky-modern-distribution-center-concept-urban-architecture-industrial-design-distribution-centers-cloudy-sky-parking-lots.png";
+import MainImage from "../../assets/warehouse/parking.jpg";
 
 const WareHousePage = () => {
   return (
