@@ -16,6 +16,7 @@ import Navbar from "../Homepage/component/Navbar";
 import TopHeader from "../Homepage/component/TopHeader";
 import FifthSectionHeader from "./components/FifthSectionHeader";
 import MainImage from "../../assets/warehouse/parking.jpg";
+import GlobalConsollidation from "./components/GlobalConsollidation";
 
 const WareHousePage = () => {
   return (
@@ -38,6 +39,7 @@ const WareHousePage = () => {
       <SeaFreight />
       <IslansFreight />
       <WareHousingAndDistribution />
+      <GlobalConsollidation />
       <WhyChooseUs />
       <SeventhSection />
       <LastSection
