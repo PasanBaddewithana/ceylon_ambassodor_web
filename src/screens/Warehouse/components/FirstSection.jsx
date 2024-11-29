@@ -29,7 +29,7 @@ const FirstSection = ({
           alt="Mid Brand Logo"
           className="absolute top-1/2  w-[340px]"
         /> */}
-        <div className="absolute bottom-0 w-screen">
+        <div className="absolute bottom-0 w-screen font-kollektif">
           <BrandNavSection
             first={first}
             second={second}

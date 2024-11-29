@@ -24,10 +24,10 @@ const WareHousePage = () => {
       <Navbar />
       <FirstSection
         image={MainImage}
-        first="Home"
-        second="Services"
-        third="Warehouse"
-        fourth="Contact"
+        first="AIR FREIGHTS"
+        second="SEA FRIGHTS"
+        third="INLAND FRIGHTS"
+        fourth="WAREHOUSING"
         branding={UFSlogo}
       />
       <ConnectingGlobal />
