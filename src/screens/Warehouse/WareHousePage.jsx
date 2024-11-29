@@ -31,7 +31,7 @@ const WareHousePage = () => {
         branding={UFSlogo}
       />
       <ConnectingGlobal />
-      <FifthSectionHeader />
+
       <IconsLayer />
       <ContainerImage />
       <ForwardTogether />
