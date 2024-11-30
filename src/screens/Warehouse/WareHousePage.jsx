@@ -32,9 +32,9 @@ const WareHousePage = () => {
         branding={UFSlogo}
       />
       <ConnectingGlobal />
-
       <IconsLayer />
       <ContainerImage />
+      <FifthSectionHeader />
       <ForwardTogether />
       <SeaFreight />
       <IslansFreight />

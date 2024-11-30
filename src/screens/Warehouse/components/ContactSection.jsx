@@ -2,7 +2,7 @@ import React from "react";
 
 const SeventhSection = () => {
   return (
-    <div className="bg-[#181728] text-white flex flex-row items-center justify-center p-20 px-[180px] text-[10px] gap-20">
+    <div className="bg-customBlue text-white flex flex-row items-center justify-center p-20 px-[180px] text-[10px] gap-20">
       <div className="flex flex-row justify-center items-center gap-4">
         <div>
           <div className="rounded-full w-[80px] h-[80px] bg-white"></div>
