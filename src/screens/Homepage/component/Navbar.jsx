@@ -98,7 +98,6 @@ const Navbar = ({ changeColor = false }) => {
   ];
 
   const companiesLinks = [
-
     { href: "/ufs", text: "United Freight Solutions" },
 
     { href: "/khmergate", text: "Khmergate" },
