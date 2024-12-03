@@ -9,7 +9,7 @@ import white_logo from "../../../assets/white_logo.svg";
 
 const Footer = () => {
   return (
-    <footer className="container bg-[#031c3f] text-white py-8">
+    <footer className="bg-[#031c3f] text-white py-8">
       <div className="container mx-auto px-4">
         {/* Top Quote */}
         <p className="text-center text-lg mb-8 font-light">
@@ -17,12 +17,10 @@ const Footer = () => {
           yours."
         </p>
 
-        <hr className="border-t border-white mx-10 mb-8" />
-
         {/* Footer Content */}
-        <div className="flex flex-wrap justify-between mb-8">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mb-8">
           {/* Logo Section */}
-          <div className="flex justify-center md:w-1/4 mb-6 md:mb-0 text-center mt-3 md:text-left">
+          <div className="flex justify-center mb-6 md:mb-0 text-center mt-3">
             <img
               src={white_logo}
               alt="Ceylon Ambassador"
@@ -32,13 +30,10 @@ const Footer = () => {
           </div>
 
           {/* Footer Links - Divided into sections */}
-          <div className="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-            {/* Reduced gap between columns */}
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div>
               <h3 className="font-semibold mb-3 text-sm">Our Divisions</h3>
-              {/* Reduced font size */}
               <ul className="space-y-1 text-xs">
-                {/* Reduced space between items and text size */}
                 <li>About Us</li>
                 <li>Our Team</li>
                 <li>Our Clients</li>
@@ -49,10 +44,7 @@ const Footer = () => {
             </div>
             <div>
               <h3 className="font-semibold mb-3 text-sm">Company Service</h3>
-              {/* Reduced font size */}
               <ul className="space-y-1 text-xs">
-                {" "}
-                {/* Reduced space between items and text size */}
                 <li>Our Services</li>
                 <li>What We Do</li>
                 <li>Request a Freight</li>
@@ -64,10 +56,7 @@ const Footer = () => {
             </div>
             <div>
               <h3 className="font-semibold mb-3 text-sm">Contact Us</h3>
-              {/* Reduced font size */}
               <ul className="space-y-1 text-xs">
-                {" "}
-                {/* Reduced space between items and text size */}
                 <li>Find Us Here</li>
                 <li>Get In Touch</li>
                 <li>FAQ Page</li>
@@ -76,11 +65,8 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-3 text-sm">Latest News</h3>{" "}
-              {/* Reduced font size */}
+              <h3 className="font-semibold mb-3 text-sm">Latest News</h3>
               <ul className="space-y-1 text-xs">
-                {" "}
-                {/* Reduced space between items and text size */}
                 <li>Expert Tips</li>
                 <li>A Sustainable Future</li>
                 <li>Fresh Start</li>
@@ -91,17 +77,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr className="border-t border-white mx-10 mb-8" />
-
         {/* Social Media Icons */}
-        <div className="flex justify-between items-center ml-8 mr-8">
-          <p className="text-center w-full text-xs">
-            {" "}
-            {/* Reduced font size */}
+        <div className="flex justify-center items-center mb-8">
+          <p className="text-center w-full text-xs mb-4">
             &copy; 2024 Ceylon Ambassador, All Rights Reserved
           </p>
 
-          <div className="flex justify-end space-x-4">
+          <div className="flex justify-center space-x-4">
             <a href="#" className="hover:text-gray-400" aria-label="Facebook">
               <FaFacebookF size={20} /> {/* Slightly reduced icon size */}
             </a>
