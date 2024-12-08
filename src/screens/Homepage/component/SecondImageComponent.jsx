@@ -23,17 +23,18 @@ const SecondHomeImageComponent = () => {
           <div className="lg:ml-2">
             {/* Main Heading */}
             <h1 className="text-xl lg:text-4xl font-bold mb-6 font-MontserratMedium ">
-              Your Global Logistics Partner for Seamless Solutions
+              Ceylon Ambassador: Pioneering Global Connections
             </h1>
 
             {/* Description */}
             <p className="text-sm lg:text-sm mb-6 font-Montserrat">
-              UFS is a leader in logistics and supply chain management, offering
-              a full suite of services including air, sea, and inland freight,
-              warehousing, and global consolidation. With a strong network of
-              partners and state-of-the-art technology, UFS delivers efficient,
-              reliable, and cost-effective logistics solutions that meet the
-              complex needs of businesses worldwide.
+              Welcome to <strong>Ceylon Ambassador,</strong> where innovation meets excellence to
+              create a world of seamless possibilities. As the mother brand
+              behind industry leaders in logistics, travel, aviation, and
+              branding, we are dedicated to empowering businesses and
+              individuals to thrive in a globally connected marketplace. Our
+              mission is simple: to bridge distances, break boundaries, and
+              deliver unmatched value through our network of specialized brands.
             </p>
 
             <div className="border-t border-white opacity-80 my-8"></div>
@@ -42,9 +43,19 @@ const SecondHomeImageComponent = () => {
             <div className="text-left flex items-center space-x-4">
               <div className="h-8 w-8 bg-white rounded-full"></div>
               <p className="text-sm lg:text-lg font-semibold font-Montserrat">
-                UFS is a leader in logistics and supply chain
+              A Legacy of Leadership
               </p>
+              
             </div>
+            <p className="text-sm lg:text-sm mb-6 font-Montserrat">
+              Welcome to <strong>Ceylon Ambassador,</strong> where innovation meets excellence to
+              create a world of seamless possibilities. As the mother brand
+              behind industry leaders in logistics, travel, aviation, and
+              branding, we are dedicated to empowering businesses and
+              individuals to thrive in a globally connected marketplace. Our
+              mission is simple: to bridge distances, break boundaries, and
+              deliver unmatched value through our network of specialized brands.
+            </p>
           </div>
         </div>
       </div>

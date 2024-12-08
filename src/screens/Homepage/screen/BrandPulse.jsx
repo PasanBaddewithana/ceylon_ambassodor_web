@@ -4,11 +4,6 @@ import Hero from "../component/HeroSection";
 import NavSection from "../component/NavigationSection";
 import TopHeader from "../component/TopHeader";
 import Navbar from "../component/Navbar";
-import PlanImage from "../../../assets/editPlaneImage.jpg";
-import CargoService from "../../../assets/cargo-service-image.jpg";
-import OfficeImage from "../../../assets/office-supplies-sheets-notes.jpg";
-import courierImage from "../../../assets/courier.jpg";
-import RoboImage from "../../../assets/roboimage.jpg";
 import BrandNavSection from "../component/BrandPulseNavigationSection";
 import SecondPart from "../component/SecondPart";
 import FirstSection from "../component/FirstSection";
@@ -19,26 +14,27 @@ import SixthSection from "../component/SixthSection";
 import SeventhSection from "../component/SeventhSection";
 import LastSection from "../component/LastSection";
 import Footer from "../../../../src/screens/faq/component/Footer";
-import heroImage from "../../../assets/hero_image.png";
-import brandColored from "../../../assets/brand_pulse_ml_color.svg";
 import tableMeeting from "../../../assets/table_meeting.png";
 import BrandPulseSixthSection from "../component/Khmergate/BrandPulseSixthScreen";
 
+
+// Assets
+import brandColored from "../../../assets/brand_pulse_ml_color.svg";
+
+// Video assets
+import Video1 from "../../../assets/BrandPulse/Brand Stratergy.mp4";
+import Video2 from "../../../assets/BrandPulse/Content Creation.mp4";
+import Video3 from "../../../assets/BrandPulse/Creative Design.mp4";
+import Video4 from "../../../assets/BrandPulse/Digital Marketing.mp4";
+
 function BrandPulse() {
-  const images = [
-    PlanImage,
-    CargoService,
-    OfficeImage,
-    courierImage,
-    RoboImage,
-  ];
   return (
     <div>
       <TopHeader />
       <Navbar />
       <FirstSection
+        videos={[Video1, Video2, Video3, Video4]} // Pass the video array
         branding={brandColored}
-        image={heroImage}
         first="BRAND STRATEGY"
         second="DIGITAL MARKETING"
         third="CREATIVE DESIGN"
@@ -50,29 +46,17 @@ function BrandPulse() {
       <FifthSection />
       <BrandPulseSixthSection
         brandName="BrandPulse?"
-        description="Choosing BrandPulse means working with a team that's passionate about
-          crafting brands that resonate and inspire. Here's why businesses trust
-          us with their branding and marketing needs:"
+        description="Choosing BrandPulse means working with a team that's passionate about crafting brands that resonate and inspire. Here's why businesses trust us with their branding and marketing needs:"
         subtopic1="Creative Expertise:"
-        subdes1="At BrandPulse, we bring creativity to every project,
-          ensuring that your brand is visually stunning and strategically
-          aligned with your goals."
+        subdes1="At BrandPulse, we bring creativity to every project, ensuring that your brand is visually stunning and strategically aligned with your goals."
         subtopic2="Tailored Solutions: "
-        subdes2="We understand that every brand is unique, which is why we
-          offer customized solutions designed to meet your specific business
-          objectives and challenges."
+        subdes2="We understand that every brand is unique, which is why we offer customized solutions designed to meet your specific business objectives and challenges."
         subtopic3="Data-Driven Strategy:"
-        subdes3="We leverage data and analytics to inform every decision,
-          ensuring that your marketing campaigns are optimized for success and
-          delivering measurable results."
+        subdes3="We leverage data and analytics to inform every decision, ensuring that your marketing campaigns are optimized for success and delivering measurable results."
         subtopic4="Seamless Collaboration:"
-        subdes4=" We work closely with your team throughout the entire
-          process, ensuring that every aspect of your brand is aligned with your
-          vision and consistently executed."
+        subdes4="We work closely with your team throughout the entire process, ensuring that every aspect of your brand is aligned with your vision and consistently executed."
         subtopic5="Long-Lasting Impact:"
-        subdes5="Our goal is to create brands that stand the test of time,
-          leaving a lasting impression on your audience and driving long-term
-          business growth."
+        subdes5="Our goal is to create brands that stand the test of time, leaving a lasting impression on your audience and driving long-term business growth."
         brandImage={brandColored}
       />
       <SeventhSection />

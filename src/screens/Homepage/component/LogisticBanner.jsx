@@ -22,18 +22,16 @@ const LogisticsBanner = () => {
 
           {/* Title and Description */}
           <h1 className="text-2xl font-bold text-customBlue font-MontserratMedium">
-            Your Global Logistics
-            <br />
-            Partner for Seamless Solutions
+            Connecting Ideas. Moving Dreams. Delivering Excellence.
           </h1>
           <p className="mt-8 text-sm text-customBlue font-Montserrat">
-            UFS is a leader in logistics and supply chain management, offering a
-            full suite of services including air, sea, and inland freight,
-            warehousing, and global consolidation. With a strong network of
-            partners and state-of-the-art technology, UFS delivers efficient,
-            reliable, and cost-effective logistics solutions that meet the
-            complex needs of businesses worldwide.
+            At <strong>Ceylon Ambassador,</strong> we believe in the power of connection. Whether
+            it’s moving goods, enabling travel, fueling aviation growth, or
+            shaping brands, we are here to bring your vision to life. Let us
+            partner with you to redefine what’s possible.
           </p>
+          <br />
+          <h3 className="text-1xl font-bold text-customBlue font-MontserratMedium">  Ceylon Ambassador: At the heart of global progress.</h3>
         </div>
       </div>
     </div>
