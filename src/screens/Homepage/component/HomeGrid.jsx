@@ -1,20 +1,44 @@
 import React from "react";
+import Icon1Black from "../../../assets/blue_ufs_logo.svg";
+import Icon1Color from "../../../assets/home/ufs_orange.png";
+import Icon2Black from "../../../assets/Aerofly_blue_logo.svg";
+import Icon2Color from "../../../assets/aeroflylogo.svg";
+import Icon3Black from "../../../assets/khmergate_blue_logo.svg";
+import Icon3Color from "../../../assets/Khmergate/khermgate_green_logo.svg";
+import Icon4Black from "../../../assets/brand_pulse_blue_logo.svg";
+import Icon4Color from "../../../assets/brand_pulse_ml_color.svg";
 
 const HomeGridComponent = () => {
+  const icons = [
+    { black: Icon1Black, color: Icon1Color },
+    { black: Icon2Black, color: Icon2Color },
+    { black: Icon3Black, color: Icon3Color },
+    { black: Icon4Black, color: Icon4Color },
+  ];
+
   return (
-    <div className="w-full h-[200px] border border-gray-400">
-      <div className="grid grid-cols-4 divide-x-[2px] divide-customBlue h-full border-t-2 border-customBlue">
-        {/* Column 1 */}
-        <div className="bg-[#A9ABAA]"></div>
-
-        {/* Column 2 */}
-        <div className="bg-[#A9ABAA]"></div>
-
-        {/* Column 3 */}
-        <div className="bg-[#A9ABAA]"></div>
-
-        {/* Column 4 */}
-        <div className="bg-[#A9ABAA]"></div>
+    <div className="w-full h-[250px] overflow-hidden bg-[#A9ABAA] border border-gray-400">
+      <div className="flex animate-train gap-x-4">
+        {/* Duplicated icons for smooth loop */}
+        {[...icons, ...icons].map((icon, index) => (
+          <div
+            key={index}
+            className="relative flex items-center justify-center min-w-[200px] group"
+          >
+            {/* Black Icon */}
+            <img
+              src={icon.black}
+              alt={`Icon ${index + 1} Black`}
+              className="h-28 w-30 transition-opacity duration-300 group-hover:opacity-0"
+            />
+            {/* Colored Icon */}
+            <img
+              src={icon.color}
+              alt={`Icon ${index + 1} Color`}
+              className="h-28 w-30 absolute opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

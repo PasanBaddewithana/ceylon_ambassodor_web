@@ -44,3 +44,16 @@
 .btn-secondary {
   @apply bg-customBlue text-white  px-6 py-0  hover:bg-customBlue transition;
 }
+
+@keyframes train-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-train {
+  animation: train-scroll 20s linear infinite;
+}
