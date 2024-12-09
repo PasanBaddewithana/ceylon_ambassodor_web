@@ -1,6 +1,6 @@
 import React from "react";
 import DetailCard from "./DetailCard";
-import image from "../../../assets/warehouse/transport-logistics-products-2.jpg";
+import image from "../../../assets/ufsnew2.jpg";
 const IslansFreight = () => {
   return (
     <>

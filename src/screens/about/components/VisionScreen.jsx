@@ -8,14 +8,19 @@ const VisionScreen = () => {
         {/* Sidebar - Left side (5 columns) */}
         <div className="w-4/12 bg-white flex flex-col justify-start items-start">
           <div className="space-y-2 text-left">
-            {[...Array(6)].map((_, index) => (
-              <p
-                key={index}
-                className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2"
-              >
+              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2">
                 UNITED FREIGHT SOLUTIONS
               </p>
-            ))}
+              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2">
+              KhmerGate
+              </p>
+              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2">
+              Aerofly Aviation
+              </p>
+              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2">
+              BrandPulse
+              </p>
+          
           </div>
           <div className="mt-16 w-40 h-40 bg-[#031c3f] flex justify-center items-center">
             <div className="w-12 h-12 bg-[#d8b572] flex justify-center items-center">

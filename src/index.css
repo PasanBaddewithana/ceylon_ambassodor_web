@@ -57,3 +57,19 @@
 .animate-train {
   animation: train-scroll 20s linear infinite;
 }
+
+.branding-animation {
+  animation: train-move 5s linear infinite;
+}
+
+@keyframes train-move {
+  0% {
+    transform: translateX(-100%) translateY(-50%);
+  }
+  50% {
+    transform: translateX(10%) translateY(-50%);
+  }
+  100% {
+    transform: translateX(100%) translateY(-50%);
+  }
+}

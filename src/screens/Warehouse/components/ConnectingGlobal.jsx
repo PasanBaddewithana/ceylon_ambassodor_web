@@ -14,21 +14,16 @@ const ConnectingGlobal = () => {
         />
 
         <h1 className="text-3xl font-bold mb-3 text-white font-MontserratMedium">
-          "Connecting the Globe,
-          <br /> One shipment at a Time"
+        United Freight Solutions: Logistics with 
+        Precision and Purpose
         </h1>
 
         <div className="w-3/4 bg-[#c6a664] h-[2px] mb-3"></div>
-        <p className="text-xs text-white font-Montserrat lg:pr-20 lg:mt-5">
-          At KhmerGate, we believe that travel is more than just visiting
-          places—it's about creating memories, discovering new cultures, and
-          experiencing life in its most authentic form. As Cambodia's premier
-          travel and tourism company, we offer a curated selection of tours and
-          services that showcase the beauty, history, and culture of Cambodia,
-          as well as global destinations. Whether you're seeking a serene
-          retreat in the heart of nature, an immersive cultural experience, or
-          an adventurous journey across borders, KhmerGate is your gateway to
-          the world.
+        <p className="text-s text-white font-Montserrat lg:pr-20 lg:mt-5">
+        At <strong>United Freight Solutions (UFS) </strong>, we believe that every shipment tells a story of growth, opportunity, and connection. 
+        Whether you’re moving goods across continents or locally, our logistics solutions are designed to provide <strong>speed, efficiency, and reliability.</strong> 
+        With UFS, you’re not just shipping products—you’re moving your business forward with a trusted partner committed to excellence.
+
         </p>
       </div>
 

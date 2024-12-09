@@ -30,8 +30,8 @@ function Khmergate() {
       <FirstSection
         videos={[Video1, Video2, Video3, Video4]} // Pass the video array
         branding={khmergate_logo}
-        first="INBOUND TOURS"
-        second="OUTBOUND TOURS"
+        first="AIR TICKETING"
+        second="INBOUND TOURS"
         third="EVENT SERVICES"
         fourth="SPECIAL INTEREST TOURS"
       />

@@ -18,7 +18,7 @@ const HomeGridComponent = () => {
 
   return (
     <div className="w-full h-[250px] overflow-hidden bg-[#A9ABAA] border border-gray-400">
-      <div className="flex animate-train gap-x-4">
+      <div className="flex animate-train gap-x-10">
         {/* Duplicated icons for smooth loop */}
         {[...icons, ...icons].map((icon, index) => (
           <div

@@ -29,10 +29,10 @@ function Aerofly() {
       <FirstSection
         videos={[Video1, Video2, Video3, Video4]} // Array of video sources
         branding={aerofly}
-        first="CARGO CAPACITY MANAGEMENT"
+        first="AIR CHARTER SOLUTIONS"
         second="GENERAL SALES & SERVICES AGENT"
         third="AIRLINE REPRESENTATION"
-        fourth="CUSTOM SERVICE SOLUTIONS"
+        fourth="CARGO CAPACITY MANAGEMENT"
       />
       <AeroSecond />
       <AeroThirdPart />

@@ -19,12 +19,15 @@ const JobListingsPage = () => {
         <div className="lg:w-1/2 flex flex-col justify-center border-l-2 border-bggray mt-8 pb-4 lg:mt-0">
           <div className="border-b-2 border-bggray pl-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              Fast and professional shipping services
+              Available Positions at Ceylon Ambassador
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              elementum, lacus a cursus hendrerit, lectus risus rhoncus nunc,
-              sit amet accumsan.
+              Join the team that’s redefining global logistics and making an
+              impact across industries! At Ceylon Ambassador, we believe that
+              great people make a great company. We’re looking for talented,
+              passionate individuals to join our crew and contribute to our
+              mission of delivering excellence in logistics, aviation, travel,
+              and branding.
             </p>
           </div>
           <div className="mt-4 ml-8 flex items-center">

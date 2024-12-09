@@ -13,10 +13,16 @@ function FAQ_Screen() {
         <Navbar />
         <div className="mt-10 ml-24">
           <h1 className="text-5xl font-Montserrat  font-bold text-black">
-            FAQ Page
+          Frequently Asked Questions
           </h1>
+          <p> At Ceylon Ambassador, we understand that you may have questions about our services. Below, we’ve compiled some of 
+the most common inquiries to provide you with quick and helpful answers. If you don’t find what you’re looking for, feel free 
+to leave a reply or contact us directly!</p>
         </div>
+       
+      
       </div>
+     
 
       {/* Make sure FAQ_Content is placed below Navbar */}
       <div className="mt-3">

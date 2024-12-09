@@ -19,12 +19,15 @@ const HeaderPart = () => {
         <div className="lg:w-1/2 flex flex-col justify-center border-l-2 border-bggray mt-8 pb-4 lg:mt-0">
           <div className="border-b-2 border-bggray pl-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              Fast and professional shipping services
+              The Heart of Ceylon Ambassador
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              elementum, lacus a cursus hendrerit, lectus risus rhoncus nunc,
-              sit amet accumsan.
+              At <strong>Ceylon Ambassador,</strong> our greatest strength lies in our people.
+              Behind every seamless shipment, innovative solution, and
+              successful project is a dedicated team of experts who work
+              tirelessly to deliver excellence. Our crew is a diverse group of
+              professionals, united by a shared vision to connect businesses and
+              people across the globe with precision, care, and innovation.
             </p>
           </div>
           <div className="mt-4 ml-8 flex items-center">

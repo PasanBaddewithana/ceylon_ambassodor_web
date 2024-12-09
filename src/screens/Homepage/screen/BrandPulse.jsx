@@ -12,7 +12,7 @@ import FourthPart from "../component/FourthPart";
 import FifthSection from "../component/FifthSection";
 import SixthSection from "../component/SixthSection";
 import SeventhSection from "../component/SeventhSection";
-import LastSection from "../component/LastSection";
+import LastSection from "../component/BrandPulseLastSection";
 import Footer from "../../../../src/screens/faq/component/Footer";
 import tableMeeting from "../../../assets/table_meeting.png";
 import BrandPulseSixthSection from "../component/Khmergate/BrandPulseSixthScreen";

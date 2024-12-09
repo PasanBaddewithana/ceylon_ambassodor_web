@@ -39,11 +39,13 @@ const FirstSection = ({
                 playsInline
               />
               {/* Branding over the video */}
-              <img
-                src={branding}
-                alt="Brand Logo"
-                className="absolute top-1/2 right-[0%] transform -translate-x-1/4 -translate-y-1/2 w-[500px]"
-              />
+              <div className="branding-animation absolute top-1/2 right-[10%] transform -translate-y-1/2">
+                <img
+                  src={branding}
+                  alt="Brand Logo"
+                  className="w-[200px] lg:w-[300px]"
+                />
+              </div>
             </div>
           ))}
         </Slider>
