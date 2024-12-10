@@ -111,3 +111,27 @@
   transform: translateY(0);
 }
 
+/* Component Container */
+.component-wrapper {
+  background-color: white;
+  padding: 50px 20px; /* Adjust padding for spacing inside components */
+  margin: 0 auto; /* Center alignment */
+  position: relative;
+  z-index: 2; /* Ensure components are above the spacer */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for better visual separation */
+}
+
+/* Parallax Spacer */
+.parallax-spacer {
+  height: 600px; /* Adjust height as needed */
+  background-image: url('./assets/warehouse/transport-logistics-concept-3.jpg'); /* Use ContainerImage source */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1; /* Below components */
+}
+
+
+
