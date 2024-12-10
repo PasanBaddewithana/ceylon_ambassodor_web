@@ -78,21 +78,30 @@ With Aerofly Aviation's Airline Representation, you can expand your global reach
 
       <DetailCard
         image={focused}
-        topicTop="Customer Service Solutions:"
+        topicTop=" Air Charter Solutions:"
         topicBottom="
-Ensuring a Seamless Experience"
+ Flexibility in the Sky"
         description="
-At Aerofly Aviation, we understand that exceptional customer service is the key to building lasting relationships with your clients. Our Customer Service Solutions are designed to provide world-class support at every stage of the customer journey, ensuring that your airline's reputation remains strong."
+ At Aerofly Aviation, we understand that every shipment or journey is unique, and 
+sometimes scheduled services just don’t align with your needs. Our Air Charter 
+Solutions provide flexible, on-demand flight options tailored to meet your specific 
+requirements. Whether it’s critical cargo, oversized freight, or exclusive passenger 
+services, we ensure a seamless experience, designed for efficiency and reliability."
         subTopic="
 Our Customer Service Solutions Include:"
-        subPoint1="24/7 Support: "
-        subPointDes1="We offer round-the-clock customer service, ensuring that your clients can reach us anytime, anywhere, with fast and effective resolutions."
-        subPoint2="Proactive Communication: "
-        subPointDes2="We keep customers informed throughout the process, providing updates on cargo status, delays, and other important information, so they always know where their goods are."
-        subPoint3="Tailored Service: "
-        subPointDes3="Our team is trained to handle a wide range of inquiries, from cargo booking assistance to post-delivery support, ensuring that every interaction is positive and efficient."
-        conclusion="
-With Aerofly Aviation, your clients will experience smooth, reliable service at every step of their journey, strengthening your airline's brand and loyalty."
+        subPoint1=" Cargo Air Charters: "
+        subPointDes1="Ideal for time-sensitive, oversized, or specialized 
+shipments, we provide customized flight solutions that deliver goods safely 
+and quickly to their destination."
+        subPoint2=" Passenger Charters:"
+        subPointDes2="Whether for corporate travel, group transportation, or 
+private journeys, our passenger charter services offer luxury, convenience, 
+and privacy tailored to your schedule."
+        subPoint3=" Global Access:  "
+        subPointDes3="With access to a vast network of aircraft, we arrange flights to 
+even the most remote locations, ensuring seamless connectivity worldwide."
+        conclusion="With Aerofly Aviation, you gain access to tailored, efficient, and reliable air charter 
+services designed to adapt to your needs and keep you ahead of the competition."
         imagePosition="left"
         buttonHoverColor="#927b49"
         buttoncolor="#C7A764"

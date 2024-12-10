@@ -40,9 +40,11 @@ const FAQ_Content = () => {
 };
 
 const accordionData = [
-  { title: "Eu sit modo...", content: "Lorem ipsum dolor sit amet..." },
-  { title: "Enim volutpat...", content: "Lorem ipsum dolor sit amet..." },
-  { title: "An eam adipisci...", content: "Lorem ipsum dolor sit amet..." },
+  { title: "1. What logistics services does Ceylon Ambassador offer?", content: "We provide a comprehensive range of logistics solutions, including air freight, sea freight, inland freight, warehousing, distribution, and global consolidation. Our services are designed to meet the unique needs of businesses worldwide." },
+  { title: " 2. How can I track my shipment?", content: " You can track your shipment in real time using our advanced tracking system. Simply enter your tracking number on our platform, and you’ll receive updates on the location and status of your shipment." },
+  { title: "3. Do you offer customized logistics solutions?", content: "Yes, we specialize in tailoring our services to suit your specific requirements. Whether it’s a unique cargo type, urgent delivery timelines, or specific routing, our team works closely with you to ensure your logistics needs are met." },
+  { title: "4. Which industries does Ceylon Ambassador serve?", content: " We cater to a wide range of industries, including retail, e-commerce, healthcare, pharmaceuticals, automotive, manufacturing, and more. Our solutions are adaptable to meet the demands of any industry." },
+  { title: " 5. How do I request a quote for your services?", content: " You can easily request a quote by filling out the Contact Us form on our website or by reaching out to our customer support team directly. We’ll get back to you promptly with a detailed estimate." },
   // Add more as needed
 ];
 
@@ -68,7 +70,7 @@ const Accordion = ({ title, content, isActive, onClick }) => (
 
 const ReplyForm = () => (
   <div className="mt-8 p-6 bg-white rounded-lg shadow-md">
-    <h2 className="text-4xl font-bold mb-6">Leave a reply</h2>
+    <h2 className="text-4xl font-bold mb-6"> Still Have Questions? Leave a Reply Below!</h2>
     <form className="space-y-4">
       <input
         type="text"
@@ -132,6 +134,7 @@ const Sidebar = () => {
         <div className="space-y-2">
           <span className="bg-gray-200 px-2 mx-1 py-1 rounded">Business</span>
           <span className="bg-gray-200 px-2 mx-1 py-1 rounded">Shipping</span>
+          <span className="bg-gray-200 px-2 mx-1 py-1 rounded">Logistics</span>
           {/* Add more tags as needed */}
         </div>
       </div>

@@ -16,12 +16,19 @@ const Navbar = ({ changeColor = false }) => {
   const companiesDropdownRef = useRef(null);
   const sidebarRef = useRef(null);
 
-  const toggleDropdown = (setter) => {
-    setter((prev) => !prev);
-  };
+  const contactTimeoutRef = useRef(null);
+  const officeTimeoutRef = useRef(null);
+  const companiesTimeoutRef = useRef(null);
 
   const toggleSidebar = () => {
     setSidebarOpen((prev) => !prev);
+  };
+
+  const clearTimeoutRef = (ref) => {
+    if (ref.current) {
+      clearTimeout(ref.current);
+      ref.current = null;
+    }
   };
 
   const handleClickOutside = (event) => {
@@ -29,18 +36,21 @@ const Navbar = ({ changeColor = false }) => {
       contactDropdownRef.current &&
       !contactDropdownRef.current.contains(event.target)
     ) {
+      clearTimeoutRef(contactTimeoutRef);
       setContactDropdownOpen(false);
     }
     if (
       officeDropdownRef.current &&
       !officeDropdownRef.current.contains(event.target)
     ) {
+      clearTimeoutRef(officeTimeoutRef);
       setOfficeDropdownOpen(false);
     }
     if (
       companiesDropdownRef.current &&
       !companiesDropdownRef.current.contains(event.target)
     ) {
+      clearTimeoutRef(companiesTimeoutRef);
       setCompaniesDropdownOpen(false);
     }
     if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
@@ -52,6 +62,30 @@ const Navbar = ({ changeColor = false }) => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  const dropdownWithDelay = (
+    ref,
+    isOpen,
+    setOpen,
+    timeoutRef,
+    links,
+    buttonText
+  ) => (
+    <div
+      className="relative group"
+      ref={ref}
+      onMouseEnter={() => {
+        clearTimeoutRef(timeoutRef);
+        setOpen(true);
+      }}
+      onMouseLeave={() => {
+        timeoutRef.current = setTimeout(() => setOpen(false), 100); // 300ms delay
+      }}
+    >
+      <button className="relative group text-base">{buttonText}</button>
+      {isOpen && <DropdownMenu links={links} />}
+    </div>
+  );
 
   const contactLinks = [
     { href: "/contact-us", text: "Contact Us" },
@@ -69,8 +103,8 @@ const Navbar = ({ changeColor = false }) => {
 
   const companiesLinks = [
     { href: "/ufs", text: "United Freight Solutions" },
-    { href: "/khmergate", text: "Khmergate" },
     { href: "/aerofly", text: "AEROFLY Aviation" },
+    { href: "/khmergate", text: "Khmergate" },
     { href: "/brand-pulse", text: "Brandpulse" },
   ];
 
@@ -99,39 +133,34 @@ const Navbar = ({ changeColor = false }) => {
               </Link>
 
               {/* Companies Dropdown */}
-              <div
-                className="relative group"
-                ref={companiesDropdownRef}
-                onMouseEnter={() => setCompaniesDropdownOpen(true)}
-                onMouseLeave={() => setCompaniesDropdownOpen(false)}
-              >
-                <button className="relative group text-base">Companies</button>
-                {isCompaniesDropdownOpen && (
-                  <DropdownMenu links={companiesLinks} />
-                )}
-              </div>
+              {dropdownWithDelay(
+                companiesDropdownRef,
+                isCompaniesDropdownOpen,
+                setCompaniesDropdownOpen,
+                companiesTimeoutRef,
+                companiesLinks,
+                "Companies"
+              )}
 
               {/* Office Dropdown */}
-              <div
-                className="relative group"
-                ref={officeDropdownRef}
-                onMouseEnter={() => setOfficeDropdownOpen(true)}
-                onMouseLeave={() => setOfficeDropdownOpen(false)}
-              >
-                <button className="relative group text-base">Office</button>
-                {isOfficeDropdownOpen && <DropdownMenu links={officeLinks} />}
-              </div>
+              {dropdownWithDelay(
+                officeDropdownRef,
+                isOfficeDropdownOpen,
+                setOfficeDropdownOpen,
+                officeTimeoutRef,
+                officeLinks,
+                "Office"
+              )}
 
               {/* Contact Dropdown */}
-              <div
-                className="relative group"
-                ref={contactDropdownRef}
-                onMouseEnter={() => setContactDropdownOpen(true)}
-                onMouseLeave={() => setContactDropdownOpen(false)}
-              >
-                <button className="relative group text-base">Contact</button>
-                {isContactDropdownOpen && <DropdownMenu links={contactLinks} />}
-              </div>
+              {dropdownWithDelay(
+                contactDropdownRef,
+                isContactDropdownOpen,
+                setContactDropdownOpen,
+                contactTimeoutRef,
+                contactLinks,
+                "Contact"
+              )}
             </div>
           </div>
 
@@ -170,21 +199,21 @@ const Navbar = ({ changeColor = false }) => {
           </Link>
           <button
             className="text-xl font-bold"
-            onClick={() => toggleDropdown(setCompaniesDropdownOpen)}
+            onClick={() => setCompaniesDropdownOpen(!isCompaniesDropdownOpen)}
           >
             Companies
           </button>
           {isCompaniesDropdownOpen && <DropdownMenu links={companiesLinks} />}
           <button
             className="text-xl font-bold"
-            onClick={() => toggleDropdown(setOfficeDropdownOpen)}
+            onClick={() => setOfficeDropdownOpen(!isOfficeDropdownOpen)}
           >
             Office
           </button>
           {isOfficeDropdownOpen && <DropdownMenu links={officeLinks} />}
           <button
             className="text-xl font-bold"
-            onClick={() => toggleDropdown(setContactDropdownOpen)}
+            onClick={() => setContactDropdownOpen(!isContactDropdownOpen)}
           >
             Contact
           </button>

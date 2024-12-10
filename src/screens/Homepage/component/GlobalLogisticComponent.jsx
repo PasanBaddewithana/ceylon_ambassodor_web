@@ -21,24 +21,29 @@ const GlobalLogisticsComponent = () => {
             className="h-12 w-12 lg:h-14 lg:w-14"
           />
 
-          <div className="ml-4">
-            {/* Title */}
-            <h1 className="mt-4 text-4xl font-bold font-MontserratMedium">
-              Your Global Logistics
-              <br />
-              Partner for Seamless Solutions
-            </h1>
+<div className="ml-4">
+  {/* Title */}
+  <h1 className="mt-4 text-4xl font-bold font-MontserratMedium">
+    Why Choose Ceylon Ambassador?
+  </h1>
 
-            {/* Description */}
-            <p className="text-sm leading-relaxed  text-justify font-Montserrat mt-8">
-              UFS is a leader in logistics and supply chain management, offering
-              a full suite of services including air, sea, and inland freight,
-              warehousing, and global consolidation. With a strong network of
-              partners and state-of-the-art technology, UFS delivers efficient,
-              reliable, and cost-effective logistics solutions that meet the
-              complex needs of businesses worldwide.
-            </p>
-          </div>
+  {/* Description */}
+  <p className="text-sm leading-snug text-justify font-Montserrat mt-4">
+    <strong>● Global Reach:</strong> Our services span continents, ensuring your needs are met wherever you are.
+  </p>
+
+  <p className="text-sm leading-snug text-justify font-Montserrat mt-4">
+    <strong>● Tailored Solutions:</strong> We offer personalized services designed to align with your unique goals.
+  </p>
+
+  <p className="text-sm leading-snug text-justify font-Montserrat mt-4">
+    <strong>● Innovation-Driven:</strong> Powered by technology, we provide cutting-edge solutions across industries.
+  </p>
+
+  <p className="text-sm leading-snug text-justify font-Montserrat mt-4">
+    <strong>● Commitment to Sustainability:</strong> We prioritize eco-friendly practices to create a better tomorrow.
+  </p>
+</div>
         </div>
       </div>
     </div>

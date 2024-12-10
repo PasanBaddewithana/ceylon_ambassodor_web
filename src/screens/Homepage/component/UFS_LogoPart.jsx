@@ -23,15 +23,22 @@ const LogisticsPage = () => {
               className="w-36 mx-auto lg:mx-0"
             />
             <h1 className="text-3xl font-bold text-customBlue">
-              Your Global Logistics Partner for Seamless Solutions
+              United Freight Solutions: Connecting the World, One Shipment at a
+              Time
             </h1>
             <p className="text-gray-600 pb-4">
-              UFS is a leader in logistics and supply chain management, offering
-              a full suite of services including air, sea, and inland freight,
-              warehousing, and global consolidation. With a strong network of
-              partners and state-of-the-art technology, UFS delivers efficient,
-              reliable, and cost-effective logistics solutions that meet the
-              complex needs of businesses worldwide.
+            
+              <strong className="text-black">United Freight Solutions (UFS)</strong> is a leader in global logistics and
+              supply chain management, offering an extensive range of services
+              including air, sea, and inland freight, warehousing, and global
+              consolidation. With a vast network of trusted partners and
+              state-of-the-art technology, UFS delivers efficient, reliable, and
+              cost-effective logistics solutions designed to meet the unique and
+              complex demands of businesses worldwide.
+              <br />
+              <br />
+              <strong className="text-black">Experience seamless logistics</strong> with UFS—your trusted partner for
+              global freight solutions.
             </p>
 
             {/* View More Button */}

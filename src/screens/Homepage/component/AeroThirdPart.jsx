@@ -9,6 +9,17 @@ import message from "../../../assets/message.svg";
 const AeroThirdPart = () => {
   return (
     <div className="w-full h-[400px] flex flex-row items-center justify-center p-8 gap-20">
+
+<CartoonCard
+        image={handPlane}
+        h="100px"
+        alt="slips"
+        topic="Air Charter Solutions"
+        content="We specialise in providing tailored 
+air charter services designed to meet 
+your unique travel and cargo needs."
+      />
+
       <CartoonCard
         image={plane}
         h="100px"
@@ -37,13 +48,7 @@ const AeroThirdPart = () => {
         topic="Cutomer Service Solutions"
         content="Provide world-class customer support with our 24/7 service solutions, ensuring seamless communication and satisfaction throughout the client journey."
       />
-      <CartoonCard
-        image={handPlane}
-        h="100px"
-        alt="slips"
-        topic="Strategic Partnership Development"
-        content="Unlock new growth opportunities and streamline operations with Aerofly Aviation's tailored partnership strategies, designed to enhance collaboration and profitability"
-      />
+      
     </div>
   );
 };

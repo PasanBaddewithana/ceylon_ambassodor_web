@@ -9,6 +9,15 @@ import bag from "../../../../assets/Khmergate/logo/bag.svg";
 const KhmergateThird = () => {
   return (
     <div className="w-full h-[400px] flex flex-row items-center justify-center p-8 gap-20 text-[#015B02]">
+
+    <CartoonCard
+        image={pass}
+        textcolor="#015B02"
+        h="100px"
+        alt="newspaper"
+        topic="Air Ticketing"
+        content="Explore exciting global destinations with customized travel packages, designed specifically for Cambodian travelers seeking seamless international experiences."
+      />
       <CartoonCard
         image={lorry}
         textcolor="#015B02"
@@ -16,14 +25,6 @@ const KhmergateThird = () => {
         alt="plane"
         topic="Inbound Tours"
         content="Immerse yourself in Cambodia's rich culture, historical landmarks, and natural beauty with our expertly guided tours, offering deep cultural and adventure experiences. "
-      />
-      <CartoonCard
-        image={pass}
-        textcolor="#015B02"
-        h="100px"
-        alt="newspaper"
-        topic="Outbound Travel Packages"
-        content="Explore exciting global destinations with customized travel packages, designed specifically for Cambodian travelers seeking seamless international experiences."
       />
       <CartoonCard
         textcolor="#015B02"

@@ -19,25 +19,25 @@ const cardsData = [
     image: ufsImage, // Actual image import for UFS
     logo: ufs_logo, // Actual logo path for UFS
     title: "UFS",
-    description: "Connecting Globe",
+    description: "Delivering efficient and reliable logistics solutions to connect businesses across the globe",
   },
   {
     image: aeroflyImage, // Actual image import for Aerofly Aviation
     logo: aerofly_logo, // Actual logo path for Aerofly Aviation
     title: "Aerofly Aviation",
-    description: "Seamless aviation services",
+    description: "Elevating aviation services with cutting-edge solutions for airlines worldwide",
   },
   {
     image: khmersImage, // Actual image import for Khmers Gate
     logo: khmers_logo, // Actual logo path for Khmers Gate
     title: "Khmers Gate",
-    description: "Curated travel experiences",
+    description: "Creating unforgettable travel experiences that celebrate culture, adventure, and authenticity",
   },
   {
     image: brandpulseImage, // Actual image import for BrandPulse
     logo: brandpulse_logo, // Actual logo path for BrandPulse
     title: "BrandPulse",
-    description: "Creative media production",
+    description: "Empowering brands to inspire through innovative strategies and creative storytelling",
   },
 ];
 const CardsGrid = () => {

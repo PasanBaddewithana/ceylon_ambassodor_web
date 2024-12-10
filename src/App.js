@@ -9,7 +9,6 @@ import GlobalNetworkScreen from "./screens/global_network/screens/GlobalNetworkS
 
 import Aerofly from "./screens/Homepage/screen/Aerofly";
 
-import AvilablePositions from "./screens/aviable_positions/screens/AvilablePositions";
 import BlogPage from "./blog/screens/BlogPage";
 import MeetCrewScreen from "./screens/meet_crew/screens/MeetCrewScreen";
 import ProfilePage from "./screens/meet_crew/screens/ProfileScreen";
@@ -19,6 +18,10 @@ import Khmergate from "./screens/Homepage/screen/Khmergate";
 import OurClientScreen from "./screens/OurClients/screens/OurClientScreen";
 import BookFrieghtScreen from "./screens/book_frieght/screens/BookFrieghtScreen";
 import WareHousePage from "./screens/Warehouse/WareHousePage";
+import AvilablePositions from "./screens/aviable_positions/screens/AvilablePositions";
+
+
+
 
 function App() {
   return (
@@ -43,7 +46,6 @@ function App() {
             <Route path="/about" element={<AboutUsScreen />} />
             <Route path="/global-network" element={<GlobalNetworkScreen />} />
             <Route path="/brand-pulse" element={<BrandPulse />} />
-            <Route path="/avilable-positions" element={<AvilablePositions />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/aerofly" element={<Aerofly />} />
             <Route path="/meet-crew" element={<MeetCrewScreen />} />
@@ -51,9 +53,11 @@ function App() {
             <Route path="/book-frieghts" element={<BookFrieghtScreen />} />
             <Route path="/profile/:name" element={<ProfilePage />} />
 
+
             <Route path="/ufs" element=  {<WareHousePage />} />
 
             <Route path="/khmergate" element={<Khmergate />} />
+            <Route path="/avilablepositions" element={<AvilablePositions />} />
 
             <Route path="*" element={<h1>Not Found</h1>} />
           </Routes>

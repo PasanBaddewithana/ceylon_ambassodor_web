@@ -1,21 +1,37 @@
 import React from "react";
-import Slider from "react-slick"; // Import Slider component from react-slick
-import "slick-carousel/slick/slick.css"; // Import slick-carousel styles
-import "slick-carousel/slick/slick-theme.css"; // Import slick-theme styles
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Import icons for arrows
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const Hero = ({ images }) => {
-  // Slider settings
+const Hero = ({ images, video }) => {
+  if (video) {
+    return (
+      <section className="relative overflow-hidden flex-wrap mb-0">
+        <div className="w-full">
+          <video
+            className="w-full h-[550px] object-cover"
+            src={video}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
+      </section>
+    );
+  }
+
   const settings = {
-    dots: false, // Show dots for navigation
-    infinite: true, // Loop the slides
-    speed: 500, // Transition speed
-    slidesToShow: 1, // Number of slides to show at once
-    slidesToScroll: 1, // Number of slides to scroll at once
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Autoplay speed in milliseconds
-    nextArrow: <CustomNextArrow />, // Custom next arrow
-    prevArrow: <CustomPrevArrow />, // Custom previous arrow
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
   };
 
   return (
@@ -27,7 +43,7 @@ const Hero = ({ images }) => {
               <img
                 src={image}
                 alt={`Airplane ${index + 1}`}
-                className="w-full h-[550px] object-cover" // Keep object-cover to fill the space
+                className="w-full h-[550px] object-cover"
               />
             </div>
           ))}
@@ -37,7 +53,6 @@ const Hero = ({ images }) => {
   );
 };
 
-// Custom Next Arrow
 const CustomNextArrow = (props) => {
   const { onClick } = props;
   return (
@@ -50,7 +65,6 @@ const CustomNextArrow = (props) => {
   );
 };
 
-// Custom Prev Arrow
 const CustomPrevArrow = (props) => {
   const { onClick } = props;
   return (

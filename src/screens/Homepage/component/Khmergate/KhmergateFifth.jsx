@@ -37,16 +37,28 @@ Walk through history as you explore the legendary Angkor Wat, the bustling stree
       <div className="h-[2px] w-3/4 bg-black"></div>
       <DetailCard
         image={girl_man}
-        topicTop="Explore the World with"
-        topicBottom=" Our Outbound Travel Packages "
-        description="At KhmerGate. we don't just showcase Cambodia—we also take Cambodian travelers to global destinations. Our outbound travel packages are designed to make international travel simple, stress-free, and unforgettable. Whether you dream of wandering through Europe's grand cities or experiencing the natural wonders of Asia, our team crafts personalized itineraries that are as seamless as they are exciting. "
-        subTopic="Our Outbound Travel Packages Include: "
-        subPoint1="Exotic Destinations: "
+        topicTop=" Air Ticketing: "
+        topicBottom="Your Gateway to Seamless 
+Travel"
+        description="At KhmerGate, we believe that every journey begins with the 
+perfect flight. Our Air Ticketing services are designed to 
+simplify the booking process, offering you the best options for 
+domestic and international travel. Whether you’re planning a 
+solo adventure, a family vacation, or corporate travel, 
+KhmerGate ensures a hassle-free experience from booking to 
+boarding. "
+        subTopic=" Our Air Ticketing Services Include: "
+        subPoint1=" Domestic and International Flights:"
         subPointDes1="
-Explore vibrant cities, tranquil countryside, or breathtaking coastlines with tours that cater to both solo travelers and groups. "
-        subPoint2="Tailored Itineraries:"
-        subPointDes2=" Every trip is customized to suit your preferences, from selecting the best accommodations to planning excursions that match your interests. "
-        subPoint3="Seamless Planning: "
+Access 
+competitive fares and a wide range of airlines for 
+seamless travel across Cambodia and around the 
+world. "
+        subPoint2=" Tailored Travel Solutions: "
+        subPointDes2=" We help you find flights 
+that match your schedule, budget, and preferences, 
+ensuring a personalized experience. "
+        subPoint3=" Group Bookings: "
         subPointDes3="
 From flights and hotels to visas and travel insurance, we handle all the logistics so you can focus on enjoying your journey. "
         conclusion="With KhmerGate, traveling abroad has never been easier. Wherever your heart desires to go, we're here to take you there. "
