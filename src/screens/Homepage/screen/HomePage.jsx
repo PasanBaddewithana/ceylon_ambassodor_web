@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Hero from "../component/HeroSection";
 import TopHeader from "../component/TopHeader";
 import Navbar from "../component/Navbar";
@@ -14,19 +17,26 @@ import HomeGridComponent from "../component/HomeGrid";
 import ContactComponent from "../component/ContactComponent";
 import Footer from "../../faq/component/Footer";
 
-//sections
+// Sections
 import LogisticsPage from "../component/UFS_LogoPart";
-import  AeroLogisticsPage from "../component/Aerosection";
+import AeroLogisticsPage from "../component/Aerosection";
 import KhemerLogisticsPage from "../component/khemergatesection";
 import BrandpulseLogisticsPage from "../component/brandpulsesection";
 
 import HomeVideo from "../../../assets/home/Home.mp4";
 
 function HomePage() {
-  // State to track the active section
   const [activeSection, setActiveSection] = useState("LogisticsPage");
 
-  // Function to render the correct section based on activeSection state
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration (ms)
+      easing: "ease-in-out", // Animation easing
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
+
   const renderSection = () => {
     switch (activeSection) {
       case "LogisticsPage":
@@ -46,18 +56,36 @@ function HomePage() {
     <div>
       <TopHeader />
       <Navbar />
-      <Hero video={HomeVideo} /> {/* Pass the video prop */}
-      <NavSection setActiveSection={setActiveSection} /> {/* Pass setActiveSection */}
-      {renderSection()} {/* Render the active section dynamically */}
-      <SecondHomeImageComponent />
-      <ServicesComponent />
-      <HomeJoinUsComponent />
-      <StatsSection />
-      <GlobalLogisticsComponent />
-      <LatestNewsComponent />
-      <LogisticsBanner />
-      <HomeGridComponent />
-      <ContactComponent />
+      <Hero video={HomeVideo} /> {/* Hero Section */}
+      <NavSection setActiveSection={setActiveSection} /> {/* Navigation */}
+      <div data-aos="fade-up">{renderSection()}</div> {/* Animated Section */}
+      <div data-aos="fade-right">
+        <SecondHomeImageComponent />
+      </div>
+      <div data-aos="fade-left">
+        <ServicesComponent />
+      </div>
+      <div data-aos="zoom-in">
+        <HomeJoinUsComponent />
+      </div>
+      <div data-aos="flip-up">
+        <StatsSection />
+      </div>
+      <div data-aos="fade-up">
+        <GlobalLogisticsComponent />
+      </div>
+      <div data-aos="fade-in">
+        <LatestNewsComponent />
+      </div>
+      <div data-aos="fade-down">
+        <LogisticsBanner />
+      </div>
+      <div data-aos="fade-up">
+        <HomeGridComponent />
+      </div>
+      <div data-aos="zoom-out">
+        <ContactComponent />
+      </div>
       <Footer />
     </div>
   );

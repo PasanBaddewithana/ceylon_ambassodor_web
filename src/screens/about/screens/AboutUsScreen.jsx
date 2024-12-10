@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import TopHeader from "../../Homepage/component/TopHeader";
 import Navbar from "../../Homepage/component/Navbar";
 import FrontBanner from "../components/FrontBanner";
@@ -10,17 +13,27 @@ import AirplaneHero from "../components/AirplaneHero";
 import ServicesWithImages from "../components/ServiceswithImages";
 import GridComponent from "../components/GridComponent";
 import Footer from "../../faq/component/Footer";
+
 // Import your video file
 import AboutUsVideo from "../../../assets/About Us.mp4";
 
 function AboutUsScreen() {
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration (ms)
+      easing: "ease-in-out", // Animation easing
+      once: true, // Run animation only once
+    });
+  }, []);
+
   return (
     <div className="relative">
       <TopHeader />
       <Navbar />
       <div className="flex-1 bg-customBlue">
-        {/* Replace Hero with a video element */}
-        <div className="w-full h-[550px] overflow-hidden">
+        {/* Hero Section with Video */}
+        <div className="w-full h-[550px] overflow-hidden" data-aos="fade-up">
           <video
             className="w-full h-full object-cover"
             src={AboutUsVideo}
@@ -30,15 +43,31 @@ function AboutUsScreen() {
             playsInline
           />
         </div>
-        <FrontBanner />
+        <div data-aos="fade-in">
+          <FrontBanner />
+        </div>
       </div>
-      <VisionScreen />
-      <ValuesSection />
-      <CardsGrid />
-      <LeadershipComponent />
-      <AirplaneHero />
-      <ServicesWithImages />
-      <GridComponent />
+      <div data-aos="fade-up">
+        <VisionScreen />
+      </div>
+      <div data-aos="fade-right">
+        <ValuesSection />
+      </div>
+      <div data-aos="zoom-in">
+        <CardsGrid />
+      </div>
+      <div data-aos="fade-left">
+        <LeadershipComponent />
+      </div>
+      <div data-aos="flip-up">
+        <AirplaneHero />
+      </div>
+      <div data-aos="fade-up">
+        <ServicesWithImages />
+      </div>
+      <div data-aos="zoom-out">
+        <GridComponent />
+      </div>
       <Footer />
     </div>
   );
