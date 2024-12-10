@@ -73,3 +73,30 @@
     transform: translateX(100%) translateY(-50%);
   }
 }
+
+@keyframes train-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes train-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-train-left {
+  animation: train-left 10s linear infinite;
+}
+
+.animate-train-right {
+  animation: train-right 10s linear infinite;
+}
+

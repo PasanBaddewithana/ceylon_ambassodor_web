@@ -12,13 +12,13 @@ const VisionScreen = () => {
                 UNITED FREIGHT SOLUTIONS
               </p>
               <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2">
-              KhmerGate
+              KHMERGATE
               </p>
               <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2">
-              Aerofly Aviation
+              AEROFLY AVIATION
               </p>
               <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2">
-              BrandPulse
+              BRANDPULSE
               </p>
           
           </div>
