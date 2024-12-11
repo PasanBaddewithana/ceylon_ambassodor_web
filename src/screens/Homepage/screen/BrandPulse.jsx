@@ -58,9 +58,10 @@ function BrandPulse() {
       <div data-aos="fade-right">
         <ThirdPart />
       </div>
-      <div data-aos="zoom-in">
+      {/* <div data-aos="zoom-in">
         <FourthPart fourthImage={tableMeeting} />
-      </div>
+      </div> */}
+      <div className="parallax-spacer-brandpulse"></div>
       <div data-aos="fade-up">
         <FifthSection />
       </div>

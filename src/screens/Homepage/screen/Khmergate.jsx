@@ -55,9 +55,11 @@ function Khmergate() {
       <div data-aos="fade-right">
         <KhmergateThird />
       </div>
-      <div data-aos="zoom-in">
+      {/* <div data-aos="zoom-in">
         <FourthPart fourthImage={plane_man} imageHeight={800} />
-      </div>
+      </div> */}
+
+<div className="parallax-spacer-khemergate"></div>
       <div data-aos="fade-up">
         <KhmergateFifth />
       </div>
