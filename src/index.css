@@ -59,7 +59,7 @@
 }
 
 .branding-animation {
-  animation: train-move 5s linear infinite;
+  animation: train-move 30s linear infinite;
 }
 
 @keyframes train-move {

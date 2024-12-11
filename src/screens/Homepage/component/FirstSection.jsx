@@ -39,7 +39,7 @@ const FirstSection = ({
                 playsInline
               />
               {/* Branding over the video */}
-              <div className="branding-animation absolute top-1/2 right-[10%] transform -translate-y-1/2">
+              <div className="branding-animation absolute top-20 start-0 end-0 transform -translate-x-1/2">
                 <img
                   src={branding}
                   alt="Brand Logo"

@@ -39,11 +39,11 @@ const FirstSection = ({
                 playsInline
               />
               {/* Branding with train-like animation */}
-              <div className="branding-animation absolute top-10 left-1/2 transform -translate-x-1/2">
+              <div className="branding-animation absolute top-20 start-0 end-0 transform -translate-x-1/2">
                 <img
                   src={branding}
                   alt="Brand Logo"
-                  className="w-[120px]"
+                  className="w-[200px]"
                 />
               </div>
             </div>
