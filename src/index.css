@@ -133,5 +133,31 @@
   z-index: 1; /* Below components */
 }
 
+.parallax-spacer-khemergate{
+  height: 600px; /* Adjust height as needed */
+  background-image: url('./assets/Khmergate/airplane-man-transportation-aircraft.jpg'); /* Use ContainerImage source */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1; /* Below components */
+
+}
+
+.parallax-spacer-brandpulse{
+  height: 600px; /* Adjust height as needed */
+  background-image: url('./assets/table_meeting.png'); /* Use ContainerImage source */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1; /* Below components */
+
+}
+
+
+
 
 
