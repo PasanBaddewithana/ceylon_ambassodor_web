@@ -66,37 +66,28 @@ const WareHousePage = () => {
       </div>
        {/* Parallax Spacer */}
        <div className="parallax-spacer"></div>
-      <div data-aos="fade-right">
+      <div >
         <FifthSectionHeader />
       </div>
       {/* Fourth Section */}
-      <div className="component-wrapper" data-aos="fade-right">
+      <div className="component-wrapper" >
         <ForwardTogether />
       </div>
-     
-       
        <div data-aos="fade-up">
         <SeaFreight />
-      </div>
-     
-      
-      <div data-aos="fade-up">
+      </div>  
+      <div >
         <IslansFreight />
       </div>
-    
-     
-      <div data-aos="zoom-in">
-        
+      <div >
       </div>
-      
-      <div data-aos="fade-up">
+      <div >
         <GlobalConsollidation />
       </div>
-      
-      <div data-aos="fade-up">
+      <div>
         <WhyChooseUs />
       </div>
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" data-aos-duration="1000">
         <SeventhSection />
       </div>
       

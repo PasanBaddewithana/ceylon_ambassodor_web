@@ -22,7 +22,7 @@ const SecondHomeImageComponent = () => {
           </div>
           <div className="lg:ml-2">
             {/* Main Heading */}
-            <h1 data-aos="fade-up" data-aos-duration="1000" className="text-xl lg:text-4xl font-bold mb-6 font-MontserratMedium ">
+            <h1 data-aos="fade-up" data-aos-duration="1000" className="text-xl lg:text-4xl font-bold mb-6 font-MontserratMedium " >
               Ceylon Ambassador: Pioneering Global Connections
             </h1>
 

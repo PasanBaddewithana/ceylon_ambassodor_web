@@ -5,7 +5,9 @@ const ForwardTogether = () => {
   return (
     <>
       <DetailCard
+     
         topicTop="Air Freight"
+         
         topicBottom="Speed When It Matters Most"
         description="When time is critical, UFS's Air Freight solutions ensure that your cargo takes flight, reaching its destination quickly and securely. This statement highlights the speed and security of UFS's air freight services."
         subTopic="Our Air Freight Services include:"
@@ -21,8 +23,9 @@ const ForwardTogether = () => {
         buttoncolor="orange"
         buttonHoverColor="green"
         textColor="#031c3f"
+        
       />
-      <div className="px-4 flex items-center justify-center">
+      <div className="px-4 flex items-center justify-center" >
         <div className="w-11/12 h-[2px] bg-customBlue"></div>
       </div>
     </>

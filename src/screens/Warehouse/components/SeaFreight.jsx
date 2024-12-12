@@ -15,14 +15,13 @@ const SeaFreight = () => {
         subPointDes2="We offer flexible solutions, whether your shipment requires port-to-port or a full door-to-door delivery."
         subPoint3="Global Carrier Network:"
         subPointDes3="Partnering with the world’s leading ocean carriers, we ensure reliable and timely shipping on major trade routes."
-        conclusion="With UFS, your sea freight sails smoothly from origin to destination.
-      "
+        conclusion="With UFS, your sea freight sails smoothly from origin to destination."
         image={image}
         imagePosition="left"
         buttoncolor="orange"
         textColor="#031c3f"
       />
-      <div className="px-4 flex items-center justify-center">
+      <div className="px-4 flex items-center justify-center" >
         <div className="w-11/12 h-[2px] bg-customBlue"></div>
       </div>
     </>

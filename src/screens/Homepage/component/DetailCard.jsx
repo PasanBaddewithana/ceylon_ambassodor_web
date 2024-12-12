@@ -29,38 +29,39 @@ const DetailCard = ({
           </div>
           <div className="flex flex-col items-start w-1/2 p-10">
             <p
-              className="font-bold text-[30px] font-MontserratMedium"
+              className="font-bold text-[30px] font-MontserratMedium" data-aos="fade-up" data-aos-duration="1000"
               style={{ color: textColor }}
             >
               {topicTop}
             </p>
             <p
-              className="font-bold text-[30px] mb-5"
+              className="font-bold text-[30px] mb-5" data-aos="fade-up" data-aos-duration="1500"
               style={{ color: textColor }}
             >
               {topicBottom}
             </p>
-            <p className="text-[13px] p-1" style={{ color: textColor }}>
+            <p className="text-[13px] p-1" data-aos="fade-up" data-aos-duration="2000" style={{ color: textColor }}>
               {description}
             </p>
             <div className="text-left">
               <p
                 className="font-bold text-[13px] p-1"
+                data-aos="fade-up" data-aos-duration="2500"
                 style={{ color: textColor }}
               >
                 {subTopic}
               </p>
             </div>
-            <p className="text-[13px] p-1" style={{ color: textColor }}>
+            <p className="text-[13px] p-1" data-aos="fade-up" data-aos-duration="3000" style={{ color: textColor }}>
               <span className="font-bold">{subPoint1}</span> {subPointDes1}
             </p>
-            <p className="text-[13px] p-1" style={{ color: textColor }}>
+            <p className="text-[13px] p-1" data-aos="fade-up" data-aos-duration="3000" style={{ color: textColor }}>
               <span className="font-bold">{subPoint2}</span> {subPointDes2}
             </p>
-            <p className="text-[13px] p-1" style={{ color: textColor }}>
+            <p className="text-[13px] p-1" data-aos="fade-up" data-aos-duration="3000" style={{ color: textColor }}>
               <span className="font-bold">{subPoint3}</span> {subPointDes3}
             </p>
-            <p className="text-[13px] p-1" style={{ color: textColor }}>
+            <p className="text-[13px] p-1" data-aos="fade-up" data-aos-duration="3000" style={{ color: textColor }}>
               {conclusion}
             </p>
             <button
@@ -85,36 +86,39 @@ const DetailCard = ({
             <p
               className="font-bold text-[30px] font-MontserratMedium"
               style={{ color: textColor }}
+              data-aos="fade-up" data-aos-duration="1000"
             >
               {topicTop}
             </p>
             <p
               className="font-bold text-[30px] mb-5"
               style={{ color: textColor }}
+              data-aos="fade-up" data-aos-duration="1500"
             >
               {topicBottom}
             </p>
-            <p className="text-[13px] p-1" style={{ color: textColor }}>
+            <p className="text-[13px] p-1" data-aos="fade-up" data-aos-duration="2000" style={{ color: textColor }}>
               {description}
             </p>
             <div className="text-left">
               <p
                 className="font-bold text-[13px] p-1"
                 style={{ color: textColor }}
+                data-aos="fade-up" data-aos-duration="2500"
               >
                 {subTopic}
               </p>
             </div>
-            <p className="text-[13px] p-1" style={{ color: textColor }}>
+            <p className="text-[13px] p-1" data-aos="fade-up" data-aos-duration="3000" style={{ color: textColor }}>
               <span className="font-bold">{subPoint1}</span> {subPointDes1}
             </p>
-            <p className="text-[13px] p-1" style={{ color: textColor }}>
+            <p className="text-[13px] p-1" data-aos="fade-up" data-aos-duration="3000" style={{ color: textColor }}>
               <span className="font-bold">{subPoint2}</span> {subPointDes2}
             </p>
-            <p className="text-[13px] p-1" style={{ color: textColor }}>
+            <p className="text-[13px] p-1" data-aos="fade-up" data-aos-duration="3000" style={{ color: textColor }}>
               <span className="font-bold">{subPoint3}</span> {subPointDes3}
             </p>
-            <p className="text-[13px] p-1" style={{ color: textColor }}>
+            <p className="text-[13px] p-1" data-aos="fade-up" data-aos-duration="3000" style={{ color: textColor }}>
               {conclusion}
             </p>
             <button

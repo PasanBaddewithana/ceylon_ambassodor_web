@@ -13,13 +13,13 @@ const ConnectingGlobal = () => {
           className="mb-4 w-full md:w-1/2 transform scale-50"
         />
 
-        <h1 className="text-3xl font-bold mb-3 text-white font-MontserratMedium">
+        <h1 className="text-3xl font-bold mb-3 text-white font-MontserratMedium" data-aos="fade-up" data-aos-duration="1000">
         United Freight Solutions: Logistics with 
         Precision and Purpose
         </h1>
 
         <div className="w-3/4 bg-[#c6a664] h-[2px] mb-3"></div>
-        <p className="text-s text-white font-Montserrat lg:pr-20 lg:mt-5">
+        <p className="text-s text-white font-Montserrat lg:pr-20 lg:mt-5" data-aos="fade-up" data-aos-duration="3000">
         At <strong>United Freight Solutions (UFS) </strong>, we believe that every shipment tells a story of growth, opportunity, and connection. 
         Whether you’re moving goods across continents or locally, our logistics solutions are designed to provide <strong>speed, efficiency, and reliability.</strong> 
         With UFS, you’re not just shipping products—you’re moving your business forward with a trusted partner committed to excellence.

@@ -13,66 +13,78 @@ const ValuesSection = () => {
       <h2 className="text-center text-4xl font-bold mb-20 font-MontserratMedium" data-aos="fade-up" data-aos-duration="1000">
         Our Values
       </h2>
-      <div className="max-w-screen-2xl ml-5 mr-5 flex flex-wrap justify-between">
-        <div className="flex flex-col font-MontserratMedium w-full md:w-1/5 mb-6" data-aos="fade-up" data-aos-duration="1000">
+      <div className="max-w-screen-2xl ml-7 mr-7 flex flex-wrap justify-between">
+        <div className="flex flex-col font-MontserratMedium w-full md:w-1/6 mb-6" data-aos="fade-up" data-aos-duration="1000">
+        
           <img
             src={integrity}
             alt="Integrity"
             className="self-center w-20 h-20 mb-4"
           />
+          <h3 className="text-2xl font-bold mb-8 ">Integrity</h3>
+         
           <p className="mt-2 mb-3 text-xs w-full">
             We conduct business with the highest ethical standards, always doing
             what is right for our clients, partners.
           </p>
-          <h3 className="text-2xl font-bold">Integrity</h3>
+         
         </div>
-        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/5 mb-6" data-aos="fade-up" data-aos-duration="2000">
+        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/6 mb-6" data-aos="fade-up" data-aos-duration="2000">
+       
           <img
             src={excellence}
             alt="Excellence"
             className="self-center w-20 h-20 mb-4"
           />
+           <h3 className="text-2xl font-bold mb-8">Excellence</h3>
+          
           <p className="mt-2 mb-3 text-xs w-full">
             We are driven by a relentless pursuit of quality in every project,
             ensuring that our services are second to none.
           </p>
-          <h3 className="text-2xl font-bold">Excellence</h3>
+         
         </div>
-        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/5 mb-6" data-aos="fade-up" data-aos-duration="3000">
+        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/6 mb-6" data-aos="fade-up" data-aos-duration="3000">
+       
           <img
             src={innovation}
             alt="Innovation"
             className="self-center w-20 h-20 mb-4"
           />
+           <h3 className="text-2xl font-bold">Innovation</h3>
+           <div className="flex-grow min-h-[20px]"></div>
           <p className="mt-2 mb-3 text-xs w-full">
             We thrive on creativity and forward-thinking, constantly seeking new
             ways to enhance and revolutionize our services.
           </p>
-          <h3 className="text-2xl font-bold">Innovation</h3>
+          
         </div>
-        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/5 mb-6" data-aos="fade-up" data-aos-duration="4000">
+        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/6 mb-6" data-aos="fade-up" data-aos-duration="4000">
           <img
             src={sustainability}
             alt="Sustainability"
             className="self-center w-20 h-20 mb-4"
           />
+           <h3 className="text-2xl font-bold">Sustainability</h3>
+           <div className="flex-grow min-h-[20px]"></div>
           <p className="mt-2 mb-3 text-xs w-full">
             We are committed to responsible business practices that protect the
             environment and contribute positively to society.
           </p>
-          <h3 className="text-2xl font-bold">Sustainability</h3>
+         
         </div>
-        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/5 mb-6" data-aos="fade-up" data-aos-duration="5000">
+        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/6 mb-6" data-aos="fade-up" data-aos-duration="5000">
           <img
             src={customer}
             alt="Customer-Centricity"
             className="self-center w-20 h-20 mb-4"
           />
+          <h3 className="text-2xl font-bold">Customer-Centricity</h3>
           <p className="mb-3 mt-2 text-xs w-full">
             Our clients are at the core of everything we do, and we strive to
             build long-lasting relationships by exceeding their expectations.
           </p>
-          <h3 className="text-2xl font-bold">Customer-Centricity</h3>
+          
         </div>
       </div>
       <div className="mt-20 text-center">

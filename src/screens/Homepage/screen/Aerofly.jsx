@@ -9,6 +9,7 @@ import FourthPart from "../component/FourthPart";
 import SixthSection from "../component/SixthSection";
 import LastSection from "../component/LastSection";
 import Footer from "../../../../src/screens/faq/component/Footer";
+import uniformedPilot from "../../../assets/uniformedPilot.jpg";
 
 import AeroSecond from "../component/AeroSecond";
 import AeroThirdPart from "../component/AeroThirdPart";
@@ -48,15 +49,16 @@ function Aerofly() {
           fourth="CARGO CAPACITY MANAGEMENT"
         />
       </div>
-      <div data-aos="fade-left">
+      <div data-aos="fade-up">
         <AeroSecond />
       </div>
       <div data-aos="fade-right">
         <AeroThirdPart />
       </div>
-      <div data-aos="zoom-in">
-        <FourthPart imageHeight={800} />
-      </div>
+      {/* <div data-aos="zoom-in">
+        <FourthPart fourthImage={uniformedPilot} imageHeight={800} />
+      </div> */}
+      <div className="parallax-spacer-aerofly"></div>
       <div data-aos="fade-up">
         <AeroflyFifth />
       </div>
