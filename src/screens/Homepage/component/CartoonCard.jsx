@@ -5,21 +5,27 @@ const CartoonCard = ({
   topic,
   content,
   alt,
-  h,
+  h = "150px",
   textcolor = "black",
 }) => {
-  // Create a utility class for text color
   const textColorClass = `text-${textcolor}`;
 
   return (
-    <div className="flex flex-col items-center justify-center w-[200px] gap-2">
-      <img src={image} style={{ height: h }} alt={alt} />
+    <div className="flex flex-col items-center justify-between w-[200px] h-[300px] gap-2">
+      <img
+        src={image}
+        alt={alt}
+        className="object-contain w-full"
+        style={{ maxHeight: h }}
+      />
       <p
-        className={`mt-4 font-bold font-MontserratSemiBold text-center text-[16px] ${textColorClass}`}
+        className={`mt-3 font-bold font-MontserratSemiBold text-center text-[16px] ${textColorClass} min-h-[40px]`}
       >
         {topic}
       </p>
-      <p className={`text-center font-Montserrat text-xs ${textColorClass}`}>
+      <p
+        className={`text-center font-Montserrat text-xs ${textColorClass} min-h-[60px] line-clamp-3`}
+      >
         {content}
       </p>
     </div>

@@ -90,6 +90,10 @@ const WareHousePage = () => {
       <div data-aos="fade-up" data-aos-duration="1000">
         <SeventhSection />
       </div>
+      <LastSection
+        lastImage={UFSlogo}
+        lastwords="We are committed to providing the best services to our clients"
+      />
       
       <Footer />
     </div>
