@@ -9,14 +9,14 @@ const SecondPart = () => {
       <div className="w-1/2 h-full flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-start">
           <img src={brandPulse} className="w-[200px] h-auto mb-9" />
-          <p className="text-white text-4xl font-MontserratMedium font-semibold">
+          <p className="text-white text-4xl font-MontserratMedium font-semibold" data-aos="fade-up" data-aos-duration="1000">
             "Crafting Brands{" "}
           </p>
-          <p className="text-white text-4xl font-MontserratMedium font-semibold mb-5">
+          <p className="text-white text-4xl font-MontserratMedium font-semibold mb-5" data-aos="fade-up" data-aos-duration="1500">
             That Inspire"
           </p>
           <div className="h-[2px] w-[500px] bg-[#BC9C61] "></div>
-          <p className="text-white text-[14px]  font-Montserrat mt-4 w-[390px]">
+          <p className="text-white text-[14px]  font-Montserrat mt-4 w-[390px]" data-aos="fade-up" data-aos-duration="2000">
             At BrandPulse, we believe that a brand is more than just a logo-it's
             a story, a vision, and an experience. In today's competitive world,
             your brand needs to stand out, resonate with your audience, and

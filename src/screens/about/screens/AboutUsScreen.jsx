@@ -59,9 +59,10 @@ function AboutUsScreen() {
       <div data-aos="fade-left">
         <LeadershipComponent />
       </div>
-      <div data-aos="flip-up">
+      {/* <div data-aos="flip-up">
         <AirplaneHero />
-      </div>
+      </div> */}
+      <div className="parallax-spacer-aboutus"></div>
       <div data-aos="fade-up">
         <ServicesWithImages />
       </div>

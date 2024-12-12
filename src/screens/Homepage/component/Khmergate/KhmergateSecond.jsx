@@ -9,12 +9,12 @@ const KhmergateSecond = () => {
       <div className="w-1/2 h-full flex flex-col justify-center items-center ">
         <div className="flex flex-col justify-center items-start">
           <img src={khermgate} alt="logo" className="w-[300px] h-auto mb-9" />
-          <p className="text-white text-[28px] font-bold">"Your Gateway to </p>
-          <p className="text-white text-[28px] font-bold mb-5">
+          <p className="text-white text-[28px] font-bold" data-aos="fade-up" data-aos-duration="1000">"Your Gateway to </p>
+          <p className="text-white text-[28px] font-bold mb-5" data-aos="fade-up" data-aos-duration="1500">
             Extraordinary Experiences"
           </p>
           <div className="h-[2px] w-[500px] bg-[#605645] "></div>
-          <p className="text-white text-[14px] mt-4 w-[390px]">
+          <p className="text-white text-[14px] mt-4 w-[390px]" data-aos="fade-up" data-aos-duration="2000">
             At KhmerGate, we believe that travel is more than just visiting
             places—it's about creating memories, discovering new cultures, and
             experiencing life in its most authentic form. As Cambodia's premier

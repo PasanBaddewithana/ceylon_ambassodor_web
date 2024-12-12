@@ -29,7 +29,7 @@ const AeroflyFifth = () => {
         buttonHoverColor="#927b49"
         buttoncolor="#C7A764"
       />
-      <div className="h-[2px] w-3/4 bg-black"></div>
+      <div className="h-[2px] w-3/4 bg-black" ></div>
       <DetailCard
         image={sales}
         topicTop="General Sales and Services Agent (GSSA): "
@@ -48,7 +48,7 @@ By partnering with Aerofly Aviation's GSSA services, your airline can expand its
         buttonHoverColor="#927b49"
         buttoncolor="#C7A764"
       />
-      <div className="h-[2px] w-3/4 bg-black"></div>
+      <div className="h-[2px] w-3/4 bg-black" ></div>
       <DetailCard
         image={airline}
         topicTop="Airline Representation:"

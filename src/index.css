@@ -163,6 +163,28 @@
 
 }
 
+.parallax-spacer-aerofly{
+  height: 600px; /* Adjust height as needed */
+  background-image: url('./assets/uniformedPilot.jpg'); /* Use ContainerImage source */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1; /* Below components */
+}
+
+.parallax-spacer-aboutus{
+  height: 600px; /* Adjust height as needed */
+  background-image: url('./assets/airplane_about_hero.jpg'); /* Use ContainerImage source */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1; /* Below components */
+}
+
 .animate-text {
   opacity: 0;
   transform: translateY(20px);

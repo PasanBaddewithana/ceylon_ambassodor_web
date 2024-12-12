@@ -7,7 +7,7 @@ const AeroSeventh = () => {
         <div>
           <div className="rounded-full w-[80px] h-[80px] bg-white"></div>
         </div>
-        <div className="flex flex-col  justify-center gap-2">
+        <div className="flex flex-col  justify-center gap-2" >
           <p>
             KhmerGate made our trip to Cambodia absolutely unforgettable!The
             tours were so well organized, and the local guides truly made the

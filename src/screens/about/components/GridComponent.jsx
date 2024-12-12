@@ -44,20 +44,20 @@ const GridComponent = () => {
   const row2Images = [icon9, icon11, icon12, imageK1, imageK2, imageK3, imageK4, imageK5, imageK6, imageK7,imageA1, imageA2, imageA3, imageA4, imageA5, imageA6, imageA7 ];
 
   return (
-    <div className="relative w-full overflow-hidden mt-4">
+    <div className="relative w-full overflow-hidden mt-2">
       {/* First row */}
       <div className="flex animate-train-left">
         {row1Images.map((image, index) => (
-          <div key={index} className="w-40 h-40 p-1 ">
+          <div key={index} className="w-60 h-50 p-1 ">
             <img src={image} alt={`Row 1 Image ${index + 1}`} className="object-cover w-full h-full" />
           </div>
         ))}
       </div>
 
       {/* Second row */}
-      <div className="flex animate-train-right mt-4">
+      <div className="flex animate-train-right mt-2">
         {row2Images.map((image, index) => (
-          <div key={index} className="w-40 h-40 p-1 ">
+          <div key={index} className="w-60 h-50 p-0 ">
             <img src={image} alt={`Row 2 Image ${index + 1}`} className="object-cover w-full h-full" />
           </div>
         ))}
