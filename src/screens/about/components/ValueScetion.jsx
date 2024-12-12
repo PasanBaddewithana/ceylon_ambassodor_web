@@ -10,11 +10,11 @@ import sustainability from "../../../assets/sustainability.svg";
 const ValuesSection = () => {
   return (
     <div className="bg-[#002147] text-white py-12">
-      <h2 className="text-center text-4xl font-bold mb-20 font-MontserratMedium">
+      <h2 className="text-center text-4xl font-bold mb-20 font-MontserratMedium" data-aos="fade-up" data-aos-duration="1000">
         Our Values
       </h2>
       <div className="max-w-screen-2xl ml-5 mr-5 flex flex-wrap justify-between">
-        <div className="flex flex-col font-MontserratMedium w-full md:w-1/5 mb-6">
+        <div className="flex flex-col font-MontserratMedium w-full md:w-1/5 mb-6" data-aos="fade-up" data-aos-duration="1000">
           <img
             src={integrity}
             alt="Integrity"
@@ -26,7 +26,7 @@ const ValuesSection = () => {
           </p>
           <h3 className="text-2xl font-bold">Integrity</h3>
         </div>
-        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/5 mb-6">
+        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/5 mb-6" data-aos="fade-up" data-aos-duration="2000">
           <img
             src={excellence}
             alt="Excellence"
@@ -38,7 +38,7 @@ const ValuesSection = () => {
           </p>
           <h3 className="text-2xl font-bold">Excellence</h3>
         </div>
-        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/5 mb-6">
+        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/5 mb-6" data-aos="fade-up" data-aos-duration="3000">
           <img
             src={innovation}
             alt="Innovation"
@@ -50,7 +50,7 @@ const ValuesSection = () => {
           </p>
           <h3 className="text-2xl font-bold">Innovation</h3>
         </div>
-        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/5 mb-6">
+        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/5 mb-6" data-aos="fade-up" data-aos-duration="4000">
           <img
             src={sustainability}
             alt="Sustainability"
@@ -62,7 +62,7 @@ const ValuesSection = () => {
           </p>
           <h3 className="text-2xl font-bold">Sustainability</h3>
         </div>
-        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/5 mb-6">
+        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/5 mb-6" data-aos="fade-up" data-aos-duration="5000">
           <img
             src={customer}
             alt="Customer-Centricity"
@@ -82,7 +82,7 @@ const ValuesSection = () => {
           </h2>
         </div>
 
-        <p className="max-w-screen-md text-sm mt-10  mx-auto">
+        <p className="max-w-screen-md text-sm mt-10  mx-auto" data-aos="fade-up" data-aos-duration="1000">
           What makes us unique is not just our breadth of expertise, but our
           passion for what we do. From our dedicated team of industry experts to
           our cutting-edge technology and global reach, Ceylon Ambassador is

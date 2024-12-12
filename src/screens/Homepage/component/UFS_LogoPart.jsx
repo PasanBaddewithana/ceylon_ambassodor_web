@@ -16,17 +16,17 @@ const LogisticsPage = () => {
           </div>
 
           {/* Text Content */}
-          <div className="lg:w-1/2 space-y-4 text-center lg:text-left font-Montserrat">
+          <div className="lg:w-1/2 space-y-4 text-center lg:text-left font-Montserrat" >
             <img
               src={ufs_orange}
               alt="UFS Logo"
               className="w-36 mx-auto lg:mx-0"
             />
-            <h1 className="text-3xl font-bold text-customBlue">
+            <h1 className="text-3xl font-bold text-customBlue" data-aos="fade-up" data-aos-duration="1000">
               United Freight Solutions: Connecting the World, One Shipment at a
               Time
             </h1>
-            <p className="text-gray-600 pb-4">
+            <p className="text-gray-600 pb-4" data-aos="fade-up" data-aos-duration="2000">
             
               <strong className="text-black">United Freight Solutions (UFS)</strong> is a leader in global logistics and
               supply chain management, offering an extensive range of services
@@ -42,7 +42,7 @@ const LogisticsPage = () => {
             </p>
 
             {/* View More Button */}
-            <div className="flex items-center space-x-4 py-4 border-t-2 border-customBlue">
+            <div className="flex items-center space-x-4 py-4 border-t-2 border-customBlue" data-aos="fade-up" data-aos-duration="3000">
               {/* Clickable area with hover effect */}
               <a
                 href="#"

@@ -65,7 +65,7 @@ const ServicesWithImages = () => {
           <h2 className="text-3xl font-MontserratMedium  font-bold text-customBlue text-right">
             Client Success Stories
           </h2>
-          <p className="text-gray-700 mt-1 text-sm text-right">
+          <p className="text-sm text-gray-700 mt-1  text-right">
             Our success is built on the success of our clients. Over the years,
             we've partnered with businesses across the globe, delivering
             customized solutions that drive results and exceed expectations.

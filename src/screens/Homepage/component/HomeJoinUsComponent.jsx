@@ -8,20 +8,20 @@ const HomeJoinUsComponent = () => {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10">
         {/* Left Section: Text (40% width) */}
         <div className="lg:w-2/5 text-center lg:text-left space-y-4 border-customBlue border-r-2">
-          <h1 className="text-4xl font-bold text-customBlue leading-tight">
+          <h1 className="text-4xl font-bold text-customBlue leading-tight" data-aos="fade-up" data-aos-duration="1000">
             Join Us
           </h1>
-          <h1 className="text-4xl font-bold text-customBlue leading-tight">
+          <h1 className="text-4xl font-bold text-customBlue leading-tight" data-aos="fade-up" data-aos-duration="1500">
             on Our Journey
           </h1>
-          <p className="text-customBlue max-w-md lg:max-w-sm">
+          <p className="text-customBlue max-w-md lg:max-w-sm" data-aos="fade-up" data-aos-duration="2000">
             We invite you to explore our services and discover how Ceylon
             Ambassador can be your partner in growth. Together, let's connect
             opportunities and create lasting value.
           </p>
 
           {/* View More Section */}
-          <div className="flex items-center space-x-4 py-4 border-t-2 border-customBlue">
+          <div className="flex items-center space-x-4 py-4 border-t-2 border-customBlue" data-aos="fade-up" data-aos-duration="3000">
             {/* Circle with Plus Icon */}
             <a
               href="#"
