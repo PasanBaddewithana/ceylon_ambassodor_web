@@ -58,7 +58,7 @@ function HomePage() {
       <Navbar />
       <Hero video={HomeVideo} /> {/* Hero Section */}
       <NavSection setActiveSection={setActiveSection} /> {/* Navigation */}
-      <div data-aos="fade-up">{renderSection()}</div> {/* Animated Section */}
+      <div data-aos="fade-up">{renderSection()}</div> {/*Animated Section*/}
       <div data-aos="fade-right">
         <SecondHomeImageComponent />
       </div>

@@ -17,10 +17,10 @@ const BrandpulseLogisticsPage = () => {
           {/* Text Content */}
           <div className="lg:w-1/2 space-y-4 text-center lg:text-left font-Montserrat">
            
-            <h1 className="text-3xl font-bold text-customBlue">
+            <h1 className="text-3xl font-bold text-customBlue" data-aos="fade-up" data-aos-duration="1000">
               Shaping Brands That Inspire
             </h1>
-            <p className="text-gray-600 pb-4">
+            <p className="text-gray-600 pb-4" data-aos="fade-up" data-aos-duration="2000">
               <strong className="text-black">BrandPulse</strong> is a creative
               branding and marketing agency that transforms businesses into
               memorable brands through a full suite of services, including brand
@@ -38,7 +38,7 @@ const BrandpulseLogisticsPage = () => {
             </p>
 
             {/* View More Button */}
-            <div className="flex items-center space-x-4 py-4 border-t-2 border-customBlue">
+            <div className="flex items-center space-x-4 py-4 border-t-2 border-customBlue" data-aos="fade-up" data-aos-duration="3000">
               {/* Clickable area with hover effect */}
               <a
                 href="#"

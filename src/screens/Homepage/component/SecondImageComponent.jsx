@@ -22,12 +22,12 @@ const SecondHomeImageComponent = () => {
           </div>
           <div className="lg:ml-2">
             {/* Main Heading */}
-            <h1 className="text-xl lg:text-4xl font-bold mb-6 font-MontserratMedium ">
+            <h1 data-aos="fade-up" data-aos-duration="1000" className="text-xl lg:text-4xl font-bold mb-6 font-MontserratMedium ">
               Ceylon Ambassador: Pioneering Global Connections
             </h1>
 
             {/* Description */}
-            <p className="text-sm lg:text-sm mb-6 font-Montserrat">
+            <p className="text-sm lg:text-sm mb-6 font-Montserrat " data-aos="fade-up" data-aos-duration="2000">
               Welcome to <strong>Ceylon Ambassador,</strong> where innovation meets excellence to
               create a world of seamless possibilities. As the mother brand
               behind industry leaders in logistics, travel, aviation, and
@@ -40,14 +40,14 @@ const SecondHomeImageComponent = () => {
             <div className="border-t border-white opacity-80 my-8"></div>
 
             {/* Footer Statement */}
-            <div className="text-left flex items-center space-x-4">
+            <div className="text-left flex items-center space-x-4" data-aos="fade-up" data-aos-duration="3000">
               <div className="h-8 w-8 bg-white rounded-full"></div>
-              <p className="text-sm lg:text-lg font-semibold font-Montserrat">
+              <p className="text-sm lg:text-lg font-semibold font-Montserrat ">
               A Legacy of Leadership
               </p>
               
             </div>
-            <p className="text-sm lg:text-sm mb-6 font-Montserrat">
+            <p className="text-sm lg:text-sm mb-6 font-Montserrat " data-aos="fade-up" data-aos-duration="3000">
               Welcome to <strong>Ceylon Ambassador,</strong> where innovation meets excellence to
               create a world of seamless possibilities. As the mother brand
               behind industry leaders in logistics, travel, aviation, and

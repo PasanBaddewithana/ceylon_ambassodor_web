@@ -23,24 +23,24 @@ const GlobalLogisticsComponent = () => {
 
 <div className="ml-4">
   {/* Title */}
-  <h1 className="mt-4 text-4xl font-bold font-MontserratMedium">
+  <h1 className="mt-4 text-4xl font-bold font-MontserratMedium" data-aos="fade-up" data-aos-duration="1000">
     Why Choose Ceylon Ambassador?
   </h1>
 
   {/* Description */}
-  <p className="text-sm leading-snug text-justify font-Montserrat mt-4">
+  <p className="text-sm leading-snug text-justify font-Montserrat mt-4" data-aos="fade-up" data-aos-duration="2000">
     <strong>● Global Reach:</strong> Our services span continents, ensuring your needs are met wherever you are.
   </p>
 
-  <p className="text-sm leading-snug text-justify font-Montserrat mt-4">
+  <p className="text-sm leading-snug text-justify font-Montserrat mt-4" data-aos="fade-up" data-aos-duration="3000">
     <strong>● Tailored Solutions:</strong> We offer personalized services designed to align with your unique goals.
   </p>
 
-  <p className="text-sm leading-snug text-justify font-Montserrat mt-4">
+  <p className="text-sm leading-snug text-justify font-Montserrat mt-4" data-aos="fade-up" data-aos-duration="6000">
     <strong>● Innovation-Driven:</strong> Powered by technology, we provide cutting-edge solutions across industries.
   </p>
 
-  <p className="text-sm leading-snug text-justify font-Montserrat mt-4">
+  <p className="text-sm leading-snug text-justify font-Montserrat mt-4" data-aos="fade-up" data-aos-duration="7000">
     <strong>● Commitment to Sustainability:</strong> We prioritize eco-friendly practices to create a better tomorrow.
   </p>
 </div>

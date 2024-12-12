@@ -20,10 +20,10 @@ const AeroLogisticsPage = () => {
 
           {/* Text Content */}
           <div className="lg:w-1/2 space-y-4 text-center lg:text-left font-Montserrat">
-            <h1 className="text-3xl font-bold text-customBlue">
+            <h1 className="text-3xl font-bold text-customBlue" data-aos="fade-up" data-aos-duration="1000">
               Elevating the Future of Aviation
             </h1>
-            <p className="text-gray-600 pb-4">
+            <p className="text-gray-600 pb-4" data-aos="fade-up" data-aos-duration="2000">
               <strong className="text-black"> Aerofly Aviation</strong> provides
               comprehensive aviation solutions, specializing in cargo capacity
               management, airline representation, and customer service solutions
@@ -41,7 +41,7 @@ const AeroLogisticsPage = () => {
             </p>
 
             {/* View More Button */}
-            <div className="flex items-center space-x-4 py-4 border-t-2 border-customBlue">
+            <div className="flex items-center space-x-4 py-4 border-t-2 border-customBlue" data-aos="fade-up" data-aos-duration="3000">
               {/* Clickable area with hover effect */}
               <a
                 href="#"

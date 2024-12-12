@@ -14,8 +14,8 @@ const LeadershipComponent = () => {
         {/* Left Text Content */}
         <div className="lg:w-1/2 text-center lg:text-left mt-24 lg:ml-16 mb-12 lg:mb-0 font-Montserrat">
           <img src={quota} alt="Logo" className="h-12 mb-6 mx-auto lg:mx-0" />
-          <h2 className="text-4xl font-bold mb-4">Leadership & Expertise</h2>
-          <p className="text-sm leading-relaxed">
+          <h2 className="text-4xl font-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Leadership & Expertise</h2>
+          <p className="text-sm leading-relaxed" data-aos="fade-up" data-aos-duration="1000">
             Our leadership team brings decades of industry expertise, guiding
             Ceylon Ambassador with a vision that balances innovation with
             sustainability. Each member of our executive team is dedicated to
@@ -28,6 +28,7 @@ const LeadershipComponent = () => {
             src={logo}
             alt="Ceylon Ambassador"
             className="h-16 mt-8 mx-auto" // Centered with mx-auto
+            
           />
         </div>
 

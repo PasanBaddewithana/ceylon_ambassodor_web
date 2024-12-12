@@ -8,13 +8,13 @@ import ThirdPart from '../../../screens/Homepage/component/ThirdPart';
 
 const ServicesComponent = () => {
   return (
-    <div className="bg-bggray py-12 font-Montserrat overflow-hidden">
-      <div className="train-container flex space-x-8 animate-train">
+    <div className="bg-white py-12 font-Montserrat overflow-hidden">
+      <div className="train-container flex space-x-8 animate-train-home">
         <IconsLayer />
         <KhmergateThird />
         <AeroThirdPart />
         <ThirdPart />
-        <ThirdPart /> {/* Add more components if needed */}
+       
       </div>
     </div>
   );

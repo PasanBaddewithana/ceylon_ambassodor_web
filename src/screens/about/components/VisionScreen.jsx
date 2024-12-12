@@ -8,16 +8,16 @@ const VisionScreen = () => {
         {/* Sidebar - Left side (5 columns) */}
         <div className="w-4/12 bg-white flex flex-col justify-start items-start">
           <div className="space-y-2 text-left">
-              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2">
+              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="1000">
                 UNITED FREIGHT SOLUTIONS
               </p>
-              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2">
+              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="2000">
               KHMERGATE
               </p>
-              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2">
+              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="3000">
               AEROFLY AVIATION
               </p>
-              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2">
+              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="4000">
               BRANDPULSE
               </p>
           
@@ -33,7 +33,7 @@ const VisionScreen = () => {
         <div className="w-7/12 flex flex-col px-8 py-0">
           {/* Our Journey Section */}
           <section className="mb-12">
-            <p className=" text-sm mb-6 text-customBlue">
+            <p className=" text-sm mb-6 text-customBlue" data-aos="fade-up" data-aos-duration="1000">
               At Ceylon Ambassador, we believe in the power of
               connection—connecting businesses with opportunities, people with
               experiences, and ideas with innovation. Founded on the principles
@@ -43,10 +43,10 @@ const VisionScreen = () => {
               simple: to deliver world-class solutions that inspire trust, drive
               growth, and create lasting impact.
             </p>
-            <h2 className="text-3xl text-customBlue font-semibold mb-4">
+            <h2 className="text-3xl text-customBlue font-semibold mb-4" data-aos="fade-up" data-aos-duration="1000">
               Our Journey
             </h2>
-            <p className="text-sm text-customBlue">
+            <p className="text-sm text-customBlue" data-aos="fade-up" data-aos-duration="1000">
               Since our inception, we have been driven by a vision to create a
               global presence that bridges industries, regions, and cultures.
               From humble beginnings, Ceylon Ambassador has evolved into a
@@ -61,8 +61,8 @@ const VisionScreen = () => {
 
           {/* What Sets Us Apart */}
           <section className="mb-8">
-            <h2 className="text-3xl font-semibold mb-4">What Sets Us Apart</h2>
-            <p className="text-sm text-customBlue">
+            <h2 className="text-3xl font-semibold mb-4" data-aos="fade-up" data-aos-duration="1000">What Sets Us Apart</h2>
+            <p className="text-sm text-customBlue" data-aos="fade-up" data-aos-duration="1000">
               At the heart of Ceylon Ambassador lies our unwavering commitment
               to excellence. We are not just about providing services; we are
               about offering solutions that elevate and empower. Whether it's
@@ -92,9 +92,9 @@ const VisionScreen = () => {
               className="text-4xl font-MontserratMedium
              font-extrabold text-[#031c3f]"
             >
-              <span className="text-7xl">“</span> Vision
+              <span className="text-7xl" data-aos="fade-up" data-aos-duration="1000">“</span> Vision
             </h2>
-            <p className=" mt-4 text-customBlue">
+            <p className=" mt-4 text-customBlue" data-aos="fade-up" data-aos-duration="1000">
               Our vision is to become a global leader in each of our
               sectors—logistics, travel and tourism, branding, and aviation—by
               continuously innovating, expanding our market presence, and
@@ -108,10 +108,10 @@ const VisionScreen = () => {
 
           {/* Mission */}
           <div className="flex flex-col items-end">
-            <h2 className="text-4xl font-MontserratMedium font-extrabold text-[#031c3f] ">
-              Mission <span className="text-7xl">”</span>
+            <h2 className="text-4xl font-MontserratMedium font-extrabold text-[#031c3f] " data-aos="fade-up" data-aos-duration="1000">
+              Mission <span className="text-7xl" data-aos="fade-up" data-aos-duration="1000">”</span>
             </h2>
-            <p className="mt-4  text-customBlue">
+            <p className="mt-4  text-customBlue" data-aos="fade-up" data-aos-duration="1000">
               Ceylon Ambassador's mission is to connect opportunities and
               deliver excellence across our diverse portfolio of services. We
               are committed to fostering long-term relationships with our
