@@ -47,7 +47,16 @@
 
 @keyframes train-scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+@keyframes train-scroll-other {
+  0% {
+    transform: translateX(50%);
   }
   100% {
     transform: translateX(-50%);
@@ -55,12 +64,12 @@
 }
 
 .animate-train {
-  animation: train-scroll 10s linear infinite;
+  animation: train-scroll-other 10s linear infinite;
  
 }
 
 .animate-train-home {
-  animation: train-scroll 10s linear infinite;
+  animation: train-scroll 30s linear infinite;
  
 }
 

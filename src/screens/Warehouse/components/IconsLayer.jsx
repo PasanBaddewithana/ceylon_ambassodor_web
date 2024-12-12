@@ -14,7 +14,7 @@ const IconsLayer = () => {
         alt="plane"
         topic="Air Freight"
         content="Delivering fast, secure, and reliable air cargo solutions with global reach and real-time tracking."
-        data-aos="fade-up" data-aos-duration="1000"
+        
       />
       <CartoonCard
         image={Ship}
@@ -22,7 +22,7 @@ const IconsLayer = () => {
         topic="Sea Freight"
         h="100px"
         content="Providing cost-effective and flexible ocean freight services for all shipment sizes and types."
-        data-aos="fade-up" data-aos-duration="1000"
+        
       />
       <CartoonCard
         image={Truck}
@@ -30,7 +30,7 @@ const IconsLayer = () => {
         topic="Inland Freight"
         h="100px"
         content="Offering tailored and secure inland freight solutions, including temperature-controlled and custom handling options."
-        data-aos="fade-up" data-aos-duration="1000"
+      
       />
       <CartoonCard
         image={Train}
@@ -38,7 +38,7 @@ const IconsLayer = () => {
         topic="Warehousing"
         h="100px"
         content="Advanced warehousing solutions with real-time inventory management and value-added services."
-        data-aos="fade-up" data-aos-duration="1000"
+       
       />
       <CartoonCard
         image={World}
@@ -46,7 +46,7 @@ const IconsLayer = () => {
         alt="slips"
         topic="Global Consolidation"
         content="Efficient multi-country consolidation and distribution services, leveraging strategic locations."
-        data-aos="fade-up" data-aos-duration="1000"
+        
       />
     </div>
   );
