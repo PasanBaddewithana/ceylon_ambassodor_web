@@ -1,5 +1,6 @@
 import React from "react";
 import AllVehiclesImage from "../../../assets/all_vehicles_image.png";
+import roboimg from "../../../assets/roboimage.jpg"
 
 const VisionScreen = () => {
   return (
@@ -22,10 +23,12 @@ const VisionScreen = () => {
               </p>
           
           </div>
-          <div className="mt-16 w-40 h-40 bg-[#031c3f] flex justify-center items-center">
-            <div className="w-12 h-12 bg-[#d8b572] flex justify-center items-center">
-              <span className="text-3xl font-bold text-white">+</span>
-            </div>
+          <div className="mt-10  flex items-start ">
+          <img
+    src={roboimg}
+    alt="robo"
+    className=" w-60 h-full mx-auto object-cover"
+  />
           </div>
         </div>
 

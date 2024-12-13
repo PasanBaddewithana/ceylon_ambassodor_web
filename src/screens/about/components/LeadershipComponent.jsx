@@ -6,7 +6,8 @@ import PersonCard from "./PersonCard";
 import person from "../../../assets/glow_geometric.png"; // Replace with actual image path
 import logo from "../../../assets/white_logo_2.svg"; // Replace with actual image path
 import quota from "../../../assets/quata.png"; // Replace with actual image path
-
+import person1 from "../../../assets/Sranga.png";
+import person2 from "../../../assets/Jeewan.png";
 const LeadershipComponent = () => {
   return (
     <section className="bg-customBlue text-white py-12">
@@ -36,15 +37,15 @@ const LeadershipComponent = () => {
         <div className="flex flex-col lg:flex-row lg:w-1/2 justify-around items-center space-y-6 lg:space-y-0 lg:space-x-8">
           {/* Card 1 */}
           <PersonCard
-            image={person} // Replace with actual image path
-            title="Your Global Logistics"
-            subtitle="Partner for Seamless"
+            image={person1} // Replace with actual image path
+            title="Suranga Tissera"
+            subtitle=" Managing Director"
           />
           {/* Card 2 */}
           <PersonCard
-            image={person} // Replace with actual image path
-            title="Your Global Logistics"
-            subtitle="Partner for Seamless"
+            image={person2} // Replace with actual image path
+            title="Jeewan M. Hettigamage"
+            subtitle=" Director"
           />
         </div>
       </div>
