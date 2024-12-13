@@ -2,6 +2,7 @@ import React from "react";
 import ship1 from "../../../assets/home/ship01.png";
 import ship2 from "../../../assets/home/ship2.jpg";
 import ufs_orange from "../../../assets/home/ufs_orange.png";
+import h1 from '../../../assets/home/H1.png'
 
 const LogisticsPage = () => {
   return (
@@ -11,8 +12,8 @@ const LogisticsPage = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between  space-y-8 ">
           {/* Ships images */}
           <div className="space-y-16">
-            <img src={ship1} alt="Ship 1" className="w-full max-w-sm mx-auto" />
-            <img src={ship2} alt="Ship 2" className="w-full max-w-sm mx-auto" />
+            <img src={h1} alt="Ship 1"  className="w-full max-w-2xl mx-auto h-auto" />
+            
           </div>
 
           {/* Text Content */}

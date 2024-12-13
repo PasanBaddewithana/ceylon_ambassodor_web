@@ -41,21 +41,11 @@ const SecondHomeImageComponent = () => {
 
             {/* Footer Statement */}
             <div className="text-left flex items-center space-x-4" data-aos="fade-up" data-aos-duration="3000">
-              <div className="h-8 w-8 bg-white rounded-full"></div>
-              <p className="text-sm lg:text-lg font-semibold font-Montserrat ">
-              A Legacy of Leadership
-              </p>
+              
+              
               
             </div>
-            <p className="text-sm lg:text-sm mb-6 font-Montserrat " data-aos="fade-up" data-aos-duration="3000">
-              Welcome to <strong>Ceylon Ambassador,</strong> where innovation meets excellence to
-              create a world of seamless possibilities. As the mother brand
-              behind industry leaders in logistics, travel, aviation, and
-              branding, we are dedicated to empowering businesses and
-              individuals to thrive in a globally connected marketplace. Our
-              mission is simple: to bridge distances, break boundaries, and
-              deliver unmatched value through our network of specialized brands.
-            </p>
+            
           </div>
         </div>
       </div>

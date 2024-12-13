@@ -8,11 +8,12 @@ const ContactComponent = () => {
         <div className="font-MontserratSemiBold">
           <h2 className="text-lg font-bold">CURRENTLY OPERATING</h2>
           <ul className="mt-4 space-y-2">
-            <li>Colombo - Colombo</li>
-            <li>Colombo - Colombo</li>
-            <li>Colombo - Colombo</li>
-            <li>Colombo - Colombo</li>
-            <li>Colombo - Colombo</li>
+            <li>UFS-Sri Lanka</li>
+            <li> UFS-Singapore</li>
+            <li> UFS-Cambodia</li>
+            <li> UFS-Thailand</li>
+            <li> UFS-Dominican Republic</li>
+            <li>  UFS-Myanmar</li>
           </ul>
         </div>
 

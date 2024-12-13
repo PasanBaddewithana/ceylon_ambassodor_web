@@ -3,10 +3,10 @@ import CountUp from "react-countup";
 
 const StatsSection = () => {
   const stats = [
-    { label: "Delivered Packages", value: 1000 },
-    { label: "KM Per Year", value: 1000 },
-    { label: "Tones of Goods", value: 1000 },
-    { label: "Satisfied Clients", value: 1000 },
+    { label: "Delivered Shipments", value: 2156 },
+    { label: "Globally Connected Agents", value: 362 },
+    { label: "Tones of Goods", value: 6236 },
+    { label: "Satisfied Clients", value: 71 },
   ];
 
   const [isVisible, setIsVisible] = useState(false);
