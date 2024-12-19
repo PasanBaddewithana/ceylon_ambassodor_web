@@ -25,8 +25,8 @@ const Card = ({ image, logo, title, description, details }) => {
       <div className="relative z-10 flex flex-col justify-between h-full text-center px-4">
         {hover ? (
           <div className="flex flex-col justify-center h-full">
-            <p className="text-lg text-white">{description}</p>
-            {details && <p className="text-md mt-2 text-white">{details}</p>}
+            <p className="text-lg text-blue-800">{description}</p>
+            {details && <p className="text-md mt-2 text-blue-800">{details}</p>}
           </div>
         ) : (
           <>

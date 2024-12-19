@@ -1,6 +1,7 @@
 import React from "react";
 import AllVehiclesImage from "../../../assets/all_vehicles_image.png";
 import roboimg from "../../../assets/roboimage.jpg"
+import Logo from "../../../assets/blue_logo.svg";
 
 const VisionScreen = () => {
   return (
@@ -13,19 +14,20 @@ const VisionScreen = () => {
                 UNITED FREIGHT SOLUTIONS
               </p>
               <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="2000">
-              KHMERGATE
-              </p>
-              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="3000">
               AEROFLY AVIATION
               </p>
-              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="4000">
+              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="3000">
+              KHMERGATE
+              </p>
+              
+              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="6000">
               BRANDPULSE
               </p>
           
           </div>
           <div className="mt-10  flex items-start ">
           <img
-    src={roboimg}
+    src={Logo}
     alt="robo"
     className=" w-60 h-full mx-auto object-cover"
   />

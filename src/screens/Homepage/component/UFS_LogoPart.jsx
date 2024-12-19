@@ -2,7 +2,9 @@ import React from "react";
 import ship1 from "../../../assets/home/ship01.png";
 import ship2 from "../../../assets/home/ship2.jpg";
 import ufs_orange from "../../../assets/home/ufs_orange.png";
-import h1 from '../../../assets/home/H1.png'
+import h1 from '../../../assets/home/H1.png';
+import { Link } from "react-router-dom";
+
 
 const LogisticsPage = () => {
   return (
@@ -21,7 +23,7 @@ const LogisticsPage = () => {
             <img
               src={ufs_orange}
               alt="UFS Logo"
-              className="w-36 mx-auto lg:mx-0"
+              className="w-30 h-40 mx-auto lg:mx-0"
             />
             <h1 className="text-3xl font-bold text-customBlue" data-aos="fade-up" data-aos-duration="1000">
               United Freight Solutions: Connecting the World, One Shipment at a
@@ -43,36 +45,40 @@ const LogisticsPage = () => {
             </p>
 
             {/* View More Button */}
-            <div className="flex items-center space-x-4 py-4 border-t-2 border-customBlue" data-aos="fade-up" data-aos-duration="3000">
-              {/* Clickable area with hover effect */}
-              <a
-                href="#"
-                className="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg transition-all duration-300 cursor-pointer"
-              >
-                {/* Circle with Plus Icon */}
-                <div className="flex justify-center items-center w-12 h-12 bg-orange-300 rounded-full transition-transform duration-300 hover:scale-110">
-                  <svg
-                    className="w-6 h-6 text-customBlue"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M12 4v16m8-8H4"
-                    />
-                  </svg>
-                </div>
-                {/* Text beside Icon */}
-                <div className="text-gray-800 font-kollektif ">
-                  <p className="font-medium">View more</p>
-                  <p>about our services</p>
-                </div>
-              </a>
-            </div>
+            <div
+  className="flex items-center space-x-4 py-4 border-t-2 border-customBlue"
+  data-aos="fade-up"
+  data-aos-duration="3000"
+>
+  {/* Clickable area with hover effect */}
+  <Link
+    to="/ufs" // Replace with your React route
+    className="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg transition-all duration-300 cursor-pointer"
+  >
+    {/* Circle with Plus Icon */}
+    <div className="flex justify-center items-center w-12 h-12 bg-[#c3a05f] rounded-full transition-transform duration-300 hover:scale-110">
+      <svg
+        className="w-6 h-6 text-customBlue"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M12 4v16m8-8H4"
+        />
+      </svg>
+    </div>
+    {/* Text beside Icon */}
+    <div className="text-gray-800 font-kollektif ">
+      <p className="font-medium">View more</p>
+      <p>about our services</p>
+    </div>
+  </Link>
+</div>
           </div>
         </div>
       </div>

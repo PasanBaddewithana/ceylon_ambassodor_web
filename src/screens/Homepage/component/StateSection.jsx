@@ -38,23 +38,24 @@ const StatsSection = () => {
   return (
     <div
       ref={sectionRef}
-      className="bg-customBlue py-12 font-MontserratMedium"
+      className="bg-customBlue py-16 font-MontserratMedium"
     >
       <div className="max-w-7xl mx-auto flex justify-around items-center">
-        {stats.map((stat, index) => (
-          <div key={index} className="flex items-center space-x-4">
-            {/* Vertical Line */}
-            <div className="h-16 border-l-2 border-white"></div>
-            {/* Stat Block */}
-            <div className="text-center text-white">
-              <p className="text-sm">{stat.label}</p>
-              <p className="text-5xl font-bold">
-                {isVisible ? <CountUp end={stat.value} duration={2} /> : "0"}+
-              </p>
-            </div>
-          </div>
-        ))}
+  {stats.map((stat, index) => (
+    <div key={index} className="flex items-center space-x-4">
+      {/* Vertical Line */}
+      <div className="h-16 border-l-2 border-white"></div>
+      {/* Stat Block */}
+      <div className="text-left text-white"> {/* Updated alignment */}
+        <p className="text-sm">{stat.label}</p>
+        <p className="text-5xl font-bold">
+          {isVisible ? <CountUp end={stat.value} duration={2} /> : "0"}+
+        </p>
       </div>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 };

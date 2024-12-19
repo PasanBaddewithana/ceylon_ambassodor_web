@@ -3,6 +3,7 @@ import TopHeader from "../../screens/Homepage/component/TopHeader";
 import Navbar from "../../screens/Homepage/component/Navbar";
 import Footer from "../../screens/faq/component/Footer";
 import BlogPost from "../components/BlogComponent";
+import LatestNewsComponent from "../../screens/Homepage/component/LatestNewsComponent"; // Import LatestNewsComponent
 
 import blog1_img from "../../assets/blog/blog1.jpg";
 import blog2_img from "../../assets/blog/blog2.jpg";
@@ -70,6 +71,11 @@ function BlogPage() {
           />
         ))}
       </div>
+
+      {/* Pass blogPosts as a prop to LatestNewsComponent */}
+      <LatestNewsComponent newsData={blogPosts} />
+      
+
       <Footer />
     </div>
   );

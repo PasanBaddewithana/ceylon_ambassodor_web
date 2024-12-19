@@ -21,9 +21,9 @@ const ValuesSection = () => {
             alt="Integrity"
             className="self-center w-20 h-20 mb-4"
           />
-          <h3 className="text-2xl font-bold mb-8 ">Integrity</h3>
+          <h3 className="text-1xl font-bold mb-8  self-center">Integrity</h3>
          
-          <p className="mt-2 mb-3 text-xs w-full">
+          <p className="mt-2 mb-3 text-xs w-full self-center">
             We conduct business with the highest ethical standards, always doing
             what is right for our clients, partners.
           </p>
@@ -36,9 +36,9 @@ const ValuesSection = () => {
             alt="Excellence"
             className="self-center w-20 h-20 mb-4"
           />
-           <h3 className="text-2xl font-bold mb-8">Excellence</h3>
+           <h3 className="text-1xl font-bold mb-8 self-center">Excellence</h3>
           
-          <p className="mt-2 mb-3 text-xs w-full">
+          <p className="mt-2 mb-3 text-xs w-full self-center">
             We are driven by a relentless pursuit of quality in every project,
             ensuring that our services are second to none.
           </p>
@@ -51,9 +51,9 @@ const ValuesSection = () => {
             alt="Innovation"
             className="self-center w-20 h-20 mb-4"
           />
-           <h3 className="text-2xl font-bold">Innovation</h3>
+           <h3 className="text-1xl font-bold self-center">Innovation</h3>
            <div className="flex-grow min-h-[20px]"></div>
-          <p className="mt-2 mb-3 text-xs w-full">
+          <p className="mt-2 mb-3 text-xs w-full self-center">
             We thrive on creativity and forward-thinking, constantly seeking new
             ways to enhance and revolutionize our services.
           </p>
@@ -65,9 +65,9 @@ const ValuesSection = () => {
             alt="Sustainability"
             className="self-center w-20 h-20 mb-4"
           />
-           <h3 className="text-2xl font-bold">Sustainability</h3>
+           <h3 className="text-1xl font-bold self-center">Sustainability</h3>
            <div className="flex-grow min-h-[20px]"></div>
-          <p className="mt-2 mb-3 text-xs w-full">
+          <p className="mt-2 mb-3 text-xs w-full self-center">
             We are committed to responsible business practices that protect the
             environment and contribute positively to society.
           </p>
@@ -79,8 +79,8 @@ const ValuesSection = () => {
             alt="Customer-Centricity"
             className="self-center w-20 h-20 mb-4"
           />
-          <h3 className="text-2xl font-bold">Customer-Centricity</h3>
-          <p className="mb-3 mt-2 text-xs w-full">
+          <h3 className="text-1xl font-bold self-center">Customer-Centricity</h3>
+          <p className="mb-3 mt-2 text-xs w-full self-center">
             Our clients are at the core of everything we do, and we strive to
             build long-lasting relationships by exceeding their expectations.
           </p>

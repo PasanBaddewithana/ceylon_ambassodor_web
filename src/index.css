@@ -45,14 +45,7 @@
   @apply bg-customBlue text-white  px-6 py-0  hover:bg-customBlue transition;
 }
 
-@keyframes train-scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-300%);
-  }
-}
+
 
 @keyframes train-scroll-other {
   0% {
@@ -68,8 +61,17 @@
  
 }
 
+@keyframes train-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
 .animate-train-home {
-  animation: train-scroll 30s linear infinite;
+  animation: train-scroll 75s linear infinite;
  
 }
 
@@ -108,11 +110,11 @@
 }
 
 .animate-train-left {
-  animation: train-left 30s linear infinite;
+  animation: train-left 60s linear infinite;
 }
 
 .animate-train-right {
-  animation: train-right 30s linear infinite;
+  animation: train-right 60s linear infinite;
 }
 
 .section {
@@ -186,6 +188,37 @@
 .parallax-spacer-aboutus{
   height: 600px; /* Adjust height as needed */
   background-image: url('./assets/airplane_about_hero.jpg'); /* Use ContainerImage source */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1; /* Below components */
+}
+
+.parallax-spacer-home {
+  height: 800px; /* Adjust height as needed */
+  background-image: url('./assets/home/2.ndimagejpg.jpg'); /* Use ContainerImage source */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1; /* Below components */
+}
+.parallax-spacer-homeglobe {
+  height: 800px; /* Adjust height as needed */
+  background-image: url('./assets/home/3_image_home.jpg'); /* Use ContainerImage source */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1; /* Below components */
+}
+
+.parallax-spacertext {
+  height: 800px; /* Adjust height as needed */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
