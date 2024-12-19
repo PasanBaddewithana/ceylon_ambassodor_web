@@ -79,9 +79,9 @@ function HomePage() {
       <div data-aos="fade-in">
         <LatestNewsComponent />
       </div>
-      <div data-aos="fade-down">
+      
         <LogisticsBanner />
-      </div>
+     
       <div data-aos="fade-up">
         <HomeGridComponent />
       </div>

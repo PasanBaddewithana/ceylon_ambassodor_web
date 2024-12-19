@@ -5,13 +5,8 @@ import quote_img from "../../../assets/quata.png";
 
 const LogisticsBanner = () => {
   return (
-    <div className="relative w-full h-[750px] overflow-hidden bg-customGray">
-      {/* Background Image */}
-      <img
-        src={logistic_banner}
-        alt="Logistics background"
-        className="absolute inset-0 object-cover w-full h-full"
-      />
+    <div className="parallax-spacer-homelogic">
+     
 
       {/* Text content */}
       <div className="mt-16 relative z-10 flex flex-col items-start justify-center px-8 py-16 lg:px-20">

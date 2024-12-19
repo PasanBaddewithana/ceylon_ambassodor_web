@@ -34,44 +34,90 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold mb-3 text-sm">Our Divisions</h3>
               <ul className="space-y-1 text-xs">
-                <li>About Us</li>
-                <li>Our Team</li>
-                <li>Our Clients</li>
-                <li>Meet The Crew</li>
-                <li>Available Positions</li>
-                <li>Job Application</li>
+                <li>
+                  <a href="/about" className="hover:text-gray-400">About Us</a>
+                </li>
+                <li>
+                  <a href="/meet-crew" className="hover:text-gray-400">Our Team</a>
+                </li>
+                <li>
+                  <a href="/our-clients" className="hover:text-gray-400">Our Clients</a>
+                </li>
+                <li>
+                  <a href="/meet-crew" className="hover:text-gray-400">Meet The Crew</a>
+                </li>
+                <li>
+                  <a href="/avilablepositions" className="hover:text-gray-400">Available Positions</a>
+                </li>
+                <li>
+                  <a href="/job-application" className="hover:text-gray-400">Job Application</a>
+                </li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-3 text-sm">Company Service</h3>
               <ul className="space-y-1 text-xs">
-                <li>Our Services</li>
-                <li>What We Do</li>
-                <li>Request a Freight</li>
-                <li>Track & Trace</li>
-                <li>Air Freight</li>
-                <li>Rail Freight</li>
-                <li>Maritime Transport</li>
+                <li>
+                  <a href="/" className="hover:text-gray-400">Our Services</a>
+                </li>
+                <li>
+                  <a href="/about" className="hover:text-gray-400">What We Do</a>
+                </li>
+                <li>
+                  <a href="/book-frieghts" className="hover:text-gray-400">Request a Freight</a>
+                </li>
+                <li>
+                  <a href="/" className="hover:text-gray-400">Track & Trace</a>
+                </li>
+                <li>
+                  <a href="/" className="hover:text-gray-400">Air Freight</a>
+                </li>
+                <li>
+                  <a href="/" className="hover:text-gray-400">Rail Freight</a>
+                </li>
+                <li>
+                  <a href="/" className="hover:text-gray-400">Maritime Transport</a>
+                </li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-3 text-sm">Contact Us</h3>
               <ul className="space-y-1 text-xs">
-                <li>Find Us Here</li>
-                <li>Get In Touch</li>
-                <li>FAQ Page</li>
-                <li>Global Network</li>
-                <li>Support 24/7</li>
+                <li>
+                  <a href="/contact-us" className="hover:text-gray-400">Find Us Here</a>
+                </li>
+                <li>
+                  <a href="/" className="hover:text-gray-400">Get In Touch</a>
+                </li>
+                <li>
+                  <a href="/faq" className="hover:text-gray-400">FAQ Page</a>
+                </li>
+                <li>
+                  <a href="/global-network" className="hover:text-gray-400">Global Network</a>
+                </li>
+                <li>
+                  <a href="/" className="hover:text-gray-400">Support 24/7</a>
+                </li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-3 text-sm">Latest News</h3>
               <ul className="space-y-1 text-xs">
-                <li>Expert Tips</li>
-                <li>A Sustainable Future</li>
-                <li>Fresh Start</li>
-                <li>Clean Spaces</li>
-                <li>Tips & Strategies</li>
+                <li>
+                  <a href="/" className="hover:text-gray-400">Expert Tips</a>
+                </li>
+                <li>
+                  <a href="/" className="hover:text-gray-400">A Sustainable Future</a>
+                </li>
+                <li>
+                  <a href="/" className="hover:text-gray-400">Fresh Start</a>
+                </li>
+                <li>
+                  <a href="/" className="hover:text-gray-400">Clean Spaces</a>
+                </li>
+                <li>
+                  <a href="/" className="hover:text-gray-400">Tips & Strategies</a>
+                </li>
               </ul>
             </div>
           </div>
