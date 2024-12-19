@@ -32,7 +32,7 @@ const Card = ({ image, logo, title, description, details }) => {
           <>
             {/* Align logo to the bottom and reduce size */}
             <div className="absolute bottom-8 left-5 right-5 flex justify-center">
-              <img src={logo} alt={title} className="h-16 w-48" />{" "}
+              <img src={logo} alt={title} className="h-16 w-50" />{" "}
               {/* Reduced size */}
             </div>
           </>

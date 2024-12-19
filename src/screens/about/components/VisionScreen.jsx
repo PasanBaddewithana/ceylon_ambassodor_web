@@ -9,22 +9,32 @@ const VisionScreen = () => {
       <div className="mb-10 flex justify-center items-start bg-white px-12 mx-16 mt-12 gap-x-4 text-customBlue">
         {/* Sidebar - Left side (5 columns) */}
         <div className="w-4/12 bg-white flex flex-col justify-start items-start">
-          <div className="space-y-2 text-left">
-              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="1000">
-                UNITED FREIGHT SOLUTIONS
-              </p>
-              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="2000">
-              AEROFLY AVIATION
-              </p>
-              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="3000">
-              KHMERGATE
-              </p>
-              
-              <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="6000">
-              BRANDPULSE
-              </p>
-          
-          </div>
+        <div className="space-y-2 text-left">
+  <a href="/ufs" className="block">
+    <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="1000">
+      UNITED FREIGHT SOLUTIONS
+    </p>
+  </a>
+  
+  <a href="/aerofly" className="block">
+    <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="1500">
+      AEROFLY AVIATION
+    </p>
+  </a>
+  
+  <a href="/khmergate" className="block">
+    <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="2000">
+      KHMERGATE
+    </p>
+  </a>
+
+  <a href="/brandpulse" className="block">
+    <p className="font-kollektif text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="2500">
+      BRANDPULSE
+    </p>
+  </a>
+</div>
+
           <div className="mt-10  flex items-start ">
           <img
     src={Logo}
