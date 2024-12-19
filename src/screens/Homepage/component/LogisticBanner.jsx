@@ -1,6 +1,7 @@
 import React from "react";
 import logistic_banner from "../../../assets/home/4th_image_home.jpg";
 import logo from "../../../assets/home/blueQuata.svg";
+import quote_img from "../../../assets/quata.png";
 
 const LogisticsBanner = () => {
   return (
@@ -17,7 +18,7 @@ const LogisticsBanner = () => {
         <div className="p-6 max-w-md">
           {/* Quote Icon at the Start */}
           <div className="flex justify-start mb-4">
-            <img src={logo} alt="Quote Icon" className="w-16 h-16" />
+            <img src={quote_img} alt="Quote Icon" className="w-16 h-16" />
           </div>
 
           {/* Title and Description */}

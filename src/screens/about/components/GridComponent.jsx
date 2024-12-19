@@ -48,14 +48,14 @@ const GridComponent = () => {
       {/* First row */}
       <div className="flex animate-train-left">
         {row1Images.map((image, index) => (
-          <div key={index} className="w-60 h-50 p-1 ">
+          <div key={index} className="w-60 h-50 p-0 ">
             <img src={image} alt={`Row 1 Image ${index + 1}`} className="object-cover w-full h-full" />
           </div>
         ))}
       </div>
 
       {/* Second row */}
-      <div className="flex animate-train-right mt-2">
+      <div className="flex animate-train-right mt-0.25">
         {row2Images.map((image, index) => (
           <div key={index} className="w-60 h-50 p-0 ">
             <img src={image} alt={`Row 2 Image ${index + 1}`} className="object-cover w-full h-full" />

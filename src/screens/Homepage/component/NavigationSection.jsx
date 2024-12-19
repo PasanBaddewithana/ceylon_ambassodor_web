@@ -5,8 +5,8 @@ const NavSection = ({ setActiveSection }) => {
     <section className="w-[85%] mx-auto mt-6 grid grid-cols-4 text-center py-4 bg-white font-bold font-kollektif">
       {[
         { name: "UNITED FREIGHT SOLUTIONS", value: "LogisticsPage" },
-        { name: "KHMERGATE", value: "KhemerLogisticsPage" },
         { name: "AEROFLY AVIATION", value: "AeroLogisticsPage" },
+        { name: "KHMERGATE", value: "KhemerLogisticsPage" },
         { name: "BRANDPULSE", value: "BrandpulseLogisticsPage" },
       ].map((item, index) => (
         <div

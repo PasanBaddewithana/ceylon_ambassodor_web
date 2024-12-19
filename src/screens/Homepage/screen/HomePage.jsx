@@ -59,9 +59,11 @@ function HomePage() {
       <Hero video={HomeVideo} /> {/* Hero Section */}
       <NavSection setActiveSection={setActiveSection} /> {/* Navigation */}
       <div data-aos="fade-up">{renderSection()}</div> {/*Animated Section*/}
-      <div data-aos="fade-right">
+      
+      
+      
         <SecondHomeImageComponent />
-      </div>
+      
       <div data-aos="fade-left">
         <ServicesComponent />
       </div>
@@ -71,9 +73,9 @@ function HomePage() {
       <div data-aos="flip-up">
         <StatsSection />
       </div>
-      <div data-aos="fade-up">
+     
         <GlobalLogisticsComponent />
-      </div>
+    
       <div data-aos="fade-in">
         <LatestNewsComponent />
       </div>

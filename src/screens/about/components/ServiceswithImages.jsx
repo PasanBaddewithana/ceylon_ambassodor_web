@@ -6,7 +6,8 @@ import Logo from "../../../assets/blue_logo.svg";
 
 const ServicesWithImages = () => {
   return (
-    <div className="font-Montserrat">
+    <div className="font-Montserrat ">
+      <div className=" items-center justify-center">
       {/* Sustainability & Social Responsibility Section */}
       <div className="flex flex-col md:flex-row my-10 items-center justify-center px-5 md:px-20">
         <div className="md:w-1/2 py-2 max-w-96 text-center md:text-left">
@@ -86,6 +87,7 @@ const ServicesWithImages = () => {
             />
           </div>
         </div>
+      </div>
       </div>
 
       {/* Footer */}
