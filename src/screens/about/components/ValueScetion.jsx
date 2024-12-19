@@ -53,7 +53,7 @@ const ValuesSection = () => {
           />
            <h3 className="text-1xl font-bold self-center">Innovation</h3>
            <div className="flex-grow min-h-[20px]"></div>
-          <p className="mt-2 mb-3 text-xs w-full self-center">
+          <p className="mt-5 mb-3 text-xs w-full self-center">
             We thrive on creativity and forward-thinking, constantly seeking new
             ways to enhance and revolutionize our services.
           </p>
@@ -67,7 +67,7 @@ const ValuesSection = () => {
           />
            <h3 className="text-1xl font-bold self-center">Sustainability</h3>
            <div className="flex-grow min-h-[20px]"></div>
-          <p className="mt-2 mb-3 text-xs w-full self-center">
+          <p className="mt-5 mb-3 text-xs w-full self-center">
             We are committed to responsible business practices that protect the
             environment and contribute positively to society.
           </p>
@@ -80,7 +80,7 @@ const ValuesSection = () => {
             className="self-center w-20 h-20 mb-4"
           />
           <h3 className="text-1xl font-bold self-center">Customer-Centricity</h3>
-          <p className="mb-3 mt-2 text-xs w-full self-center">
+          <p className="mb-3 mt-10 text-xs w-full self-center">
             Our clients are at the core of everything we do, and we strive to
             build long-lasting relationships by exceeding their expectations.
           </p>

@@ -93,27 +93,29 @@
 
 @keyframes train-left {
   0% {
-    transform: translateX(100%);
+    transform: translateX(50%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes train-right {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(50%);
   }
 }
 
 .animate-train-left {
+  display: flex;
   animation: train-left 60s linear infinite;
 }
 
 .animate-train-right {
+  display: flex;
   animation: train-right 60s linear infinite;
 }
 
@@ -259,6 +261,36 @@
 
 .animate-text-delay-3 {
   transition-delay: 1.5s;
+}
+
+@keyframes trainScrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes trainScrollRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.scroll-row {
+  display: flex;
+  flex-direction: row;
+  animation: trainScrollLeft 30s linear infinite;
+}
+
+.scroll-row-reverse {
+  display: flex;
+  flex-direction: row;
+  animation: trainScrollRight 30s linear infinite;
 }
 
 
