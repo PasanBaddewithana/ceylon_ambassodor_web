@@ -230,6 +230,17 @@
   z-index: 1; /* Below components */
 }
 
+.parallax-spacer-global {
+  height: 600px; /* Adjust height as needed */
+  background-image: url('./assets/global_network/cargo-servicer-container-ship-docked-port-cargo-servicer-2-min.png'); /* Use ContainerImage source */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1; /* Below components */
+}
+
 .parallax-spacertext {
   height: 800px; /* Adjust height as needed */
   background-attachment: fixed;

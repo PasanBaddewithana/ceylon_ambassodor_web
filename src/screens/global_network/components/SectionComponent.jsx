@@ -25,16 +25,16 @@ const SectionComponent = ({
             </div>
             <div className="mt-6">
               {/* Asia text */}
-              <h3 className="text-3xl font-bold mb-6">{title}</h3>
+              <h3 className="text-3xl font-bold mb-6" data-aos="fade-up" data-aos-duration="2000">{title}</h3>
             </div>
           </div>
 
           {/* Loop through the countryDetails prop */}
           {countryDetails.map((country, index) => (
             <div key={index} className="mb-12 mt-6">
-              <h4 className="text-xl font-semibold mb-2">{country.name}</h4>
-              <p className="mb-4 text-sm">{country.description}</p>
-              <div className="flex flex-wrap text-sm mx-auto max-w-screen-lg">
+              <h4 className="text-xl font-semibold mb-2" data-aos="fade-up" data-aos-duration="2000">{country.name}</h4>
+              <p className="mb-4 text-sm" data-aos="fade-up" data-aos-duration="2000">{country.description}</p>
+              <div className="flex flex-wrap text-sm mx-auto max-w-screen-lg" data-aos="fade-up" data-aos-duration="2000">
                 <div className="w-full md:w-1/2">
                   <strong>Services:</strong> {country.services.join(", ")}
                 </div>

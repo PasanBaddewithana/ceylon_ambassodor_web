@@ -95,7 +95,7 @@ function OurClientMidPart() {
           {/* Call to Action */}
           <div className="text-left mt-8">
             {/* Button with '+' and aligned to left */}
-            <button className="flex items-center text-white py-3 px-6 bg-customBlue transition text-sm">
+            <button className="flex items-center text-white py-3 px-6 bg-[#c3a05f]  transition text-sm" data-aos="fade-up" data-aos-duration="1000">
               <span className="mr-2 text-md">+</span> Send Message
             </button>
           </div>

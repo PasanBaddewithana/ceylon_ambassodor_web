@@ -177,7 +177,8 @@ const ContactUsForm = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="flex items-center justify-start  py-3 px-4 bg-customBlue text-white"
+                className="flex items-center justify-start  py-3 px-4 bg-[#c3a05f]  text-white"
+                data-aos="fade-up" data-aos-duration="1000"
               >
                 <span className="mr-2 text-lg">+</span>
                 <span className="text-lg font-medium">Send Message</span>

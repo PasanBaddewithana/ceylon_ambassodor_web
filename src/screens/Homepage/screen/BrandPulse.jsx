@@ -65,7 +65,7 @@ function BrandPulse() {
       <div data-aos="fade-up">
         <FifthSection />
       </div>
-      <div data-aos="flip-up">
+      
         <BrandPulseSixthSection
           brandName="BrandPulse?"
           description="Choosing BrandPulse means working with a team that's passionate about crafting brands that resonate and inspire. Here's why businesses trust us with their branding and marketing needs:"
@@ -81,7 +81,7 @@ function BrandPulse() {
           subdes5="Our goal is to create brands that stand the test of time, leaving a lasting impression on your audience and driving long-term business growth."
           brandImage={brandColored}
         />
-      </div>
+      
       <div data-aos="fade-left">
         <SeventhSection />
       </div>

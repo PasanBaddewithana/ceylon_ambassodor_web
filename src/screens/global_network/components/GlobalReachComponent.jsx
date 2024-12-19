@@ -9,10 +9,10 @@ const GlobalReach = () => {
     <div className="bg-white mt-8 py-12 px-8">
       {/* Expanding Our Global Reach Section */}
       <div className="text-center mb-12  text-customBlue">
-        <h2 className="text-3xl font-bold font-Montserrat mb-4">
+        <h2 className="text-3xl font-bold font-Montserrat mb-4" data-aos="fade-up" data-aos-duration="2000">
           Expanding Our Global Reach
         </h2>
-        <p className="text-gray-600 mx-auto  text-sm max-w-5xl text-justify">
+        <p className="text-gray-600 mx-auto  text-sm max-w-5xl text-justify" data-aos="fade-up" data-aos-duration="2000">
           Our global footprint continues to grow as we expand into new regions
           and markets. At Ceylon Ambassador, we are always looking for
           opportunities to build new partnerships and strengthen our network
@@ -26,16 +26,16 @@ const GlobalReach = () => {
 
       {/* Partner with Us Section */}
       <div className="text-center mb-12 text-customBlue">
-        <h2 className="text-3xl font-bold font-Montserrat mb-4">
+        <h2 className="text-3xl font-bold font-Montserrat mb-4" data-aos="fade-up" data-aos-duration="2000">
           Partner with Us, Globally
         </h2>
-        <p className="text-gray-600 mx-auto text-sm max-w-5xl mb-8 text-justify">
+        <p className="text-gray-600 mx-auto text-sm max-w-5xl mb-8 text-justify" data-aos="fade-up" data-aos-duration="2000">
           With Ceylon Ambassador’s established presence across continents, our
           expertise, resources, and strategic partnerships ensure that your
           business will thrive in any market. No matter the industry or region,
           we are your gateway to success.
         </p>
-        <button className="bg-customBlue text-white py-2 px-6 font-Montserrat">
+        <button className="bg-[#c3a05f]  text-white py-2 px-6 font-Montserrat" data-aos="fade-up" data-aos-duration="2000">
           Send Message
         </button>
       </div>

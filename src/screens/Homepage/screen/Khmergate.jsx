@@ -63,7 +63,7 @@ function Khmergate() {
       <div data-aos="fade-up">
         <KhmergateFifth />
       </div>
-      <div data-aos="flip-up">
+      
         <SixthSection
           brandImage={khmergate_logo}
           brandName="Travel with Khmergate?"
@@ -79,7 +79,7 @@ function Khmergate() {
           subtopic5="Expert Knowledge:"
           subdes5="With years of experience in the travel industry, we are your trusted partner in delivering the best travel solutions, both in Cambodia and globally."
         />
-      </div>
+    
       <div data-aos="fade-left">
         <KhmergateSeventh />
       </div>

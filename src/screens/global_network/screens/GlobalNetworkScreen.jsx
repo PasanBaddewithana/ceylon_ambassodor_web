@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TopHeader from "../../Homepage/component/TopHeader";
 import Navbar from "../../Homepage/component/Navbar";
 import map from "../../../assets/map.png";
@@ -9,8 +9,17 @@ import world_logo_white from "../../../assets/world_logo_white.svg";
 import ContainerShipImage from "../components/ContainerShip";
 import GlobalReach from "../components/GlobalReachComponent";
 import Footer from "../../faq/component/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 function GlobalNetworkScreen() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Set animation duration (in milliseconds)
+      easing: "ease-in-out",
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
   const countryDetails_Middle_East = [
     {
       name: "United Arab Emirates (UAE)",
@@ -146,7 +155,7 @@ function GlobalNetworkScreen() {
     <div className="relative">
       <TopHeader />
       <Navbar />
-      <div className="bg-gray-200 overflow-hidden">
+      <div className="bg-gray-200 overflow-hidden" data-aos="fade-up">
         {/* Image placed below the Navbar with a specific height and full width */}
         <img
           src={map}
@@ -154,7 +163,7 @@ function GlobalNetworkScreen() {
           alt="Map"
         />
       </div>
-      <GlobalNetworkIntroduction />
+      <GlobalNetworkIntroduction  />
       {sectionDetails.map((section, index) => (
         <SectionComponent key={index} {...section} />
       ))}
