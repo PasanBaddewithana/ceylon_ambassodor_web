@@ -51,16 +51,17 @@ const accordionData = [
 const Accordion = ({ title, content, isActive, onClick }) => (
   <div className="border-t border-black">
     <div className="flex justify-between items-center p-4 bg-white">
-      <h2 className="text-lg">{title}</h2>
+      <h2 className="text-lg" data-aos="fade-up" data-aos-delay="1000">{title}</h2>
       <button
         onClick={onClick}
         className="text-lg bg-[#031c3f] text-white w-8 h-8 flex items-center justify-center rounded-full"
+        data-aos="fade-up" data-aos-delay="1000"
       >
         {isActive ? "−" : "+"}
       </button>
     </div>
     {isActive && (
-      <div className="px-4 bg-gray-50 text-sm text-gray-700">
+      <div className="px-4 bg-gray-50 text-sm text-gray-700" data-aos="fade-up" data-aos-delay="1000">
         {/* Adjusted font size and color */}
         {content}
       </div>
@@ -70,21 +71,24 @@ const Accordion = ({ title, content, isActive, onClick }) => (
 
 const ReplyForm = () => (
   <div className="mt-8 p-6 bg-white rounded-lg shadow-md">
-    <h2 className="text-4xl font-bold mb-6"> Still Have Questions? Leave a Reply Below!</h2>
+    <h2 className="text-4xl font-bold mb-6" data-aos="fade-up" data-aos-delay="1000"> Still Have Questions? Leave a Reply Below!</h2>
     <form className="space-y-4">
       <input
         type="text"
         placeholder="Your Name"
         className="w-full p-2 border rounded"
+        data-aos="fade-up" data-aos-delay="1000"
       />
       <input
         type="email"
         placeholder="Your Email"
         className="w-full p-2 border rounded"
+        data-aos="fade-up" data-aos-delay="1000"
       />
       <textarea
         placeholder="Message"
         className="w-full p-2 border rounded h-28"
+        data-aos="fade-up" data-aos-delay="1000"
       />
       <button className="bg-[#c3a05f] text-white py-2 px-4 rounded-md" data-aos="fade-up" data-aos-duration="1000">
         + Send Message
@@ -118,8 +122,8 @@ const Sidebar = () => {
 
       {/* Transparent Pricing Section */}
       <div className="bg-white p-4 rounded shadow-md">
-        <h2 className="text-lg mb-2">Transparent Pricing</h2>
-        <ul className="list-disc ml-5 space-y-2">
+        <h2 className="text-lg mb-2" data-aos="fade-up" data-aos-delay="1000">Transparent Pricing</h2>
+        <ul className="list-disc ml-5 space-y-2" data-aos="fade-up" data-aos-delay="1000">
           <li>Agriculture</li>
           <li>Architecture</li>
           <li>Construction</li>
@@ -130,8 +134,8 @@ const Sidebar = () => {
 
       {/* Tags Section */}
       <div className="bg-white p-4 rounded shadow-md">
-        <h2 className="text-lg mb-2">Tags</h2>
-        <div className="space-y-2">
+        <h2 className="text-lg mb-2" data-aos="fade-up" data-aos-delay="2000">Tags</h2>
+        <div className="space-y-2" data-aos="fade-up" data-aos-delay="2000">
           <span className="bg-gray-200 px-2 mx-1 py-1 rounded">Business</span>
           <span className="bg-gray-200 px-2 mx-1 py-1 rounded">Shipping</span>
           <span className="bg-gray-200 px-2 mx-1 py-1 rounded">Logistics</span>

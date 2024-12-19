@@ -26,7 +26,7 @@ const TeamComponent = () => {
             <img
               src={member.img}
               alt={member.name}
-              className="w-24 h-24 rounded-full object-cover"
+              className="w-36 h-36 rounded-full object-cover"
             />
 
             {/* Text Section */}
