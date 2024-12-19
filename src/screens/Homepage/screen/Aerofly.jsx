@@ -62,7 +62,7 @@ function Aerofly() {
       <div data-aos="fade-up">
         <AeroflyFifth />
       </div>
-      <div data-aos="flip-up">
+      
         <AeroFlySixthSection
           brandImage={aerofly}
           brandName="Aerofly Aviation"
@@ -78,7 +78,7 @@ function Aerofly() {
           subtopic5="Data-Driven Insights:"
           subdes5="Using advanced analytics, we provide you with the data and insights needed to optimize your operations and stay competitive in the fast-paced aviation industry."
         />
-      </div>
+      
       <div data-aos="fade-left">
         <AeroSeventh />
       </div>

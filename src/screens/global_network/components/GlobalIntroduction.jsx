@@ -3,16 +3,16 @@ import logo from "../../../assets/Logo.svg";
 import world_logo from "../../../assets/world_logo_back.svg";
 const GlobalNetworkIntroduction = () => {
   return (
-    <div>
-      <div className="w-full h-3 bg-customBlue mb-3"></div>
-      <div className="bg-white px-8 py-10 max-w-6xl mx-auto font-Montserrat text-customBlue ">
+    <div >
+      <div className="w-full h-3 bg-customBlue mb-3" ></div>
+      <div className="bg-white px-8 py-10 max-w-6xl mx-auto font-Montserrat text-customBlue " >
         <div className="mb-12">
           {/* Title and Subtitle */}
           <img src={logo} alt="logo" className="w-60 mx-auto mb-6" />
-          <h2 className="text-2xl font-bold mb-1 text-center">
+          <h2 className="text-2xl font-bold mb-1 text-center" data-aos="fade-up" data-aos-duration="1500">
             Global Network: Countries and Regions
           </h2>
-          <p className="mb-10  max-w-4xl mx-auto text-xs">
+          <p className="mb-10  max-w-4xl mx-auto text-xs" data-aos="fade-up" data-aos-duration="1500">
             At Ceylon Ambassador, we operate on a global scale, providing
             seamless solutions across multiple industries, including logistics,
             aviation, travel, and branding. Our extensive network spans key
@@ -34,16 +34,16 @@ const GlobalNetworkIntroduction = () => {
             </div>
             <div className="mt-6">
               {/* Asia text */}
-              <h3 className="text-2xl font-semibold mb-6">Asia</h3>
+              <h3 className="text-2xl font-semibold mb-6" data-aos="fade-up" data-aos-duration="1500">Asia</h3>
             </div>
           </div>
 
           {/* Sri Lanka */}
           <div className="mb-12">
-            <h4 className="text-xl font-semibold mb-2">
+            <h4 className="text-xl font-semibold mb-2" data-aos="fade-up" data-aos-duration="2000">
               Sri Lanka (Headquarters)
             </h4>
-            <p className="mb-4 text-sm">
+            <p className="mb-4 text-sm" data-aos="fade-up" data-aos-duration="2000">
               As the heart of our operations, Sri Lanka is the hub from which we
               manage our diverse range of services. From United Freight
               Solutions’ comprehensive logistics network to Aerofly Aviation’s
@@ -51,7 +51,7 @@ const GlobalNetworkIntroduction = () => {
               solutions, Sri Lanka serves as our strategic headquarters for
               connecting clients across the globe.
             </p>
-            <div className="flex flex-wrap text-sm">
+            <div className="flex flex-wrap text-sm" data-aos="fade-up" data-aos-duration="2000">
               <div className="w-full md:w-1/2">
                 <strong>Services:</strong> Logistics, Aviation, Branding, and
                 Marketing
@@ -65,15 +65,15 @@ const GlobalNetworkIntroduction = () => {
 
           {/* Cambodia */}
           <div className="mb-12">
-            <h4 className="text-xl font-bold mb-2 ">Cambodia</h4>
-            <p className="mb-4 text-sm">
+            <h4 className="text-xl font-bold mb-2 " data-aos="fade-up" data-aos-duration="2000">Cambodia</h4>
+            <p className="mb-4 text-sm" data-aos="fade-up" data-aos-duration="2000">
               Cambodia is a key region for our travel and tourism operations
               through KhmerGate, offering immersive experiences that showcase
               the rich cultural heritage and natural beauty of Southeast Asia.
               It’s also a base for BrandPulse, where we provide branding and
               marketing solutions to businesses across the region.
             </p>
-            <div className="flex flex-wrap text-sm">
+            <div className="flex flex-wrap text-sm" data-aos="fade-up" data-aos-duration="2000">
               <div className="w-full md:w-1/2">
                 <strong>Services:</strong> Travel and Tourism, Branding,
                 Marketing, Event Management
@@ -87,15 +87,15 @@ const GlobalNetworkIntroduction = () => {
 
           {/* India */}
           <div className="mb-12">
-            <h4 className="text-xl font-bold mb-2">India</h4>
-            <p className="mb-4 text-sm">
+            <h4 className="text-xl font-bold mb-2" data-aos="fade-up" data-aos-duration="2000">India</h4>
+            <p className="mb-4 text-sm" data-aos="fade-up" data-aos-duration="2000">
               We operate a robust logistics network in India, a major hub for
               United Freight Solutions' freight and supply chain services. With
               strong partnerships and a deep understanding of the region's trade
               routes, we help businesses in India optimize their logistics and
               expand their global reach.
             </p>
-            <div className="flex flex-wrap text-sm ">
+            <div className="flex flex-wrap text-sm " data-aos="fade-up" data-aos-duration="2000">
               <div className="w-full md:w-1/2">
                 <strong>Services:</strong> Logistics, Freight Management,
                 Warehousing
@@ -109,15 +109,15 @@ const GlobalNetworkIntroduction = () => {
 
           {/* Singapore */}
           <div>
-            <h4 className="text-xl font-bold mb-2">Singapore</h4>
-            <p className="mb-4 text-sm ">
+            <h4 className="text-xl font-bold mb-2" data-aos="fade-up" data-aos-duration="2000">Singapore</h4>
+            <p className="mb-4 text-sm " data-aos="fade-up" data-aos-duration="2000">
               Singapore is a key logistics and aviation hub for United Freight
               Solutions and Aerofly Aviation. Our presence in this dynamic
               region enables us to offer streamlined air and sea freight
               solutions, as well as comprehensive aviation services for
               businesses in Southeast Asia.
             </p>
-            <div className="flex flex-wrap text-sm ">
+            <div className="flex flex-wrap text-sm " data-aos="fade-up" data-aos-duration="2000">
               <div className="w-full md:w-1/2">
                 <strong>Services:</strong> Logistics, Aviation, Freight
                 Consolidation, Warehousing

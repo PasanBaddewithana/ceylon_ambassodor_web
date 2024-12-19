@@ -1,5 +1,6 @@
 import React from "react";
 import working_man from "../../../assets/workingMan.png";
+import { Link } from "react-router-dom";
 
 const JobListingsPage = () => {
   return (
@@ -103,10 +104,12 @@ const JobListingsPage = () => {
                     </td>
                     <td className="py-4 px-6 text-right">
                       <div className="flex items-center justify-end">
-                        <button className="flex items-center bg-customBlue text-white text-sm px-3 py-1">
-                          <span className="text-3xl font-bold mr-2">+</span>
-                          <span className="text-base">Send Message</span>
-                        </button>
+                      <button className="flex items-center bg-[#c3a05f] text-white text-sm px-3 py-1">
+  <Link to="/contact-us" className="flex items-center">
+    <span className="text-3xl font-bold mr-2">+</span>
+    <span className="text-base">Send Message</span>
+  </Link>
+</button>
                       </div>
                     </td>
                   </tr>

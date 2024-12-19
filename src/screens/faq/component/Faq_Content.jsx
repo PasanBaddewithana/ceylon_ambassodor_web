@@ -86,7 +86,7 @@ const ReplyForm = () => (
         placeholder="Message"
         className="w-full p-2 border rounded h-28"
       />
-      <button className="bg-[#031c3f] text-white py-2 px-4 rounded-md">
+      <button className="bg-[#c3a05f] text-white py-2 px-4 rounded-md" data-aos="fade-up" data-aos-duration="1000">
         + Send Message
       </button>
     </form>

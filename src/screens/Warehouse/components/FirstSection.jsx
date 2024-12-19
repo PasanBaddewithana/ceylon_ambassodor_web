@@ -25,41 +25,42 @@ const FirstSection = ({
 
   return (
     <section className="relative overflow-hidden">
-      {/* Video Carousel */}
-      <div className="w-full relative">
-        <Slider {...settings}>
-          {videos.map((videoSrc, index) => (
-            <div key={index} className="relative">
-              <video
-                src={videoSrc}
-                className="w-full h-[550px] object-cover"
-                autoPlay
-                loop
-                muted
-                playsInline
-              />
-              {/* Branding with train-like animation */}
-              <div className="branding-animation absolute top-20 start-0 end-0 transform -translate-x-1/2">
-                <img
-                  src={branding}
-                  alt="Brand Logo"
-                  className="w-[200px]"
-                />
-              </div>
-            </div>
-          ))}
-        </Slider>
-        {/* Navigation Section */}
-        <div className="absolute bottom-0 w-screen font-kollektif">
-          <BrandNavSection
-            first={first}
-            second={second}
-            third={third}
-            fourth={fourth}
+  {/* Video Carousel */}
+  <div className="w-full relative">
+    <Slider {...settings}>
+      {videos.map((videoSrc, index) => (
+        <div key={index} className="relative">
+          <video
+            src={videoSrc}
+            className="w-full h-[550px] object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
           />
+          {/* Branding with train-like animation */}
+          <div className="branding-animation absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <img
+              src={branding}
+              alt="Brand Logo"
+              className="w-[200px]"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      ))}
+    </Slider>
+    {/* Navigation Section */}
+    <div className="absolute bottom-0 w-screen font-kollektif">
+      <BrandNavSection
+        first={first}
+        second={second}
+        third={third}
+        fourth={fourth}
+      />
+    </div>
+  </div>
+</section>
+
   );
 };
 

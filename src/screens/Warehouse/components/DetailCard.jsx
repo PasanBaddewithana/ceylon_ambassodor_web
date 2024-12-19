@@ -15,7 +15,7 @@ const DetailCard = ({
   conclusion,
 
   imagePosition = "left", // Default position is 'left'
-  buttoncolor = "#000", // Default button color
+  buttoncolor = "#c3a05f", // Default button color
   buttonHoverColor = "#333", // Default hover color
   textColor = "black", // Default text color is black
 }) => {
@@ -92,6 +92,7 @@ const DetailCard = ({
             </p>
             <button
               className="px-4 py-2 text-white mt-5 transition duration-300"
+              data-aos="fade-up" data-aos-duration="1000"
               style={{
                 backgroundColor: buttoncolor,
               }}
@@ -169,6 +170,7 @@ const DetailCard = ({
             </p>
             <button
               className="px-4 py-2 text-white mt-5 transition duration-300 self-end"
+              data-aos="fade-up" data-aos-duration="1000"
               style={{
                 backgroundColor: buttoncolor,
               }}

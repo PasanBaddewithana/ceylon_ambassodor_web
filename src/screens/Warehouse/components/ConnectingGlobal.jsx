@@ -13,10 +13,14 @@ const ConnectingGlobal = () => {
           className="mb-4 w-full md:w-1/2 transform scale-50"
         />
 
-        <h1 className="text-3xl font-bold mb-3 text-white font-MontserratMedium" data-aos="fade-up" data-aos-duration="1000">
-        United Freight Solutions: Logistics with 
-        Precision and Purpose
-        </h1>
+        
+        <p className="text-white text-[28px] font-bold font-MontserratMedium "data-aos="fade-up" data-aos-duration="1000">
+            " United Freight Solutions:{" "}
+          </p>
+          <p className="text-white text-[28px] font-bold mb-5 font-MontserratMedium "data-aos="fade-up" data-aos-duration="1500">
+          Logistics with 
+          Precision and Purpose"
+          </p>
 
         <div className="w-3/4 bg-[#c6a664] h-[2px] mb-3"></div>
         <p className="text-s text-white font-Montserrat lg:pr-20 lg:mt-5" data-aos="fade-up" data-aos-duration="3000">
