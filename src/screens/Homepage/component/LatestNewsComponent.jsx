@@ -9,23 +9,23 @@ const LatestNewsComponent = () => {
   const newsData = [
     {
       date: "August 9, 2024",
-      title: "Exploring Ceylon Ambassador's Global Reach and Impact",
+      title: "United Freight Solutions: Redefining Global Logistics for Modern Businesses",
       description:
-        "Ceylon Ambassador operates across multiple continents, with a strong presence in Asia, Europe, North America, and the Middle East. This extensive network allows the company to seamlessly manage logistics...",
+        "In today’s fast-paced and interconnected world, businesses need a logistics partner...",
       imageUrl: blog1_img,
     },
     {
-      date: "August 9, 2024",
-          title: "Exploring Ceylon Ambassador's Global Reach and Impact",
+      date: "September 12, 2024",
+          title: "Aerofly Aviation: Elevating Aviation Solutions to New Heights",
           description:
-            "Ceylon Ambassador has established itself as a leader in the global market, offering premium freight and logistics services...",
+            "Blockchain technology is revolutionizing logistics by enhancing transparency...",
           imageUrl: blog2_img,
     },
     {
       date: "August 9, 2024",
-          title: "Exploring Ceylon Ambassador's Global Reach and Impact",
+          title: "KhmerGate: Your Gateway to Extraordinary Travel Experiences",
           description:
-            "Ceylon Ambassador has established itself as a leader in the global market, offering premium freight and logistics services...",
+            "Sustainability in supply chains is no longer optional—it’s a business imperative...",
           imageUrl: blog3_img,
     },
   ];
@@ -79,7 +79,7 @@ const LatestNewsComponent = () => {
                   {/* View More Button */}
                   <div className="flex items-center">
                     <a
-                      href="#"
+                      href="/blog"
                       className="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-lg transition-all duration-300 cursor-pointer"
                     >
                       <div className="flex justify-center items-center w-10 h-10 bg-[#c3a05f] rounded-full transition-transform duration-300 hover:scale-110">
