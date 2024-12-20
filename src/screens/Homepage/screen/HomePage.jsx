@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useMediaQuery } from "react-responsive";
 
 import Hero from "../component/HeroSection";
 import TopHeader from "../component/TopHeader";
@@ -27,6 +28,11 @@ import HomeVideo from "../../../assets/home/Home.mp4";
 
 function HomePage() {
   const [activeSection, setActiveSection] = useState("LogisticsPage");
+
+  // React Responsive queries
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 769, maxWidth: 1024 });
+  const isDesktop = useMediaQuery({ minWidth: 1025 });
 
   // Initialize AOS
   useEffect(() => {
@@ -58,37 +64,42 @@ function HomePage() {
       <Navbar />
       <Hero video={HomeVideo} /> {/* Hero Section */}
       <NavSection setActiveSection={setActiveSection} /> {/* Navigation */}
-      <div data-aos="fade-up">{renderSection()}</div> {/*Animated Section*/}
-      
-      
-      
-        <SecondHomeImageComponent />
-      
+
+      {isMobile && (
+        <div data-aos="fade-up">{renderSection()}</div> /* Render for Mobile */
+      )}
+
+      {isTablet && (
+        <div data-aos="fade-left">{renderSection()}</div> /* Render for Tablet */
+      )}
+
+      {isDesktop && (
+        <div data-aos="zoom-in">{renderSection()}</div> /* Render for Desktop */
+      )}
+
+      {/* Other Components */}
+      <SecondHomeImageComponent   />
       <div data-aos="fade-left">
         <ServicesComponent />
       </div>
       <div data-aos="zoom-in">
-        <HomeJoinUsComponent />
+        <HomeJoinUsComponent isMobile={isMobile} isTablet={isTablet} />
       </div>
       <div data-aos="flip-up">
-        <StatsSection />
+        <StatsSection isMobile={isMobile} isTablet={isTablet} />
       </div>
-     
-        <GlobalLogisticsComponent />
-    
+      <GlobalLogisticsComponent isMobile={isMobile} isTablet={isTablet} />
       <div data-aos="fade-in">
-        <LatestNewsComponent />
+        <LatestNewsComponent isMobile={isMobile} isTablet={isTablet} />
       </div>
-      
-        <LogisticsBanner />
-     
+      <LogisticsBanner isMobile={isMobile} isTablet={isTablet} />
       <div data-aos="fade-up">
-        <HomeGridComponent />
+        <HomeGridComponent isMobile={isMobile} isTablet={isTablet} />
       </div>
       <div data-aos="zoom-out">
-        <ContactComponent />
+        <ContactComponent isMobile={isMobile} isTablet={isTablet} />
       </div>
-      <Footer />
+      <Footer isMobile={isMobile} isTablet={isTablet} />
     </div>
   );
 }

@@ -17,24 +17,24 @@ const HomeGridComponent = () => {
   ];
 
   return (
-    <div className="w-full h-[150px] overflow-hidden bg-[#FFFFFF] border border-gray-400">
-      <div className="flex gap-x-12 justify-center">
+    <div className="w-full py-6 bg-white border border-gray-400">
+      <div className="flex flex-wrap justify-center gap-6 md:gap-12">
         {icons.map((icon, index) => (
           <div
             key={index}
-            className="relative flex items-center justify-center min-w-[200px] group"
+            className="relative flex items-center justify-center w-32 md:w-48 group"
           >
             {/* Black Icon */}
             <img
               src={icon.black}
               alt={`Icon ${index + 1} Black`}
-              className="h-20 w-48 transition-opacity duration-300 group-hover:opacity-0"
+              className="h-16 md:h-20 transition-opacity duration-300 group-hover:opacity-0"
             />
             {/* Colored Icon */}
             <img
               src={icon.color}
               alt={`Icon ${index + 1} Color`}
-              className="h-20 w-48 absolute opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              className="h-16 md:h-20 absolute opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             />
           </div>
         ))}
