@@ -12,7 +12,7 @@ import Footer from "../../../../src/screens/faq/component/Footer";
 import uniformedPilot from "../../../assets/uniformedPilot.jpg";
 
 import AeroSecond from "../component/AeroSecond";
-import AeroThirdPart from "../component/AeroThirdPart";
+import AeroThirdPart from "../component/AeroThirdPart1";
 import AeroflyFifth from "../component/AeroflyFifth";
 import AeroFlySixthSection from "../component/AeroflySixthSection";
 import AeroSeventh from "../component/AeroSeventh";

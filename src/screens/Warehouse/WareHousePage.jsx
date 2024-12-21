@@ -6,7 +6,7 @@ import ConnectingGlobal from "./components/ConnectingGlobal";
 import SeventhSection from "./components/ContactSection";
 import FirstSection from "./components/FirstSection";
 import ForwardTogether from "./components/ForwardTogether";
-import IconsLayer from "./components/IconsLayer";
+import IconsLayer from "./components/IconsLayer1";
 import IslansFreight from "./components/IslandFreight";
 import SeaFreight from "./components/SeaFreight";
 import WareHousingAndDistribution from "./components/WarehousingAndDistribution";
