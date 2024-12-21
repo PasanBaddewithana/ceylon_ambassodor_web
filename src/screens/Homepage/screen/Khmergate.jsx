@@ -10,7 +10,7 @@ import SixthSection from "../component/SixthSection";
 import Footer from "../../../../src/screens/faq/component/Footer";
 
 import KhmergateSecond from "../component/Khmergate/KhmergateSecond";
-import KhmergateThird from "../component/Khmergate/KhmergateThird";
+import KhmergateThird from "../component/Khmergate/KhmergateThird1";
 import KhmergateFifth from "../component/Khmergate/KhmergateFifth";
 import KhmergateSeventh from "../component/Khmergate/KhmergateSeventh";
 import KhmergateLastSection from "../component/Khmergate/KhmergateLastSection";

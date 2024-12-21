@@ -1,5 +1,5 @@
 import React from "react";
-
+//check
 const SixthSection = ({
   brandName,
   description,

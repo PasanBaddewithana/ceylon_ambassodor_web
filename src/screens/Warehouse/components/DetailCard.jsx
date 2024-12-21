@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DetailCard = ({
   image,
@@ -90,21 +91,23 @@ const DetailCard = ({
             >
               {conclusion}
             </p>
-            <button
-              className="px-4 py-2 text-white mt-5 transition duration-300"
-              data-aos="fade-up" data-aos-duration="1000"
-              style={{
-                backgroundColor: buttoncolor,
-              }}
-              onMouseEnter={(e) =>
-                (e.target.style.backgroundColor = buttonHoverColor)
-              }
-              onMouseLeave={(e) =>
-                (e.target.style.backgroundColor = buttoncolor)
-              }
-            >
-              + Send Message
-            </button>
+            <a href="/contact-us" className="block">
+  <button
+    className="px-4 py-2 text-white mt-5 transition duration-300"
+    data-aos="fade-up" data-aos-duration="1000"
+    style={{
+      backgroundColor: buttoncolor,
+    }}
+    onMouseEnter={(e) =>
+      (e.target.style.backgroundColor = buttonHoverColor)
+    }
+    onMouseLeave={(e) =>
+      (e.target.style.backgroundColor = buttoncolor)
+    }
+  >
+    + Send Message
+  </button>
+</a>
           </div>
         </>
       ) : (
@@ -168,21 +171,23 @@ const DetailCard = ({
             >
               {conclusion}
             </p>
-            <button
-              className="px-4 py-2 text-white mt-5 transition duration-300 self-end"
-              data-aos="fade-up" data-aos-duration="1000"
-              style={{
-                backgroundColor: buttoncolor,
-              }}
-              onMouseEnter={(e) =>
-                (e.target.style.backgroundColor = buttonHoverColor)
-              }
-              onMouseLeave={(e) =>
-                (e.target.style.backgroundColor = buttoncolor)
-              }
-            >
-              + Send Message
-            </button>
+            <a href="/contact-us" className="block">
+  <button
+    className="px-4 py-2 text-white mt-5 transition duration-300"
+    data-aos="fade-up" data-aos-duration="1000"
+    style={{
+      backgroundColor: buttoncolor,
+    }}
+    onMouseEnter={(e) =>
+      (e.target.style.backgroundColor = buttonHoverColor)
+    }
+    onMouseLeave={(e) =>
+      (e.target.style.backgroundColor = buttoncolor)
+    }
+  >
+    + Send Message
+  </button>
+</a>
           </div>
           <div className="w-full lg:w-1/2 h-auto lg:h-[300px] flex flex-col items-center justify-center">
             <img
