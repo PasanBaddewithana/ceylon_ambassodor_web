@@ -117,7 +117,8 @@ const Navbar = ({ changeColor = false }) => {
          absolute top-6 w-full z-10 font-kollektif font-bold text-sm`}
       >
         <div className="container mx-auto flex justify-between items-center">
-          <div className="w-[90%] flex justify-between items-center py-2 px-6 border-r-2">
+          <div className="w-[90%] flex justify-between items-center py-2 px-6 ">   
+            {/* border-r-2 */}
             {/* Logo */}
             <Logo className="ml-4" />
 

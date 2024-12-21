@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @font-face {
   font-family: "Kollektif";
   src: url("./fonts/Kollektif.ttf") format("truetype");
@@ -30,6 +32,13 @@
   src: url("./fonts/FontsFree-Net-Montserrat-SemiBold.ttf");
 }
 
+#root {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 
 /* input-field */
 .input-field {
@@ -305,6 +314,27 @@
   animation: trainScrollRight 30s linear infinite;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cartoon-card {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@media (max-width: 888px) {
+  .cartoon-card {
+    width: 85vw;
+    margin: 0 auto;
+  }
+}
 
 
 
