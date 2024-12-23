@@ -108,6 +108,26 @@ const Navbar = ({ changeColor = false }) => {
     { href: "/brand-pulse", text: "Brandpulse" },
   ];
 
+  const menuItems = [
+    { type: 'link', href: '/', text: 'Home' },
+    { type: 'link', href: '/about', text: 'About' },
+    { 
+      type: 'dropdown',
+      text: 'Companies',
+      dropdownLinks: companiesLinks
+    },
+    {
+      type: 'dropdown',
+      text: 'Office',
+      dropdownLinks: officeLinks
+    },
+    {
+      type: 'dropdown',
+      text: 'Contact',
+      dropdownLinks: contactLinks
+    }
+  ];
+
   return (
     <>
       <nav
@@ -179,48 +199,11 @@ const Navbar = ({ changeColor = false }) => {
       </nav>
 
       {/* Sidebar for Mobile View */}
-      <div
-        ref={sidebarRef}
-        className={`fixed top-0 right-0 w-full md:w-2/5 h-full bg-[#031c3f] text-white transition-transform ${
-          isSidebarOpen ? "translate-x-0" : "translate-x-full"
-        } z-20`}
-      >
-        <button
-          className="absolute top-4 right-4 text-3xl text-white"
-          onClick={toggleSidebar}
-        >
-          <FaTimes />
-        </button>
-        <div className="flex flex-col items-center justify-center h-full space-y-6">
-          <Link to="/" className="text-xl font-bold" onClick={toggleSidebar}>
-            Home
-          </Link>
-          <Link to="/about" className="text-xl font-bold" onClick={toggleSidebar}>
-            About
-          </Link>
-          <button
-            className="text-xl font-bold"
-            onClick={() => setCompaniesDropdownOpen(!isCompaniesDropdownOpen)}
-          >
-            Companies
-          </button>
-          {isCompaniesDropdownOpen && <DropdownMenu links={companiesLinks} />}
-          <button
-            className="text-xl font-bold"
-            onClick={() => setOfficeDropdownOpen(!isOfficeDropdownOpen)}
-          >
-            Office
-          </button>
-          {isOfficeDropdownOpen && <DropdownMenu links={officeLinks} />}
-          <button
-            className="text-xl font-bold"
-            onClick={() => setContactDropdownOpen(!isContactDropdownOpen)}
-          >
-            Contact
-          </button>
-          {isContactDropdownOpen && <DropdownMenu links={contactLinks} />}
-        </div>
-      </div>
+      <DropdownMenu 
+      isOpen={isSidebarOpen}
+      onClose={() => setSidebarOpen(false)}
+      menuItems={menuItems}
+    />
     </>
   );
 };

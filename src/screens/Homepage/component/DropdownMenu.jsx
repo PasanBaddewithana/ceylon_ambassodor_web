@@ -1,59 +1,69 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { FaTimes } from 'react-icons/fa';
 
-import "animate.css";
+const Sidebar = ({ isOpen, onClose, menuItems }) => {
+  const navigate = useNavigate();
 
-const DropdownMenu = ({ links, toggleDropdown }) => {
-  // State to track hover state of each link
-  const [isAnimated, setIsAnimated] = useState(
-    new Array(links.length).fill(false)
-  );
-
-  // Handlers to toggle animation on hover for a specific link
-  const handleMouseEnter = (index) => {
-    const updatedAnimation = [...isAnimated];
-    updatedAnimation[index] = true;
-    setIsAnimated(updatedAnimation);
-  };
-
-  const handleMouseLeave = (index) => {
-    const updatedAnimation = [...isAnimated];
-    updatedAnimation[index] = false;
-    setIsAnimated(updatedAnimation);
+  const handleNavigation = (path) => {
+    navigate(path);
+    onClose();
   };
 
   return (
-    <div
-      className="absolute bg-[#031c3f] text-white mt-2 py-2 px-4 rounded shadow-lg"
-      onMouseLeave={toggleDropdown}
-      style={{ minWidth: "150px" }}
-    >
-      {links.map((link, index) => (
-        <Link
-          key={index}
-          to={link.href}
-          className="group px-2 py-2 border-b border-transparent hover:border-white transition-all duration-300 whitespace-nowrap uppercase flex items-center"
-          style={{ whiteSpace: "nowrap" }}
+    <>
+      <div 
+        className={`fixed inset-0 bg-black bg-opacity-50 transition-opacity z-10 ${
+          isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={onClose}
+      />
+      <div
+        className={`fixed top-0 right-0 w-full md:w-2/5 h-full bg-[#031c3f] text-white transform transition-transform duration-300 ease-in-out z-20 ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 text-3xl text-white"
         >
-          <div
-            className="flex items-center"
-            onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={() => handleMouseLeave(index)}
-          >
-            {/* Conditionally render the '+' icon with rotation and increased size */}
-            {isAnimated[index] && (
-              <span className={`mr-2 animate__animated animate__rotateIn `}>
-                <FontAwesomeIcon icon={faPlus} className="text-lg font-bold" />
-              </span>
-            )}
-            {link.text}
-          </div>
-        </Link>
-      ))}
-    </div>
+          <FaTimes />
+        </button>
+        
+        <nav className="flex flex-col items-center justify-center h-full space-y-8">
+          {menuItems.map((item, index) => (
+            <div key={index} className="w-full px-8 text-center">
+              {item.type === 'link' ? (
+                <button
+                  onClick={() => handleNavigation(item.href)}
+                  className="text-xl font-bold w-full hover:text-[#c3a05f] transition-colors"
+                >
+                  {item.text}
+                </button>
+              ) : (
+                <details className="w-full group justify-items-center">
+                  <summary className="text-xl font-bold cursor-pointer hover:text-[#c3a05f] transition-colors">
+                    {item.text}
+                  </summary>
+                  <div className="mt-4 ml-4 space-y-3 ">
+                    {item.dropdownLinks?.map((link, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => handleNavigation(link.href)}
+                        className="block w-full text-left hover:text-[#c3a05f] transition-colors"
+                      >
+                        {link.text}
+                      </button>
+                    ))}
+                  </div>
+                </details>
+              )}
+            </div>
+          ))}
+        </nav>
+      </div>
+    </>
   );
 };
 
-export default DropdownMenu;
+export default Sidebar;
