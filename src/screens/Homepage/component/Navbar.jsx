@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ReactComponent as Logo } from "../../../assets/Logo.svg";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { ReactComponent as TrackOrder } from "../../../assets/track_order.svg";
 import DropdownMenu from "./DropdownMenu";
+import Sidebar from "./Sidebar1";
+import { ReactComponent as TrackOrder } from "../../../assets/track_order.svg";
+import { ReactComponent as Support } from "../../../assets/support.svg";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ changeColor = false }) => {
@@ -108,26 +110,6 @@ const Navbar = ({ changeColor = false }) => {
     { href: "/brand-pulse", text: "Brandpulse" },
   ];
 
-  const menuItems = [
-    { type: 'link', href: '/', text: 'Home' },
-    { type: 'link', href: '/about', text: 'About' },
-    { 
-      type: 'dropdown',
-      text: 'Companies',
-      dropdownLinks: companiesLinks
-    },
-    {
-      type: 'dropdown',
-      text: 'Office',
-      dropdownLinks: officeLinks
-    },
-    {
-      type: 'dropdown',
-      text: 'Contact',
-      dropdownLinks: contactLinks
-    }
-  ];
-
   return (
     <>
       <nav
@@ -198,12 +180,7 @@ const Navbar = ({ changeColor = false }) => {
         </div>
       </nav>
 
-      {/* Sidebar for Mobile View */}
-      <DropdownMenu 
-      isOpen={isSidebarOpen}
-      onClose={() => setSidebarOpen(false)}
-      menuItems={menuItems}
-    />
+      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
     </>
   );
 };
