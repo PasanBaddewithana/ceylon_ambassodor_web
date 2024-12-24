@@ -106,7 +106,7 @@ const Navbar = ({ changeColor = false }) => {
         className={`bg-transparent mx-auto flex items-center border-b-2 ${
           changeColor ? "border-white" : "border-[#031c3f]"
         } ${changeColor ? "text-white" : "text-[#031c3f]"} 
-         absolute top-6 w-full z-10 font-kollektif font-bold text-sm`}
+         absolute top-6 w-full z-10 font-kollektif font-bold text-sm h-16`}
       >
         <div className="container mx-auto flex justify-between items-center">
           <div className="w-[90%] flex justify-between items-center py-2 px-6 ">   
@@ -188,7 +188,7 @@ const Navbar = ({ changeColor = false }) => {
         </div>
       </nav>
 
-      <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
+      <Sidebar isOpen={isSidebarOpen}  toggleSidebar={toggleSidebar}/>
     </>
   );
 };
