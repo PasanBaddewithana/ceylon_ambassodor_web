@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ReactComponent as Logo } from "../../../assets/Logo.svg";
-import { FaBars, FaTimes } from "react-icons/fa";
-import DropdownMenu from "./DropdownMenu";
+import { FaBars } from "react-icons/fa";
 import Sidebar from "./Sidebar1";
 import { ReactComponent as TrackOrder } from "../../../assets/track_order.svg";
-import { ReactComponent as Support } from "../../../assets/support.svg";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ changeColor = false }) => {
@@ -65,30 +63,6 @@ const Navbar = ({ changeColor = false }) => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const dropdownWithDelay = (
-    ref,
-    isOpen,
-    setOpen,
-    timeoutRef,
-    links,
-    buttonText
-  ) => (
-    <div
-      className="relative group"
-      ref={ref}
-      onMouseEnter={() => {
-        clearTimeoutRef(timeoutRef);
-        setOpen(true);
-      }}
-      onMouseLeave={() => {
-        timeoutRef.current = setTimeout(() => setOpen(false), 100); // 300ms delay
-      }}
-    >
-      <button className="relative group text-base">{buttonText}</button>
-      {isOpen && <DropdownMenu links={links} />}
-    </div>
-  );
-
   const contactLinks = [
     { href: "/contact-us", text: "Contact Us" },
     { href: "/faq", text: "FAQ's" },
@@ -109,6 +83,22 @@ const Navbar = ({ changeColor = false }) => {
     { href: "/khmergate", text: "Khmergate" },
     { href: "/brand-pulse", text: "Brandpulse" },
   ];
+
+  const renderDropdown = (isOpen, links) => (
+    isOpen && (
+      <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md z-20">
+        {links.map((link, index) => (
+          <Link
+            key={index}
+            to={link.href}
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+          >
+            {link.text}
+          </Link>
+        ))}
+      </div>
+    )
+  );
 
   return (
     <>
@@ -136,34 +126,52 @@ const Navbar = ({ changeColor = false }) => {
               </Link>
 
               {/* Companies Dropdown */}
-              {dropdownWithDelay(
-                companiesDropdownRef,
-                isCompaniesDropdownOpen,
-                setCompaniesDropdownOpen,
-                companiesTimeoutRef,
-                companiesLinks,
-                "Companies"
-              )}
+              <div
+                className="relative group"
+                ref={companiesDropdownRef}
+                onMouseEnter={() => {
+                  clearTimeoutRef(companiesTimeoutRef);
+                  setCompaniesDropdownOpen(true);
+                }}
+                onMouseLeave={() => {
+                  companiesTimeoutRef.current = setTimeout(() => setCompaniesDropdownOpen(false), 100);
+                }}
+              >
+                <button className="relative group text-base">Companies</button>
+                {renderDropdown(isCompaniesDropdownOpen, companiesLinks)}
+              </div>
 
               {/* Office Dropdown */}
-              {dropdownWithDelay(
-                officeDropdownRef,
-                isOfficeDropdownOpen,
-                setOfficeDropdownOpen,
-                officeTimeoutRef,
-                officeLinks,
-                "Office"
-              )}
+              <div
+                className="relative group"
+                ref={officeDropdownRef}
+                onMouseEnter={() => {
+                  clearTimeoutRef(officeTimeoutRef);
+                  setOfficeDropdownOpen(true);
+                }}
+                onMouseLeave={() => {
+                  officeTimeoutRef.current = setTimeout(() => setOfficeDropdownOpen(false), 100);
+                }}
+              >
+                <button className="relative group text-base">Office</button>
+                {renderDropdown(isOfficeDropdownOpen, officeLinks)}
+              </div>
 
               {/* Contact Dropdown */}
-              {dropdownWithDelay(
-                contactDropdownRef,
-                isContactDropdownOpen,
-                setContactDropdownOpen,
-                contactTimeoutRef,
-                contactLinks,
-                "Contact"
-              )}
+              <div
+                className="relative group"
+                ref={contactDropdownRef}
+                onMouseEnter={() => {
+                  clearTimeoutRef(contactTimeoutRef);
+                  setContactDropdownOpen(true);
+                }}
+                onMouseLeave={() => {
+                  contactTimeoutRef.current = setTimeout(() => setContactDropdownOpen(false), 100);
+                }}
+              >
+                <button className="relative group text-base">Contact</button>
+                {renderDropdown(isContactDropdownOpen, contactLinks)}
+              </div>
             </div>
           </div>
 
@@ -180,7 +188,7 @@ const Navbar = ({ changeColor = false }) => {
         </div>
       </nav>
 
-      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
     </>
   );
 };
