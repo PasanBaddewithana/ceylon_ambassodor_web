@@ -1,6 +1,43 @@
-# Getting Started with Create React App
+# Ceylon Ambassador Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive website for Ceylon Ambassador, showcasing freight and logistics services, company information, and service offerings.
+
+## Features
+
+- 🌐 Responsive Navigation with dropdown menus
+- 📱 Mobile-friendly design
+- 🎯 Interactive Service Cards
+- 🔄 Animated Components using AOS
+- 📋 FAQ Section
+- 📬 Contact Forms
+- 🌍 Global Network Display
+- 🏢 Multiple Company Portfolios
+- 📰 Blog Integration
+- 🛫 Freight Booking System
+
+## Technologies
+
+- React.js 18
+- Tailwind CSS
+- React Router v6
+- AOS (Animate On Scroll)
+- React Icons
+- Custom SVG Components
+- Responsive Design
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/ceylon-ambassador.git
+```
 
 ## Available Scripts
 
