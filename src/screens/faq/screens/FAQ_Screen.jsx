@@ -25,9 +25,9 @@ function FAQ_Screen() {
         
       >
         <Navbar />
-        <div className="mt-10 px-4 md:px-10 lg:ml-24">
+        <div className="mt-3 pl-20">
   <h1 
-    className="text-3xl md:text-4xl lg:text-5xl font-Montserrat font-bold text-black" 
+    className="text-2xl md:text-3xl font-bold mb-8 font-MontserratMedium" 
     data-aos="fade-up" 
     data-aos-duration="1000"
   >
