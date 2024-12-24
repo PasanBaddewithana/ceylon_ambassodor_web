@@ -39,11 +39,50 @@ A modern, responsive website for Ceylon Ambassador, showcasing freight and logis
 git clone https://github.com/yourusername/ceylon-ambassador.git
 ```
 
+2. Navigate to project directory
+
+```bash
+cd ceylon-ambassador
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Start development server
+
+```bash
+npm start
+```
+
+5. Visit http://localhost:3000 to view the application.
+
+## Project Structure
+ceylon-ambassador/
+├── src/
+│   ├── assets/          # Static assets (images, SVGs)
+│   ├── components/      # Reusable components
+│   ├── screens/         # Page components
+│   │   ├── Homepage/
+│   │   ├── faq/
+│   │   ├── contact/
+│   │   └── ...
+│   └── App.js          # Main application component
+├── public/             # Public assets
+└── package.json        # Project dependencies
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start` : Run development server
+### `npm build` : Build for production
+### `npm test`  : Run tests 
+### `npm run eject` :Eject from create react app
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
