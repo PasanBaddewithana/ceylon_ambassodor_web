@@ -29,7 +29,7 @@ function AboutUsScreen() {
 
   return (
     <div className="relative">
-      <TopHeader />
+      
       <Navbar />
       <div className="flex-1 bg-customBlue">
         {/* Hero Section with Video */}

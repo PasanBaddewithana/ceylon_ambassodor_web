@@ -60,7 +60,7 @@ function HomePage() {
 
   return (
     <div>
-      <TopHeader />
+      
       <Navbar />
       <Hero video={HomeVideo} /> {/* Hero Section */}
       <NavSection setActiveSection={setActiveSection} /> {/* Navigation */}

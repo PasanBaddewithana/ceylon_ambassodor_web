@@ -12,7 +12,7 @@ import InnovationBanner from "../component/InnovationBanner";
 function ContactUsScreen() {
   return (
     <div className="relative font-Montserrat">
-      <TopHeader />
+     
       <Navbar />
       <MapComponent />
       <ContactUsForm />

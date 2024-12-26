@@ -22,7 +22,7 @@ const ProfilePage = () => {
   const { name } = useParams();
   return (
     <div className="relative">
-      <TopHeader />
+   
       <Navbar />
       <div className="mt-12">
         <TeamMemberProfile name={name} />

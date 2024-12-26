@@ -4,6 +4,7 @@ import { FaBars } from "react-icons/fa";
 import Sidebar from "./Sidebar1";
 import { ReactComponent as TrackOrder } from "../../../assets/track_order.svg";
 import { Link } from "react-router-dom";
+import TopHeader from "./TopHeader";
 
 const Navbar = ({ changeColor = false }) => {
   const [isContactDropdownOpen, setContactDropdownOpen] = useState(false);
@@ -115,9 +116,16 @@ const Navbar = ({ changeColor = false }) => {
   );
 
   return (
-    <>
+   
+    <div className="fixed top-0 left-0 w-full z-40">
+      {/* TopHeader - only visible when not scrolled */}
+      <div className={`transition-all duration-300 ${
+        isScrolled ? 'h-0 overflow-hidden' : 'h-auto'
+      }`}>
+        <TopHeader />
+      </div>
         <nav
-        className={`fixed w-full z-50 transition-all duration-300 ${
+        className={` fixed w-full z-40 transition-all duration-300 ${
           isScrolled
             ? 'bg-white shadow-md'
             : isHovered
@@ -210,7 +218,8 @@ const Navbar = ({ changeColor = false }) => {
       </nav>
 
       <Sidebar isOpen={isSidebarOpen}  toggleSidebar={toggleSidebar}/>
-    </>
+      </div>
+    
   );
 };
 
