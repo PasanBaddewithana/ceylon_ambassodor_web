@@ -79,7 +79,7 @@ function HomePage() {
 
       {/* Other Components */}
       <SecondHomeImageComponent   />
-      <div data-aos="fade-left">
+      <div data-aos="fade-left" className="mt-1">
         <ServicesComponent />
       </div>
       <div data-aos="zoom-in">

@@ -12,13 +12,11 @@ const LogisticsBanner = () => {
       <div className="mt-16 relative z-10 flex flex-col items-start justify-center px-8 py-16 lg:px-20">
         <div className="p-6 max-w-md">
           {/* Quote Icon at the Start */}
-          <div className="flex justify-start mb-4">
-            <img src={quote_img} alt="Quote Icon" className="w-16 h-16" />
-          </div>
+         
 
           {/* Title and Description */}
           <h1 className="text-2xl font-bold text-customBlue font-MontserratMedium" data-aos="fade-up" data-aos-duration="1000">
-            Connecting Ideas. Moving Dreams. Delivering Excellence.
+            Connecting Ideas.<br /> Moving Dreams. <br /> Delivering Excellence.
           </h1>
           <p className="mt-8 text-sm text-customBlue font-Montserrat" data-aos="fade-up" data-aos-duration="2000">
             At <strong>Ceylon Ambassador,</strong> we believe in the power of connection. Whether

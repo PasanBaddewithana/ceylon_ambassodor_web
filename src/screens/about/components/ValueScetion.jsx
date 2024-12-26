@@ -9,7 +9,7 @@ import sustainability from "../../../assets/sustainability.svg";
 
 const ValuesSection = () => {
   return (
-    <div className="bg-[#002147] text-white py-12">
+    <div className="bg-[#002147] text-white py-4">
       <h2 className="text-center text-4xl font-bold mb-20 font-MontserratMedium" data-aos="fade-up" data-aos-duration="1000">
         Our Values
       </h2>
@@ -21,7 +21,7 @@ const ValuesSection = () => {
             alt="Integrity"
             className="self-center w-20 h-20 mb-4"
           />
-          <h3 className="text-1xl font-bold mb-8  self-center">Integrity</h3>
+          <h3 className="text-1xl font-bold mb-4  self-center">Integrity</h3>
          
           <p className="mt-2 mb-3 text-xs w-full self-center">
             We conduct business with the highest ethical standards, always doing
@@ -29,14 +29,14 @@ const ValuesSection = () => {
           </p>
          
         </div>
-        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/6 mb-6" data-aos="fade-up" data-aos-duration="2000">
+        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/6 mb-6" data-aos="fade-up" data-aos-duration="1000">
        
           <img
             src={excellence}
             alt="Excellence"
             className="self-center w-20 h-20 mb-4"
           />
-           <h3 className="text-1xl font-bold mb-8 self-center">Excellence</h3>
+           <h3 className="text-1xl font-bold mb-4 self-center">Excellence</h3>
           
           <p className="mt-2 mb-3 text-xs w-full self-center">
             We are driven by a relentless pursuit of quality in every project,
@@ -44,7 +44,7 @@ const ValuesSection = () => {
           </p>
          
         </div>
-        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/6 mb-6" data-aos="fade-up" data-aos-duration="3000">
+        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/6 mb-6" data-aos="fade-up" data-aos-duration="1000">
        
           <img
             src={innovation}
@@ -53,13 +53,13 @@ const ValuesSection = () => {
           />
            <h3 className="text-1xl font-bold self-center">Innovation</h3>
            <div className="flex-grow min-h-[20px]"></div>
-          <p className="mt-5 mb-3 text-xs w-full self-center">
+          <p className="mt-1 mb-3 text-xs w-full self-center">
             We thrive on creativity and forward-thinking, constantly seeking new
             ways to enhance and revolutionize our services.
           </p>
           
         </div>
-        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/6 mb-6" data-aos="fade-up" data-aos-duration="4000">
+        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/6 mb-6" data-aos="fade-up" data-aos-duration="1000">
           <img
             src={sustainability}
             alt="Sustainability"
@@ -67,20 +67,20 @@ const ValuesSection = () => {
           />
            <h3 className="text-1xl font-bold self-center">Sustainability</h3>
            <div className="flex-grow min-h-[20px]"></div>
-          <p className="mt-5 mb-3 text-xs w-full self-center">
+          <p className="mt-1 mb-3 text-xs w-full self-center">
             We are committed to responsible business practices that protect the
             environment and contribute positively to society.
           </p>
          
         </div>
-        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/6 mb-6" data-aos="fade-up" data-aos-duration="5000">
+        <div className="flex flex-col font-MontserratMedium  w-full md:w-1/6 mb-6" data-aos="fade-up" data-aos-duration="1000">
           <img
             src={customer}
             alt="Customer-Centricity"
             className="self-center w-20 h-20 mb-4"
           />
           <h3 className="text-1xl font-bold self-center">Customer-Centricity</h3>
-          <p className="mb-3 mt-10 text-xs w-full self-center">
+          <p className="mb-3 mt-5 text-xs w-full self-center">
             Our clients are at the core of everything we do, and we strive to
             build long-lasting relationships by exceeding their expectations.
           </p>

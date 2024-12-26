@@ -32,7 +32,7 @@ const GlobalLogisticsComponent = () => {
               <p
                 className="text-sm lg:text-base leading-snug text-center lg:text-left font-Montserrat"
                 data-aos="fade-up"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
               >
                 <strong>● Global Reach:</strong> Our services span continents,
                 ensuring your needs are met wherever you are.
@@ -41,7 +41,7 @@ const GlobalLogisticsComponent = () => {
               <p
                 className="text-sm lg:text-base leading-snug text-center lg:text-left font-Montserrat"
                 data-aos="fade-up"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
               >
                 <strong>● Tailored Solutions:</strong> We offer personalized
                 services designed to align with your unique goals.
@@ -50,7 +50,7 @@ const GlobalLogisticsComponent = () => {
               <p
                 className="text-sm lg:text-base leading-snug text-center lg:text-left font-Montserrat"
                 data-aos="fade-up"
-                data-aos-duration="6000"
+                data-aos-duration="1000"
               >
                 <strong>● Innovation-Driven:</strong> Powered by technology, we
                 provide cutting-edge solutions across industries.
@@ -59,7 +59,7 @@ const GlobalLogisticsComponent = () => {
               <p
                 className="text-sm lg:text-base leading-snug text-center lg:text-left font-Montserrat"
                 data-aos="fade-up"
-                data-aos-duration="7000"
+                data-aos-duration="1000"
               >
                 <strong>● Commitment to Sustainability:</strong> We prioritize
                 eco-friendly practices to create a better tomorrow.

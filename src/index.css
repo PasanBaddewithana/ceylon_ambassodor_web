@@ -161,6 +161,11 @@
   position: relative;
   z-index: 1; /* Below components */
 }
+.yellow-strip {
+  height: 30px; /* Adjust strip height as needed */
+  background-color: #c3a05f;
+  width: 100%;
+}
 
 .parallax-spacer-khemergate{
   height: 600px; /* Adjust height as needed */

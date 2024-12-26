@@ -17,19 +17,19 @@ const VisionScreen = () => {
             </a>
 
             <a href="/aerofly" className="block">
-              <p className="font-kollektif text-base sm:text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="1500">
+              <p className="font-kollektif text-base sm:text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="1000">
                 AEROFLY AVIATION
               </p>
             </a>
 
             <a href="/khmergate" className="block">
-              <p className="font-kollektif text-base sm:text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="2000">
+              <p className="font-kollektif text-base sm:text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="1000">
                 KHMERGATE
               </p>
             </a>
 
-            <a href="/brandpulse" className="block">
-              <p className="font-kollektif text-base sm:text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="2500">
+            <a href="/brand-pulse" className="block">
+              <p className="font-kollektif text-base sm:text-lg font-black text-customBlue border-b-2 border-black pb-2" data-aos="fade-up" data-aos-duration="1000">
                 BRANDPULSE
               </p>
             </a>

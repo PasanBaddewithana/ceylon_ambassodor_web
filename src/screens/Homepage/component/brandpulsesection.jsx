@@ -23,9 +23,14 @@ const BrandpulseLogisticsPage = () => {
               alt="Brandpulse Logo"
               className="w-30 h-40 mx-auto lg:mx-0"
             />
-            <h1 className="text-3xl font-bold text-customBlue" data-aos="fade-up" data-aos-duration="1000">
-              Shaping Brands That Inspire
-            </h1>
+            <h1 
+  className="text-3xl font-bold text-customBlue" 
+  data-aos="fade-up" 
+  data-aos-duration="1000"
+>
+  Shaping Brands<br />That Inspire
+</h1>
+            
             <p className="text-gray-600 pb-4" data-aos="fade-up" data-aos-duration="2000">
               <strong className="text-black">BrandPulse</strong> is a creative
               branding and marketing agency that transforms businesses into

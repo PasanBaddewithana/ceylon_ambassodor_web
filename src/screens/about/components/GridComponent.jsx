@@ -1,5 +1,6 @@
 import React from "react";
 import RowTag from "./RowTag"; // Import the RowTag component
+import Slider from "react-infinite-logo-slider";
 
 // Import images
 import icon1 from "../../../assets/ufs_about/UFS-2.png";
@@ -49,9 +50,45 @@ const GridComponent = () => {
   ];
 
   return (
-    <div className="relative w-full overflow-hidden mt-2">
-      <RowTag images={row1Images} animationClass="animate-train-left" />
-      <RowTag images={row2Images} animationClass="animate-train-right mt-0.25" />
+    <div className="w-full space-y-4">
+      {/* First row - Left to Right */}
+      <Slider
+        width="20%"
+        duration={1200}
+        pauseOnHover={false}
+        blurBorders={false}
+        blurBorderColor="#fff"
+      >
+        {row1Images.map((image, index) => (
+          <Slider.Slide key={index}>
+            <img 
+              src={image} 
+              alt={`logo-${index}`}
+              className="w-32 h-32 object-contain mx-1"
+            />
+          </Slider.Slide>
+        ))}
+      </Slider>
+
+      {/* Second row - Right to Left */}
+      <Slider
+        width="20%"
+        duration={1200}
+        pauseOnHover={false}
+        blurBorders={false}
+        blurBorderColor="#fff"
+        toRight={true}
+      >
+        {row2Images.map((image, index) => (
+          <Slider.Slide key={index}>
+            <img 
+              src={image} 
+              alt={`logo-${index}`}
+              className="w-32 h-32 object-contain mx-1"
+            />
+          </Slider.Slide>
+        ))}
+      </Slider>
     </div>
   );
 };

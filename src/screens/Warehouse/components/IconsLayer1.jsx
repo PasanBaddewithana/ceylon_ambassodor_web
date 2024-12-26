@@ -1,4 +1,4 @@
-import CartoonCard from "./CartoonCard";
+import CartoonCard from "./CartoonCard1";
 import Plane from "../../../assets/warehouse/Layer 33.svg";
 import Ship from "../../../assets/warehouse/Layer 34.svg";
 import Truck from "../../../assets/warehouse/Layer 35.svg";
@@ -7,7 +7,7 @@ import World from "../../../assets/warehouse/Layer 37.svg";
 
 const IconsLayer = () => {
   return (
-    <div className="w-full h-auto flex flex-wrap md:flex-row flex-col items-center justify-center p-4 gap-8 md:gap-20">
+    <div className="w-full h-300 flex flex-wrap md:flex-row flex-col items-center justify-center p-4 gap-1 md:gap-4">
       <CartoonCard
         image={Plane}
         h="100px"

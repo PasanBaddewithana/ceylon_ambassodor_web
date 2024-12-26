@@ -1,5 +1,5 @@
 import React from "react";
-import CartoonCard from "./CartoonCard";
+import CartoonCard from "./CartoonCard2";
 import slips from "../../../assets/slips.png";
 import robot from "../../../assets/robot.png";
 import speaker from "../../../assets/speaker.png";
@@ -8,7 +8,7 @@ import bulb from "../../../assets/bulb.png";
 
 const ThirdPart = () => {
   return (
-    <div className="w-full h-auto flex flex-wrap md:flex-row flex-col items-center justify-center p-4 gap-8 md:gap-20">
+    <div className="w-full h-70 flex flex-wrap md:flex-row flex-col items-center justify-center p-4 gap-1 md:gap-4">
       <CartoonCard
         image={robot}
         h="100px"

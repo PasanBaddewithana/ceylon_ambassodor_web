@@ -65,7 +65,10 @@ const WareHousePage = () => {
         <IconsLayer />
       </div>
        {/* Parallax Spacer */}
+       <div class="yellow-strip"></div>
        <div className="parallax-spacer"></div>
+       <div class="yellow-strip"></div>
+
       <div >
         <FifthSectionHeader />
       </div>
