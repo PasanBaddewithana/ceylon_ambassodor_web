@@ -40,7 +40,7 @@ function BrandPulse() {
 
   return (
     <div>
-      <TopHeader />
+     
       <Navbar />
       <div data-aos="fade-up">
         <FirstSection

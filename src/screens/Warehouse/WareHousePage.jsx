@@ -36,7 +36,7 @@ const WareHousePage = () => {
 
   return (
     <div className="font-Montserrat">
-      <TopHeader />
+     
       <Navbar />
 
       {/* First Section */}

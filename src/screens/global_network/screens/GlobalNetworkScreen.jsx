@@ -153,7 +153,7 @@ function GlobalNetworkScreen() {
 
   return (
     <div className="relative">
-      <TopHeader />
+    k
       <Navbar />
       <div className="bg-gray-200 overflow-hidden" data-aos="fade-up">
         {/* Image placed below the Navbar with a specific height and full width */}

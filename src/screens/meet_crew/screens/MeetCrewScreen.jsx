@@ -11,14 +11,17 @@ function MeetCrewScreen() {
   return (
     <div style={{ position: "relative" }} className="font-kollektif">
       {/* Set relative positioning */}
-      <TopHeader />
+     
       <div className="bg-gray-200 h-[200px]  flex justify-start items-center">
         <Navbar />
-        <div className="mt-10 ml-24">
-          <h1 className="text-5xl font-Montserrat  font-bold text-black">
-            Meet The Crew
-          </h1>
-        </div>
+        <div className="mt-20 px-6 md:px-24">
+  <h1 
+    className="text-2xl sm:text-3xl md:text-5xl font-Montserrat font-bold text-black mt-6 md:mt-10"
+  >
+    Meet The Crew
+  </h1>
+</div>
+
       </div>
 
       {/* Make sure FAQ_Content is placed below Navbar */}

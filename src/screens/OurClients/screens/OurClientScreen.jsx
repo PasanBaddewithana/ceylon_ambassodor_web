@@ -20,7 +20,7 @@ function OurClientScreen() {
 
   return (
     <div className="bg-white">
-      <TopHeader />
+     
       <Navbar />
       <div className="bg-white">
         <div data-aos="fade-down">

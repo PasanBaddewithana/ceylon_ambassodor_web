@@ -37,7 +37,7 @@ function Khmergate() {
 
   return (
     <div>
-      <TopHeader />
+     
       <Navbar />
       <div data-aos="fade-up">
         <FirstSection
