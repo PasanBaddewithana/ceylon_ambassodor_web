@@ -10,6 +10,8 @@ const Navbar = ({ changeColor = false }) => {
   const [isOfficeDropdownOpen, setOfficeDropdownOpen] = useState(false);
   const [isCompaniesDropdownOpen, setCompaniesDropdownOpen] = useState(false);
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const contactDropdownRef = useRef(null);
   const officeDropdownRef = useRef(null);
@@ -61,6 +63,18 @@ const Navbar = ({ changeColor = false }) => {
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
+
+    
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      setIsScrolled(offset > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const contactLinks = [
@@ -102,11 +116,18 @@ const Navbar = ({ changeColor = false }) => {
 
   return (
     <>
-      <nav
-        className={`bg-transparent mx-auto flex items-center border-b-2 ${
-          changeColor ? "border-white" : "border-[#031c3f]"
-        } ${changeColor ? "text-white" : "text-[#031c3f]"} 
-         absolute top-6 w-full z-10 font-kollektif font-bold text-sm h-16`}
+        <nav
+        className={`fixed w-full z-50 transition-all duration-300 ${
+          isScrolled
+            ? 'bg-white shadow-md'
+            : isHovered
+              ? 'bg-white/95' // Semi-transparent white when hovered
+              : 'bg-transparent'
+        } ${
+          (changeColor && !isScrolled && !isHovered) ? 'text-white' : 'text-[#031c3f]'
+        } font-kollektif font-bold text-sm`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
         <div className="container mx-auto flex justify-between items-center">
           <div className="w-[90%] flex justify-between items-center py-2 px-6 ">   
