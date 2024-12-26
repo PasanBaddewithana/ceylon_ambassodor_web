@@ -1,5 +1,5 @@
 import React from "react";
-import CartoonCard from "./CartoonCard";
+import CartoonCard from "./CartoonCardAero";
 import plane from "../../../assets/plane.svg";
 import planeEarth from "../../../assets/planeEarth.svg";
 import planeWindow from "../../../assets/planeWindow.svg";
@@ -8,7 +8,7 @@ import message from "../../../assets/message.svg";
 
 const AeroThirdPart = () => {
   return (
-    <div className="w-full h-auto flex flex-wrap md:flex-row flex-col items-center justify-center p-4 gap-8 md:gap-20">
+    <div className="w-full h-300 flex flex-wrap md:flex-row flex-col items-center justify-center p-4 gap-4 md:gap-10">
 
 <CartoonCard
         image={handPlane}

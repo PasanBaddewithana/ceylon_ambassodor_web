@@ -125,9 +125,12 @@ const Footer = () => {
 
         {/* Social Media Icons */}
         <div className="flex justify-center items-center mb-8">
-          <p className="text-center w-full text-xs mb-4">
+          <p className="flex-row text-center w-full text-xs mb-4">
             &copy; 2024 Ceylon Ambassador, All Rights Reserved
+            <br />
+            &copy; Developed By <a href="https://www.gravitycolombo.com/" className="hover:text-gray-400" target="_blank" rel="noopener noreferrer">Gravity Colombo</a>
           </p>
+         
 
           <div className="flex justify-center space-x-4">
             <a href="#" className="hover:text-gray-400" aria-label="Facebook">

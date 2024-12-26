@@ -7,9 +7,9 @@ import Logo from "../../../assets/blue_logo.svg";
 const ServicesWithImages = () => {
   return (
     <div className="font-Montserrat ">
-      <div className=" items-center justify-center">
+      <div className=" items-center justify-center pl-40">
       {/* Sustainability & Social Responsibility Section */}
-      <div className="flex flex-col md:flex-row my-10 items-center justify-center px-5 md:px-20">
+      <div className="flex flex-col md:flex-row my-10 items-center justify-center px-7 md:px-20 pl-60">
         <div className="md:w-1/2 py-2 max-w-96 text-center md:text-left">
           <h2 className="text-3xl font-MontserratMedium font-bold text-customBlue text-right" data-aos="fade-up" data-aos-duration="1000">
             Sustainability & Social Responsibility
@@ -24,11 +24,11 @@ const ServicesWithImages = () => {
           </p>
         </div>
         <div className="md:w-1/2 flex justify-start mx-8 relative">
-          <div className="w-full  h-auto  max-w-md border-l-2 border-gray-700 px-5">
+          <div className="w-full  h-auto  justify-center max-w-md border-l-2 border-gray-700 px-5 pl-45">
             <img
               src={SustainabilityImage}
               alt="Sustainability"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover "
               data-aos="fade-up" data-aos-duration="1000"
             />
           </div>
@@ -36,8 +36,8 @@ const ServicesWithImages = () => {
       </div>
 
       {/* Innovation at the Core Section */}
-      <div className="flex flex-col md:flex-row-reverse my-10 items-center justify-center px-5 md:px-20">
-        <div className="md:w-4/5 p-5 text-center md:text-left" style={{ marginLeft: '-26px' }}>
+      <div className="flex flex-col md:flex-row-reverse my-10 items-center justify-center px-7 md:px-20 ms-8 ms-20">
+        <div className="md:w-3/4 p-5 text-center md:text-left " style={{ marginLeft: '-26px' }} >
           <h2 className="text-3xl font-MontserratMedium font-bold text-customBlue text-left " data-aos="fade-up" data-aos-duration="1000">
             Innovation at the Core
           </h2>
@@ -55,7 +55,7 @@ const ServicesWithImages = () => {
             <img
               src={InnovationImage}
               alt="Innovation"
-              className="w-96 h-auto object-cover"
+              className="w-96 h-auto object-cover "
               data-aos="fade-up" data-aos-duration="1000"
             />
           </div>

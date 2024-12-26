@@ -1,5 +1,5 @@
 import React from "react";
-import CartoonCard from "../CartoonCard";
+import CartoonCard from "../CartoonCard2";
 import lorry from "../../../../assets/Khmergate/logo/lorry.svg";
 import pass from "../../../../assets/Khmergate/logo/pass.svg";
 import ballon from "../../../../assets/Khmergate/logo/balloon.svg";
@@ -8,7 +8,7 @@ import bag from "../../../../assets/Khmergate/logo/bag.svg";
 
 const KhmergateThird = () => {
   return (
-    <div className="w-full h-auto flex flex-wrap md:flex-row flex-col items-center justify-center p-4 gap-8 md:gap-20">
+    <div className="w-full h-300 flex flex-wrap md:flex-row flex-col items-center justify-center p-4 gap-1 md:gap-4">
 
     <CartoonCard
         image={pass}

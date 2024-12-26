@@ -23,7 +23,7 @@ const LogisticsPage = () => {
             <img
               src={ufs_orange}
               alt="UFS Logo"
-              className="w-30 h-40 mx-auto lg:mx-0"
+              className="w-50 h-40 mx-auto lg:mx-0"
             />
             <h1 className="text-3xl font-bold text-customBlue" data-aos="fade-up" data-aos-duration="1000">
               United Freight Solutions: Connecting the World, One Shipment at a

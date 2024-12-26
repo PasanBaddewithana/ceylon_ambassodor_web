@@ -28,13 +28,13 @@ const HomeGridComponent = () => {
             <img
               src={icon.black}
               alt={`Icon ${index + 1} Black`}
-              className="h-16 md:h-20 transition-opacity duration-300 group-hover:opacity-0"
+              className="h-18 md:h-20 transition-opacity duration-300 group-hover:opacity-0"
             />
             {/* Colored Icon */}
             <img
               src={icon.color}
               alt={`Icon ${index + 1} Color`}
-              className="h-16 md:h-20 absolute opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              className="h-18 md:h-20 absolute opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             />
           </div>
         ))}

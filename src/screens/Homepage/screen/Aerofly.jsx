@@ -58,7 +58,9 @@ function Aerofly() {
       {/* <div data-aos="zoom-in">
         <FourthPart fourthImage={uniformedPilot} imageHeight={800} />
       </div> */}
+       <div class="yellow-strip"></div>
       <div className="parallax-spacer-aerofly"></div>
+      <div class="yellow-strip"></div>
       <div data-aos="fade-up">
         <AeroflyFifth />
       </div>

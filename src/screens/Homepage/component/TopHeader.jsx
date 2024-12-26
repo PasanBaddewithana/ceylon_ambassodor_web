@@ -15,7 +15,7 @@ const TopHeader = () => {
         <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mb-2 md:mb-0">
           <div className="flex items-center space-x-1">
             <Phone />
-            <span className="text-[10px] sm:text-[12px]">+94 77 777 7777</span>
+            <span className="text-[10px] sm:text-[12px]">+94 77 367 5054</span>
           </div>
           <div className="flex items-center space-x-1">
             <Mail />

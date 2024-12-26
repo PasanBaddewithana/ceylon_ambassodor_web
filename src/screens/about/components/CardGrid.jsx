@@ -3,8 +3,8 @@ import React from "react";
 import Card from "./CardComponent";
 
 // import images
-import ufsImage from "../../../assets/card_images/UFS_card_image.jpg";
-import aeroflyImage from "../../../assets/card_images/aerofly_card_iamge.jpg"; // Corrected the typo in 'aerofly_card_iamge'
+import ufsImage from "../../../assets/ufs_newcard.jpg";
+import aeroflyImage from "../../../assets/aerofly_newcard.jpg"; // Corrected the typo in 'aerofly_card_iamge'
 import khmersImage from "../../../assets/card_images/khermgate_card_image.jpg"; // Assuming this path is correct
 import brandpulseImage from "../../../assets/card_images/brand_pulse_card_image.jpg"; // Assuming this path is correct
 

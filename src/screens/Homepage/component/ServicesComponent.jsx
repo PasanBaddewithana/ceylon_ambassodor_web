@@ -227,7 +227,7 @@ your unique travel and cargo needs."
   );
 
   return (
-    <div className="bg-white py-12 font-Montserrat">
+    <div className="bg-white py-1 font-Montserrat">
       <div 
         className="relative overflow-hidden" 
         style={{ 
