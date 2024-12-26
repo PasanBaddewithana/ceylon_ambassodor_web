@@ -1,5 +1,5 @@
 import React from "react";
-import RowTag from "./RowTag"; // Import the RowTag component
+// import RowTag from "./RowTag"; // Import the RowTag component
 import Slider from "react-infinite-logo-slider";
 
 // Import images
@@ -45,26 +45,27 @@ const GridComponent = () => {
   ];
 
   const row2Images = [
-    icon9, icon11, icon12, imageK1, imageK2, imageK3, imageK4, imageK5, imageK6, 
-    imageK7, imageA1, imageA2, imageA3, imageA4, imageA5, imageA6, imageA7
+    icon9, icon11, icon12, imageK1, imageK2, imageK3, imageK4, imageK5, 
+    imageK6, imageK7, imageA1, imageA2, imageA3, imageA4, imageA5, imageA6, imageA7
   ];
 
   return (
-    <div className="w-full space-y-4">
+    <div className="w-full space-y-1">
       {/* First row - Left to Right */}
       <Slider
-        width="20%"
-        duration={1200}
+        width="100px"
+        duration={40}
         pauseOnHover={false}
         blurBorders={false}
         blurBorderColor="#fff"
+        toRight={false}
       >
         {row1Images.map((image, index) => (
           <Slider.Slide key={index}>
             <img 
               src={image} 
               alt={`logo-${index}`}
-              className="w-32 h-32 object-contain mx-1"
+              className="w-48 h-32 object-contain mx-1"
             />
           </Slider.Slide>
         ))}
@@ -72,19 +73,19 @@ const GridComponent = () => {
 
       {/* Second row - Right to Left */}
       <Slider
-        width="20%"
-        duration={1200}
+        width="100px"
+        duration={40}
         pauseOnHover={false}
         blurBorders={false}
         blurBorderColor="#fff"
-        toRight={true}
+        toRight={false}
       >
         {row2Images.map((image, index) => (
           <Slider.Slide key={index}>
             <img 
               src={image} 
               alt={`logo-${index}`}
-              className="w-32 h-32 object-contain mx-1"
+              className="w-48 h-32 object-contain mx-1"
             />
           </Slider.Slide>
         ))}

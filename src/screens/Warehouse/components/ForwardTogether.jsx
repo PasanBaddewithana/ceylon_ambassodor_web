@@ -1,5 +1,5 @@
 import DetailCard from "./DetailCard";
-import image from "../../../assets/warehouse/transport-logistics-concept-2.jpg";
+import image from "../../../assets/warehouse/transport_ufsnew.jpg";
 //this is forward to gether component
 const ForwardTogether = () => {
   return (

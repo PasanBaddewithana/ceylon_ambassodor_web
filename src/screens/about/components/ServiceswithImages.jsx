@@ -36,7 +36,7 @@ const ServicesWithImages = () => {
       </div>
 
       {/* Innovation at the Core Section */}
-      <div className="flex flex-col md:flex-row-reverse my-10 items-center justify-center px-7 md:px-20 ms-8 ms-20">
+      <div className="flex flex-col md:flex-row-reverse my-10 items-center justify-center px-7 md:px-20  ms-20">
         <div className="md:w-3/4 p-5 text-center md:text-left " style={{ marginLeft: '-26px' }} >
           <h2 className="text-3xl font-MontserratMedium font-bold text-customBlue text-left " data-aos="fade-up" data-aos-duration="1000">
             Innovation at the Core

@@ -73,9 +73,9 @@ const WareHousePage = () => {
         <FifthSectionHeader />
       </div>
       {/* Fourth Section */}
-      <div className="component-wrapper" >
+      
         <ForwardTogether />
-      </div>
+     
        <div data-aos="fade-up">
         <SeaFreight />
       </div>  
@@ -84,9 +84,9 @@ const WareHousePage = () => {
       </div>
       <div >
       </div>
-      <div >
+     
         <GlobalConsollidation />
-      </div>
+     
       <div>
         <WhyChooseUs />
       </div>
