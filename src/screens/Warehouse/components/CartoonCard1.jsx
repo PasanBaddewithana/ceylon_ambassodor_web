@@ -11,7 +11,7 @@ const CartoonCard = ({
   const textColorClass = `text-${textcolor}`;
 
   return (
-    <div className="flex flex-col items-center justify-between w-[250px] h-[200px]  bg-white ">
+    <div className="flex flex-col items-center justify-between w-[250px] h-[300px]  bg-white ">
       <div className="flex-shrink-0">
         <img
           src={image}
