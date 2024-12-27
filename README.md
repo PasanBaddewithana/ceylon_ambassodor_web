@@ -60,6 +60,7 @@ npm start
 5. Visit http://localhost:3000 to view the application.
 
 ## Project Structure
+```bash
 ceylon-ambassador/
 ├── src/
 │   ├── assets/          # Static assets (images, SVGs)
@@ -72,7 +73,7 @@ ceylon-ambassador/
 │   └── App.js          # Main application component
 ├── public/             # Public assets
 └── package.json        # Project dependencies
-
+```
 
 
 ## Available Scripts
