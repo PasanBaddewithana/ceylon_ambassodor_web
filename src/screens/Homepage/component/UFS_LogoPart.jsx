@@ -1,7 +1,7 @@
 import React from "react";
 import ship1 from "../../../assets/home/ship01.png";
 import ship2 from "../../../assets/home/ship2.jpg";
-import ufs_orange from "../../../assets/home/ufs_orange.png";
+import ufs_orange from "../../../assets/color/Artboard 1.png";
 import h1 from '../../../assets/home/H1.png';
 import { Link } from "react-router-dom";
 
@@ -23,7 +23,7 @@ const LogisticsPage = () => {
             <img
               src={ufs_orange}
               alt="UFS Logo"
-              className="w-50 h-40 mx-auto lg:mx-0"
+              className="w-50 h-60 mx-auto lg:mx-0"
             />
             <h1 className="text-3xl font-bold text-customBlue" data-aos="fade-up" data-aos-duration="1000">
               United Freight Solutions: Connecting the World, One Shipment at a

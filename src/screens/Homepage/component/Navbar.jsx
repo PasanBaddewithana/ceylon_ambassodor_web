@@ -3,8 +3,10 @@ import { ReactComponent as Logo } from "../../../assets/Logo.svg";
 import { FaBars } from "react-icons/fa";
 import Sidebar from "./Sidebar1";
 import { ReactComponent as TrackOrder } from "../../../assets/track_order.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import TopHeader from "./TopHeader";
+import { useNavigate } from "react-router-dom";
+
 
 const Navbar = ({ changeColor = false }) => {
   const [isContactDropdownOpen, setContactDropdownOpen] = useState(false);
@@ -22,6 +24,13 @@ const Navbar = ({ changeColor = false }) => {
   const contactTimeoutRef = useRef(null);
   const officeTimeoutRef = useRef(null);
   const companiesTimeoutRef = useRef(null);
+  const navigate = useNavigate(); 
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   const toggleSidebar = () => {
     setSidebarOpen((prev) => !prev);
@@ -206,7 +215,12 @@ const Navbar = ({ changeColor = false }) => {
 
           {/* Hamburger Menu - Always Visible */}
           <div className="flex items-center space-x-4">
+          <div
+            className="flex items-center space-x-1 cursor-pointer"
+            onClick={() => navigate("/book-frieghts")}
+          >
             <TrackOrder className="hidden md:block" />
+            </div>
             <button
               className="bg-[#031c3f] p-2 text-white rounded"
               onClick={toggleSidebar}

@@ -1,9 +1,10 @@
 import React from "react";
 
 import plane1 from "../../../assets/H2.png";
-import ufs_orange from "../../../assets/home/ufs_orange.png";
-import Icon2Color from "../../../assets/aeroflylogo.svg";
+
+import Icon2Color from "../../../assets/color/Artboard 2.png";
 import { Link } from "react-router-dom";
+
 
 
 const AeroLogisticsPage = () => {
@@ -26,7 +27,7 @@ const AeroLogisticsPage = () => {
           <img
               src={Icon2Color}
               alt="Aerofly Logo"
-              className="w-30 h-40 mx-auto lg:mx-0"
+              className="w-50 h-60 mx-auto lg:mx-0"
             />
             <h1 className="text-3xl font-bold text-customBlue" data-aos="fade-up" data-aos-duration="1000">
               Elevating the <br /> Future of Aviation
