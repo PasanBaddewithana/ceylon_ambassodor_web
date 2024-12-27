@@ -2,6 +2,7 @@ import React from "react";
 import tall_building from "../../../assets/home/tall_building.jpg";
 import company_logo from "../../../assets/white_logo_2.svg";
 
+
 const HomeJoinUsComponent = () => {
   return (
     <div className="relative flex justify-center items-center mt-12 py-8 font-Montserrat ">
@@ -27,11 +28,11 @@ const HomeJoinUsComponent = () => {
             data-aos-duration="3000"
           >
             {/* Clickable area with hover effect */}
-            <a
-              href="../../../assets/Ceylon Ambassador Company Profile.pdf" // Correct path to your file
-              download="Ceylon Ambassador Company Profile.pdf"
-              className="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg transition-all duration-300 cursor-pointer"
-            >
+            <a 
+  href="/Ceylon_Ambassador_Company_Profile.pdf"
+  download="Ceylon Ambassador Company Profile.pdf" 
+  className="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg transition-all duration-300 cursor-pointer" 
+>
               {/* Circle with Plus Icon */}
               <div className="flex justify-center items-center w-12 h-12 bg-[#c3a05f] rounded-full transition-transform duration-300 hover:scale-110">
                 <svg
