@@ -14,7 +14,7 @@ const MapComponent = () => {
           scrolling="no"
           marginHeight="0"
           marginWidth="0"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=New%20York+(New%20York)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?q=6.972802351547266,79.91743277742121&hl=en&z=14&output=embed" 
           title="Google Map"
         />
       </div>
