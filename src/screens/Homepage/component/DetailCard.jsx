@@ -43,14 +43,14 @@ const DetailCard = ({
             <p
               className="font-bold text-lg md:text-xl lg:text-[27px] mb-4 md:mb-5"
               style={{ color: textColor }}
-              data-aos="fade-up" data-aos-duration="1500"
+              data-aos="fade-up" data-aos-duration="1000"
             >
               {topicBottom}
             </p>
             <p
               className="text-sm md:text-base lg:text-[13px] p-1"
               style={{ color: textColor }}
-              data-aos="fade-up" data-aos-duration="2000"
+              data-aos="fade-up" data-aos-duration="1000"
             >
               {description}
             </p>
@@ -58,7 +58,7 @@ const DetailCard = ({
               <p
                 className="font-bold text-sm md:text-base lg:text-[13px] p-1"
                 style={{ color: textColor }}
-                data-aos="fade-up" data-aos-duration="2500"
+                data-aos="fade-up" data-aos-duration="1000"
               >
                 {subTopic}
               </p>
@@ -66,28 +66,28 @@ const DetailCard = ({
             <p
               className="text-sm md:text-base lg:text-[13px] p-1"
               style={{ color: textColor }}
-              data-aos="fade-up" data-aos-duration="3000"
+              data-aos="fade-up" data-aos-duration="1000"
             >
               <span className="font-bold">{subPoint1}</span> {subPointDes1}
             </p>
             <p
               className="text-sm md:text-base lg:text-[13px] p-1"
               style={{ color: textColor }}
-              data-aos="fade-up" data-aos-duration="3000"
+              data-aos="fade-up" data-aos-duration="1000"
             >
               <span className="font-bold">{subPoint2}</span> {subPointDes2}
             </p>
             <p
               className="text-sm md:text-base lg:text-[13px] p-1"
               style={{ color: textColor }}
-              data-aos="fade-up" data-aos-duration="3000"
+              data-aos="fade-up" data-aos-duration="1000"
             >
               <span className="font-bold">{subPoint3}</span> {subPointDes3}
             </p>
             <p
               className="text-sm md:text-base lg:text-[13px] p-1"
               style={{ color: textColor }}
-              data-aos="fade-up" data-aos-duration="3000"
+              data-aos="fade-up" data-aos-duration="1000"
             >
               {conclusion}
             </p>
@@ -123,14 +123,14 @@ const DetailCard = ({
             <p
               className="font-bold text-lg md:text-xl lg:text-[27px] mb-4 md:mb-5"
               style={{ color: textColor }}
-              data-aos="fade-up" data-aos-duration="1500"
+              data-aos="fade-up" data-aos-duration="1000"
             >
               {topicBottom}
             </p>
             <p
               className="text-sm md:text-base lg:text-[13px] p-1"
               style={{ color: textColor }}
-              data-aos="fade-up" data-aos-duration="2000"
+              data-aos="fade-up" data-aos-duration="1000"
             >
               {description}
             </p>
@@ -138,7 +138,7 @@ const DetailCard = ({
               <p
                 className="font-bold text-sm md:text-base lg:text-[13px] p-1"
                 style={{ color: textColor }}
-                data-aos="fade-up" data-aos-duration="2500"
+                data-aos="fade-up" data-aos-duration="1000"
               >
                 {subTopic}
               </p>
@@ -146,28 +146,28 @@ const DetailCard = ({
             <p
               className="text-sm md:text-base lg:text-[13px] p-1"
               style={{ color: textColor }}
-              data-aos="fade-up" data-aos-duration="3000"
+              data-aos="fade-up" data-aos-duration="1000"
             >
               <span className="font-bold">{subPoint1}</span> {subPointDes1}
             </p>
             <p
               className="text-sm md:text-base lg:text-[13px] p-1"
               style={{ color: textColor }}
-              data-aos="fade-up" data-aos-duration="3000"
+              data-aos="fade-up" data-aos-duration="1000"
             >
               <span className="font-bold">{subPoint2}</span> {subPointDes2}
             </p>
             <p
               className="text-sm md:text-base lg:text-[13px] p-1"
               style={{ color: textColor }}
-              data-aos="fade-up" data-aos-duration="3000"
+              data-aos="fade-up" data-aos-duration="1000"
             >
               <span className="font-bold">{subPoint3}</span> {subPointDes3}
             </p>
             <p
               className="text-sm md:text-base lg:text-[13px] p-1"
               style={{ color: textColor }}
-              data-aos="fade-up" data-aos-duration="3000"
+              data-aos="fade-up" data-aos-duration="1000"
             >
               {conclusion}
             </p>
