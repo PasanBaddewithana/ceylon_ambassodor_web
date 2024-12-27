@@ -2,7 +2,7 @@ import React from "react";
 
 import h3 from "../../../assets/H3.png";
 import ufs_orange from "../../../assets/home/ufs_orange.png";
-import Icon3Color from "../../../assets/Khmergate/khermgate_green_logo.svg";
+import Icon3Color from "../../../assets/color/Artboard 3.png";
 import { Link } from "react-router-dom";
 
 
@@ -22,7 +22,7 @@ const KhemerLogisticsPage = () => {
           <img
               src={Icon3Color}
               alt="khemergate Logo"
-              className="w-30 h-40 mx-auto lg:mx-0"
+              className="w-50 h-60 mx-auto lg:mx-0"
             />
             <h1 className="text-3xl font-bold text-customBlue" data-aos="fade-up" data-aos-duration="1000">
               Your Gateway to Authentic Experiences

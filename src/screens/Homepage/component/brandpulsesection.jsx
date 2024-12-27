@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import h4 from "../../../assets/H4.png";
 import ufs_orange from "../../../assets/home/ufs_orange.png";
-import Icon4Color from "../../../assets/brand_pulse_ml_color.svg";
+import Icon4Color from "../../../assets/color/Artboard 4.png";
 
 const BrandpulseLogisticsPage = () => {
   return (
@@ -21,7 +21,7 @@ const BrandpulseLogisticsPage = () => {
           <img
               src={Icon4Color}
               alt="Brandpulse Logo"
-              className="w-30 h-40 mx-auto lg:mx-0"
+              className="w-50 h-60 mx-auto lg:mx-0"
             />
             <h1 
   className="text-3xl font-bold text-customBlue" 
