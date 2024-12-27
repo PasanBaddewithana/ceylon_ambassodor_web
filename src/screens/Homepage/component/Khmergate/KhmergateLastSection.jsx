@@ -7,6 +7,7 @@ import {
   faLinkedinIn,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import Slider from "react-infinite-logo-slider";
 
 // Sample images (replace these with your actual image imports)
 import image1 from "../../../../assets/khmergate_about/K-1.png";
@@ -39,18 +40,26 @@ const KhmergateLastSection = ({ lastwords, lastImage }) => {
       </div>
 
       {/* Scrolling Train Section */}
-      <div className="w-full overflow-hidden relative h-[150px] border-[#015B02] border-[3px]">
-        <div className="flex animate-train whitespace-nowrap">
-          {imageArray.concat(imageArray).map((image, index) => (
-            <div
-              key={index}
-              className="flex-none w-[150px] h-[150px] flex items-center justify-center"
-            >
-              <img src={image} alt={`Icon ${index + 1}`} className="h-full w-full object-contain" />
-            </div>
-          ))}
-        </div>
-      </div>
+      <div className="last-section-container">
+      <Slider
+        width="10%"
+        duration={200}
+        pauseOnHover={false}
+        blurBorders={false}
+        blurBorderColor="#fff"
+        toRight={false}
+      >
+        {imageArray.map((image, index) => (
+          <Slider.Slide key={index} className="flex justify-center items-center">
+            <img 
+              src={image} 
+              alt={`logo-${index}`}
+              className="w-32 h-32 object-contain mx-1"  // Adjust the size as needed
+            />
+          </Slider.Slide>
+        ))}
+      </Slider>
+    </div>
     </div>
   );
 };
