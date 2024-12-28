@@ -10,15 +10,17 @@ const HomeJoinUsComponent = () => {
         {/* Left Section: Text (40% width) */}
         <div className="lg:w-2/5 text-center lg:text-left space-y-4 border-customBlue border-r-2">
           <h1 className="text-4xl font-bold text-customBlue leading-tight" data-aos="fade-up" data-aos-duration="1000">
-            Join Us
+          Explore 
+
           </h1>
           <h1 className="text-4xl font-bold text-customBlue leading-tight" data-aos="fade-up" data-aos-duration="1500">
-            on Our Journey
+          Our Company Profile
           </h1>
           <p className="text-customBlue max-w-md lg:max-w-sm" data-aos="fade-up" data-aos-duration="2000">
-            We invite you to explore our services and discover how Ceylon
-            Ambassador can be your partner in growth. Together, let's connect
-            opportunities and create lasting value.
+          Discover more about Ceylon Ambassador, our vision, values, and the services that set us apart in the global marketplace.
+          <br />
+At Ceylon Ambassador, we’re not just moving goods—we’re enabling progress, fostering growth, and building connections that last a lifetime.
+
           </p>
 
           {/* View More Section */}
@@ -52,8 +54,8 @@ const HomeJoinUsComponent = () => {
               </div>
               {/* Text beside Icon */}
               <div className="text-gray-800 font-kollektif ">
-                <p className="font-medium">View more</p>
-                <p>about our services</p>
+                <p className="font-medium">Download Our Company Profile</p>
+                {/* <p>about our services</p> */}
               </div>
             </a>
           </div>
