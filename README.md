@@ -64,7 +64,7 @@ npm start
 ceylon-ambassador/
 ├── src/
 │   ├── assets/          # Static assets (images, SVGs)
-│   ├── components/      # Reusable components
+│   ├── components/      # Reusable components~
 │   ├── screens/         # Page components
 │   │   ├── Homepage/
 │   │   ├── faq/
